@@ -6,46 +6,6 @@
     <title>駱忠湧 - 履歷</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      @font-face {
-        font-family: 'LucideIcons';
-        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
-      }
-      .lucide {
-        font-family: 'LucideIcons';
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        display: inline-block; /* Ensure icons align properly */
-        vertical-align: middle; /* Align icons vertically */
-      }
-      /* Define icon content */
-      .lucide-user:before { content: "\ef01"; }
-      .lucide-mail:before { content: "\edae"; }
-      .lucide-phone:before { content: "\edff"; }
-      .lucide-map-pin:before { content: "\edb7"; }
-      .lucide-briefcase:before { content: "\ec6a"; }
-      .lucide-graduation-cap:before { content: "\ee16"; }
-      .lucide-wrench:before { content: "\f0b9"; }
-      .lucide-code:before { content: "\ecc7"; }
-      .lucide-cloud:before { content: "\ec9d"; }
-      .lucide-terminal:before { content: "\f061"; }
-      .lucide-database:before { content: "\ecf0"; }
-      .lucide-github:before { content: "\ed7c"; }
-      .lucide-award:before { content: "\ec46"; }
-      .lucide-book-open:before { content: "\ec5e"; }
-      .lucide-star:before { content: "\f02c"; }
-      .lucide-star-half:before { content: "\f02b"; } /* Optional for finer rating */
-      .lucide-star-off:before { content: "\f02d"; } /* Optional for empty star */
-      .lucide-car:before { content: "\ec81"; }
-      .lucide-bike:before { content: "\ec53"; }
-      .lucide-languages:before { content: "\eda8"; }
-      .lucide-file-text:before { content: "\ed4e"; }
-      .lucide-link:before { content: "\eda7"; }
-
       /* Basic styles */
       body {
         font-family: 'Inter', sans-serif; /* Ensure Inter font is loaded or use system default */
@@ -95,6 +55,7 @@
         }
       }
     </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-gray-100 text-gray-800 leading-relaxed p-4 md:p-8 print:p-0 print:bg-white">
     <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden print:shadow-none print:rounded-none fade-in">
@@ -126,14 +87,14 @@
             <div class="md:col-span-2 space-y-8">
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-user mr-2"></span>個人簡介</h2>
+                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="user"></i>個人簡介</h2>
                     <p class="text-gray-700">
                         我是來自高雄、2000年出生的軟體工程師，擁有電機工程碩士學歷與跨領域開發經驗，熟悉後端系統、雲端平台與AI應用。我從高中開始接觸 Arduino 與單晶片開發，進而走上軟體工程之路，一路上持續自學與實作，累積豐富的技術實力與解決問題的能力，並致力於將創意轉化為可落地的創新專案。此外，我也擅長系統整合，能有效地串聯不同的技術與平台。未來我希望持續精進後端開發、AI應用與雲端架構設計，投入更具規模與影響力的產品開發，並為團隊與公司創造實質價值。
                     </p>
                 </section>
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-briefcase mr-2"></span>工作經驗</h2>
+                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="briefcase"></i>工作經驗</h2>
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold text-gray-900">實習生 - 采威國際資訊股份有限公司 (ISCOM)</h3>
                         <p class="text-sm text-secondary mb-1">2022年2月 - 2022年6月 (5個月) | 高雄市新興區</p>
@@ -148,7 +109,7 @@
                 </section>
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-code mr-2"></span>專案成就</h2>
+                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="code"></i>專案成就</h2>
                     <div class="space-y-6">
                         <div class="print-break-inside-avoid">
                             <h3 class="text-lg font-semibold text-gray-900">協作機械手臂抽血系統</h3>
@@ -220,7 +181,7 @@
                 </section>
 
                  <section class="print-break-inside-avoid">
-                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-book-open mr-2"></span>學術成果</h2>
+                    <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="book-open"></i>學術成果</h2>
                      <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
                          <li>
                              <strong>Development of Collaborative Robots by Integrating Natural Language Processing and Reinforcement Learning.</strong>
@@ -246,7 +207,7 @@
             <aside class="space-y-8">
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-wrench mr-2"></span>專業技能</h2>
+                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="wrench"></i>專業技能</h2>
                     <div class="space-y-4">
                         <div>
                             <h4 class="font-semibold text-gray-800 mb-1">程式語言:</h4>
@@ -292,7 +253,7 @@
                 </section>
 
                  <section class="print-break-inside-avoid">
-                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-graduation-cap mr-2"></span>學歷</h2>
+                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="graduation-cap"></i>學歷</h2>
                     <div class="mb-4">
                         <h3 class="font-semibold text-gray-900">國立臺灣師範大學</h3>
                         <p class="text-sm text-secondary">電機工程學系 | 碩士畢業</p>
@@ -306,7 +267,7 @@
                     </section>
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-award mr-2"></span>專業證照</h2>
+                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="award"></i>專業證照</h2>
                     <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4 text-sm">
                         <li>Red Hat Certified System Administrator (RHCSA)</li>
                         <li>TQC+ 程式語言 (C)</li>
@@ -317,7 +278,7 @@
                 </section>
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-award mr-2"></span>獎項與榮譽</h2>
+                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="award"></i>獎項與榮譽</h2>
                      <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4 text-sm">
                          <li>FIRA Roboworld Cup - 第一名</li>
                          <li>全國技術型高級中等學校學生團隊技術創造力培訓與競賽 - 第三名</li>
@@ -325,7 +286,7 @@
                 </section>
 
                  <section class="print-break-inside-avoid">
-                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-languages mr-2"></span>語言能力</h2>
+                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="languages"></i>語言能力</h2>
                      <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4 text-sm">
                          <li>中文 (母語)</li>
                          <li>英文 (聽/說/讀/寫: 中等, TOEIC: 475)</li>
@@ -333,7 +294,7 @@
                 </section>
 
                 <section class="print-break-inside-avoid">
-                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><span class="lucide lucide-file-text mr-2"></span>其他資訊</h2>
+                    <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="file-text"></i>其他資訊</h2>
                      <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4 text-sm">
                          <li>兵役：役畢</li>
                          <li>駕照：普通重型機車, 普通小型車</li>
@@ -366,4 +327,7 @@
         }
     </script>
 </body>
+<script>
+    lucide.createIcons();
+  </script>
 </html>
