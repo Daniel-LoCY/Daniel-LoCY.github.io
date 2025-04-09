@@ -8,7 +8,7 @@
     <style>
       /* Basic styles */
       body {
-        font-family: 'Inter', sans-serif; /* Ensure Inter font is loaded or use system default */
+        font-family: 'Inter', sans-serif; /* 確保使用 Inter 字體，或者使用系統預設字體 */
       }
       /* Add some subtle animation */
       .fade-in {
@@ -21,7 +21,7 @@
       /* Print specific styles */
       @media print {
         body {
-          -webkit-print-color-adjust: exact; /* Ensure colors print */
+          -webkit-print-color-adjust: exact; /* 確保顏色可以正確列印 */
           print-color-adjust: exact;
         }
         .no-print {
@@ -61,9 +61,12 @@
     <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden print:shadow-none print:rounded-none fade-in">
         <header class="bg-primary-dark text-white p-6 md:p-8 print:bg-blue-900">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div>
-                    <h1 class="text-3xl md:text-4xl font-bold">駱忠湧 (Lo, Chung Yung)</h1>
-                    <p class="text-lg md:text-xl text-primary-light mt-1">軟體工程師</p>
+                <div class="flex items-center gap-6">
+                    <img src="daniel.jpg" alt="照片" class="rounded-full w-40 h-40 object-cover shadow-md border-2 border-gray-200">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold">駱忠湧 (Lo, Chung Yung)</h1>
+                        <p class="text-lg md:text-xl text-primary-light mt-1">軟體工程師</p>
+                    </div>
                 </div>
                 <div class="text-sm mt-4 md:mt-0 md:text-right space-y-1">
                     <p><span class="lucide lucide-mail mr-2"></span>m0989062418@gmail.com</p>
@@ -85,12 +88,11 @@
 
         <main class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-8 print:grid-cols-1">
             <div class="md:col-span-2 space-y-8">
-
                 <section class="print-break-inside-avoid">
                     <h2 class="text-2xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="user"></i>個人簡介</h2>
-                    <p class="text-gray-700">
-                        我是來自高雄、2000年出生的軟體工程師，擁有電機工程碩士學歷與跨領域開發經驗，熟悉後端系統、雲端平台與AI應用。我從高中開始接觸 Arduino 與單晶片開發，進而走上軟體工程之路，一路上持續自學與實作，累積豐富的技術實力與解決問題的能力，並致力於將創意轉化為可落地的創新專案。此外，我也擅長系統整合，能有效地串聯不同的技術與平台。未來我希望持續精進後端開發、AI應用與雲端架構設計，投入更具規模與影響力的產品開發，並為團隊與公司創造實質價值。
-                    </p>
+                        <p class="text-gray-700">
+                            我是來自高雄、2000年出生的軟體工程師，擁有電機工程碩士學歷與跨領域開發經驗，熟悉後端系統、雲端平台與AI應用。我從高中開始接觸 Arduino 與單晶片開發，進而走上軟體工程之路，一路上持續自學與實作，累積豐富的技術實力與解決問題的能力，並致力於將創意轉化為可落地的創新專案。此外，我也擅長系統整合，能有效地串聯不同的技術與平台。未來我希望持續精進後端開發、AI應用與雲端架構設計，投入更具規模與影響力的產品開發，並為團隊與公司創造實質價值。
+                        </p>
                 </section>
 
                 <section class="print-break-inside-avoid">
@@ -100,9 +102,7 @@
                         <p class="text-sm text-secondary mb-1">2022年2月 - 2022年6月 (5個月) | 高雄市新興區</p>
                         <p class="text-gray-700 mb-2">參與經濟部iPAS實習生計畫，擔任研發部門實習生。</p>
                         <ul class="list-disc list-inside text-gray-700 space-y-1 pl-4">
-                            <li>協助撰寫後端 API。</li>
-                            <li>前端網頁串接 API。</li>
-                            <li>開發網頁功能。</li>
+                            <li>負責後端 API 開發、前端網頁串接及網頁功能開發。</li>
                             <li>使用技術： C#, ASP.NET MVC, JavaScript, jQuery, MS SQL, Git。</li>
                         </ul>
                     </div>
@@ -130,7 +130,7 @@
                             <p class="text-sm font-medium text-gray-600">開發工具: C#, Unity</p>
                         </div>
                         <div class="print-break-inside-avoid">
-                            <h3 class="text-lg font-semibold text-gray-900">垃圾分類小遊戲 (勝利之家合作)</h3>
+                            <h3 class="text-lg font-semibold text-gray-900">垃圾分類小遊戲 (屏東基督教勝利之家)</h3>
                             <p class="text-sm text-secondary mb-1">2021年2月 - 2021年6月</p>
                             <p class="text-gray-700 mb-2">使用 C# WPF 製作，結合 Microsoft Kinect 骨架偵測判斷姿勢，控制遊戲中腳丫位置進行垃圾分類互動教學，旨在幫助智能障礙學員學習。</p>
                             <p class="text-sm font-medium text-gray-600">開發工具: C#, WPF, Microsoft Kinect</p>
@@ -191,21 +191,23 @@
                              <strong>使用體感肢體偵測遊戲來進行智能障礙學童垃圾分類教學之研究.</strong>
                              <br>第20屆離島資訊技術與應用研討會, 澎湖馬公.
                          </li>
-                         <li>
-                             <strong>AR地面投影復健系統建構之研究.</strong>
-                             <br>DLT2021數位生活科技研討會, 台灣屏東市. (科技部: 109-2813-C-153-004-E)
-                         </li>
-                         <li>
-                             <strong>AR地面投影復健系統建構之研究.</strong>
-                             <br>國科會補助大專生研究計畫. (計畫編號: 109-2813-C-153-004-E)
-                         </li>
+
+                        <li><strong>AR地面投影復健系統建構之研究.</strong></li>
+                        <ul>
+
+                        <li>DLT2021數位生活科技研討會, 台灣屏東市. (科技部: 109-2813-C-153-004-E)</li>
+                        <li>國科會補助大專生研究計畫. (計畫編號: 109-2813-C-153-004-E)</li>
+
+                        </ul>
+
+                         
+
                      </ul>
                 </section>
 
             </div>
 
             <aside class="space-y-8">
-
                 <section class="print-break-inside-avoid">
                     <h2 class="text-xl font-semibold text-primary-dark border-b-2 border-primary-light pb-2 mb-4 flex items-center"><i data-lucide="wrench"></i>專業技能</h2>
                     <div class="space-y-4">
@@ -307,16 +309,9 @@
 
             </aside>
         </main>
-
-        <!-- <footer class="text-center text-sm text-gray-500 p-4 border-t mt-8 print:hidden">
-            Generated on <span id="generation-date"></span>
-        </footer> -->
     </div>
 
     <script>
-        // Simple script to add generation date
-        // document.getElementById('generation-date').textContent = new Date().toLocaleDateString();
-        // Replace placeholder GitHub link (if you add one)
         const githubLink = "https://github.com/Daniel-LoCY";
         const githubElement = document.querySelector('a[href="YOUR_GITHUB_LINK_HERE"]');
         if (githubElement && githubLink !== "YOUR_ACTUAL_GITHUB_URL") {

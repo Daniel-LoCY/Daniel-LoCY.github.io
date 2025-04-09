@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Lo Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient {
+            background-image: linear-gradient(to bottom right, #f0f4f8, #e0e7eb);
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #1e40af, #1d4ed8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .shadow-lg {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .hover\:scale-105:hover {
+            transform: scale(1.05);
+        }
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gradient p-6">
+    <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-center text-gradient">Daniel Lo Portfolio</h1>
+            <p class="text-gray-600 text-center mt-2">Software Engineer | Portfolio</p>
+        </header>
+
+        <section class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="project-container">
+                </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.13.1/dist/js-yaml.min.js"></script>
+    <script>
+        const projectContainer = document.getElementById('project-container');
+
+        function createProjectCard(project) {
+            const card = document.createElement('div');
+            card.className = "bg-gray-50 rounded-lg shadow-md p-4 transition-all hover:scale-105 group";
+
+            const title = document.createElement('h3');
+            title.className = "text-lg font-semibold text-blue-600 mb-2";
+            title.textContent = project.title;
+
+            const description = document.createElement('p');
+            description.className = "text-gray-700 mb-2";
+            description.textContent = project.description;
+
+            const technologies = document.createElement('p');
+            technologies.className = "text-sm text-gray-500";
+            technologies.textContent = project.technologies;
+
+            const link = document.createElement('a');
+            link.href = project.link;
+            link.className = "inline-flex items-center text-blue-500 hover:text-blue-700 hover:underline mt-2 space-y-2";
+            link.innerHTML = `<span class="mr-1">Project Link</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>`;
+            if (!project.link || project.link === "#") {
+                link.style.display = 'none';
+            }
+
+            const videoLink = document.createElement('a');
+            videoLink.href = project.video;
+            videoLink.className = "inline-flex items-center text-blue-500 hover:text-blue-700 hover:underline mt-2 space-y-2";
+            videoLink.innerHTML = `<span class="mr-1">Project Video</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="M10 15V9l5 3-5 3z"></path></svg>`;
+            if (!project.video) {
+                videoLink.style.display = 'none';
+            } else {
+                videoLink.target = "_blank";
+                videoLink.rel = "noopener noreferrer";
+            }
+
+            card.appendChild(title);
+            card.appendChild(description);
+            card.appendChild(technologies);
+            card.appendChild(link);
+            card.appendChild(videoLink);
+
+            return card;
+        }
+
+        fetch('en_projects.yaml')
+            .then(response => response.text())
+            .then(yamlString => {
+                const projectData = jsyaml.load(yamlString);
+                projectData.forEach(project => {
+                    const card = createProjectCard(project);
+                    projectContainer.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error fetching or parsing YAML:', error));
+    </script>
+</body>
+</html>
