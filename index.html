@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Lo 的個人網站</title>
+    <title>Lo Chung-Yung</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -19,20 +20,392 @@
         .btn-gradient:hover {
             background-image: linear-gradient(to right, #6a1b9a, #4a148c);
         }
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #ddd;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .education-entry {
+            margin-bottom: 1rem;
+        }
+
+        .education-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .education-date {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .education-major {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 1rem;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        .skill-item {
+            margin-bottom: 0.5rem;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-name {
+            margin-right: 1rem;
+            font-weight: normal;
+            color: #666;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .skill-level {
+            display: inline-block;
+            width: 150px;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+            display: none;
+        }
+
+        .skill-level-bar {
+            height: 100%;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .skill-level-bar.level-1 { background-color: #fbe761; width: 20%; }
+        .skill-level-bar.level-2 { background-color: #f8c734; width: 40%; }
+        .skill-level-bar.level-3 { background-color: #f4a506; width: 60%; }
+        .skill-level-bar.level-4 { background-color: #e56b0f; width: 80%; }
+        .skill-level-bar.level-5 { background-color: #d01c23; width: 100%; }
+
+        .collapsible-icon {
+            margin-right: 0.5rem;
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        .skill-block {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: #e2e8f0;
+            margin: 0.25rem;
+            color: #334155;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-block:hover {
+            background-color: #cbd5e0;
+        }
+
     </style>
 </head>
-<body class="bg-gradient-to-r from-purple-400 to-blue-500 h-screen flex justify-center items-center">
-    <div class="bg-white rounded-xl shadow-glow p-8 text-center w-4/5 max-w-md transition duration-300 ease-in-out hover:scale-105">
-        <h1 class="text-4xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text">Daniel Lo's website</h1>
-        <div class="flex flex-col space-y-4">
-            <a href="resume/chinese.html" class="btn-gradient text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg">中文履歷</a>
-            <a href="resume/english.html" class="btn-gradient text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg">English Resume</a>
-            <a href="portfolio/portfolio.html" class="btn-gradient text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg">中文作品集</a>
-            <a href="portfolio/en_portfolio.html" class="btn-gradient text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg">English Portfolio</a>
-            <a href="https://github.com/Daniel-LoCY" target="_blank" rel="noopener noreferrer" class="btn-gradient text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out hover:shadow-lg">
-                <i class="fab fa-github mr-2"></i>GitHub
-            </a>
+<body class="bg-gradient-to-r from-purple-400 to-blue-500 flex flex-col items-center min-h-screen p-4">
+    <nav class="bg-white rounded-xl shadow-glow py-2 px-4 w-full max-w-6xl mt-4 mb-8 transition duration-300 ease-in-out hover:scale-105">
+        <div class="container-fluid flex justify-around items-center">
+            <div class="relative inline-block text-left">
+                <button id="resume-dropdown-button" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center" type="button" aria-haspopup="true" aria-expanded="false">
+                    履歷
+                </button>
+                <div id="resume-dropdown-menu" class="absolute left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transform origin-top hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+                    <div class="py-1" role="none">
+                        <a href="resume/chinese.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">中文履歷</a>
+                        <a href="resume/english.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">English Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative inline-block text-left">
+                <button id="portfolio-dropdown-button" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center" type="button" aria-haspopup="true" aria-expanded="false">
+                    作品集
+                </button>
+                <div id="portfolio-dropdown-menu" class="absolute left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transform origin-top hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+                    <div class="py-1" role="none">
+                        <a href="portfolio/portfolio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">中文作品集</a>
+                        <a href="portfolio/en_portfolio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">English Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-white rounded-xl shadow-glow p-8 text-center w-full max-w-3xl transition duration-300 ease-in-out hover:scale-105 flex-grow">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text">駱忠湧</h1>
+        <div class="mb-6">
+            <div class="relative w-32 h-32 mx-auto rounded-full overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-indigo-500 rounded-full animate-spin duration-2000"></div>
+                <div class="absolute inset-0 bg-white rounded-full flex items-center justify-center">
+                    <img src="daniel_index.JPG" alt="Your Photo" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+            <p class="text-lg text-gray-700 mt-2">Software Engineer</p>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/chung-yung-lo-790ab6330/" target="_blank" rel="noopener noreferrer" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-block mr-4">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/Daniel-LoCY" target="_blank" rel="noopener noreferrer" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-block">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="w-full">
+            <button class="collapsible"><i class="fas fa-graduation-cap collapsible-icon"></i>學歷</button>
+            <div class="content">
+                <div class="education-entry">
+                    <div class="education-title">國立臺灣師範大學</div>
+                    <div class="education-date">2022 / 9 ~ 2024 / 7</div>
+                    <div class="education-major">電機工程學系 | 碩士畢業</div>
+                </div>
+                <div class="education-entry">
+                    <div class="education-title">國立屏東大學</div>
+                    <div class="education-date">2018 / 9 ~ 2022 / 6</div>
+                    <div class="education-major">電腦與通訊工程學系 | 大學畢業</div>
+                </div>
+            </div>
+
+            <button class="collapsible"><i class="fas fa-briefcase collapsible-icon"></i>工作經歷</button>
+            <div class="content">
+                <div class="education-entry">
+                    <div class="education-title">采威國際資訊股份有限公司</div>
+                    <div class="education-date">2022 / 2 ~ 2022 / 6</div>
+                    <div class="education-major">實習生 | 軟體工程師</div>
+                    <p>負責後端 API 開發、前端網頁串接及網頁功能開發</p>
+                </div>
+            </div>
+
+            <button class="collapsible"><i class="fas fa-certificate collapsible-icon"></i>證照</button>
+            <div class="content">
+                <div class="education-entry">
+                    <div class="skill-category">TQC+</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">程式語言 C</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">Red Hat</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">RHCSA</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">電機類證照</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">丙級室內配線技術士</span>
+                        <span class="skill-block">丙級工業配線技術士</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">其他證照</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Reallusion Certified Associate for iClone</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="collapsible"><i class="fas fa-code collapsible-icon"></i>程式語言</button>
+            <div class="content">
+                <div class="education-entry">
+                    <div class="skill-category">Python</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Machine Learning</span>
+                        <span class="skill-block">Deep Learning</span>
+                        <span class="skill-block">Reinforcement Learning</span>
+                        <span class="skill-block">Data Analysis</span>
+                        <span class="skill-block">Web (Front-end / Back-end)</span>
+                        <span class="skill-block">Computer Vision</span>
+                        <span class="skill-block">Crawler/Format</span>
+                        <span class="skill-block">Windows Application Development</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">C#</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Windows Application Development</span>
+                        <span class="skill-block">Game</span>
+                        <span class="skill-block">Web (Front-end / Back-end)</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">Java</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Data Structure</span>
+                        <span class="skill-block">Basic Framework</span>
+                        <span class="skill-block">Spring</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">C++</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Computer Vision</span>
+                        <span class="skill-block">Data Structure</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">HTML / Javascript / Node.js</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Data Structure</span>
+                        <span class="skill-block">Basic Framework</span>
+                        <span class="skill-block">jQuery & Ajax</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">C</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Data Structure</span>
+                    </div>
+                </div>
+                <div class="education-entry">
+                    <div class="skill-category">MSSQL & MySQL & SQLite & PostgreSQL & MongoDB</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Data Structure</span>
+                        <span class="skill-block">Basic programming syntax</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="collapsible"><i class="fas fa-tools collapsible-icon"></i>開發工具 / 環境</button>
+            <div class="content">
+                <div class="education-entry">
+                    <div class="skill-category">Tool</div>
+                    <div class="flex flex-wrap">
+                        <span class="skill-block">Docker</span>
+                        <span class="skill-block">ROS/ROS2</span>
+                        <span class="skill-block">Microsoft Azure</span>
+                        <span class="skill-block">Nvidia Isaac Gym</span>
+                        <span class="skill-block">VS Code</span>
+                        <span class="skill-block">Visual Studio</span>
+                        <span class="skill-block">Heroku</span>
+                        <span class="skill-block">Arduino</span>
+                        <span class="skill-block">Windows</span>
+                        <span class="skill-block">Ansible</span>
+                        <span class="skill-block">GitHub</span>
+                        <span class="skill-block">GitLab</span>
+                        <span class="skill-block">Sourcetree</span>
+                        <span class="skill-block">Jupyter (Python)</span>
+                        <span class="skill-block">Spyder (Python)</span>
+                        <span class="skill-block">Unity</span>
+                        <span class="skill-block">Google Cloud Platform (GCP)</span>
+                        <span class="skill-block">K8S</span>
+                        <span class="skill-block">Linux Ubuntu</span>
+                        <span class="skill-block">Mac OS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="mt-8 p-4 rounded-md bg-gray-100 shadow-md">
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fas fa-envelope text-gray-700"></i>
+                        <p class="text-gray-700">m0989062418@gmail.com</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone text-gray-700"></i>
+                        <p class="text-gray-700">+886 902170772</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+
+        // Get the dropdown button and menu elements
+        const resumeDropdownButton = document.getElementById('resume-dropdown-button');
+        const resumeDropdownMenu = document.getElementById('resume-dropdown-menu');
+        const portfolioDropdownButton = document.getElementById('portfolio-dropdown-button');
+        const portfolioDropdownMenu = document.getElementById('portfolio-dropdown-menu');
+
+        // Function to toggle the dropdown menu
+        function toggleDropdown(button, menu) {
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                // Close other dropdowns
+                if (menu === resumeDropdownMenu) {
+                    portfolioDropdownMenu.classList.add('hidden');
+                } else {
+                    resumeDropdownMenu.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize the dropdowns
+        toggleDropdown(resumeDropdownButton, resumeDropdownMenu);
+        toggleDropdown(portfolioDropdownButton, portfolioDropdownMenu);
+
+        // Close the dropdown when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!resumeDropdownMenu.classList.contains('hidden') && !resumeDropdownMenu.contains(event.target) && event.target !== resumeDropdownButton) {
+                resumeDropdownMenu.classList.add('hidden');
+            }
+            if (!portfolioDropdownMenu.classList.contains('hidden') && !portfolioDropdownMenu.contains(event.target) && event.target !== portfolioDropdownButton) {
+                portfolioDropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
