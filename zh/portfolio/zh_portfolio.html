@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Lo 作品集</title>
+    <title>駱忠湧 - 作品集</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -39,7 +39,7 @@
 <body class="bg-gradient p-6">
     <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
         <header class="mb-8">
-            <h1 class="text-3xl font-bold text-center text-gradient">Daniel Lo 作品集</h1>
+            <h1 class="text-3xl font-bold text-center text-gradient">駱忠湧 作品集</h1>
             <p class="text-gray-600 text-center mt-2">Software Engineer | Portfolio</p>
         </header>
 
@@ -98,7 +98,7 @@
             return card;
         }
 
-        fetch('projects.yaml')
+        fetch('zh_projects.yaml')
             .then(response => response.text())
             .then(yamlString => {
                 const projectData = jsyaml.load(yamlString);
