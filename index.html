@@ -157,26 +157,14 @@
     <nav class="bg-white rounded-xl shadow-glow py-2 px-4 w-full max-w-6xl mt-4 mb-8 transition duration-300 ease-in-out hover:scale-105">
         <div class="container-fluid flex justify-around items-center">
             <div class="relative inline-block text-left">
-                <button id="resume-dropdown-button" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center" type="button" aria-haspopup="true" aria-expanded="false">
+                <a href="/zh/resume/zh_resume.html" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center">
                     履歷
-                </button>
-                <div id="resume-dropdown-menu" class="absolute left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transform origin-top hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
-                    <div class="py-1" role="none">
-                        <a href="/zh/resume/zh_resume.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">中文履歷</a>
-                        <a href="/en/resume/en_resume.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">English Resume</a>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="relative inline-block text-left">
-                <button id="portfolio-dropdown-button" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center" type="button" aria-haspopup="true" aria-expanded="false">
+                <a href="/zh/portfolio/zh_portfolio.html" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center">
                     作品集
-                </button>
-                <div id="portfolio-dropdown-menu" class="absolute left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transform origin-top hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
-                    <div class="py-1" role="none">
-                        <a href="/zh/portfolio/zh_portfolio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">中文作品集</a>
-                        <a href="/en/portfolio/en_portfolio.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-purple-600 whitespace-nowrap" role="menuitem">English Portfolio</a>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="relative inline-block text-left">
                 <button id="language-dropdown-button" class="text-gray-700 font-semibold hover:text-purple-600 transition duration-300 inline-flex justify-center items-center" type="button" aria-haspopup="true" aria-expanded="false">
@@ -386,45 +374,24 @@
         }
 
         // Get the dropdown button and menu elements
-        const resumeDropdownButton = document.getElementById('resume-dropdown-button');
-        const resumeDropdownMenu = document.getElementById('resume-dropdown-menu');
-        const portfolioDropdownButton = document.getElementById('portfolio-dropdown-button');
-        const portfolioDropdownMenu = document.getElementById('portfolio-dropdown-menu');
         const languageDropdownButton = document.getElementById('language-dropdown-button');
         const languageDropdownMenu = document.getElementById('language-dropdown-menu');
 
         // Function to toggle the dropdown menu
         function toggleDropdown(button, menu) {
+            if (!button || !menu) return; // 確保元素存在
+            
             button.addEventListener('click', () => {
                 menu.classList.toggle('hidden');
-                // Close other dropdowns
-                if (menu === resumeDropdownMenu) {
-                    portfolioDropdownMenu.classList.add('hidden');
-                    languageDropdownMenu.classList.add('hidden');
-                } else if (menu === portfolioDropdownMenu) {
-                    resumeDropdownMenu.classList.add('hidden');
-                    languageDropdownMenu.classList.add('hidden');
-                }else{
-                    resumeDropdownMenu.classList.add('hidden');
-                    portfolioDropdownMenu.classList.add('hidden');
-                }
             });
         }
 
         // Initialize the dropdowns
-        toggleDropdown(resumeDropdownButton, resumeDropdownMenu);
-        toggleDropdown(portfolioDropdownButton, portfolioDropdownMenu);
         toggleDropdown(languageDropdownButton, languageDropdownMenu);
 
         // Close the dropdown when clicking outside
         document.addEventListener('click', (event) => {
-            if (!resumeDropdownMenu.classList.contains('hidden') && !resumeDropdownMenu.contains(event.target) && event.target !== resumeDropdownButton) {
-                resumeDropdownMenu.classList.add('hidden');
-            }
-            if (!portfolioDropdownMenu.classList.contains('hidden') && !portfolioDropdownMenu.contains(event.target) && event.target !== portfolioDropdownButton) {
-                portfolioDropdownMenu.classList.add('hidden');
-            }
-            if (!languageDropdownMenu.classList.contains('hidden') && !languageDropdownMenu.contains(event.target) && event.target !== languageDropdownButton) {
+            if (languageDropdownMenu && !languageDropdownMenu.classList.contains('hidden') && !languageDropdownMenu.contains(event.target) && event.target !== languageDropdownButton) {
                 languageDropdownMenu.classList.add('hidden');
             }
         });
