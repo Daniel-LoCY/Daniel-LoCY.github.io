@@ -1,0 +1,50 @@
+[about]
+other = "關於我"
+
+[experience]
+other = "工作經歷"
+
+[education]
+other = "學歷"
+
+[achievements]
+other = "其他資訊"
+
+[projects]
+other = "專案作品"
+
+[contact]
+other = "聯絡我"
+
+[nav_about]
+other = "關於我"
+
+[nav_experience]
+other = "工作經歷"
+
+[nav_education]
+other = "學歷"
+
+[nav_achievements]
+other = "其他資訊"
+
+[nav_projects]
+other = "專案作品"
+
+[nav_contact]
+other = "聯絡我"
+
+[read]
+other = "閱讀"
+
+[search_placeholder]
+other = "搜尋"
+
+[recent_posts]
+other = "最新文章"
+
+[page_not_found]
+other = "找不到頁面"
+
+[copyright]
+other = "版權所有"

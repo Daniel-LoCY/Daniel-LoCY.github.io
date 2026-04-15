@@ -1,0 +1,481 @@
+baseURL: "https://daniel-locy.github.io/"
+languageCode: "zh-tw"
+title: "Daniel Lo"
+theme: "hugo-profile"
+enableRobotsTXT: true
+disableKinds:
+  - "taxonomy"
+  - "term"
+
+defaultContentLanguage: "zh-tw"
+defaultContentLanguageInSubdir: false
+
+languages:
+  zh-tw:
+    languageName: "繁體中文"
+    languageCode: "zh-TW"
+    weight: 1
+    contentDir: "content/zh-tw"
+    title: "駱忠湧 Daniel Lo"
+  en:
+    languageName: "English"
+    languageCode: "en-US"
+    weight: 2
+    contentDir: "content/en"
+    title: "Daniel Lo"
+    params:
+      hero:
+        intro: "Hi, I'm"
+        title: "Daniel Lo"
+        subtitle: "AI Robotics Engineer / Software Engineer"
+        content: "An engineer focused on AI, robotics, backend systems, and cross-domain system integration."
+        button:
+          name: "View Projects"
+      about:
+        title: "About Me"
+        content: |-
+          I am an AI robotics engineer and software engineer from Kaohsiung with a master's degree in Electrical Engineering and hands-on experience across backend systems, cloud platforms, computer vision, and robotics applications.
+
+          Starting from Arduino and microcontroller development, I gradually extended my work into AI, ROS/ROS2, and cloud services. I enjoy turning algorithms, software, hardware, and platforms into practical products. I am currently working at AMTRAN TECHNOLOGY CO., LTD. as an AI Robotics Engineer, focusing on AI, robotics, and system integration related development.
+        skills:
+          title: "Core technologies and domains:"
+      experience:
+        title: "Experience"
+        items:
+          - company: "AMTRAN TECHNOLOGY CO., LTD."
+            companyUrl: "https://www.amtran.com.tw/"
+            jobs:
+              - name: "AI Robotics Engineer"
+                date: "May 12, 2025 - Present"
+                info:
+                  content: "Current role"
+                content: |-
+                  - Joined AMTRAN TECHNOLOGY CO., LTD. on May 12, 2025 as an AI Robotics Engineer.
+                  - Focused on AI, robotics, and system integration related R&D work.
+          - company: "ISCOM"
+            companyUrl: "https://www.iscom.com.tw"
+            jobs:
+              - name: "Software Engineer Intern"
+                date: "Feb 2022 - Jun 2022"
+                info:
+                  content: "Xinxing District, Kaohsiung City"
+                content: |-
+                  - Participated in the Ministry of Economic Affairs iPAS internship program as an R&D intern.
+                  - Responsible for backend API development, frontend integration, and web feature development.
+                  - Technologies: C#, ASP.NET MVC, JavaScript, jQuery, MS SQL, Git.
+      education:
+        title: "Education"
+        items:
+          - title: "M.S. in Electrical Engineering"
+            school:
+              name: "National Taiwan Normal University"
+            date: "Sep 2022 - Jul 2024"
+            content: "Research focused on combining AI, natural language processing, and reinforcement learning with collaborative robotics."
+          - title: "B.S. in Computer and Communication"
+            school:
+              name: "National Pingtung University"
+            date: "Sep 2018 - Jun 2022"
+            content: "Built a solid foundation in software development, embedded systems, and interactive application projects."
+      achievements:
+        title: "Additional Information"
+        items:
+          - title: "Academic Achievements"
+            content: "NSSSE 2024: Development of Collaborative Robots by Integrating Natural Language Processing and Reinforcement Learning; Research on Using Somatosensory Gesture Detection Games for Garbage Classification Teaching for Students with Intellectual Disabilities; DLT2021 AR Ground Projection Rehabilitation System project."
+          - title: "Professional Certifications"
+            content: "RHCSA; TQC+ Programming Language (C); Reallusion Certified Associate for iClone; Class C Indoor Wiring Technician; Class C Industrial Wiring Technician."
+          - title: "Awards and Honors"
+            content: "FIRA Roboworld Cup - First Place; National Senior High School Student Team Technical Creativity Training and Competition - Third Place."
+          - title: "Language Proficiency"
+            content: "Chinese (Native); English (Intermediate listening, speaking, reading, and writing; TOEIC 475)."
+          - title: "Other Information"
+            content: "Military service completed; Driver's licenses for regular motorcycle and regular passenger car."
+      projects:
+        title: "Projects"
+        items:
+          - title: "Collaborative Robotic Arm Blood Sampling System"
+            content: "Identify vessel locations with Azure Kinect and OpenCV, detect tools with YOLOv8, and control a robotic arm to perform blood sampling tasks."
+            image: "/images/projects/default-project.svg"
+            featured:
+              name: "Video"
+              link: "https://www.youtube.com/watch?v=pdxjWPd_i1o"
+            badges:
+              - "Python"
+              - "ROS"
+              - "YOLOv8"
+              - "OpenCV"
+              - "Docker"
+              - "Azure Kinect"
+          - title: "AIoT Smart Home Pet Monitoring System"
+            content: "Track pet locations with YOLOv5 and send warning messages to a mobile app through MQTT."
+            image: "/images/projects/default-project.svg"
+            featured:
+              name: "Video"
+              link: "https://youtu.be/pdnrbPbIDgk"
+            badges:
+              - "Python"
+              - "MQTT"
+              - "YOLOv5"
+              - "Raspberry Pi"
+              - "Kivy"
+          - title: "AR Ground Projection Rehabilitation System"
+            content: "Combined an interactive floor projection system with Unity games to support elderly rehabilitation training."
+            image: "/images/projects/default-project.svg"
+            featured:
+              name: "Video"
+              link: "https://youtu.be/TSrFhOD4Rss"
+            badges:
+              - "C#"
+              - "Unity"
+          - title: "Interactive Trash Sorting Game"
+            content: "Built a C# WPF educational game with Kinect-based posture detection for interactive trash sorting practice."
+            image: "/images/projects/default-project.svg"
+            featured:
+              name: "Video"
+              link: "https://youtu.be/I4rUTPnTPfk"
+            badges:
+              - "C#"
+              - "WPF"
+              - "Microsoft Kinect"
+          - title: "Product Ordering and Inventory Management System"
+            content: "Created a farm inventory and ordering app with MIT App Inventor 2 and Azure-hosted MS SQL."
+            image: "/images/projects/default-project.svg"
+            featured:
+              name: "Video"
+              link: "https://youtu.be/sOrhnQT_3ck"
+            badges:
+              - "App Inventor"
+              - "Microsoft Azure"
+              - "MS SQL"
+          - title: "Smart Wheelchair"
+            content: "Built a Bluetooth-based wheelchair control app that follows preset routes through Arduino integration."
+            image: "/images/projects/default-project.svg"
+            featured:
+              name: "Video"
+              link: "https://youtu.be/g8oHRZrlbD8"
+            badges:
+              - "App Inventor"
+              - "Arduino"
+          - title: "Personal Cloud Message and Storage System Website"
+            content: "Developed an integrated cloud platform for message boards, user account management, and file uploads."
+            image: "/images/projects/default-project.svg"
+            badges:
+              - "Python"
+              - "Flask"
+              - "JavaScript"
+              - "Azure"
+              - "MSSQL"
+              - "Docker"
+              - "ASP.NET Core MVC"
+          - title: "Real-time Chat Room Platform"
+            content: "Built a real-time chat application with synchronized multi-user messaging and connection management."
+            image: "/images/projects/default-project.svg"
+            badges:
+              - "Node.js"
+              - "WebSocket"
+          - title: "YouTube Video Download Platform"
+            content: "Integrated a browser extension and backend services to provide a streamlined audio and video download workflow."
+            image: "/images/projects/default-project.svg"
+            badges:
+              - "Flask"
+              - "Chrome Extension"
+              - "Docker"
+              - "Heroku"
+              - "Tkinter"
+          - title: "Taiwan High Speed Rail Ticket Booking Bot"
+            content: "Automated login and ticket booking by simulating user behavior with browser automation."
+            image: "/images/projects/default-project.svg"
+            badges:
+              - "Python"
+              - "Selenium"
+          - title: "LineBot / Discord Bot Chatbot"
+            content: "Developed chatbots for automated replies, utility queries, and interactive conversations with scraping-based information delivery."
+            image: "/images/projects/default-project.svg"
+            badges:
+              - "Python"
+              - "Line Messaging API"
+              - "Discord API"
+              - "BeautifulSoup"
+              - "requests"
+          - title: "Racing Car Game"
+            content: "Created a self-made 3D racing game with vehicle physics and player control logic."
+            image: "/images/projects/default-project.svg"
+            badges:
+              - "C#"
+              - "Unity"
+      contact:
+        title: "Contact"
+        content: |-
+          Feel free to reach out by email or LinkedIn.
+
+          - Email: [m0989062418@gmail.com](mailto:m0989062418@gmail.com)
+          - Phone: [+886 902170772](tel:+886902170772)
+          - GitHub: [Daniel-LoCY](https://github.com/Daniel-LoCY)
+          - LinkedIn: [chung-yung-lo-790ab6330](https://www.linkedin.com/in/chung-yung-lo-790ab6330/)
+        btnName: "Email Me"
+
+params:
+  title: "Daniel Lo"
+  description: "Daniel Lo's personal portfolio and resume website built with Hugo Profile."
+  favicon: "/images/profile-about.jpg"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+  copyright: "Daniel Lo"
+
+  theme:
+    defaultTheme: "light"
+
+  navbar:
+    brandName: "Daniel Lo"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "你好，我是"
+    title: "駱忠湧 Daniel Lo"
+    subtitle: "AI 機器人工程師 / 軟體工程師"
+    content: "專注於 AI、機器人、後端系統與跨領域系統整合的工程師。"
+    image: "/images/profile-hero.jpg"
+    roundImage: true
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "查看專案"
+      url: "#projects"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: "fab fa-github"
+          url: "https://github.com/Daniel-LoCY"
+        - icon: "fab fa-linkedin"
+          url: "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
+        - icon: "fas fa-envelope"
+          url: "mailto:m0989062418@gmail.com"
+
+  about:
+    enable: true
+    title: "個人簡介"
+    image: "/images/profile-about.jpg"
+    content: |-
+      我是來自高雄的 AI 機器人工程師與軟體工程師，具備電機工程碩士背景與跨領域系統整合經驗，熟悉後端系統、雲端平台、電腦視覺與機器人應用。
+
+      我從 Arduino 與單晶片開發一路延伸到 AI、ROS/ROS2 與雲端服務，擅長把演算法、軟硬體與平台串接成可落地的產品。目前於瑞軒科技擔任 AI 機器人工程師，持續投入 AI、機器人與系統整合相關開發。
+    skills:
+      enable: true
+      title: "核心技術與領域："
+      items:
+        - "程式語言 / Programming: Python, C#, C++, Java, JavaScript, C, Go, Ruby"
+        - "後端與框架 / Backend: Flask, Django, FastAPI, ASP.NET Core MVC, Spring Boot, Node.js, jQuery, ABP Framework"
+        - "前端與桌面 / Frontend & Desktop: WPF, WinForm, PyQt, Tkinter, Kivy, Unity, HTML/CSS"
+        - "資料庫 / Databases: MS SQL, MySQL, PostgreSQL, SQLite, MongoDB"
+        - "AI 與視覺 / AI & Vision: PyTorch, TensorFlow, Keras, Scikit-learn, OpenCV, YOLO, MediaPipe, Nvidia Isaac Gym, Reinforcement Learning, NLP (CKIP)"
+        - "資料處理 / Data: Pandas, NumPy, Matplotlib, Seaborn, Selenium, Requests, BeautifulSoup"
+        - "雲端平台 / Cloud: Microsoft Azure, GCP, AWS, Heroku, Replit"
+        - "DevOps / Tools: Docker, Kubernetes, Ansible, Git, GitHub, GitLab, Sourcetree, Linux Command"
+        - "物聯網與機器人 / IoT & Robotics: ROS/ROS2, MQTT, Arduino, Raspberry Pi, ESP32"
+        - "網路與資安基礎 / Networking: OSI Model, TCP/IP, DNS, DHCP, Routing, Firewall Config, NAT, VPN"
+
+  experience:
+    enable: true
+    title: "工作經歷"
+    items:
+      - company: "瑞軒科技股份有限公司"
+        companyUrl: "https://www.amtran.com.tw/"
+        jobs:
+          - name: "AI 機器人工程師"
+            date: "2025/05/12 - 至今"
+            info:
+              content: "現職"
+            content: |-
+              - 自 2025/05/12 起任職，負責 AI 與機器人相關研發工作。
+              - 聚焦 AI、機器人與系統整合相關開發。
+      - company: "采威國際資訊股份有限公司 (ISCOM)"
+        companyUrl: "https://www.iscom.com.tw"
+        jobs:
+          - name: "實習生｜軟體工程師"
+            date: "2022/02 - 2022/06"
+            info:
+              content: "高雄市新興區"
+            content: |-
+              - 參與經濟部 iPAS 實習計畫，於研發部門擔任實習生。
+              - 負責後端 API 開發、前端串接與網頁功能開發。
+              - 技術：C#, ASP.NET MVC, JavaScript, jQuery, MS SQL, Git。
+
+  education:
+    enable: true
+    title: "學歷"
+    items:
+      - title: "電機工程學系｜碩士"
+        school:
+          name: "國立臺灣師範大學"
+        date: "2022/09 - 2024/07"
+        content: "研究聚焦於 AI、自然語言處理與強化學習整合於協作機器人應用。"
+      - title: "電腦與通訊學系｜學士"
+        school:
+          name: "國立屏東大學"
+        date: "2018/09 - 2022/06"
+        content: "奠定軟體開發、嵌入式系統與互動式應用專案的基礎。"
+
+  achievements:
+    enable: true
+    title: "其他資訊"
+    items:
+      - title: "學術成果"
+        content: "NSSSE 2024：Development of Collaborative Robots by Integrating Natural Language Processing and Reinforcement Learning；使用體感肢體偵測遊戲來進行智能障礙學童垃圾分類教學之研究；DLT2021 AR 地面投影復健系統建構之研究。"
+      - title: "專業證照"
+        content: "RHCSA；TQC+ 程式語言（C）；Reallusion Certified Associate for iClone；丙級室內配線技術士；丙級工業配線技術士。"
+      - title: "獎項與榮譽"
+        content: "FIRA Roboworld Cup 第一名；全國技術型高級中等學校學生團隊技術創造力培訓與競賽第三名。"
+      - title: "語言能力"
+        content: "中文（母語）；英文（聽說讀寫中等，TOEIC 475）。"
+      - title: "其他資訊"
+        content: "兵役已服畢；持有普通重型機車與普通小型車駕照。"
+
+  projects:
+    enable: true
+    title: "專案作品"
+    items:
+      - title: "協作機械手臂抽血系統"
+        content: "透過 Azure Kinect 和 OpenCV 找出血管位置，並以 YOLOv8 辨識工具後控制機械手臂執行抽血任務。"
+        image: "/images/projects/default-project.svg"
+        featured:
+          name: "影片"
+          link: "https://www.youtube.com/watch?v=pdxjWPd_i1o"
+        badges:
+          - "Python"
+          - "ROS"
+          - "YOLOv8"
+          - "OpenCV"
+          - "Docker"
+          - "Azure Kinect"
+      - title: "AIoT 智慧居家寵物監控系統"
+        content: "使用 YOLOv5 追蹤寵物位置，並透過 MQTT 將警告訊息傳送至 APP。"
+        image: "/images/projects/default-project.svg"
+        featured:
+          name: "影片"
+          link: "https://youtu.be/pdnrbPbIDgk"
+        badges:
+          - "Python"
+          - "MQTT"
+          - "YOLOv5"
+          - "Raspberry Pi"
+          - "Kivy"
+      - title: "AR 地面投影復健系統"
+        content: "結合地面互動投影系統與 Unity 遊戲，協助長者進行復健訓練。"
+        image: "/images/projects/default-project.svg"
+        featured:
+          name: "影片"
+          link: "https://youtu.be/TSrFhOD4Rss"
+        badges:
+          - "C#"
+          - "Unity"
+      - title: "垃圾分類小遊戲"
+        content: "以 C# WPF 與 Kinect 製作互動式垃圾分類教學遊戲。"
+        image: "/images/projects/default-project.svg"
+        featured:
+          name: "影片"
+          link: "https://youtu.be/I4rUTPnTPfk"
+        badges:
+          - "C#"
+          - "WPF"
+          - "Microsoft Kinect"
+      - title: "產品訂購及庫存管理系統"
+        content: "使用 MIT App Inventor 2 開發農場水果庫存管理與線上訂購 APP。"
+        image: "/images/projects/default-project.svg"
+        featured:
+          name: "影片"
+          link: "https://youtu.be/sOrhnQT_3ck"
+        badges:
+          - "App Inventor"
+          - "Microsoft Azure"
+          - "MS SQL"
+      - title: "智慧型輪椅"
+        content: "透過藍牙與 Arduino 整合，讓輪椅依照預設路線行駛。"
+        image: "/images/projects/default-project.svg"
+        featured:
+          name: "影片"
+          link: "https://youtu.be/g8oHRZrlbD8"
+        badges:
+          - "App Inventor"
+          - "Arduino"
+      - title: "個人雲端留言與存儲系統網站"
+        content: "建構整合式雲端平台，提供留言板、帳號管理與檔案上傳功能。"
+        image: "/images/projects/default-project.svg"
+        badges:
+          - "Python"
+          - "Flask"
+          - "JavaScript"
+          - "Azure"
+          - "MSSQL"
+          - "Docker"
+          - "ASP.NET Core MVC"
+      - title: "即時聊天室平台"
+        content: "開發具備多人訊息同步與連線管理能力的即時聊天應用。"
+        image: "/images/projects/default-project.svg"
+        badges:
+          - "Node.js"
+          - "WebSocket"
+      - title: "Youtube 影片下載平台"
+        content: "整合瀏覽器擴充功能與後端服務，提供簡便的影音下載流程。"
+        image: "/images/projects/default-project.svg"
+        badges:
+          - "Flask"
+          - "Chrome Extension"
+          - "Docker"
+          - "Heroku"
+          - "Tkinter"
+      - title: "高鐵自動訂票機器人"
+        content: "透過模擬使用者操作，自動完成登入與訂票流程。"
+        image: "/images/projects/default-project.svg"
+        badges:
+          - "Python"
+          - "Selenium"
+      - title: "LineBot / Discord Bot 聊天機器人"
+        content: "打造自動回應、功能查詢與互動對話的聊天機器人。"
+        image: "/images/projects/default-project.svg"
+        badges:
+          - "Python"
+          - "Line Messaging API"
+          - "Discord API"
+          - "BeautifulSoup"
+          - "requests"
+      - title: "Racing Car 小遊戲"
+        content: "自製 3D 賽車遊戲，模擬車輛物理與玩家操控邏輯。"
+        image: "/images/projects/default-project.svg"
+        badges:
+          - "C#"
+          - "Unity"
+
+  contact:
+    enable: true
+    title: "聯絡我"
+    content: |-
+      歡迎透過 Email 或 LinkedIn 與我聯繫。
+
+      - Email: [m0989062418@gmail.com](mailto:m0989062418@gmail.com)
+      - Phone: [+886 902170772](tel:+886902170772)
+      - GitHub: [Daniel-LoCY](https://github.com/Daniel-LoCY)
+      - LinkedIn: [chung-yung-lo-790ab6330](https://www.linkedin.com/in/chung-yung-lo-790ab6330/)
+    btnName: "寄信給我"
+    btnLink: "mailto:m0989062418@gmail.com"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: "https://github.com/Daniel-LoCY"
+      linkedin: "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
+
