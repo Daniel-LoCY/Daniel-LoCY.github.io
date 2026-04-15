@@ -2,7 +2,7 @@
 title: "About"
 type: "homepage"
 intro: >-
-  I am an AI robotics engineer and software engineer from Kaohsiung with a master's degree in Electrical Engineering and hands-on experience across backend systems, cloud platforms, computer vision, and robotics applications. I enjoy connecting algorithms, software, hardware, and platforms into practical products.
+  I am Chung-Yung Lo, currently living in New Taipei and working in New Taipei as an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD. I hold a master's degree in Electrical Engineering and bring hands-on experience across backend systems, cloud platforms, computer vision, and robotics applications. I enjoy connecting algorithms, software, hardware, and platforms into practical products.
 study: >-
   My academic path combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I focused on AI, natural language processing, and reinforcement learning for collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
 passion_title: "What I focus on"

@@ -14,7 +14,7 @@ positions:
     role: "AI Robotics Engineer"
     period: "May 2025 - Present"
     industry: "AI Robotics"
-    location: "Kaohsiung, Taiwan"
+    location: "New Taipei, Taiwan"
     company_description: "Consumer electronics and smart technology company with R&D work spanning AI, robotics, and system integration."
     bullet_points:
       - "Joined the R&D team as an AI Robotics Engineer, focusing on AI, robotics, and multidisciplinary integration projects."

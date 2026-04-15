@@ -34,7 +34,7 @@
         </div>
         <!-- Name -->
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading leading-tight hero-name hero-text-element" data-animation="name">
-          {{ .Site.Params.firstName }} {{ .Site.Params.lastName }}
+          {{ .Site.Params.fullName | default (printf "%s %s" .Site.Params.firstName .Site.Params.lastName) }}
         </h1>
         <!-- Tagline: one block; each cycling phrase wraps (up to ~2 lines); split phrases in JS on ". " -->
         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6 font-light hero-text-accent hero-text-element w-full flex items-center justify-center lg:justify-start" data-animation="tagline">

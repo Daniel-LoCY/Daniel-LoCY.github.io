@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var style = el.getAttribute('data-devicon-style') || 'plain';
     var faIcon = el.getAttribute('data-fa-icon');
+    var faPrefix = el.getAttribute('data-fa-prefix') || 'fas';
 
     var tryStyles = [];
     if (style) tryStyles.push(style);
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!faIcon) return;
 
       var fa = document.createElement('i');
-      fa.className = 'fas fa-' + faIcon + ' text-5xl';
+      fa.className = faPrefix + ' fa-' + faIcon + ' text-5xl';
       var animation = el.getAttribute('data-animation');
       if (animation) {
         fa.setAttribute('data-animation', animation);
@@ -72,4 +73,3 @@ document.addEventListener('DOMContentLoaded', function () {
     setImgSrcSequentially(0);
   });
 });
-

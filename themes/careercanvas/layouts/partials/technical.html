@@ -24,6 +24,7 @@
               <div class="flex flex-col items-center text-center">
                 {{ if .devicon_name }}
                   {{ $style := .devicon_style | default "original" }}
+                  {{ $faPrefix := .fa_prefix | default "fas" }}
                   {{ $defaultInvertOnDark := slice "nextjs" "github" "ollama" "keras" "prisma" }}
                   {{ $invertOnDark := or (.invert_on_dark) (in $defaultInvertOnDark .devicon_name) }}
                   <div class="h-16 flex items-center justify-center mb-1">
@@ -35,15 +36,17 @@
                          data-animation="skill-icon"
                          data-devicon-name="{{ .devicon_name }}"
                          data-devicon-style="{{ $style }}"
+                         data-fa-prefix="{{ $faPrefix }}"
                          data-fa-icon="{{ .icon }}" />
-                  </div>
-                {{ else }}
+                   </div>
+                 {{ else }}
+                  {{ $faPrefix := .fa_prefix | default "fas" }}
                   <!-- Fallback to FontAwesome with random colors -->
                   {{ $colors := slice "text-blue-500" "text-green-500" "text-purple-500" "text-red-500" "text-yellow-500" "text-indigo-500" "text-pink-500" "text-teal-500" "text-orange-500" "text-cyan-500" }}
                   {{ $randomColor := index $colors (mod (add (mul (len $colors) 7) (len .name)) (len $colors)) }}
                   <div class="h-16 flex items-center justify-center mb-1">
                     <div class="w-16 h-16 box-border rounded-md p-1 dark:bg-white/25 dark:ring-1 dark:ring-white/25 flex items-center justify-center">
-                      <i class="fas fa-{{ .icon }} text-4xl md:text-5xl {{ $randomColor }}"
+                      <i class="{{ $faPrefix }} fa-{{ .icon }} text-4xl md:text-5xl {{ $randomColor }}"
                          data-animation="skill-icon"
                          aria-hidden="true"></i>
                     </div>
