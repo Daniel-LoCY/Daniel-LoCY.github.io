@@ -27,7 +27,7 @@ quickfacts:
     title: "Languages"
     value: |
       - Chinese (Native)
-      - English (Intermediate, TOEIC 475)
+      - English (Intermediate)
   - icon: "heart"
     kind: "interests"
     title: "Interests"

@@ -27,7 +27,7 @@ quickfacts:
     title: "語言能力"
     value: |
       - 中文（母語）
-      - 英文（中等，TOEIC 475）
+      - 英文（中等）
   - icon: "heart"
     kind: "interests"
     title: "興趣"
