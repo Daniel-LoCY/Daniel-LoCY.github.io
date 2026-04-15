@@ -129,7 +129,7 @@ technical_groups:
       - icon: "microsoft"
         name: "Azure"
         devicon_name: "azure"
-      - icon: "aws"
+      - icon: "amazon"
         name: "AWS"
         devicon_name: "amazonwebservices"
       - icon: "google"
