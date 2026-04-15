@@ -1,0 +1,171 @@
+baseURL = "https://daniel-locy.github.io/"
+languageCode = "zh-tw"
+title = "Daniel Lo"
+theme = "careercanvas"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "zh-tw"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.zh-tw]
+    contentDir = "content/zh-tw"
+    languageName = "繁體中文"
+    languageCode = "zh-TW"
+    title = "駱忠湧 Daniel Lo"
+    weight = 1
+    [languages.zh-tw.params]
+      firstName = "Daniel"
+      lastName = "Lo"
+      tagline = "AI 機器人工程師。軟體工程師。跨域系統整合開發者。"
+      hero_description = "專注於 AI、機器人、後端系統與跨領域整合，擅長把演算法、軟體與硬體串成可落地產品。"
+      hero_location = "高雄，台灣"
+      resume_url = ""
+      collab_tags = ["AI / 機器人", "後端系統", "系統整合", "電腦視覺", "ROS / ROS2"]
+    [languages.zh-tw.menu]
+      [[languages.zh-tw.menu.main]]
+        name = "關於我"
+        url = "#about"
+        weight = 10
+      [[languages.zh-tw.menu.main]]
+        name = "技能"
+        url = "#skills"
+        weight = 20
+      [[languages.zh-tw.menu.main]]
+        name = "經歷"
+        url = "#experience"
+        weight = 30
+      [[languages.zh-tw.menu.main]]
+        name = "技術棧"
+        url = "#technical"
+        weight = 40
+      [[languages.zh-tw.menu.main]]
+        name = "聯絡"
+        url = "#contact"
+        weight = 50
+      [[languages.zh-tw.menu.main]]
+        name = "專案作品"
+        url = "engineering/"
+        weight = 60
+
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    languageCode = "en-US"
+    title = "Daniel Lo"
+    weight = 2
+    [languages.en.params]
+      firstName = "Daniel"
+      lastName = "Lo"
+      tagline = "AI Robotics Engineer. Software Engineer. Cross-domain system integrator."
+      hero_description = "Engineer focused on AI, robotics, backend systems, and multidisciplinary integration, turning algorithms, software, and hardware into practical products."
+      hero_location = "Kaohsiung, Taiwan"
+      resume_url = ""
+      collab_tags = ["AI / Robotics", "Backend Systems", "System Integration", "Computer Vision", "ROS / ROS2"]
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "About"
+        url = "#about"
+        weight = 10
+      [[languages.en.menu.main]]
+        name = "Skills"
+        url = "#skills"
+        weight = 20
+      [[languages.en.menu.main]]
+        name = "Experience"
+        url = "#experience"
+        weight = 30
+      [[languages.en.menu.main]]
+        name = "Tech Stack"
+        url = "#technical"
+        weight = 40
+      [[languages.en.menu.main]]
+        name = "Contact"
+        url = "#contact"
+        weight = 50
+      [[languages.en.menu.main]]
+        name = "Projects"
+        url = "engineering/"
+        weight = 60
+
+[build]
+  writeStats = true
+
+[params]
+  name = "Daniel Lo"
+  firstName = "Daniel"
+  lastName = "Lo"
+  email = "m0989062418@gmail.com"
+  profile_image = "/images/profile-about.jpg"
+  author = "Daniel Lo"
+  og_image = "/images/profile-hero.jpg"
+  description = "Bilingual portfolio for Daniel Lo, an AI robotics engineer and software engineer focused on robotics, computer vision, backend systems, and cross-domain integration."
+  linkedin_url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
+  linkedin_text = "linkedin.com/in/chung-yung-lo-790ab6330"
+  github_url = "https://github.com/Daniel-LoCY"
+  github_text = "github.com/Daniel-LoCY"
+  calendly_url = ""
+  calendly_height = "700px"
+  copyright = "Daniel Lo"
+  resume_url_en = ""
+  resume_url_fr = ""
+  resume_label = "View CV"
+  sectionPagesMenu = "main"
+  formspreeendpoint = ""
+  pexelsapikey = ""
+
+  [[params.social]]
+    icon = "linkedin-in"
+    url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
+
+  [[params.social]]
+    icon = "github"
+    url = "https://github.com/Daniel-LoCY"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[server]
+  [[server.headers]]
+    for = "/**/*.css"
+    [server.headers.values]
+      Content-Type = "text/css"
+
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]
+
+[params.color_palettes]
+  [[params.color_palettes.palette]]
+    name = "professional"
+    main_color = "#474A51"
+    second_color = "#E52521"
+    third_color = "#3CB043"
+
+  [[params.color_palettes.palette]]
+    name = "ocean"
+    main_color = "#1E40AF"
+    second_color = "#06B6D4"
+    third_color = "#10B981"
+
+  [[params.color_palettes.palette]]
+    name = "steel"
+    main_color = "#374151"
+    second_color = "#6B7280"
+    third_color = "#10B981"
+
+  [[params.color_palettes.palette]]
+    name = "slate"
+    main_color = "#475569"
+    second_color = "#0EA5E9"
+    third_color = "#F97316"
+
+[params.pexels]
+  queries = ["modern robotics lab", "industrial robot arm", "technology workspace"]

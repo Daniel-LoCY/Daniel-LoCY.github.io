@@ -1,50 +1,155 @@
-[about]
-other = "關於我"
+[read_more]
+other = "閱讀更多"
 
-[experience]
-other = "工作經歷"
+[by]
+other = "作者"
 
-[education]
-other = "學歷"
+[posted_on]
+other = "發佈於"
 
-[achievements]
-other = "其他資訊"
-
-[projects]
-other = "專案作品"
+[tags]
+other = "標籤"
 
 [contact]
-other = "聯絡我"
+other = "聯絡"
 
-[nav_about]
-other = "關於我"
+[contactFormLabel]
+other = "一起聊聊"
 
-[nav_experience]
-other = "工作經歷"
+[contactFormLabelNameLabel]
+other = "姓名"
 
-[nav_education]
-other = "學歷"
+[contactFormLabelEmailLabel]
+other = "Email"
 
-[nav_achievements]
-other = "其他資訊"
+[contactFormLabelSubjectLabel]
+other = "主旨"
 
-[nav_projects]
+[contactFormLabelMessageLabel]
+other = "訊息"
+
+[contactFormSendBtnLabel]
+other = "送出"
+
+[send]
+other = "送出"
+
+[skills]
+other = "技能"
+
+[experience]
+other = "經歷"
+
+[about]
+other = "關於"
+
+[blog]
+other = "部落格"
+
+[engineering]
 other = "專案作品"
 
-[nav_contact]
+[contributions]
+other = "貢獻"
+
+[technical]
+other = "技術棧"
+
+[language]
+other = "語言"
+
+[getInTouch]
 other = "聯絡我"
 
-[read]
-other = "閱讀"
+[learnMore]
+other = "了解更多"
 
-[search_placeholder]
-other = "搜尋"
+[sendMeAMessage]
+other = "傳送訊息給我"
 
-[recent_posts]
-other = "最新文章"
+[contactInformation]
+other = "聯絡資訊"
 
-[page_not_found]
+[priorityContact]
+other = "優先聯絡方式"
+
+[aboutMe]
+other = "關於我"
+
+[connectOnLinkedIn]
+other = "在 LinkedIn 聯絡我"
+
+[quickFacts]
+other = "快速重點"
+
+[more]
+other = "更多"
+
+[aboutName]
+other = "關於"
+
+[relatedContent]
+other = "相關內容"
+
+[interests]
+other = "興趣"
+
+[languages]
+other = "語言能力"
+
+[helloIm]
+other = "你好，我是"
+
+[viewCV]
+other = "查看履歷"
+
+[downloadResume]
+other = "下載履歷"
+
+[keyAchievements]
+other = "重點成果"
+
+[demoImageAlt]
+other = "示意圖片"
+
+[galleryNotFound]
+other = "找不到圖庫資料夾"
+
+[viewOnGithub]
+other = "在 GitHub 查看完整原始碼"
+
+[iframeIdRequired]
+other = "錯誤：iframe shortcode 需要提供 id 參數。"
+
+[fullscreen]
+other = "全螢幕"
+
+[youtubePlayerTitle]
+other = "YouTube 影片播放器"
+
+[vimeoPlayerTitle]
+other = "Vimeo 影片播放器"
+
+[pageNotFound]
 other = "找不到頁面"
 
-[copyright]
-other = "版權所有"
+[pageNotFoundSubtitle]
+other = "你要找的頁面不存在。"
+
+[goHome]
+other = "回到首頁"
+
+[certainlyNotHere]
+other = "總之不在這裡"
+
+[contactFormNotConfigured]
+other = "聯絡表單尚未設定，請稍後再試。"
+
+[contactFormSuccess]
+other = "收到訊息了，我會盡快回覆你。"
+
+[contactFormError]
+other = "送出失敗，請再試一次。"
+
+[contactFormFailed]
+other = "無法送出表單。"
