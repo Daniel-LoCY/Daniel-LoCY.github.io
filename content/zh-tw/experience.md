@@ -14,7 +14,7 @@ positions:
     role: "AI 機器人工程師"
     period: "2025/05 - 至今"
     industry: "AI 機器人"
-    location: "高雄，台灣"
+    location: "新北，台灣"
     company_description: "智慧科技與消費性電子公司，研發工作涵蓋 AI、機器人與系統整合。"
     bullet_points:
       - "加入研發團隊擔任 AI 機器人工程師，負責 AI、機器人與跨域整合相關開發。"
