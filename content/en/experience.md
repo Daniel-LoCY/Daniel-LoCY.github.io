@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  Experience spanning AI robotics, backend development, and interdisciplinary engineering delivery.
+  Focused on AI robotics, computer vision, simulation and control, and imitation-learning data pipelines, with experience spanning research prototypes and real-robot integration.
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -17,9 +17,15 @@ positions:
     location: "New Taipei, Taiwan"
     company_description: "Consumer electronics and smart technology company with R&D work spanning AI, robotics, and system integration."
     bullet_points:
-      - "Joined the R&D team as an AI Robotics Engineer, focusing on AI, robotics, and multidisciplinary integration projects."
-      - "Worked on perception, system integration, and applied engineering tasks that bridge software, hardware, and deployment constraints."
-      - "Contributed to solution building in computer vision, robot-related workflows, and practical AI applications."
+      - "Built Isaac Sim, ROS 2, MoveIt 2, and cuMotion environments for robot simulation and control, covering target-pose control, motion planning, collision handling, and object manipulation."
+      - "Extended the control architecture from UR5 to TM5S, integrating Robotiq 2F-85/2F-140 and Toyo CHY2B-S80 grippers through configuration-driven robot and gripper settings."
+      - "Integrated RealSense, DOPE, AprilTag, and OpenCV for image acquisition, 3D object pose estimation, TF conversion, hand-eye calibration, and grasp-target calculation."
+      - "Developed a YOLO OBB visual-servoing workflow for HDMI insertion, using camera intrinsics, principal-point offset, focal length, and object dimensions to estimate relative distance and improve alignment."
+      - "Developed an AprilTag-based HDMI and power-cable unplugging workflow integrating TM Flow, TM API, ROS 2, arm control, and gripper control across rear-, side-, and bottom-inserted configurations and multiple device models."
+      - "Developed a PatchCore anomaly-detection API and UI with ROI extraction, image preprocessing, template replacement, and anomaly-score evaluation to analyze false positives caused by backgrounds, reflections, and small defects."
+      - "Designed a PyQt/PyQt6 unplugging-control system separating vision, PLC, robot arm, gripper, ROS 2, configuration, and workflow execution modules; also connected Windows .NET DLLs and EPSON RC+ APIs with Pythonnet."
+      - "Built Quest 2, ALVR, SteamVR, and PyOpenXR control flows that map VR controller poses and buttons to virtual and physical robot commands with speed and workspace limits."
+      - "Built robotics imitation-learning and digital-twin data pipelines integrating recording, HDF5, RGB/depth, robot state, gripper state, actions, Rotation 6D, and training-data export for Isaac GR00T N1.7."
   - company: "ISCOM"
     company_url: "https://www.iscom.com.tw"
     role: "Software Engineer Intern"
