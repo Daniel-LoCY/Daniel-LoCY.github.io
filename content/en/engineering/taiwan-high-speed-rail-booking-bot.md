@@ -13,3 +13,9 @@ An automation project designed to handle repetitive ticket booking steps through
 - Automated login and ticket booking flows.
 - Simulated user interactions with Selenium.
 - Focused on reliable sequence control for web automation.
+
+## Dockerized Deployment
+
+- Wrapped the original booking project as an independently managed Web service with Docker Compose.
+- Kept the original source mounted read-only while separating configuration and browser-extension state.
+- Supported Headless and AutoVerify flows by default, with `/status.json` exposing the latest job and booking result.
