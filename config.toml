@@ -103,6 +103,9 @@ defaultContentLanguageInSubdir = false
 
 [module]
   [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
     source = "output/pdf"
     target = "static/files"
 
