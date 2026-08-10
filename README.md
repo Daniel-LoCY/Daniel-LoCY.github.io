@@ -20,6 +20,8 @@
 - 補充 SQLAlchemy、Alembic、PWA 與 GitHub Actions 等已在 Side Project／部署流程中實際使用的技術。
 - 重新設計 `/engineering/` 專案索引頁，加入近期工作區、搜尋、領域篩選、專案統計與響應式專案卡片，改善桌面與行動版瀏覽動線。
 - 首頁新增精選作品入口，集中展示機器人實機整合、信用卡回饋 PWA 與 Docker 自架平台；移除未有內容的空白推薦區段。
+- 新增繁體中文與英文兩頁式 PDF 履歷，並在首頁與經歷區提供對應下載入口；PDF 位於 `output/pdf/`，由 Hugo 掛載至網站 `/files/`。
+- 調整 GSAP 載入 fallback，正常 CDN 載入不再輸出誤導性的 warning，主要來源失敗時改用不同 CDN fallback。
 
 ## 預覽與建置
 
@@ -36,3 +38,8 @@ hugo --gc --minify
 ```
 
 GitHub Actions 會在推送至 `main` 後執行建置並部署至 GitHub Pages。
+
+中英文 PDF 履歷來源檔案：
+
+- `output/pdf/daniel-lo-resume-zh-tw.pdf`
+- `output/pdf/daniel-lo-resume-en.pdf`

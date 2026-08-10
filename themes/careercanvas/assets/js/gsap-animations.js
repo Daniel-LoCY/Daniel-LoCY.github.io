@@ -79,7 +79,6 @@ function initQuickFactLighting() {
 // Main initialization
 document.addEventListener('DOMContentLoaded', function() {
     if (typeof gsap === 'undefined') {
-        console.warn('GSAP not loaded. Loading from CDN...');
         loadGSAP();
         return;
     }
@@ -114,8 +113,8 @@ function loadGSAP() {
         document.head.appendChild(script);
     };
 
-    loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js', 
-        'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js',
+    loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js',
+        'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js',
         () => {
             initializeHeroAnimations();
         });
