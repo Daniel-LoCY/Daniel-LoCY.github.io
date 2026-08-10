@@ -61,8 +61,20 @@ other = "語言"
 [getInTouch]
 other = "聯絡我"
 
+[viewProjects]
+other = "查看作品"
+
 [learnMore]
 other = "了解更多"
+
+[selectedWork]
+other = "精選作品"
+
+[selectedWorkIntro]
+other = "用三個代表性專案，展示機器人實機整合、可公開使用的產品，以及可維運的 Docker 平台。"
+
+[viewProject]
+other = "查看專案"
 
 [sendMeAMessage]
 other = "傳送訊息給我"

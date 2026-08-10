@@ -1,0 +1,49 @@
+{{ $paths := slice
+  "engineering/yolo-obb-hdmi-insertion-system"
+  "engineering/credit-card-reward-comparison-app"
+  "engineering/docker-multi-stack-self-hosted-platform"
+}}
+
+<section id="selected-work" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary dark:text-primary-light mb-3">{{ i18n "engineering" }}</p>
+        <h2 class="text-3xl font-bold font-heading text-text-primary dark:text-text-primary">{{ i18n "selectedWork" }}</h2>
+      </div>
+      <p class="max-w-2xl text-base leading-relaxed text-gray-700 dark:text-text-tertiary">{{ i18n "selectedWorkIntro" }}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {{ range $index, $path := $paths }}
+        {{ with site.GetPage $path }}
+          {{ $icon := "fa-diagram-project" }}
+          {{ if eq $path "engineering/yolo-obb-hdmi-insertion-system" }}{{ $icon = "fa-robot" }}{{ end }}
+          {{ if eq $path "engineering/credit-card-reward-comparison-app" }}{{ $icon = "fa-credit-card" }}{{ end }}
+          {{ if eq $path "engineering/docker-multi-stack-self-hosted-platform" }}{{ $icon = "fa-server" }}{{ end }}
+          <a href="{{ .RelPermalink }}" class="block group" aria-label="{{ i18n "viewProject" }}: {{ .Title }}">
+            <article class="h-full rounded-xl border border-border-primary dark:border-border-primary bg-bg dark:bg-bg p-6 shadow-lg transition-all duration-200 group-hover:-translate-y-1 group-hover:border-primary group-hover:shadow-xl" data-animate>
+              <div class="flex items-center justify-between gap-4 mb-6">
+                <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-primary text-white shadow-lg">
+                  <i class="fas {{ $icon }} text-xl" aria-hidden="true"></i>
+                </span>
+                <span class="text-xs font-semibold uppercase tracking-[0.14em] text-text-tertiary">0{{ add $index 1 }}</span>
+              </div>
+              <h3 class="text-xl font-semibold leading-snug text-text-primary dark:text-text-primary">{{ .Title }}</h3>
+              <p class="mt-3 text-sm leading-relaxed text-gray-700 dark:text-text-tertiary">{{ .Description }}</p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                {{ range first 3 .Params.tags }}
+                  <span class="rounded-full border border-border-primary dark:border-border-primary bg-bg-secondary dark:bg-bg-secondary px-2.5 py-1 text-xs text-text-secondary dark:text-text-tertiary">{{ . }}</span>
+                {{ end }}
+              </div>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary dark:text-primary-light">
+                {{ i18n "viewProject" }}
+                <i class="fas fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+              </span>
+            </article>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

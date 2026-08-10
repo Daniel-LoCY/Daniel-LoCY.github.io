@@ -39,6 +39,12 @@ weight: 25
 - 以模組化單體保留清楚 domain 邊界，同時避免 MVP 過早拆成多個微服務。
 - 實作同源 API proxy、PWA、資料來源揭露與免責說明，讓工具可以真的被公開使用而不只停留在 demo。
 
+## 可驗證工程證據
+
+- 2026/08/08 驗證快照：Flutter `analyze`、22 項 Flutter tests、Web release build、SEO contract verifier、Nginx 設定檢查與 HTTP smoke test 通過；backend pytest 40 passed。
+- 2026/07/21 資料同步快照：151 張 active 卡片、413 筆 active 官方活動規則，涵蓋 24 家銀行；這是驗證當日的資料快照，不代表目前即時筆數。
+- Web 入口具備 canonical、Open Graph、JSON-LD、可索引的產品說明頁、資料來源頁與隱私說明頁，並以 Docker 重建驗證部署結果。
+
 ## 產品限制
 
 這個工具提供的是快速回饋估算，不代表銀行最終入帳；活動可能有名額、已使用額度、MCC 判定或最新條款差異。工具不要求登入、不收集卡號與消費紀錄，網站只展示公開產品功能與工程設計。

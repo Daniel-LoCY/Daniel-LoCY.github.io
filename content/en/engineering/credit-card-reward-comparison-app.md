@@ -39,6 +39,12 @@ This is a live Taiwan credit-card reward comparison product. Users enter a spend
 - Keeping clear domain boundaries in a modular monolith without prematurely splitting an MVP into microservices.
 - Combining same-origin API proxying, PWA delivery, source disclosure, and product disclaimers so the tool can serve real users instead of remaining a demo.
 
+## Verifiable engineering evidence
+
+- Verification snapshot from 2026-08-08: Flutter `analyze`, 22 Flutter tests, Web release build, SEO contract verification, Nginx configuration checks, and HTTP smoke tests passed; backend pytest reported 40 passed.
+- Data synchronization snapshot from 2026-07-21: 151 active cards and 413 active official campaign rules across 24 banks. This is a dated verification snapshot, not a current live count.
+- The Web entry includes canonical, Open Graph, JSON-LD, indexable product, data-source, and privacy pages, with Docker rebuild verification for deployment behavior.
+
 ## Product limitations
 
 The product provides a quick reward estimate, not a guarantee of final bank settlement. Campaign quotas, already-used caps, MCC classification, and changing terms can affect the result. The tool does not require login or collect card numbers or transaction records; the portfolio presents only public product behavior and engineering design.

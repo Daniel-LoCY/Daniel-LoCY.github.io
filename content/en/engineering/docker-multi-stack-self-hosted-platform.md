@@ -28,6 +28,12 @@ This Docker workspace organizes multiple self-hosted services into an operable m
 - Configuration and scripts reduce manual deployment errors without hard-coding sensitive values into public content.
 - Explicit fallback and verification points for the exposure, Tailnet access, and authentication of internal services.
 
+## Verifiable engineering evidence
+
+- Route output is validated through a route registry, generator, and Nginx syntax checks; services not present in the allowlist are not automatically exposed through the public gateway.
+- The August 2026 operations audit added reproducibility and security evidence: Docker images with trusted digests were pinned where verifiable, while dynamic Docker DNS upstreams, Compose config, health checks, and HTTP smoke tests were validated.
+- A concrete rollback path remains available through per-stack or per-service rebuild, logs, and restoration of route / port configuration instead of manual edits inside containers.
+
 ## Showcase boundary
 
 This is private self-hosted infrastructure. The portfolio presents the architecture and operational practices without publishing the actual hostname, internal ports, accounts, tokens, or service data.

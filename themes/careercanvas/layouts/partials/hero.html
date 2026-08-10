@@ -50,6 +50,9 @@
           <a href="#contact" class="bg-bg text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover">
             {{ i18n "getInTouch" }}
           </a>
+          <a href="{{ "engineering/" | relLangURL }}" class="bg-gradient-primary text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover">
+            {{ i18n "viewProjects" }}
+          </a>
           {{ with .Site.Params.resume_url }}
           <a href="{{ . }}" target="_blank" rel="noopener" class="bg-bg text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover">
             {{ i18n "viewCV" }}

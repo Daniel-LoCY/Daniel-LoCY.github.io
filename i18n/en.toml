@@ -61,8 +61,20 @@ other = "Language"
 [getInTouch]
 other = "Get in Touch"
 
+[viewProjects]
+other = "View Projects"
+
 [learnMore]
 other = "Learn more"
+
+[selectedWork]
+other = "Selected Work"
+
+[selectedWorkIntro]
+other = "Three representative projects show hands-on robotics integration, a live product, and an operable Docker platform."
+
+[viewProject]
+other = "View project"
 
 [sendMeAMessage]
 other = "Send me a message"

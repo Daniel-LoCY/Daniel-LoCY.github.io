@@ -28,6 +28,12 @@ weight: 37
 - 以設定檔與腳本降低手動部署錯誤，同時避免把敏感設定硬編碼進公開內容。
 - 針對內部服務的公開性、Tailnet 存取與認證流程保留清楚的 fallback 與驗證點。
 
+## 可驗證工程證據
+
+- 以 route registry、產生器與 Nginx syntax check 驗證路由輸出；未列入 allowlist 的服務不會自動暴露到公開入口。
+- 2026/08 的維運稽核補上可重現性與安全邊界：已能可信取得 digest 的 Docker image 進行 pinning，並驗證動態 Docker DNS upstream、Compose config、healthcheck 與 HTTP smoke。
+- 保留明確 rollback 路徑：可按 Stack 或 service 重建、查看 log、恢復既有 route／port 設定，不依賴手動修改容器內檔案。
+
 ## 展示範圍
 
 這是私有自架基礎設施，網站展示的是架構與維運能力，不公開實際 hostname、內部 port、帳號、token 或服務資料。
