@@ -1,0 +1,45 @@
+{{ $page := .page }}
+{{ $tagText := printf " %s " (lower (delimit $page.Params.tags " ")) }}
+{{ $category := "applications" }}
+{{ $icon := "fa-code" }}
+{{ if or (in $tagText " isaac ") (in $tagText " robot ") (in $tagText " ros ") (in $tagText " vision ") (in $tagText " yolo ") (in $tagText " yolov5 ") (in $tagText " yolov8 ") (in $tagText " apriltag ") (in $tagText " gr00t ") (in $tagText " tm5s ") (in $tagText " realsense ") (in $tagText " dope ") (in $tagText " patchcore ") }}
+  {{ $category = "robotics" }}
+  {{ $icon = "fa-robot" }}
+{{ else if or (in $tagText " docker ") (in $tagText " fastapi ") (in $tagText " nginx ") (in $tagText " authelia ") (in $tagText " tailscale ") (in $tagText " mqtt ") (in $tagText " postgres ") (in $tagText " flask ") (in $tagText " websocket ") }}
+  {{ $category = "platforms" }}
+  {{ $icon = "fa-server" }}
+{{ else if or (in $tagText " unity ") (in $tagText " kinect ") (in $tagText " arduino ") (in $tagText " app inventor ") (in $tagText " game ") (in $tagText " ar ") (in $tagText " mobile ") }}
+  {{ $category = "applications" }}
+  {{ $icon = "fa-wand-magic-sparkles" }}
+{{ end }}
+{{ $categoryLabel := index .labels $category }}
+{{ $cardNumber := printf "%02d" (add (int .index) 1) }}
+{{ $searchText := lower (printf "%s %s %s" $page.Title $page.Description (delimit $page.Params.tags " ")) }}
+
+<a
+  class="engineering-project-link{{ if .featured }} engineering-project-link--featured{{ end }}"
+  href="{{ $page.RelPermalink }}"
+  data-project-card
+  data-category="{{ $category }}"
+  data-search="{{ $searchText }}"
+>
+  <article class="engineering-project-card">
+    <div class="engineering-project-card__visual engineering-project-card__visual--{{ $category }}">
+      <span class="engineering-project-card__number">{{ $cardNumber }}</span>
+      <i class="fas {{ $icon }}" aria-hidden="true"></i>
+      <span class="engineering-project-card__category">{{ $categoryLabel }}</span>
+    </div>
+    <div class="engineering-project-card__body">
+      <div class="engineering-project-card__meta">
+        <span>{{ if .featured }}{{ .recent_badge }}{{ else }}{{ .archive_badge }}{{ end }}</span>
+        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </div>
+      <h3>{{ $page.Title }}</h3>
+      {{ with $page.Description }}<p>{{ . }}</p>{{ end }}
+      <div class="engineering-project-card__tags" aria-label="{{ .technologies_label }}">
+        {{ range first 4 $page.Params.tags }}<span>{{ . }}</span>{{ end }}
+        {{ if gt (len $page.Params.tags) 4 }}<span>+{{ sub (len $page.Params.tags) 4 }}</span>{{ end }}
+      </div>
+    </div>
+  </article>
+</a>

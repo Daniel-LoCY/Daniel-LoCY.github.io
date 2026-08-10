@@ -15,6 +15,9 @@
     
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />    
     <link rel="stylesheet" href="/css/careercanvas.css">
+    {{ if eq .Section "engineering" }}
+    <link rel="stylesheet" href="{{ "css/engineering.css" | relURL }}">
+    {{ end }}
     <style>
         /* Critical CSS to prevent FOUC */
         body {
@@ -55,6 +58,9 @@
     <script src="{{ $colors.RelPermalink }}"></script>
     <script src="{{ $gsap.RelPermalink }}"></script>
     <script src="{{ $pexels.RelPermalink }}"></script>
+    {{ if eq .Section "engineering" }}
+    <script src="{{ "js/engineering.js" | relURL }}"></script>
+    {{ end }}
     <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
 
     <!-- Dark mode toggle script -->
