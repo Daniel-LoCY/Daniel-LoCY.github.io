@@ -177,7 +177,7 @@ technical_groups:
       - icon: "plug"
         name: "TM Flow / TM API"
       - icon: "brain"
-        name: "Isaac GR00T"
+        name: "NVIDIA Isaac GR00T"
       - icon: "vr-cardboard"
         name: "PyOpenXR"
       - icon: "robot"

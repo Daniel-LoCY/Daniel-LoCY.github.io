@@ -13,7 +13,7 @@ This environment uses Isaac Sim as the simulation core and connects ROS 2 with M
 - Implemented target-pose control, fixed-object grasping/placement, collision scenes, and dynamic collision-object updates.
 - Implemented `Attach Object` so grasped objects become part of the planning collision model and do not cause later plans to fail around the gripper.
 - Worked around the limitation of attaching Mesh objects by creating approximate collision spheres from the objects' actual poses.
-- Extended the UR5 control architecture to TM5S and integrated Robotiq 2F-85/2F-140 and Toyo CHY2B-S80 grippers.
+- Extended the UR5 control architecture to TM5S through configuration-driven robot and gripper integration, supporting multiple equipment configurations.
 - Moved arm and gripper parameters from hard-coded values into configuration files to reduce the cost of hardware changes.
 
 ## Technical Focus

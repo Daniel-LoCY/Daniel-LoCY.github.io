@@ -1,8 +1,8 @@
 ---
-title: "VR 控制與 GR00T 模仿學習資料流程"
-description: "將 Quest 2 VR 控制、機器人狀態與影像資料整合為虛擬／真實環境的模仿學習流程。"
+title: "VR 控制與 NVIDIA Isaac GR00T 模仿學習資料流程"
+description: "將 Quest 2 VR 控制、機器人狀態與影像資料整合為虛擬／真實環境的 NVIDIA Isaac GR00T 模仿學習流程。"
 featured_image: "/images/projects/default-project.svg"
-tags: ["Quest 2", "PyOpenXR", "HDF5", "Rotation 6D", "GR00T", "ROS 2"]
+tags: ["Quest 2", "PyOpenXR", "Rotation 6D", "NVIDIA Isaac GR00T", "ROS 2"]
 weight: 5
 ---
 

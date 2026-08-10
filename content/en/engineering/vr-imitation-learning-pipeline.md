@@ -1,8 +1,8 @@
 ---
-title: "VR Control and GR00T Imitation-Learning Pipeline"
-description: "A virtual/physical robot data workflow combining Quest 2 control, robot state, and vision data for imitation learning."
+title: "VR Control and NVIDIA Isaac GR00T Imitation-Learning Pipeline"
+description: "A virtual/physical robot data workflow combining Quest 2 control, robot state, and vision data for NVIDIA Isaac GR00T imitation learning."
 featured_image: "/images/projects/default-project.svg"
-tags: ["Quest 2", "PyOpenXR", "HDF5", "Rotation 6D", "GR00T", "ROS 2"]
+tags: ["Quest 2", "PyOpenXR", "Rotation 6D", "NVIDIA Isaac GR00T", "ROS 2"]
 weight: 5
 ---
 
