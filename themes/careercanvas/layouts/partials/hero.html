@@ -73,13 +73,15 @@
     </div>
   </div>
 
-  <a
-    id="pexels-credit"
-    class="pexels-credit"
-    data-animation="pexels-credit"
-    href="https://www.pexels.com"
-    target="_blank"
-    rel="noopener noreferrer"
-  >Photo / Pexels</a>
+  {{ with .Site.Params.pexelsapikey }}
+    <a
+      id="pexels-credit"
+      class="pexels-credit"
+      data-animation="pexels-credit"
+      href="https://www.pexels.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Photo / Pexels</a>
+  {{ end }}
 </section>
   
