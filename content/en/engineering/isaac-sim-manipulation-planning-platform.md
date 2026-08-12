@@ -6,7 +6,7 @@ tags: ["Isaac Sim", "ROS 2", "MoveIt 2", "cuMotion", "OMPL", "TRAC-IK"]
 weight: 3
 ---
 
-This sim-to-real environment centers on TM5S control and connects Isaac Sim and Isaac Lab, ROS 2, MoveIt 2, and cuMotion for target poses, motion planning, collision handling, manipulation, and real-robot tasks.
+This sim-to-real environment uses TM5S as the physical target and connects Isaac Sim and Isaac Lab, ROS 2, MoveIt 2, and cuMotion for target poses, motion planning, collision handling, manipulation, and real-robot tasks.
 
 ## My Contributions
 

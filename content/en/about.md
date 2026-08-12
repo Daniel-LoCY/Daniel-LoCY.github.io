@@ -2,12 +2,12 @@
 title: "About"
 type: "homepage"
 intro: >-
-  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, sim-to-real, and VLA/robot-learning integration. I build ROS 2 systems that connect TM5S, NVIDIA Isaac Sim and Isaac Lab, MoveIt 2, and cuMotion, bringing control, perception, robot data, and AI policy inference into real-robot tasks.
+  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD. My work covers robot control, sim-to-real, and VLA/robot-learning integration. I build ROS 2 systems that connect TM5S, NVIDIA Isaac Sim and Isaac Lab, MoveIt 2, and cuMotion, bringing control, perception, robot data, and AI policy inference into real-robot tasks.
 study: >-
-  My academic path combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I focused on AI, natural language processing, and reinforcement learning for collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
-passion_title: "What I focus on"
+  My academic background combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I studied how AI, natural language processing, and reinforcement learning can be applied to collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
+passion_title: "What I do"
 passion_text: >-
-  My core work is moving robots from direct control to data-driven learning and real-world execution. I have completed data conversion, model training, policy inference, and TM5S real-robot testing for NVIDIA Isaac GR00T N1.7. I also built Quest 2 teleoperation, imitation-learning data workflows, automated task orchestration, and shared control interfaces for simulated and physical environments.
+  My work spans direct robot control, data-driven learning, and real-world execution. I have completed data conversion, model training, policy inference, and TM5S real-robot testing for NVIDIA Isaac GR00T N1.7. I also built Quest 2 teleoperation, imitation-learning data workflows, automated task orchestration, and shared control interfaces for simulated and physical environments.
 mix: >-
   I independently delivered most robotics software projects from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance. This gives me end-to-end ownership across motion planning, robot state and action contracts, image data, service interfaces, and operational safety limits.
 personal: >-

@@ -6,7 +6,7 @@ tags: ["NVIDIA Isaac GR00T", "VLA", "TM5S", "Robot Data", "Policy Inference"]
 weight: 1
 ---
 
-此專案把虛擬／真實環境的 Robot Data，串接到 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與 TM5S 真機執行。我的核心角色是機械手臂控制與整體系統整合，而非只處理單一資料格式或模型步驟。
+此專案將虛擬與真實環境的 Robot Data，串接到 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與 TM5S 真機執行流程。我主要負責機械手臂控制與整體系統整合，不只處理單一資料格式或模型步驟。
 
 ## 專案範圍與責任
 

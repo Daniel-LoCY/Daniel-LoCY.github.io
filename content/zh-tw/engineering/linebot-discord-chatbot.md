@@ -6,7 +6,7 @@ tags: ["Python", "Line Messaging API", "Discord API", "BeautifulSoup", "Requests
 weight: 110
 ---
 
-此專案聚焦於訊息平台上的對話自動化與實用型 bot 功能。
+此專案實作訊息平台的對話自動化與工具型 bot 功能。
 
 ## 重點
 

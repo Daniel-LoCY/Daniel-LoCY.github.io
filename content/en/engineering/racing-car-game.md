@@ -1,6 +1,6 @@
 ---
 title: "Racing Car Game"
-description: "A self-made 3D racing game focused on vehicle physics and player control."
+description: "A self-made 3D racing game built around vehicle physics and player control."
 featured_image: "/images/projects/default-project.svg"
 tags: ["C#", "Unity", "Game Development"]
 weight: 120

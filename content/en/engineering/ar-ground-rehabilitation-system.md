@@ -12,7 +12,7 @@ This project turned rehabilitation exercises into an interactive projection-base
 
 - Combined a ground projection system with Unity-based interaction.
 - Designed for engaging rehabilitation and movement training.
-- Focused on usability in applied health-related scenarios.
+- Designed the interaction for practical use in rehabilitation scenarios.
 
 ## Demo
 

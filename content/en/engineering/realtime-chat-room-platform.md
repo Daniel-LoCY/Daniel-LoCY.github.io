@@ -12,4 +12,4 @@ Built as a communication-focused web application, this project emphasized low-la
 
 - Implemented real-time message delivery with WebSocket.
 - Managed multi-user connections and session flow.
-- Focused on responsive communication behavior in the browser.
+- Tuned the browser experience for responsive communication.

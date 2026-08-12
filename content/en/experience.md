@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  Focused on robot control, NVIDIA Isaac GR00T and VLA integration, sim-to-real, and robot learning, with end-to-end experience from system architecture and data workflows to TM5S validation.
+  My current work covers robot control, NVIDIA Isaac GR00T and VLA integration, sim-to-real, and robot learning, from system architecture and data workflows through TM5S validation.
 resume_downloads:
   - lang: zh-tw
     label: 中文

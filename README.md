@@ -1,6 +1,6 @@
 # 駱忠湧 Daniel Lo 個人網站
 
-這是駱忠湧的雙語個人作品集網站，內容聚焦於 Robot Control、NVIDIA Isaac GR00T／VLA、Sim-to-Real、Robot Data 與 AI 機器人系統整合。
+這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Sim-to-Real、Robot Data 與 AI 機器人系統整合經驗。
 
 ## 內容結構
 
@@ -11,7 +11,8 @@
 
 ## 2026-08-13 履歷定位更新
 
-- 將首頁 Hero、About、Skills、Experience、Tech Stack 與 Contact 統一聚焦於機器人控制、GR00T／VLA 與 Sim-to-Real。
+- 將首頁 Hero、About、Skills、Experience、Tech Stack 與 Contact 統一調整為機器人控制、GR00T／VLA 與 Sim-to-Real 的職涯定位。
+- 將網站頭像與社群分享預覽圖統一使用 `profile-about.jpg`。
 - 將 Hero 核心定位改為常駐文字，避免 typewriter 動畫延遲第一眼資訊；並修正 Hugo 渲染後失效的電話連結。
 - 修正專案索引在 900px 以下因搜尋欄 flex basis 造成的大面積垂直空白。
 - 補上聯絡表單姓名與 Email 欄位的 `autocomplete` 語意，消除 Chrome 表單改善提示。

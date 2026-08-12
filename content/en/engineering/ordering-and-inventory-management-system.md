@@ -12,7 +12,7 @@ This project digitized fruit inventory tracking and order handling for a farm-or
 
 - Built the mobile app with MIT App Inventor 2.
 - Connected ordering and inventory data through Azure-hosted MS SQL.
-- Focused on simple, usable process digitization.
+- Kept the digitized workflow simple and practical for daily use.
 
 ## Demo
 

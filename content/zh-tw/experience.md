@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  聚焦機器人控制、NVIDIA Isaac GR00T／VLA、Sim-to-Real 與 Robot Learning，具備從系統架構、資料流程到 TM5S 真機驗證的完整經驗。
+  目前主要負責機器人控制、NVIDIA Isaac GR00T／VLA、Sim-to-Real 與 Robot Learning，工作範圍涵蓋系統架構、資料流程與 TM5S 真機驗證。
 resume_downloads:
   - lang: zh-tw
     label: 中文

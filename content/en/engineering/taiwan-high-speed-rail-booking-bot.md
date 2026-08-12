@@ -12,7 +12,7 @@ An automation project designed to handle repetitive ticket booking steps through
 
 - Automated login and ticket booking flows.
 - Simulated user interactions with Selenium.
-- Focused on reliable sequence control for web automation.
+- Implemented reliable sequence control for web automation.
 
 ## Dockerized Deployment
 
