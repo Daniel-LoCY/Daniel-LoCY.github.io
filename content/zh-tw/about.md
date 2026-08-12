@@ -2,16 +2,16 @@
 title: "關於駱忠湧"
 type: "homepage"
 intro: >-
-  我是駱忠湧，現居新北市，目前在新北市的瑞軒科技股份有限公司擔任 AI 機器人工程師。具備電機工程碩士背景與跨領域系統整合經驗，熟悉後端系統、雲端平台、電腦視覺與機器人應用。我喜歡把演算法、軟體、硬體與平台串成真正能落地的產品。
+  我是駱忠湧，目前於瑞軒科技擔任 AI 機器人工程師，專注機械手臂控制、Sim-to-Real 與 VLA／Robot Learning 系統整合。我以 ROS 2 串接 TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，並將控制、感知、資料流程與 AI Policy 推論整合到真實機器人任務。
 study: >-
   我的學習路徑結合電機、軟體與智慧系統。於國立臺灣師範大學就讀期間，研究聚焦在 AI、自然語言處理與強化學習整合於協作機器人；在國立屏東大學則建立了電腦與通訊、軟體開發與互動系統的基礎。
 passion_title: "我在做什麼"
 passion_text: >-
-  我專注於 AI、機器人與系統整合相關開發，特別喜歡需要軟體深度與工程落地並重的題目。近年的工作與專案涵蓋後端 API、電腦視覺流程、ROS 機器人控制，以及雲端串接系統，重點一直是把研究與原型轉成可用方案。
+  我的核心工作是讓機器人從「能被控制」走到「能用資料學習並在真機執行」。我已完成 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，也建置 Quest 2 遙操作、模仿學習資料錄製、自動化任務流程，以及虛擬／真實環境共用的控制介面。
 mix: >-
-  我的經驗從 Arduino 與嵌入式開發，一路延伸到後端服務、雲端部署與 AI 應用。這讓我能同時理解硬體限制、軟體架構與產品落地，而不是把它們分開看待。
+  多數機器人軟體專案由我獨立從需求分析、系統架構、開發與 Docker 部署，一路做到測試、現場整合與維護。這讓我能同時處理 Motion Planning、Robot State／Action、影像資料、服務介面與安全限制，而不只停留在單一模型或演算法。
 personal: >-
-  工作之外，我也持續透過 side project 與跨領域實作累積經驗。技術競賽、應用研究、證照與實務整合經歷，讓我保有很強的 hands-on 工程習慣。
+  我重視可驗證的工程成果：自動化工作流程讓相同時間內的資料蒐集量達人工操作的 3～4 倍；線材插接流程在 10 次測試中，成功率由 70% 提升至 90%。工作之外，我也持續透過 side project 與機器人實作累積 hands-on 經驗。
 quickfacts:
   - icon: "briefcase"
     title: "現職"
@@ -32,9 +32,9 @@ quickfacts:
     kind: "interests"
     title: "興趣"
     value: |
-      - 機器人
-      - 電腦視覺
-      - 系統整合
-      - 應用型 AI
-      - 產品原型開發
+      - Robot Control
+      - NVIDIA Isaac GR00T／VLA
+      - Sim-to-Real
+      - Robot Data 與遙操作
+      - Robot Perception
 ---

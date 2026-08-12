@@ -2,16 +2,16 @@
 title: "About"
 type: "homepage"
 intro: >-
-  I am Chung-Yung Lo, currently living in New Taipei and working in New Taipei as an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD. I hold a master's degree in Electrical Engineering and bring hands-on experience across backend systems, cloud platforms, computer vision, and robotics applications. I enjoy connecting algorithms, software, hardware, and platforms into practical products.
+  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, sim-to-real, and VLA/robot-learning integration. I build ROS 2 systems that connect TM5S, NVIDIA Isaac Sim and Isaac Lab, MoveIt 2, and cuMotion, bringing control, perception, robot data, and AI policy inference into real-robot tasks.
 study: >-
   My academic path combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I focused on AI, natural language processing, and reinforcement learning for collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
 passion_title: "What I focus on"
 passion_text: >-
-  I work on AI, robotics, and system integration projects that require both software depth and practical engineering execution. My recent work spans backend APIs, computer vision pipelines, ROS-based robotic workflows, and cloud-connected systems, with an emphasis on turning research and prototypes into usable solutions.
+  My core work is moving robots from direct control to data-driven learning and real-world execution. I have completed data conversion, model training, policy inference, and TM5S real-robot testing for NVIDIA Isaac GR00T N1.7. I also built Quest 2 teleoperation, imitation-learning data workflows, automated task orchestration, and shared control interfaces for simulated and physical environments.
 mix: >-
-  My experience ranges from Arduino and embedded development to backend services, cloud deployment, and AI applications. That mix helps me bridge hardware constraints, software architecture, and product delivery instead of treating them as separate silos.
+  I independently delivered most robotics software projects from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance. This gives me end-to-end ownership across motion planning, robot state and action contracts, image data, service interfaces, and operational safety limits.
 personal: >-
-  Outside work, I keep building through side projects and interdisciplinary experiments. I also bring a strong hands-on mindset shaped by technical competitions, applied research, certifications, and real-world integration work.
+  I value verifiable engineering outcomes. Workflow automation increased data collection in the same time window to 3–4× manual operation, while a cable-insertion workflow improved success from 70% to 90% in a 10-trial test. I continue building side projects and robotics experiments to strengthen that hands-on approach.
 quickfacts:
   - icon: "briefcase"
     title: "Current Role"
@@ -32,9 +32,9 @@ quickfacts:
     kind: "interests"
     title: "Interests"
     value: |
-      - Robotics
-      - Computer Vision
-      - System Integration
-      - Applied AI
-      - Product Prototyping
+      - Robot Control
+      - NVIDIA Isaac GR00T / VLA
+      - Sim-to-Real
+      - Robot Data & Teleoperation
+      - Robot Perception
 ---

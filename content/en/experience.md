@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  Focused on AI robotics, computer vision, simulation and control, and imitation-learning data pipelines, with experience spanning research prototypes and real-robot integration.
+  Focused on robot control, NVIDIA Isaac GR00T and VLA integration, sim-to-real, and robot learning, with end-to-end experience from system architecture and data workflows to TM5S validation.
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -17,15 +17,13 @@ positions:
     location: "New Taipei, Taiwan"
     company_description: "Consumer electronics and smart technology company with R&D work spanning AI, robotics, and system integration."
     bullet_points:
-      - "Built Isaac Sim, ROS 2, MoveIt 2, and cuMotion environments for robot simulation and control, covering target-pose control, motion planning, collision handling, and object manipulation."
-      - "Extended the control architecture from UR5 to TM5S through configuration-driven robot and gripper integration, supporting multiple equipment configurations."
-      - "Integrated RealSense, DOPE, AprilTag, and OpenCV for image acquisition, 3D object pose estimation, TF conversion, hand-eye calibration, and grasp-target calculation."
-      - "Developed a YOLO OBB visual-servoing workflow for HDMI insertion, using camera intrinsics, principal-point offset, focal length, and object dimensions to estimate relative distance and improve alignment."
-      - "Developed an AprilTag-based HDMI and power-cable unplugging workflow integrating TM Flow, TM API, ROS 2, arm control, and gripper control across rear-, side-, and bottom-inserted configurations and multiple device models."
-      - "Developed a PatchCore anomaly-detection API and UI with ROI extraction, image preprocessing, template replacement, and anomaly-score evaluation to analyze false positives caused by backgrounds, reflections, and small defects."
-      - "Designed a PyQt/PyQt6 unplugging-control system separating vision, PLC, robot arm, gripper, ROS 2, configuration, and workflow execution modules; also connected Windows .NET DLLs and EPSON RC+ APIs with Pythonnet."
-      - "Built Quest 2, ALVR, SteamVR, and PyOpenXR control flows that map VR controller poses and buttons to virtual and physical robot commands with speed and workspace limits."
-      - "Built robotics imitation-learning and digital-twin data pipelines integrating images, robot state, gripper state, actions, Rotation 6D, and training-data processing for NVIDIA Isaac GR00T N1.7."
+      - "Independently developed most robotics software projects from the ground up, covering requirements, architecture, implementation, Docker deployment, testing, on-site integration, and maintenance; a typical project took 1–2 months."
+      - "Built ROS 2 control environments connecting TM5S, Isaac Sim and Isaac Lab, MoveIt 2, and cuMotion for target-pose control, motion planning, collision handling, pick-and-place, and cable insertion or removal tasks."
+      - "Completed data conversion, model training, policy inference, and TM5S real-robot testing for NVIDIA Isaac GR00T N1.7 VLA, with primary ownership of dual-camera images, robot state and action contracts, policy service integration, and robot command execution."
+      - "Built a Quest 2, ALVR, SteamVR, and PyOpenXR teleoperation flow that maps controller poses and buttons to Isaac Sim and TM5S commands at 60 Hz, then integrated 30 FPS images and 60 Hz robot state and actions with an imitation-learning recording platform."
+      - "Independently developed an automation platform with 34 workflow node types for robot tasks, data recording, and scene reset. Once configured, workflows run without continuous intervention and collect 3–4× as much data as manual operation in the same time window."
+      - "Independently developed a TM5S web control and monitoring platform covering joint and Cartesian control, TM Script, I/O, MoveIt trajectories, camera streams, and robot feedback for lower-friction remote operation and live monitoring."
+      - "Evaluated DOPE 3D pose estimation in Isaac Sim with official data; separately integrated RealSense, YOLO OBB, AprilTag, and OpenCV for physical hand-eye calibration, TF conversion, and visual servoing, improving cable-insertion success from 70% to 90% in a 10-trial test."
   - company: "ISCOM"
     company_url: "https://www.iscom.com.tw"
     role: "Software Engineer Intern"

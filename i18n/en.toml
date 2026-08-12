@@ -71,7 +71,7 @@ other = "Learn more"
 other = "Selected Work"
 
 [selectedWorkIntro]
-other = "Three representative projects show hands-on robotics integration, a live product, and an operable Docker platform."
+other = "Three core projects connect VLA training and physical inference, Quest 2 demonstration data, and TM5S sim-to-real control."
 
 [viewProject]
 other = "View project"

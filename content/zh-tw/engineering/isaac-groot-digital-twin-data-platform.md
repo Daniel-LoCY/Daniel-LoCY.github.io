@@ -1,22 +1,29 @@
 ---
-title: "NVIDIA Isaac GR00T N1.7 數位孿生資料處理平台"
-description: "整合機器人、相機、夾爪與 Action 資料，輸出可用於 NVIDIA Isaac GR00T N1.7 的訓練資料。"
+title: "NVIDIA Isaac GR00T N1.7：VLA 訓練與 TM5S 真機推論"
+description: "完成 Robot Data 轉換、GR00T N1.7 模型訓練、Policy Inference 與 TM5S 真機控制整合。"
 featured_image: "/images/projects/default-project.svg"
-tags: ["Isaac Sim", "ROS 2", "RGB / Depth", "Robot State", "Action"]
-weight: 6
+tags: ["NVIDIA Isaac GR00T", "VLA", "TM5S", "Robot Data", "Policy Inference"]
+weight: 1
 ---
 
-此平台負責整理虛擬／真實機器人任務中的多源資料，將資料同步、品質檢查、任務分段與格式轉換串成可重複執行的處理流程，作為 Isaac GR00T N1.7 訓練與推論測試的資料基礎。
+此專案把虛擬／真實環境的 Robot Data，串接到 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與 TM5S 真機執行。我的核心角色是機械手臂控制與整體系統整合，而非只處理單一資料格式或模型步驟。
 
-## 資料內容
+## 專案範圍與責任
 
-- 機器人關節狀態、末端位置與姿態。
-- 夾爪狀態、相機 RGB／Depth 影像與控制 Action。
-- 虛擬與真實環境的任務、場景及錄製資訊。
+- 完成資料轉換、模型訓練、模型推論與 TM5S 真機測試的端到端流程。
+- 主要負責 Robot Control、Policy Service 串接、Action 映射與真機推論執行。
+- 資料錄製平台由其他系統負責；我協助其開發，並將機器人控制與自動化工作流程整合進錄製流程。
 
-## 我的工作
+## 端到端資料與推論流程
 
-- 建立資料同步、品質檢查、任務分段、影像前處理與結構化資料輸出流程。
-- 將資料格式與 Action 定義對齊 Isaac GR00T N1.7 Model 的訓練需求。
-- 處理 Rotation 6D、ABSOLUTE／RELATIVE Action 及 Base／Tool Frame 差異。
-- 支援不同任務與場景的資料蒐集，銜接後續模型訓練、推論測試與虛實環境驗證。
+1. 從雙相機影像、Robot State、夾爪狀態與控制 Action 建立 Episode 資料。
+2. 影像以 30 FPS 錄製，Robot State／Action 以 60 Hz 取樣，並以 Timestamp 對齊；單一 Episode 約 100～600 個時間步。
+3. 將位置、姿態、Rotation 6D 與 Action 定義轉成 GR00T N1.7 訓練格式，再進行訓練與 Checkpoint 推論。
+4. 由 Policy Service 接收觀測、回傳模型 Action，經控制層映射成 TM5S 可執行指令並完成真機測試。
+
+## 工程重點
+
+- 明確區分影像、Robot State、Action 與時間戳的資料 contract，處理多來源頻率不同造成的同步問題。
+- 對齊 ABSOLUTE／RELATIVE Action、Base／Tool Frame 與 Rotation 6D 表示，避免訓練資料和真機控制語意漂移。
+- 將模型推論與實機輸出拆成可檢查的服務邊界，保留不送出動作的測試模式，再切換到真機控制。
+- 已完成 Pick-and-Place 類型任務的完整串接；目前持續進行 GR00T 相關任務與穩定性驗證，尚未以未統計的成功率作為成果宣稱。

@@ -1,7 +1,7 @@
 {{ $paths := slice
-  "engineering/yolo-obb-hdmi-insertion-system"
-  "engineering/credit-card-reward-comparison-app"
-  "engineering/docker-multi-stack-self-hosted-platform"
+  "engineering/isaac-groot-digital-twin-data-platform"
+  "engineering/vr-imitation-learning-pipeline"
+  "engineering/isaac-sim-manipulation-planning-platform"
 }}
 
 <section id="selected-work" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
@@ -18,9 +18,9 @@
       {{ range $index, $path := $paths }}
         {{ with site.GetPage $path }}
           {{ $icon := "fa-diagram-project" }}
-          {{ if eq $path "engineering/yolo-obb-hdmi-insertion-system" }}{{ $icon = "fa-robot" }}{{ end }}
-          {{ if eq $path "engineering/credit-card-reward-comparison-app" }}{{ $icon = "fa-credit-card" }}{{ end }}
-          {{ if eq $path "engineering/docker-multi-stack-self-hosted-platform" }}{{ $icon = "fa-server" }}{{ end }}
+          {{ if eq $path "engineering/isaac-groot-digital-twin-data-platform" }}{{ $icon = "fa-brain" }}{{ end }}
+          {{ if eq $path "engineering/vr-imitation-learning-pipeline" }}{{ $icon = "fa-gamepad" }}{{ end }}
+          {{ if eq $path "engineering/isaac-sim-manipulation-planning-platform" }}{{ $icon = "fa-robot" }}{{ end }}
           <a href="{{ .RelPermalink }}" class="block group" aria-label="{{ i18n "viewProject" }}: {{ .Title }}">
             <article class="h-full rounded-xl border border-border-primary dark:border-border-primary bg-bg dark:bg-bg p-6 shadow-lg transition-all duration-200 group-hover:-translate-y-1 group-hover:border-primary group-hover:shadow-xl" data-animate>
               <div class="flex items-center justify-between gap-4 mb-6">

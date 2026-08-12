@@ -496,6 +496,11 @@ html:not(.dark) .engineering-page {
     flex-direction: column;
   }
 
+  .engineering-search {
+    width: 100%;
+    flex: 0 1 auto;
+  }
+
   .engineering-filters {
     justify-content: flex-start;
   }

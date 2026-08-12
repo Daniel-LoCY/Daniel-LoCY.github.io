@@ -3,7 +3,7 @@ title: "YOLO OBB 視覺導引 HDMI 插線系統"
 description: "以 YOLO OBB 與視覺伺服控制 TM5S，完成 HDMI 孔定位、姿態對位與自動插線。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "YOLO OBB", "OpenCV"]
-weight: 1
+weight: 4
 ---
 
 這是一套將物件辨識、相機幾何與機械手臂控制整合在一起的 HDMI 插線流程，重點在於讓末端相機能根據影像結果逐步完成對位，再執行穩定的插線動作。
@@ -20,3 +20,8 @@ weight: 1
 - 讀取 EIH Camera API 的焦距、影像尺寸、內參矩陣與畸變係數。
 - 將視覺辨識結果轉換為機械手臂可執行的控制目標。
 - 串接 TM Flow、TM API 與 ROS 2，完成視覺、控制與流程狀態整合。
+
+## 實機驗證
+
+- 加入二次視覺校正後，線材插接成功率由 70% 提升至 90%（各階段 10 次測試）。
+- 已記錄的手眼標定結果為平均位置誤差 6.82 mm、平均角度誤差 0.40°；此數據用於追蹤標定品質，不代表所有場景的絕對精度。

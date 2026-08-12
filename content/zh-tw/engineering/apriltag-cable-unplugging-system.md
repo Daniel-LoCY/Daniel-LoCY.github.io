@@ -3,7 +3,7 @@ title: "AprilTag HDMI／電源線拔線系統"
 description: "以 AprilTag 定位接頭，整合 TM5S、夾爪、TM API 與 ROS 2，支援多種拔線方向與機種。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "AprilTag", "PyQt"]
-weight: 2
+weight: 8
 ---
 
 這是一套針對 HDMI 與電源線接頭的實機拔線流程，從影像辨識、姿態估計、手臂接近、夾取到錯誤處理，建立可調整機種與線材設定的控制介面。

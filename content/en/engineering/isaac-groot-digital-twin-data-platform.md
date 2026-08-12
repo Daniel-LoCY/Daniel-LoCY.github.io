@@ -1,22 +1,29 @@
 ---
-title: "NVIDIA Isaac GR00T N1.7 Digital-Twin Data Platform"
-description: "A multi-source data pipeline for robot, camera, gripper, and action data prepared for NVIDIA Isaac GR00T N1.7 training."
+title: "NVIDIA Isaac GR00T N1.7: VLA Training and TM5S Inference"
+description: "An end-to-end workflow covering robot-data conversion, GR00T N1.7 training, policy inference, and TM5S control integration."
 featured_image: "/images/projects/default-project.svg"
-tags: ["Isaac Sim", "ROS 2", "RGB / Depth", "Robot State", "Action"]
-weight: 6
+tags: ["NVIDIA Isaac GR00T", "VLA", "TM5S", "Robot Data", "Policy Inference"]
+weight: 1
 ---
 
-This platform organizes multi-source data from simulated and physical robot tasks. It turns synchronization, quality checks, task segmentation, and format conversion into a repeatable workflow for Isaac GR00T N1.7 training and inference experiments.
+This project connects robot data from simulated and physical environments to NVIDIA Isaac GR00T N1.7 data conversion, model training, policy inference, and TM5S execution. My core responsibility was robot control and end-to-end system integration rather than only one data or modeling step.
 
-## Data Covered
+## Scope and Ownership
 
-- Robot joint state, end-effector position, and pose.
-- Gripper state, camera RGB/depth images, and control actions.
-- Task, scene, and recording metadata from simulated and physical environments.
+- Completed the end-to-end path from data conversion and model training to inference and TM5S real-robot testing.
+- Owned robot control, policy-service integration, action mapping, and the physical inference path.
+- The recording platform was a separate system; I contributed to its development and integrated robot control and workflow automation with it.
 
-## My Contributions
+## End-to-End Data and Inference Flow
 
-- Built synchronization, quality-checking, task-segmentation, image-preprocessing, and structured-data export workflows.
-- Aligned data formats and action definitions with the training requirements of Isaac GR00T N1.7.
-- Handled Rotation 6D, ABSOLUTE/RELATIVE Action, and Base/Tool Frame differences.
-- Supported data collection across tasks and scenes for later model training, inference testing, and sim-to-real validation.
+1. Build episodes from dual-camera images, robot state, gripper state, and control actions.
+2. Record images at 30 FPS and robot state/actions at 60 Hz, align them by timestamp, and organize episodes of approximately 100–600 timesteps.
+3. Convert position, pose, Rotation 6D, and action definitions into the GR00T N1.7 training format, then train and evaluate checkpoints through inference.
+4. Send observations to a policy service, map returned model actions into executable TM5S commands, and validate the physical-robot path.
+
+## Engineering Focus
+
+- Defined explicit contracts for images, robot state, actions, and timestamps to handle synchronization across sources with different rates.
+- Reconciled ABSOLUTE/RELATIVE actions, Base/Tool frames, and Rotation 6D so training data and physical control retain the same semantics.
+- Separated policy inference from robot output behind inspectable service boundaries, with a no-motion test mode before physical execution.
+- Completed the full path for pick-and-place tasks. GR00T task development and stability validation are ongoing, so no unmeasured success-rate claim is presented.

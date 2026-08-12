@@ -20,13 +20,13 @@ defaultContentLanguageInSubdir = false
       lastName = ""
       name = "駱忠湧"
       author = "駱忠湧"
-      description = "駱忠湧的雙語 AI 機器人與軟體工程作品集，聚焦於機器人、電腦視覺、後端系統與跨域整合。"
+      description = "駱忠湧的 AI 機器人工程作品集，聚焦機器人控制、NVIDIA Isaac GR00T／VLA、Sim-to-Real 與真機系統整合。"
       copyright = "駱忠湧"
-      tagline = "AI 機器人工程師。軟體工程師。跨域系統整合開發者。"
-      hero_description = "專注於 AI、機器人、後端系統與跨領域整合，擅長把演算法、軟體與硬體串成可落地產品。"
+      tagline = "AI 機器人工程師｜GR00T・VLA・Robot Control"
+      hero_description = "以 ROS 2、TM5S 與 NVIDIA Isaac 平台串接機器人控制、資料流程，以及 GR00T N1.7 VLA 模型訓練與真機推論。"
       hero_location = "新北，台灣"
       resume_url = "/files/daniel-lo-resume-zh-tw.pdf"
-      collab_tags = ["AI / 機器人", "後端系統", "系統整合", "電腦視覺", "ROS / ROS2"]
+      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Sim-to-Real", "ROS 2"]
     [languages.zh-tw.menu]
       [[languages.zh-tw.menu.main]]
         name = "關於我"
@@ -65,13 +65,13 @@ defaultContentLanguageInSubdir = false
       lastName = "Lo"
       name = "Daniel Lo"
       author = "Daniel Lo"
-      description = "Bilingual portfolio for Daniel Lo, an AI robotics engineer and software engineer focused on robotics, computer vision, backend systems, and cross-domain integration."
+      description = "Daniel Lo's AI robotics portfolio, focused on robot control, NVIDIA Isaac GR00T and VLA integration, sim-to-real, and real-robot systems."
       copyright = "Daniel Lo"
-      tagline = "AI Robotics Engineer. Software Engineer. Cross-domain system integrator."
-      hero_description = "Engineer focused on AI, robotics, backend systems, and multidisciplinary integration, turning algorithms, software, and hardware into practical products."
+      tagline = "AI Robotics Engineer | GR00T · VLA · Robot Control"
+      hero_description = "Connecting ROS 2, TM5S, and NVIDIA Isaac platforms across robot control, data workflows, GR00T N1.7 VLA training, and real-robot inference."
       hero_location = "New Taipei, Taiwan"
       resume_url = "/files/daniel-lo-resume-en.pdf"
-      collab_tags = ["AI / Robotics", "Backend Systems", "System Integration", "Computer Vision", "ROS / ROS2"]
+      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Sim-to-Real", "ROS 2"]
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "About"
@@ -118,7 +118,7 @@ defaultContentLanguageInSubdir = false
   profile_image = "/images/profile-about.jpg"
   author = "駱忠湧"
   og_image = "/images/profile-hero.jpg"
-  description = "駱忠湧的雙語 AI 機器人與軟體工程作品集，聚焦於機器人、電腦視覺、後端系統與跨域整合。"
+  description = "駱忠湧的 AI 機器人工程作品集，聚焦機器人控制、NVIDIA Isaac GR00T／VLA、Sim-to-Real 與真機系統整合。"
   linkedin_url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
   linkedin_text = "linkedin.com/in/chung-yung-lo-790ab6330"
   github_url = "https://github.com/Daniel-LoCY"

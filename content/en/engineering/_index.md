@@ -1,13 +1,13 @@
 +++
 title = "Projects"
-description = "Selected AI, robotics, software, self-hosted service, and DevOps projects."
+description = "Engineering projects centered on robot control, NVIDIA Isaac GR00T and VLA integration, robot data, and sim-to-real."
 weight = 60
 
 [params]
 eyebrow = "ENGINEERING PORTFOLIO"
 featured_title = "Recent work projects"
 featured_eyebrow = "RECENT WORK"
-featured_description = "Start with recent robotics and AI work, then use search and filters to explore the full archive."
+featured_description = "Start with the core robot-control, VLA, and sim-to-real projects, then explore supporting perception, platform, and software work in the archive."
 archive_title = "Complete project index"
 archive_eyebrow = "PROJECT ARCHIVE"
 archive_description = "Projects are organized by technology, platform, and application context."
@@ -20,8 +20,8 @@ platforms_label = "Platforms / DevOps"
 applications_label = "Interactive / Apps"
 result_label = "projects"
 focus_label = "Focus"
-focus_title = "From perception to control—and deployable systems"
-focus_description = "Current work focuses on NVIDIA Isaac GR00T, Isaac Sim, ROS 2, computer vision, and physical robot integration."
+focus_title = "From robot control and robot data to real-robot VLA execution"
+focus_description = "Current work centers on ROS 2 and TM5S control, NVIDIA Isaac Sim and Isaac Lab, GR00T N1.7 training, and physical policy integration."
 projects_label = "projects"
 featured_count_label = "recent"
 sections_label = "Project sections"
@@ -34,4 +34,4 @@ empty_title = "No matching projects"
 empty_description = "Try another keyword or reset the filters."
 +++
 
-This section gathers representative work from recent robotics projects to backend platforms, Docker-based self-hosted services, interactive software, and automation tools, organized by implementation context.
+Core work follows a control-and-simulation → teleoperation-and-data → VLA-training-and-inference sequence. Computer vision, automation platforms, Docker, and other software projects remain in the full archive as supporting evidence of end-to-end integration skills.

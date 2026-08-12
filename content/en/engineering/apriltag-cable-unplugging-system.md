@@ -3,7 +3,7 @@ title: "AprilTag HDMI and Power-Cable Unplugging"
 description: "An AprilTag-guided TM5S workflow integrating grippers, TM APIs, and ROS 2 across multiple unplugging orientations and device models."
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "AprilTag", "PyQt"]
-weight: 2
+weight: 8
 ---
 
 This real-robot workflow covers HDMI and power-cable connectors from visual detection and pose estimation through robot approach, gripping, unplugging, and error handling, with configurable device and cable settings.

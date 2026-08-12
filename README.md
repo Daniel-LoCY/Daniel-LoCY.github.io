@@ -1,6 +1,6 @@
 # 駱忠湧 Daniel Lo 個人網站
 
-這是駱忠湧的雙語個人作品集網站，內容聚焦於 AI 機器人、電腦視覺、後端系統與跨域整合。
+這是駱忠湧的雙語個人作品集網站，內容聚焦於 Robot Control、NVIDIA Isaac GR00T／VLA、Sim-to-Real、Robot Data 與 AI 機器人系統整合。
 
 ## 內容結構
 
@@ -9,32 +9,44 @@
 - `content/*/engineering/`：專案作品詳細頁，包含近期機器人工作專案與既有軟體／互動系統專案。
 - `themes/careercanvas/`：網站使用的 CareerCanvas Hugo theme。
 
-## 本次內容更新
+## 2026-08-13 履歷定位更新
 
-- 更新 2025/05 至今的 AI 機器人工程工作經歷，整理 Isaac Sim、ROS 2、TM5S、電腦視覺、VR 控制與 GR00T 資料流程。
-- 精簡中英文主履歷與公開專案摘要的技能描述，移除不必要的資料格式與品牌名稱，並以官方命名突出 NVIDIA Isaac GR00T。
-- 新增 6 個工作代表專案的中英文詳細頁：HDMI 插線、HDMI／電源線拔線、Isaac Sim 路徑規劃、機器人視覺與異常檢測、VR 模仿學習、Isaac GR00T 數位孿生資料平台。
-- 新增 3 個 Docker 工作區代表專案的中英文詳細頁：影音與工作流程平台、Home Assistant／ESPHome IoT Stack、多 Stack 自架服務與安全入口；並補充高鐵訂票工具的 Docker 化部署內容。
-- 新增已上線的 Flutter／FastAPI 信用卡回饋比較工具中英文詳細頁，包含公開 Demo、PWA、官方資料來源驗證與 Docker production 部署說明。
-- 同步補充中英文技術棧中的機器人、視覺與模仿學習工具。
-- 補充 SQLAlchemy、Alembic、PWA 與 GitHub Actions 等已在 Side Project／部署流程中實際使用的技術。
-- 重新設計 `/engineering/` 專案索引頁，加入近期工作區、搜尋、領域篩選、專案統計與響應式專案卡片，改善桌面與行動版瀏覽動線。
-- 首頁新增精選作品入口，集中展示機器人實機整合、信用卡回饋 PWA 與 Docker 自架平台；移除未有內容的空白推薦區段。
-- 新增繁體中文與英文兩頁式 PDF 履歷，並在首頁與經歷區提供對應下載入口；PDF 位於 `output/pdf/`，由 Hugo 掛載至網站 `/files/`。
-- 調整 GSAP 載入 fallback，正常 CDN 載入不再輸出誤導性的 warning，主要來源失敗時改用不同 CDN fallback。
+- 將首頁 Hero、About、Skills、Experience、Tech Stack 與 Contact 統一聚焦於機器人控制、GR00T／VLA 與 Sim-to-Real。
+- 將 Hero 核心定位改為常駐文字，避免 typewriter 動畫延遲第一眼資訊；並修正 Hugo 渲染後失效的電話連結。
+- 修正專案索引在 900px 以下因搜尋欄 flex basis 造成的大面積垂直空白。
+- 補上聯絡表單姓名與 Email 欄位的 `autocomplete` 語意，消除 Chrome 表單改善提示。
+- 現職經歷改以端到端責任呈現：需求分析、架構、開發、Docker 部署、測試、現場整合與維護。
+- 新增並前置 NVIDIA Isaac GR00T N1.7 VLA 訓練／TM5S 真機推論、Quest 2 遙操作，以及 TM5S Sim-to-Real 三個核心專案。
+- 新增 Robot Workflow 自動化資料錄製平台與 TM5S Web 遠端控制／監控平台的中英文詳細頁，明確區分兩者用途。
+- 保留 YOLO OBB、AprilTag、PatchCore、後端與 Docker 作品於完整專案索引，作為支援機器人整合能力的補充，而非首頁主定位。
+- 明確標示 DOPE 僅使用官方資料於 Isaac Sim 驗證，避免與已完成的真機視覺伺服成果混淆。
+- 移除未經歷的 UR5 → TM5S 延伸敘述；量化成果只保留已有依據的資料蒐集 3～4 倍與線材插接 70% → 90%（10 次測試）。
+
+## 已知限制
+
+- GR00T 與遙操作任務仍在持續穩定性驗證，尚未公開未正式統計的成功率、延遲或長時間運行數字。
+- 工作專案圖片可能包含公司內部資訊，公開前需另外完成敏感資訊檢查與裁切；目前使用通用專案圖，避免意外揭露。
 
 ## 預覽與建置
 
-本專案使用 Hugo Extended 0.152.1。可在專案根目錄執行：
+本專案固定使用 Hugo Extended 0.152.1，開發與測試優先在 Docker 中執行。
+
+本機預覽：
 
 ```bash
-hugo server
+docker run --rm -p 1313:1313 \
+  -v "$PWD:/src" -w /src \
+  hugomods/hugo:exts-0.152.1 \
+  server --bind 0.0.0.0 --baseURL http://localhost:1313
 ```
 
 正式建置：
 
 ```bash
-hugo --gc --minify
+docker run --rm \
+  -v "$PWD:/src" -w /src \
+  hugomods/hugo:exts-0.152.1 \
+  --gc --minify
 ```
 
 GitHub Actions 會在推送至 `main` 後執行建置並部署至 GitHub Pages。
