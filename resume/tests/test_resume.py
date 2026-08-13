@@ -22,17 +22,17 @@ class ResumeOutputTest(unittest.TestCase):
             "Daniel Lo",
             "AI Robotics Engineer",
             "Summary",
+            "Key Results",
             "Experience",
-            "Selected Projects",
             "Skills",
             "Education & Honors",
             "Isaac GR00T",
-            "Robot Workflow",
+            "3-4x",
             "ROS 2",
             "daniel-locy.github.io",
         ):
             self.assertIn(marker, text)
-        for removed_detail in ("Verification snapshot", "Evidence:"):
+        for removed_detail in ("Selected Projects", "Robot Workflow", "Verification snapshot", "Evidence:"):
             self.assertNotIn(removed_detail, text)
 
     def test_traditional_chinese_resume_is_one_page_and_job_focused(self):
@@ -41,17 +41,17 @@ class ResumeOutputTest(unittest.TestCase):
             "駱忠湧",
             "AI 機器人工程師",
             "個人簡介",
+            "核心成果",
             "工作經歷",
-            "精選專案",
             "核心技能",
             "學歷與榮譽",
             "Isaac GR00T",
-            "機器人自動化工作流程",
+            "3～4 倍",
             "ROS 2",
             "daniel-locy.github.io",
         ):
             self.assertIn(marker, text)
-        for removed_detail in ("代表專案", "工程驗證摘要", "Evidence:"):
+        for removed_detail in ("精選專案", "機器人自動化工作流程", "代表專案", "工程驗證摘要", "Evidence:"):
             self.assertNotIn(removed_detail, text)
 
     def test_104_resume_contains_copy_ready_sections(self):

@@ -14,8 +14,8 @@
     "linkedin": "linkedin.com/in/chung-yung-lo-790ab6330"
   },
   "summary": {
-    "en": "AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD. with an M.S. in Electrical Engineering. Build robot control and learning systems across ROS 2, TM5S, NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, cuMotion, and Isaac GR00T, integrating perception, data workflows, policy inference, and real-robot validation.",
-    "zh": "現任瑞軒科技 AI 機器人工程師，具備電機工程碩士背景。使用 ROS 2、TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2、cuMotion 與 Isaac GR00T 建置機器人控制與學習系統，整合感知、資料流程、Policy Inference 與真機驗證。"
+    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, TM5S, Isaac Sim / Isaac Lab, and Isaac GR00T for robot control and sim-to-real systems. Experienced in end-to-end integration across perception, data workflows, policy inference, and real-robot validation.",
+    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、TM5S、Isaac Sim／Isaac Lab 與 Isaac GR00T 的機器人控制與 Sim-to-Real。具備從感知、資料流程、Policy Inference 到真機驗證的端到端整合經驗。"
   },
   "experience": [
     {
@@ -30,17 +30,15 @@
       "bullets": {
         "en": [
           "Built ROS 2 control and simulation environments connecting TM5S, NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for motion planning, collision handling, pick-and-place, and cable tasks.",
-          "Delivered Isaac GR00T N1.7 data conversion, model training, policy inference, and TM5S real-robot testing, integrating camera data, robot state / action, policy services, and robot commands.",
-          "Integrated RealSense, YOLO OBB, AprilTag, and OpenCV for 3D pose estimation, hand-eye calibration, TF conversion, and visual servoing in physical robot workflows.",
-          "Built Quest 2 teleoperation and imitation-learning recording workflows; automated task execution and data collection reached 3-4x manual operation in the same time window.",
-          "Independently delivered robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; cable-insertion success improved from 70% to 90% in a 10-trial test."
+          "Delivered <b>Isaac GR00T N1.7</b> data conversion, model training, policy inference, and TM5S real-robot testing, integrating camera data, robot state / action, policy services, and robot commands.",
+          "Integrated RealSense, YOLO OBB, AprilTag, and OpenCV with Quest 2 teleoperation and imitation-learning recording; automated data collection reached <b>3-4x</b> manual operation in the same time window.",
+          "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; cable-insertion success improved from <b>70%</b> to <b>90%</b> in a 10-trial test."
         ],
         "zh": [
           "建置 ROS 2 控制與模擬環境，串接 TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援路徑規劃、碰撞處理、物件夾取與線材任務。",
-          "完成 Isaac GR00T N1.7 資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，整合相機資料、Robot State／Action、Policy Service 與機械手臂指令。",
-          "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV，完成 3D 姿態估計、手眼標定、TF 轉換與實機視覺伺服流程。",
-          "建立 Quest 2 遙操作與模仿學習資料錄製流程；自動化任務執行讓相同時間內的資料蒐集量達人工操作的 3～4 倍。",
-          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；線材插接成功率在 10 次測試中由 70% 提升至 90%。"
+          "完成 <b>Isaac GR00T N1.7</b> 資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，整合相機資料、Robot State／Action、Policy Service 與機械手臂指令。",
+          "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV，並串接 Quest 2 遙操作與模仿學習資料錄製；自動化資料蒐集量達人工操作的 <b>3～4 倍</b>。",
+          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；線材插接成功率在 10 次測試中由 <b>70%</b> 提升至 <b>90%</b>。"
         ]
       }
     },
@@ -65,14 +63,24 @@
   ],
   "skills": {
     "en": [
-      {"label": "Robot Control & Simulation", "items": "ROS 2, TM5S, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, Docker, Linux"},
-      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA / Policy Inference, Imitation Learning, HDF5, Robot State / Action, Quest 2"},
-      {"label": "Perception & Integration", "items": "RealSense, OpenCV, YOLO OBB, AprilTag, Hand-Eye Calibration, Visual Servoing, Python, C++, FastAPI, React / TypeScript, Git"}
+      {"label": "Robot Control", "items": "ROS 2, TM5S, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, Docker"},
+      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
+      {"label": "Perception & Integration", "items": "RealSense, YOLO OBB, AprilTag, OpenCV, Visual Servoing, Python, C++, Git"}
     ],
     "zh": [
-      {"label": "Robot Control & Simulation", "items": "ROS 2、TM5S、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、Docker、Linux"},
-      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA／Policy Inference、模仿學習、HDF5、Robot State／Action、Quest 2"},
-      {"label": "Perception & Integration", "items": "RealSense、OpenCV、YOLO OBB、AprilTag、手眼標定、視覺伺服、Python、C++、FastAPI、React／TypeScript、Git"}
+      {"label": "Robot Control", "items": "ROS 2、TM5S、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、Docker"},
+      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
+      {"label": "Perception & Integration", "items": "RealSense、YOLO OBB、AprilTag、OpenCV、視覺伺服、Python、C++、Git"}
+    ]
+  },
+  "highlights": {
+    "en": [
+      {"metric": "3-4x", "label": "automated data-collection throughput"},
+      {"metric": "70% → 90%", "label": "cable-insertion success in 10 trials"}
+    ],
+    "zh": [
+      {"metric": "3～4 倍", "label": "自動化資料蒐集量"},
+      {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"}
     ]
   },
   "projects": {
