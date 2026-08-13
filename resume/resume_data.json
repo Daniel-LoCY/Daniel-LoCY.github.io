@@ -1,0 +1,90 @@
+{
+  "version": "2026-08",
+  "contact": {
+    "name_en": "Daniel Lo",
+    "name_zh": "駱忠湧 Daniel Lo",
+    "title_en": "AI Robotics Engineer | Robotics / AI Application Engineer",
+    "title_zh": "AI 機器人工程師 | Robotics / AI Application Engineer",
+    "location_en": "New Taipei, Taiwan",
+    "location_zh": "新北，台灣",
+    "email": "m0989062418@gmail.com",
+    "phone": "+886 902 170 772",
+    "website": "daniel-locy.github.io",
+    "github": "github.com/Daniel-LoCY",
+    "linkedin": "linkedin.com/in/chung-yung-lo-790ab6330"
+  },
+  "summary": {
+    "en": "AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD. with an M.S. in Electrical Engineering. Build robot control and learning systems across ROS 2, TM5S, NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, cuMotion, and Isaac GR00T, integrating perception, data workflows, policy inference, and real-robot validation.",
+    "zh": "現任瑞軒科技 AI 機器人工程師，具備電機工程碩士背景。使用 ROS 2、TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2、cuMotion 與 Isaac GR00T 建置機器人控制與學習系統，整合感知、資料流程、Policy Inference 與真機驗證。"
+  },
+  "experience": [
+    {
+      "company_en": "AMTRAN TECHNOLOGY CO., LTD.",
+      "company_zh": "瑞軒科技股份有限公司",
+      "role_en": "AI Robotics Engineer",
+      "role_zh": "AI 機器人工程師",
+      "period_en": "May 2025 - Present",
+      "period_zh": "2025/05 - 至今",
+      "location_en": "New Taipei, Taiwan",
+      "location_zh": "新北，台灣",
+      "bullets": {
+        "en": [
+          "Built ROS 2 control and simulation environments connecting TM5S, NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for motion planning, collision handling, pick-and-place, and cable tasks.",
+          "Delivered Isaac GR00T N1.7 data conversion, model training, policy inference, and TM5S real-robot testing, integrating camera data, robot state / action, policy services, and robot commands.",
+          "Integrated RealSense, YOLO OBB, AprilTag, and OpenCV for 3D pose estimation, hand-eye calibration, TF conversion, and visual servoing in physical robot workflows.",
+          "Built Quest 2 teleoperation and imitation-learning recording workflows; automated task execution and data collection reached 3-4x manual operation in the same time window.",
+          "Independently delivered robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; cable-insertion success improved from 70% to 90% in a 10-trial test."
+        ],
+        "zh": [
+          "建置 ROS 2 控制與模擬環境，串接 TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援路徑規劃、碰撞處理、物件夾取與線材任務。",
+          "完成 Isaac GR00T N1.7 資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，整合相機資料、Robot State／Action、Policy Service 與機械手臂指令。",
+          "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV，完成 3D 姿態估計、手眼標定、TF 轉換與實機視覺伺服流程。",
+          "建立 Quest 2 遙操作與模仿學習資料錄製流程；自動化任務執行讓相同時間內的資料蒐集量達人工操作的 3～4 倍。",
+          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；線材插接成功率在 10 次測試中由 70% 提升至 90%。"
+        ]
+      }
+    },
+    {
+      "company_en": "ISCOM",
+      "company_zh": "采威國際資訊股份有限公司（ISCOM）",
+      "role_en": "Software Engineer Intern",
+      "role_zh": "軟體工程實習生",
+      "period_en": "Feb 2022 - Jun 2022",
+      "period_zh": "2022/02 - 2022/06",
+      "location_en": "Kaohsiung, Taiwan",
+      "location_zh": "高雄，台灣",
+      "bullets": {
+        "en": [
+          "Participated in backend API development, frontend integration, and web feature implementation using C#, ASP.NET MVC, JavaScript, jQuery, MS SQL, and Git."
+        ],
+        "zh": [
+          "參與後端 API、前端串接與網頁功能實作，使用 C#、ASP.NET MVC、JavaScript、jQuery、MS SQL 與 Git。"
+        ]
+      }
+    }
+  ],
+  "skills": {
+    "en": [
+      {"label": "Robotics & AI", "items": "ROS 2, TM5S, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, Isaac GR00T N1.7, VLA / Policy Inference, Imitation Learning"},
+      {"label": "Perception & Data", "items": "OpenCV, YOLO OBB, AprilTag, RealSense, Hand-Eye Calibration, Visual Servoing, HDF5, Robot State / Action"},
+      {"label": "Software", "items": "Python, C++, C# / .NET, PyQt, FastAPI, React / TypeScript, Docker, Linux, PostgreSQL / SQLite, Git"}
+    ],
+    "zh": [
+      {"label": "Robotics & AI", "items": "ROS 2、TM5S、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、Isaac GR00T N1.7、VLA／Policy Inference、模仿學習"},
+      {"label": "Perception & Data", "items": "OpenCV、YOLO OBB、AprilTag、RealSense、手眼標定、視覺伺服、HDF5、Robot State／Action"},
+      {"label": "Software", "items": "Python、C++、C#／.NET、PyQt、FastAPI、React／TypeScript、Docker、Linux、PostgreSQL／SQLite、Git"}
+    ]
+  },
+  "education": {
+    "en": [
+      "M.S. in Electrical Engineering, National Taiwan Normal University | Sep 2022 - Jul 2024",
+      "B.S. in Computer and Communication, National Pingtung University | Sep 2018 - Jun 2022",
+      "Honors: RHCSA; FIRA Roboworld Cup First Place; National Technical Creativity Competition Third Place"
+    ],
+    "zh": [
+      "國立臺灣師範大學 電機工程碩士 | 2022/09 - 2024/07",
+      "國立屏東大學 電腦與通訊學士 | 2018/09 - 2022/06",
+      "榮譽：RHCSA、FIRA Roboworld Cup 第一名、全國技術創造力競賽第三名"
+    ]
+  }
+}

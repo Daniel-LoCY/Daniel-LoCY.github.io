@@ -24,6 +24,24 @@
 - 明確標示 DOPE 僅使用官方資料於 Isaac Sim 驗證，避免與已完成的真機視覺伺服成果混淆。
 - 移除未經歷的 UR5 → TM5S 延伸敘述；量化成果只保留已有依據的資料蒐集 3～4 倍與線材插接 70% → 90%（10 次測試）。
 
+## 標準求職履歷
+
+PDF 履歷採一頁式標準求職格式，保留職涯定位、工作經歷、核心技能、學歷與榮譽；完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
+
+- `resume/resume_data.json`：中英文履歷的唯一內容來源。
+- `resume/generate_resume.py`：使用 ReportLab 產生中英文 PDF。
+- `resume/104-resume-zh-tw.md`：可直接整理至 104 履歷的中文版本。
+- `output/pdf/daniel-lo-resume-zh-tw.pdf`：中文一頁履歷。
+- `output/pdf/daniel-lo-resume-en.pdf`：英文一頁履歷。
+
+重新產生與測試 PDF：
+
+```bash
+./resume/build.sh
+```
+
+建置與測試固定在 Docker container 中執行，會檢查兩份 PDF 是否為單頁、必要欄位是否存在，以及作品集型內容是否已移出 PDF。
+
 ## 已知限制
 
 - GR00T 與遙操作任務仍在持續穩定性驗證，尚未公開未正式統計的成功率、延遲或長時間運行數字。
