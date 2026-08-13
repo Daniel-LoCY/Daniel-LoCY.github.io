@@ -3,8 +3,8 @@
   "contact": {
     "name_en": "Daniel Lo",
     "name_zh": "駱忠湧 Daniel Lo",
-    "title_en": "AI Robotics Engineer | Robotics / AI Application Engineer",
-    "title_zh": "AI 機器人工程師 | Robotics / AI Application Engineer",
+    "title_en": "AI Robotics Engineer | Robot Control / Sim-to-Real",
+    "title_zh": "AI 機器人工程師｜Robot Control / Sim-to-Real",
     "location_en": "New Taipei, Taiwan",
     "location_zh": "新北，台灣",
     "email": "m0989062418@gmail.com",
@@ -65,14 +65,44 @@
   ],
   "skills": {
     "en": [
-      {"label": "Robotics & AI", "items": "ROS 2, TM5S, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, Isaac GR00T N1.7, VLA / Policy Inference, Imitation Learning"},
-      {"label": "Perception & Data", "items": "OpenCV, YOLO OBB, AprilTag, RealSense, Hand-Eye Calibration, Visual Servoing, HDF5, Robot State / Action"},
-      {"label": "Software", "items": "Python, C++, C# / .NET, PyQt, FastAPI, React / TypeScript, Docker, Linux, PostgreSQL / SQLite, Git"}
+      {"label": "Robot Control & Simulation", "items": "ROS 2, TM5S, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, Docker, Linux"},
+      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA / Policy Inference, Imitation Learning, HDF5, Robot State / Action, Quest 2"},
+      {"label": "Perception & Integration", "items": "RealSense, OpenCV, YOLO OBB, AprilTag, Hand-Eye Calibration, Visual Servoing, Python, C++, FastAPI, React / TypeScript, Git"}
     ],
     "zh": [
-      {"label": "Robotics & AI", "items": "ROS 2、TM5S、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、Isaac GR00T N1.7、VLA／Policy Inference、模仿學習"},
-      {"label": "Perception & Data", "items": "OpenCV、YOLO OBB、AprilTag、RealSense、手眼標定、視覺伺服、HDF5、Robot State／Action"},
-      {"label": "Software", "items": "Python、C++、C#／.NET、PyQt、FastAPI、React／TypeScript、Docker、Linux、PostgreSQL／SQLite、Git"}
+      {"label": "Robot Control & Simulation", "items": "ROS 2、TM5S、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、Docker、Linux"},
+      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA／Policy Inference、模仿學習、HDF5、Robot State／Action、Quest 2"},
+      {"label": "Perception & Integration", "items": "RealSense、OpenCV、YOLO OBB、AprilTag、手眼標定、視覺伺服、Python、C++、FastAPI、React／TypeScript、Git"}
+    ]
+  },
+  "projects": {
+    "en": [
+      {
+        "title": "Robot Workflow & Data Collection Platform",
+        "detail": "Next.js, React Flow, FastAPI; built a 34-node workflow system that raised data-collection throughput to 3-4x manual operation."
+      },
+      {
+        "title": "NVIDIA Isaac GR00T N1.7 VLA Integration",
+        "detail": "Delivered data conversion, model training, policy inference, and TM5S real-robot testing across camera data, robot state/action, and control commands."
+      },
+      {
+        "title": "TM5S Visual Servoing & Cable Insertion",
+        "detail": "Integrated RealSense, YOLO OBB, AprilTag, and OpenCV; improved insertion success from 70% to 90% in a 10-trial test."
+      }
+    ],
+    "zh": [
+      {
+        "title": "機器人自動化工作流程與資料錄製平台",
+        "detail": "Next.js、React Flow、FastAPI；建立 34 節點任務流程，資料蒐集量提升至人工操作的 3～4 倍。"
+      },
+      {
+        "title": "NVIDIA Isaac GR00T N1.7 VLA 真機整合",
+        "detail": "完成資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，串接相機、Robot State／Action 與控制指令。"
+      },
+      {
+        "title": "TM5S 視覺伺服與線材插接",
+        "detail": "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV；10 次測試成功率由 70% 提升至 90%。"
+      }
     ]
   },
   "education": {

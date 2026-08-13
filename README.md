@@ -26,8 +26,9 @@
 
 ## 標準求職履歷
 
-PDF 履歷採一頁式標準求職格式，保留職涯定位、工作經歷、核心技能、學歷與榮譽；完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
+PDF 履歷採一頁式標準求職格式，保留職涯定位、工作經歷、精選專案、核心技能、學歷與榮譽；完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
 版面使用較大的內文字級與較寬鬆的行距，優先維持紙本閱讀性，同時保持中英文 PDF 都是一頁 A4。
+104 則以「標準求職履歷｜AI Robotics」副本維護，將工作內容收斂為 Robot Control、VLA／Robot Learning、Perception & Automation 三個主軸，並保留與目標職涯直接相關的專案與成果。
 
 - `resume/resume_data.json`：中英文履歷的唯一內容來源。
 - `resume/generate_resume.py`：使用 ReportLab 產生中英文 PDF。
@@ -41,7 +42,7 @@ PDF 履歷採一頁式標準求職格式，保留職涯定位、工作經歷、�
 ./resume/build.sh
 ```
 
-建置與測試固定在 Docker container 中執行，會檢查兩份 PDF 是否為單頁、必要欄位是否存在，以及作品集型內容是否已移出 PDF。
+建置與測試固定在 Docker container 中執行，會檢查兩份 PDF 是否為單頁、必要欄位與精選專案是否存在，以及長篇驗證摘要是否已移出 PDF。
 
 ## 已知限制
 

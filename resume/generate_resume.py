@@ -118,6 +118,14 @@ def make_styles(lang):
             "SkillItems", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.7,
             leading=9.5, textColor=INK,
         ),
+        "project_title": ParagraphStyle(
+            "ProjectTitle", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=7.45,
+            leading=9.0, textColor=INK,
+        ),
+        "project_detail": ParagraphStyle(
+            "ProjectDetail", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.35,
+            leading=9.0, textColor=INK,
+        ),
         "edu": ParagraphStyle(
             "Education", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.7,
             leading=9.6, textColor=INK, leftIndent=9, firstLineIndent=-9, spaceAfter=1.1,
@@ -197,7 +205,7 @@ def skills_block(data, lang, styles, width):
     rows = []
     for skill in data["skills"][lang]:
         rows.append([p(skill["label"], styles["skill_label"]), p(skill["items"], styles["skill_items"])])
-    table = Table(rows, colWidths=[width * 0.22, width * 0.78], hAlign="LEFT")
+    table = Table(rows, colWidths=[width * 0.27, width * 0.73], hAlign="LEFT")
     table.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("BACKGROUND", (0, 0), (-1, -1), PALE),
@@ -207,6 +215,26 @@ def skills_block(data, lang, styles, width):
         ("RIGHTPADDING", (0, 0), (-1, -1), 4),
         ("TOPPADDING", (0, 0), (-1, -1), 3.2),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 3.2),
+    ]))
+    return table
+
+
+def projects_block(data, lang, styles, width):
+    rows = []
+    for project in data["projects"][lang]:
+        rows.append([
+            p(project["title"], styles["project_title"]),
+            p(project["detail"], styles["project_detail"]),
+        ])
+    table = Table(rows, colWidths=[width * 0.30, width * 0.70], hAlign="LEFT")
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("BACKGROUND", (0, 0), (-1, -1), colors.white),
+        ("LINEBELOW", (0, 0), (-1, -2), 0.25, colors.HexColor("#D8DCE0")),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 1.6),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.6),
     ]))
     return table
 
@@ -244,6 +272,9 @@ def build_resume(data, lang, output_path):
     for item in data["experience"]:
         story.append(experience_block(item, lang, styles, width))
     story.extend([
+        section_heading("Selected Projects" if lang == "en" else "精選專案", styles["section"], width),
+        projects_block(data, lang, styles, width),
+        Spacer(1, 1.4 * mm),
         section_heading("Skills" if lang == "en" else "核心技能", styles["section"], width),
         skills_block(data, lang, styles, width),
         Spacer(1, 2 * mm),
