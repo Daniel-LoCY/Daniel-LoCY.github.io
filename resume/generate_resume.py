@@ -68,13 +68,13 @@ def load_data():
 def make_styles(lang):
     styles = getSampleStyleSheet()
     if lang == "en":
-        body_size, body_leading = 7.55, 9.35
-        summary_size, summary_leading = 7.75, 9.65
-        bullet_indent = 9
-    else:
-        body_size, body_leading = 7.25, 9.15
-        summary_size, summary_leading = 7.55, 9.4
+        body_size, body_leading = 8.35, 10.8
+        summary_size, summary_leading = 8.45, 10.9
         bullet_indent = 10
+    else:
+        body_size, body_leading = 8.05, 10.5
+        summary_size, summary_leading = 8.2, 10.6
+        bullet_indent = 11
 
     return {
         "name": ParagraphStyle(
@@ -82,45 +82,45 @@ def make_styles(lang):
             leading=21, textColor=INK, spaceAfter=1,
         ),
         "title": ParagraphStyle(
-            "Title", parent=styles["Normal"], fontName="ResumeSans", fontSize=8.9,
-            leading=11, textColor=ACCENT, spaceAfter=2,
+            "Title", parent=styles["Normal"], fontName="ResumeSans", fontSize=9.2,
+            leading=11.5, textColor=ACCENT, spaceAfter=2,
         ),
         "contact": ParagraphStyle(
-            "Contact", parent=styles["Normal"], fontName="ResumeSans", fontSize=6.55,
-            leading=8.15, textColor=MUTED, alignment=TA_RIGHT,
+            "Contact", parent=styles["Normal"], fontName="ResumeSans", fontSize=6.9,
+            leading=8.6, textColor=MUTED, alignment=TA_RIGHT,
         ),
         "section": ParagraphStyle(
-            "Section", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=10.1,
-            leading=12, textColor=ACCENT, spaceBefore=3, spaceAfter=2,
+            "Section", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=11.1,
+            leading=13.3, textColor=ACCENT, spaceBefore=4, spaceAfter=2.5,
         ),
         "summary": ParagraphStyle(
             "Summary", parent=styles["Normal"], fontName="ResumeSans", fontSize=summary_size,
-            leading=summary_leading, textColor=INK, spaceAfter=1,
+            leading=summary_leading, textColor=INK, spaceAfter=1.5,
         ),
         "company": ParagraphStyle(
-            "Company", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=8.0,
-            leading=9.6, textColor=INK,
+            "Company", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=8.5,
+            leading=10.3, textColor=INK,
         ),
         "role": ParagraphStyle(
-            "Role", parent=styles["Normal"], fontName="ResumeSans", fontSize=6.8,
-            leading=8.2, textColor=MUTED,
+            "Role", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.2,
+            leading=8.8, textColor=MUTED,
         ),
         "body": ParagraphStyle(
             "Body", parent=styles["Normal"], fontName="ResumeSans", fontSize=body_size,
             leading=body_leading, textColor=INK, leftIndent=bullet_indent,
-            firstLineIndent=-bullet_indent, spaceAfter=0.7,
+            firstLineIndent=-bullet_indent, spaceAfter=1.35,
         ),
         "skill_label": ParagraphStyle(
-            "SkillLabel", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=7.0,
-            leading=8.6, textColor=INK,
+            "SkillLabel", parent=styles["Normal"], fontName="ResumeSans-Bold", fontSize=7.7,
+            leading=9.5, textColor=INK,
         ),
         "skill_items": ParagraphStyle(
-            "SkillItems", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.0,
-            leading=8.6, textColor=INK,
+            "SkillItems", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.7,
+            leading=9.5, textColor=INK,
         ),
         "edu": ParagraphStyle(
-            "Education", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.0,
-            leading=8.8, textColor=INK, leftIndent=8, firstLineIndent=-8, spaceAfter=0.7,
+            "Education", parent=styles["Normal"], fontName="ResumeSans", fontSize=7.7,
+            leading=9.6, textColor=INK, leftIndent=9, firstLineIndent=-9, spaceAfter=1.1,
         ),
         "footer": ParagraphStyle(
             "Footer", parent=styles["Normal"], fontName="ResumeSans", fontSize=6.1,
@@ -141,8 +141,8 @@ def section_heading(title, style, width):
             ("LINEBELOW", (0, 0), (-1, -1), 0.55, RULE),
             ("LEFTPADDING", (0, 0), (-1, -1), 0),
             ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-            ("TOPPADDING", (0, 0), (-1, -1), 1.5),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 1.4),
+            ("TOPPADDING", (0, 0), (-1, -1), 2.7),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 2.2),
         ]),
     )
 
@@ -155,8 +155,7 @@ def header(data, lang, styles, width):
     left = [p(name, styles["name"]), p(title, styles["title"])]
     right = p(
         f"{contact['email']} | {contact['phone']}<br/>"
-        f"{location}<br/>"
-        f"{contact['website']}<br/>"
+        f"{location} | {contact['website']}<br/>"
         f"{contact['github']} | {contact['linkedin']}",
         styles["contact"],
     )
@@ -186,12 +185,12 @@ def experience_block(item, lang, styles, width):
             ("VALIGN", (0, 0), (-1, -1), "TOP"),
             ("LEFTPADDING", (0, 0), (-1, -1), 0),
             ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-            ("TOPPADDING", (0, 0), (-1, -1), 1.5),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 0.3),
+            ("TOPPADDING", (0, 0), (-1, -1), 2.1),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 0.8),
         ]),
     )
     bullets = [p(f"- {bullet}", styles["body"]) for bullet in item["bullets"][lang]]
-    return KeepTogether([heading, *bullets, Spacer(1, 1.5 * mm)])
+    return KeepTogether([heading, *bullets, Spacer(1, 2.2 * mm)])
 
 
 def skills_block(data, lang, styles, width):
@@ -206,8 +205,8 @@ def skills_block(data, lang, styles, width):
         ("INNERGRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#D8DCE0")),
         ("LEFTPADDING", (0, 0), (-1, -1), 4),
         ("RIGHTPADDING", (0, 0), (-1, -1), 4),
-        ("TOPPADDING", (0, 0), (-1, -1), 2),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
+        ("TOPPADDING", (0, 0), (-1, -1), 3.2),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3.2),
     ]))
     return table
 
@@ -252,10 +251,6 @@ def build_resume(data, lang, output_path):
     ])
     story.extend(p(f"- {item}", styles["edu"]) for item in data["education"][lang])
     story.append(Spacer(1, 1 * mm))
-    story.append(p(
-        ("Portfolio: " if lang == "en" else "作品集：") + data["contact"]["website"],
-        styles["footer"],
-    ))
     doc.build(
         story,
         onFirstPage=lambda canvas, doc: footer(canvas, doc, data, lang),
