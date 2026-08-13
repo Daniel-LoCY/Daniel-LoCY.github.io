@@ -2,9 +2,9 @@
 
 ## 自我介紹
 
-現任瑞軒科技 AI 機器人工程師，具備電機工程碩士背景，主要專長為機器人控制、Embodied AI、Robot Learning 與 Sim-to-Real 系統整合。熟悉 ROS 2、TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2、cuMotion 與 Isaac GR00T，能整合機器人、相機、夾爪、資料流程、Policy Inference 與真機驗證。
+現任瑞軒科技 AI 機器人工程師，具備電機工程碩士背景，專長為機器人控制、Embodied AI、Robot Learning 與 Sim-to-Real 系統整合。熟悉 ROS 2、TM5S、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2、cuMotion 與 Isaac GR00T，能整合機器人、相機、夾爪、資料流程、Policy Inference 與真機驗證。
 
-具備從需求分析、系統架構、軟體開發、Docker 部署、測試到現場整合與維護的端到端開發經驗。曾建立機器人控制與模擬環境、GR00T 模型訓練與推論流程、視覺伺服、Quest 2 遙操作，以及模仿學習資料錄製平台。自動化任務流程讓相同時間內的資料蒐集量達人工操作的 3～4 倍，線材插接流程在 10 次測試中由 70% 成功率提升至 90%。
+具備從需求分析、系統架構、軟體開發、Docker 部署到測試與現場整合的端到端經驗。曾建立機器人控制與模擬環境、GR00T 模型訓練與推論流程、視覺伺服、Quest 2 遙操作及模仿學習資料錄製平台。自動化流程讓相同時間內的資料蒐集量達人工操作的 3～4 倍，線材插接成功率在 10 次測試中由 70% 提升至 90%。
 
 ## 工作經歷
 
