@@ -31,6 +31,7 @@
 - 保留已驗證數據：資料蒐集量達人工操作的 3～4 倍、線材插接成功率由 70% 提升至 90%（10 次測試）。
 - 使用 Hugo Extended 0.152.1 建置成功（繁中 37 頁、英文 35 頁），並以 Chrome 實際檢查本機繁中／英文首頁與 Experience 區塊的渲染結果。
 - Docker `hugomods/hugo:exts-0.152.1` 驗證因目前 macOS keychain credential helper 無法在非互動工作階段讀取而未能啟動；本次改以既有版本的本機 Hugo 0.152.1 fallback 驗證，未修改 Docker 設定。
+- 網站公開履歷收斂為中文一頁 PDF；英文一頁版與中文兩頁 v2 保留本地產出與測試，但不掛載到 GitHub Pages，首頁「查看履歷」只指向中文一頁版。
 
 ## 標準求職履歷
 
