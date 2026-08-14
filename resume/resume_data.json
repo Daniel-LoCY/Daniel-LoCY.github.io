@@ -124,5 +124,105 @@
       "國立屏東大學 電腦與通訊學士 | 2018/09 - 2022/06",
       "榮譽：RHCSA、FIRA Roboworld Cup 第一名、全國技術創造力競賽第三名"
     ]
+  },
+  "second_zh": {
+    "version": "2026-08 | v2",
+    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Sim-to-Real。具備從需求分析、系統架構、資料流程、Policy Inference 到 TM5S 真機驗證的端到端整合經驗。",
+    "highlights": [
+      {"metric": "3～4 倍", "label": "自動化資料蒐集量（相同時間）"},
+      {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"},
+      {"metric": "34 種", "label": "Workflow Node；約 4 週完成第一版"}
+    ],
+    "experience": [
+      {
+        "company": "瑞軒科技股份有限公司",
+        "role": "AI 機器人工程師",
+        "period": "2025/05 - 至今",
+        "location": "新北，台灣",
+        "bullets": [
+          "多數機器人軟體專案由我獨立從零開發，負責需求分析、系統架構、開發、Docker 部署、測試、現場整合與維護；單一專案平均開發約 1～2 個月。",
+          "建置 ROS 2、TM5S、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 控制環境，完成目標姿態控制、路徑規劃、碰撞處理，以及 Pick-and-Place 與線材插拔等真實任務。",
+          "完成 NVIDIA Isaac GR00T N1.7 VLA 的資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，主要負責雙相機影像、Robot State／Action、Policy Service 與機械手臂控制系統的端到端整合。",
+          "建立 Quest 2、ALVR、SteamVR 與 PyOpenXR 遙操作流程，以 60 Hz 將 VR 手把姿態與按鍵轉成 Isaac Sim 及 TM5S 控制指令，並串接 30 FPS 影像、60 Hz Robot State／Action 的模仿學習資料錄製平台。",
+          "獨立開發 34 種 Workflow Node 的自動化工作流程平台，整合機器人任務、資料錄製與場景重置；完成任務配置後可無人介入執行，相同時間內的資料蒐集量達人工操作的 3～4 倍。",
+          "獨立開發 TM5S Web 控制與監控平台，整合關節／笛卡兒控制、TM Script、I/O、MoveIt 軌跡、相機畫面與 Robot Feedback，提供遠端控制與即時監控。",
+          "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV 完成真機手眼標定、TF 轉換與視覺伺服；線材插接流程在 10 次測試中由 70% 成功率提升至 90%。"
+        ]
+      },
+      {
+        "company": "采威國際資訊股份有限公司（ISCOM）",
+        "role": "軟體工程實習生",
+        "period": "2022/02 - 2022/06",
+        "location": "高雄，台灣",
+        "bullets": [
+          "參與後端 API 開發、前端串接與網頁功能實作，使用 C#、ASP.NET MVC、JavaScript、jQuery、MS SQL 與 Git。"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "NVIDIA Isaac GR00T N1.7 VLA 真機推論整合",
+        "stack": "Isaac GR00T N1.7、ROS 2、TM5S、Policy Service",
+        "bullets": [
+          "完成資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，整合雙相機、Robot State／Action 與機械手臂控制。",
+          "以 Timestamp 對齊 30 FPS 影像與 60 Hz Robot State／Action，處理 Rotation 6D、ABSOLUTE／RELATIVE Action 與 Base／Tool Frame 語意。",
+          "保留 Dry Run 與真機模式，完成 Pick-and-Place 類任務端到端串接；目前持續進行穩定性驗證，不宣稱尚未量測的成功率。"
+        ]
+      },
+      {
+        "title": "Robot Workflow 自動化與資料錄製整合平台",
+        "stack": "Next.js、React Flow、FastAPI、WebSocket、Docker",
+        "bullets": [
+          "獨立從需求、架構到部署建立 34 種 Workflow Node，串接機械手臂任務、場景重置、資料錄製、分支、重試與錯誤處理。",
+          "已支援四種 Pick-and-Place 任務變體；資料包含 30 FPS 影像與 60 Hz Robot State／Action，資料蒐集量約為人工操作的 3～4 倍。"
+        ]
+      },
+      {
+        "title": "TM5S Web 遠端控制與即時監控平台",
+        "stack": "React、TypeScript、FastAPI、rclpy、WebSocket、Docker／Nginx",
+        "bullets": [
+          "約 1 週完成第一版，整合關節與笛卡兒控制、TM Script、I/O、MoveIt 軌跡與姿態預設。",
+          "即時顯示 Robot Feedback、Joint State、Tool Pose、相機串流、FPS、ROS 2 節點與 Topic 狀態；目前不宣稱未量測的延遲或節省時間。"
+        ]
+      },
+      {
+        "title": "Quest 2 遙操作與 VLA 模仿學習資料流程",
+        "stack": "Quest 2、ALVR、SteamVR、PyOpenXR、ROS 2、Rotation 6D",
+        "bullets": [
+          "以 60 Hz 將 VR 手把姿態與按鍵轉換為 Isaac Sim／TM5S 末端控制指令，加入速度、工作範圍與操作狀態限制。",
+          "同步影像、Robot State、末端位姿、夾爪狀態與 Action，支援虛擬／真實環境的模仿學習與 GR00T／VLA 示範資料。"
+        ]
+      },
+      {
+        "title": "TM5S 視覺伺服與線材插接",
+        "stack": "TM5S、RealSense、YOLO OBB、AprilTag、OpenCV、手眼標定",
+        "bullets": [
+          "整合物件辨識、相機幾何、TF 座標轉換與機械手臂控制，完成 HDMI、USB Type-C、DisplayPort 與 Power Cord 連接孔辨識。",
+          "Checkerboard 驗證最佳結果為平移誤差 6.82 mm、旋轉誤差 0.40°；加入二次校正後，10 次測試成功率由 70% 提升至 90%。"
+        ]
+      },
+      {
+        "title": "TM5S Robot Control 與 Isaac Sim-to-Real 平台",
+        "stack": "TM5S、Isaac Sim／Isaac Lab、ROS 2、MoveIt 2、cuMotion",
+        "bullets": [
+          "整合 TM5S、Isaac Sim／Isaac Lab、ROS 2、MoveIt 2 與 cuMotion，完成目標姿態、路徑規劃、碰撞處理、Pick-and-Place 與線材插拔任務。",
+          "實作 Attach Object 與近似碰撞模型，並將機械手臂／夾爪參數改由設定檔讀取，降低控制、規劃與實機環境間的重複設定。"
+        ]
+      }
+    ],
+    "skills": [
+      {"label": "Robot Control & Simulation", "items": "ROS 2、TM5S、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、TF2、URDF／USD／XRDF"},
+      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、Policy Inference、Robot State／Action、Rotation 6D、模仿學習、Timestamp Synchronization"},
+      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB、DOPE、AprilTag、OpenCV、3D Pose、手眼標定、視覺伺服"},
+      {"label": "Software & Deployment", "items": "Python、C++、FastAPI、React／TypeScript、Next.js、React Flow、WebSocket、Docker、Nginx、Git"}
+    ],
+    "education": [
+      "國立臺灣師範大學 電機工程碩士｜2022/09 - 2024/07",
+      "國立屏東大學 電腦與通訊學士｜2018/09 - 2022/06"
+    ],
+    "honors": "RHCSA；FIRA RoboWorld Cup 第一名；全國技術創造力競賽第三名",
+    "certifications": "RHCSA、丙級室內配線技術士、丙級工業配線技術士、TQC+ 程式語言（C／Python）",
+    "language": "英文：聽、說、讀、寫皆為中等程度",
+    "target": "目標職務：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師"
   }
 }

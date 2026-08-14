@@ -15,6 +15,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     KeepTogether,
+    PageBreak,
     Paragraph,
     SimpleDocTemplate,
     Spacer,
@@ -289,14 +290,184 @@ def build_resume(data, lang, output_path):
     )
 
 
+def make_v2_styles():
+    styles = make_styles("zh")
+    styles.update({
+        "summary": ParagraphStyle(
+            "V2Summary", parent=styles["summary"], fontSize=9.2, leading=12.2,
+        ),
+        "body": ParagraphStyle(
+            "V2Body", parent=styles["body"], fontSize=8.25, leading=10.4,
+            leftIndent=11, firstLineIndent=-11, spaceAfter=1.2,
+        ),
+        "company": ParagraphStyle(
+            "V2Company", parent=styles["company"], fontSize=9.2, leading=11.2,
+        ),
+        "project_title": ParagraphStyle(
+            "V2ProjectTitle", parent=styles["company"], fontSize=9.0, leading=11.0,
+        ),
+        "project_meta": ParagraphStyle(
+            "V2ProjectMeta", parent=styles["role"], fontSize=7.5, leading=9.0,
+            alignment=TA_RIGHT,
+        ),
+        "project_body": ParagraphStyle(
+            "V2ProjectBody", parent=styles["body"], fontSize=8.0, leading=9.8,
+            leftIndent=10, firstLineIndent=-10, spaceAfter=1.0,
+        ),
+        "skill_label": ParagraphStyle(
+            "V2SkillLabel", parent=styles["skill_label"], fontSize=8.0, leading=9.8,
+        ),
+        "skill_items": ParagraphStyle(
+            "V2SkillItems", parent=styles["skill_items"], fontSize=8.0, leading=9.8,
+        ),
+        "edu": ParagraphStyle(
+            "V2Education", parent=styles["edu"], fontSize=8.2, leading=10.0,
+        ),
+        "small": ParagraphStyle(
+            "V2Small", parent=styles["role"], fontSize=8.0, leading=10.0,
+            textColor=INK,
+        ),
+    })
+    return styles
+
+
+def highlights_block_v2(items, styles, width):
+    cells = []
+    for item in items:
+        cells.append([
+            p(item["metric"], styles["highlight_metric"]),
+            p(item["label"], styles["highlight_label"]),
+        ])
+    table = Table([cells], colWidths=[width / len(cells)] * len(cells), hAlign="LEFT")
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("BACKGROUND", (0, 0), (-1, -1), PALE),
+        ("BOX", (0, 0), (-1, -1), 0.35, RULE),
+        ("INNERGRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#D8DCE0")),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+        ("TOPPADDING", (0, 0), (-1, -1), 4.2),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4.2),
+    ]))
+    return table
+
+
+def experience_block_v2(item, styles, width):
+    heading = Table(
+        [[p(f"{item['company']} | {item['role']}", styles["company"]),
+          p(f"{item['period']} | {item['location']}", styles["project_meta"])]],
+        colWidths=[width * 0.67, width * 0.33],
+        style=TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+            ("TOPPADDING", (0, 0), (-1, -1), 2.5),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 1.0),
+        ]),
+    )
+    bullets = [p(f"- {bullet}", styles["body"]) for bullet in item["bullets"]]
+    return KeepTogether([heading, *bullets, Spacer(1, 2.5 * mm)])
+
+
+def project_block_v2(item, styles, width):
+    heading = Table(
+        [[p(item["title"], styles["project_title"]),
+          p(item["stack"], styles["project_meta"])]],
+        colWidths=[width * 0.52, width * 0.48],
+        style=TableStyle([
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+            ("TOPPADDING", (0, 0), (-1, -1), 2.0),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 0.6),
+        ]),
+    )
+    bullets = [p(f"- {bullet}", styles["project_body"]) for bullet in item["bullets"]]
+    return KeepTogether([heading, *bullets, Spacer(1, 1.9 * mm)])
+
+
+def skills_block_v2(items, styles, width):
+    rows = [[p(item["label"], styles["skill_label"]), p(item["items"], styles["skill_items"])] for item in items]
+    table = Table(rows, colWidths=[width * 0.28, width * 0.72], hAlign="LEFT")
+    table.setStyle(TableStyle([
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("BACKGROUND", (0, 0), (-1, -1), PALE),
+        ("BOX", (0, 0), (-1, -1), 0.35, RULE),
+        ("INNERGRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#D8DCE0")),
+        ("LEFTPADDING", (0, 0), (-1, -1), 4),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 4),
+        ("TOPPADDING", (0, 0), (-1, -1), 3.5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5),
+    ]))
+    return table
+
+
+def footer_v2(canvas, doc, data):
+    footer(canvas, doc, data, "zh")
+
+
+def build_resume_v2(data, output_path):
+    spec = data["second_zh"]
+    styles = make_v2_styles()
+    doc = SimpleDocTemplate(
+        str(output_path), pagesize=A4,
+        leftMargin=16 * mm, rightMargin=16 * mm,
+        topMargin=13 * mm, bottomMargin=18 * mm,
+        title=f"{data['contact']['name_zh']} | 中文履歷 v2",
+        author="Daniel Lo",
+    )
+    width = doc.width
+    story = [
+        header(data, "zh", styles, width),
+        Spacer(1, 3.0 * mm),
+        section_heading("個人簡介", styles["section"], width),
+        p(spec["summary"], styles["summary"]),
+        section_heading("核心成果", styles["section"], width),
+        highlights_block_v2(spec["highlights"], styles, width),
+        section_heading("工作經歷", styles["section"], width),
+    ]
+    for item in spec["experience"]:
+        story.append(experience_block_v2(item, styles, width))
+    story.append(section_heading("精選專案", styles["section"], width))
+    for item in spec["projects"][:3]:
+        story.append(project_block_v2(item, styles, width))
+    story.extend([
+        PageBreak(),
+        section_heading("專案補充", styles["section"], width),
+    ])
+    for item in spec["projects"][3:]:
+        story.append(project_block_v2(item, styles, width))
+    story.extend([
+        section_heading("核心技能", styles["section"], width),
+        skills_block_v2(spec["skills"], styles, width),
+        section_heading("學歷與榮譽", styles["section"], width),
+    ])
+    story.extend(p(f"- {item}", styles["edu"]) for item in spec["education"])
+    story.extend([
+        p(f"- 榮譽：{spec['honors']}", styles["edu"]),
+        section_heading("資格、語言與求職方向", styles["section"], width),
+        p(f"- 資格：{spec['certifications']}", styles["small"]),
+        p(f"- 語言：{spec['language']}", styles["small"]),
+        p(f"- {spec['target']}", styles["small"]),
+        p(f"- 作品集：{data['contact']['website']}", styles["small"]),
+    ])
+    doc.build(
+        story,
+        onFirstPage=lambda canvas, doc: footer_v2(canvas, doc, data),
+        onLaterPages=lambda canvas, doc: footer_v2(canvas, doc, data),
+    )
+
+
 def main():
     register_fonts()
     data = load_data()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     build_resume(data, "en", OUTPUT_DIR / "daniel-lo-resume-en.pdf")
     build_resume(data, "zh", OUTPUT_DIR / "daniel-lo-resume-zh-tw.pdf")
+    build_resume_v2(data, OUTPUT_DIR / "daniel-lo-resume-zh-tw-v2.pdf")
     print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-en.pdf'}")
     print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-zh-tw.pdf'}")
+    print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-zh-tw-v2.pdf'}")
 
 
 if __name__ == "__main__":

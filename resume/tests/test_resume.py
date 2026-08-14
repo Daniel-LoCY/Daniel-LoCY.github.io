@@ -61,6 +61,29 @@ class ResumeOutputTest(unittest.TestCase):
         for marker in ("自我介紹", "工作經歷", "專長關鍵字", "精選專案", "學歷", "作品集", "Isaac GR00T"):
             self.assertIn(marker, text)
 
+    def test_traditional_chinese_resume_v2_is_two_pages_and_job_focused(self):
+        path = PDF_DIR / "daniel-lo-resume-zh-tw-v2.pdf"
+        self.assertTrue(path.exists(), f"Missing generated PDF: {path}")
+        reader = PdfReader(str(path))
+        self.assertEqual(len(reader.pages), 2, "v2 Chinese resume must be two pages")
+        text = "\n".join(page.extract_text() or "" for page in reader.pages)
+        for marker in (
+            "駱忠湧",
+            "個人簡介",
+            "核心成果",
+            "工作經歷",
+            "精選專案",
+            "核心技能",
+            "學歷與榮譽",
+            "NVIDIA Isaac GR00T",
+            "34 種",
+            "3～4 倍",
+            "daniel-locy.github.io",
+        ):
+            self.assertIn(marker, text)
+        for removed_detail in ("日本教育旅行", "偏鄉教育", "激發創意"):
+            self.assertNotIn(removed_detail, text)
+
 
 if __name__ == "__main__":
     unittest.main()
