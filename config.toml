@@ -25,7 +25,7 @@ defaultContentLanguageInSubdir = false
       tagline = "AI 機器人工程師｜Embodied AI"
       hero_description = "以 ROS 2、TM5S 與 NVIDIA Isaac 平台整合 Robot Control、VLA／Robot Learning、資料流程與真機驗證。"
       hero_location = "新北，台灣"
-      resume_url = "/files/daniel-lo-resume-zh-tw.pdf"
+      resume_url = "/files/daniel-lo-resume-zh-tw-v2.pdf"
       collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Sim-to-Real", "ROS 2"]
     [languages.zh-tw.menu]
       [[languages.zh-tw.menu.main]]
@@ -106,8 +106,8 @@ defaultContentLanguageInSubdir = false
     source = "static"
     target = "static"
   [[module.mounts]]
-    source = "output/pdf/daniel-lo-resume-zh-tw.pdf"
-    target = "static/files/daniel-lo-resume-zh-tw.pdf"
+    source = "output/pdf/daniel-lo-resume-zh-tw-v2.pdf"
+    target = "static/files/daniel-lo-resume-zh-tw-v2.pdf"
 
 [params]
   name = "駱忠湧"
