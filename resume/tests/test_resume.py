@@ -61,6 +61,26 @@ class ResumeOutputTest(unittest.TestCase):
         for marker in ("自我介紹", "工作經歷", "專長關鍵字", "精選專案", "學歷", "作品集", "Isaac GR00T"):
             self.assertIn(marker, text)
 
+    def test_104_resume_is_concise_for_hr_screening(self):
+        path = ROOT / "resume" / "104-resume-zh-tw.md"
+        text = path.read_text(encoding="utf-8")
+        self.assertIn("目標職稱：AI 機器人工程師、Embodied AI 工程師", text)
+        self.assertIn("目標職類：AI 工程師、軟體工程師", text)
+        self.assertNotIn("機器人軟體工程師、機器人控制工程師", text)
+        self.assertNotIn("演算法工程師", text)
+
+        introduction = text.split("## 自我介紹", 1)[1].split("## 自傳", 1)[0].strip()
+        autobiography = text.split("## 自傳", 1)[1].split("## 工作經歷", 1)[0].strip()
+        self.assertEqual(len([part for part in introduction.split("\n\n") if part]), 1)
+        self.assertEqual(len([part for part in autobiography.split("\n\n") if part]), 1)
+        self.assertLessEqual(len(introduction), 180)
+        self.assertLessEqual(len(autobiography), 220)
+
+        experience = text.split("### 瑞軒科技股份有限公司", 1)[1].split("### 采威國際", 1)[0]
+        self.assertEqual(experience.count("\n- "), 4)
+        skills = text.split("## 專長關鍵字", 1)[1].split("## 精選專案", 1)[0]
+        self.assertEqual(skills.count("\n- "), 3)
+
     def test_traditional_chinese_resume_v2_is_two_pages_and_job_focused(self):
         path = PDF_DIR / "daniel-lo-resume-zh-tw-v2.pdf"
         self.assertTrue(path.exists(), f"Missing generated PDF: {path}")
