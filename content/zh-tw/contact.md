@@ -2,7 +2,7 @@
 title: "聯絡"
 type: "homepage"
 intro: >-
-  歡迎就 Robot Control、NVIDIA Isaac GR00T／VLA、Sim-to-Real 與 AI 機器人系統整合相關職缺與我聯繫。
+  歡迎就 AI 機器人、Embodied AI、Robot Control、VLA／Robot Learning 與 Sim-to-Real 相關職缺與我聯繫。
 ---
 
 你可以透過以下方式找到我：

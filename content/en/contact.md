@@ -2,7 +2,7 @@
 title: "Contact"
 type: "homepage"
 intro: >-
-  I'm open to opportunities in robot control, NVIDIA Isaac GR00T and VLA integration, sim-to-real, and end-to-end AI robotics systems.
+  I'm open to opportunities in AI robotics, Embodied AI, robot control, VLA / robot learning, and sim-to-real.
 ---
 
 You can reach me through the following channels:
