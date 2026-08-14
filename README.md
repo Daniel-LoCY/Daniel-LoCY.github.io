@@ -24,6 +24,14 @@
 - 明確標示 DOPE 僅使用官方資料於 Isaac Sim 驗證，避免與已完成的真機視覺伺服成果混淆。
 - 移除未經歷的 UR5 → TM5S 延伸敘述；量化成果只保留已有依據的資料蒐集 3～4 倍與線材插接 70% → 90%（10 次測試）。
 
+## 2026-08-14 個人網站定位同步
+
+- 將中英文首頁 Hero、About、Skills 與 Contact 收斂為 `AI Robotics Engineer｜Embodied AI`，並保留 Robot Control、VLA／Robot Learning、Perception 與 Sim-to-Real 關鍵字。
+- 將中英文 Experience 現職內容由七段長敘述收斂為四項重點，直接呈現交付範圍、控制與模擬、GR00T 真機驗證，以及資料蒐集與線材插接成果。
+- 保留已驗證數據：資料蒐集量達人工操作的 3～4 倍、線材插接成功率由 70% 提升至 90%（10 次測試）。
+- 使用 Hugo Extended 0.152.1 建置成功（繁中 37 頁、英文 35 頁），並以 Chrome 實際檢查本機繁中／英文首頁與 Experience 區塊的渲染結果。
+- Docker `hugomods/hugo:exts-0.152.1` 驗證因目前 macOS keychain credential helper 無法在非互動工作階段讀取而未能啟動；本次改以既有版本的本機 Hugo 0.152.1 fallback 驗證，未修改 Docker 設定。
+
 ## 標準求職履歷
 
 PDF 履歷提供一頁版與兩頁深度版：一頁版保留職涯定位、核心成果、工作經歷、核心技能、學歷與榮譽；兩頁版在第一頁延伸現職責任與三個核心專案，第二頁補充 VLA／遙操作／視覺伺服專案、技術棧、學歷、證照與求職方向。完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
