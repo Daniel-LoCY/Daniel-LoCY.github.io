@@ -1,6 +1,6 @@
 # 駱忠湧 Daniel Lo 個人網站
 
-這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Sim-to-Real、Robot Data 與 AI 機器人系統整合經驗。
+這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程、Robot Data 與 AI 機器人系統整合經驗。
 
 ## 內容結構
 
@@ -11,27 +11,33 @@
 
 ## 2026-08-13 履歷定位更新
 
-- 將首頁 Hero、About、Skills、Experience、Tech Stack 與 Contact 統一調整為機器人控制、GR00T／VLA 與 Sim-to-Real 的職涯定位。
+- 將首頁 Hero、About、Skills、Experience、Tech Stack 與 Contact 統一調整為機器人控制、GR00T／VLA、Digital Twin 資料流程與虛擬／真實環境驗證的職涯定位。
 - 將網站頭像與社群分享預覽圖統一使用 `profile-about.jpg`。
 - 未設定 Pexels 背景時不再顯示照片來源標籤，避免與個人頭像產生錯誤對應。
 - 將 Hero 核心定位改為常駐文字，避免 typewriter 動畫延遲第一眼資訊；並修正 Hugo 渲染後失效的電話連結。
 - 修正專案索引在 900px 以下因搜尋欄 flex basis 造成的大面積垂直空白。
 - 補上聯絡表單姓名與 Email 欄位的 `autocomplete` 語意，消除 Chrome 表單改善提示。
 - 現職經歷改以端到端責任呈現：需求分析、架構、開發、Docker 部署、測試、現場整合與維護。
-- 新增並前置 NVIDIA Isaac GR00T N1.7 VLA 訓練／TM5S 真機推論、Quest 2 遙操作，以及 TM5S Sim-to-Real 三個核心專案。
-- 新增 Robot Workflow 自動化資料錄製平台與 TM5S Web 遠端控制／監控平台的中英文詳細頁，明確區分兩者用途。
+- 新增並前置 NVIDIA Isaac GR00T N1.7 VLA 訓練／真實機器人推論、Quest 2 遙操作，以及 Robot Control 虛擬／真實環境驗證三個核心專案。
+- 新增 Robot Workflow 自動化資料錄製平台與 Web Robot Control 遠端控制／監控平台的中英文詳細頁，明確區分兩者用途。
 - 保留 YOLO OBB、AprilTag、PatchCore、後端與 Docker 作品於完整專案索引，作為支援機器人整合能力的補充，而非首頁主定位。
 - 明確標示 DOPE 僅使用官方資料於 Isaac Sim 驗證，避免與已完成的真機視覺伺服成果混淆。
 - 移除未經歷的 UR5 → TM5S 延伸敘述；量化成果只保留已有依據的資料蒐集 3～4 倍與線材插接 70% → 90%（10 次測試）。
 
 ## 2026-08-14 個人網站定位同步
 
-- 將中英文首頁 Hero、About、Skills 與 Contact 收斂為 `AI Robotics Engineer｜Embodied AI`，並保留 Robot Control、VLA／Robot Learning、Perception 與 Sim-to-Real 關鍵字。
+- 將中英文首頁 Hero、About、Skills 與 Contact 收斂為 `AI Robotics Engineer｜Embodied AI`，並保留 Robot Control、VLA／Robot Learning、Perception 與 Digital Twin Data 關鍵字。
 - 將中英文 Experience 現職內容由七段長敘述收斂為四項重點，直接呈現交付範圍、控制與模擬、GR00T 真機驗證，以及資料蒐集與線材插接成果。
 - 保留已驗證數據：資料蒐集量達人工操作的 3～4 倍、線材插接成功率由 70% 提升至 90%（10 次測試）。
 - 使用 Hugo Extended 0.152.1 建置成功（繁中 37 頁、英文 35 頁），並以 Chrome 實際檢查本機繁中／英文首頁與 Experience 區塊的渲染結果。
 - Docker `hugomods/hugo:exts-0.152.1` 驗證因目前 macOS keychain credential helper 無法在非互動工作階段讀取而未能啟動；本次改以既有版本的本機 Hugo 0.152.1 fallback 驗證，未修改 Docker 設定。
 - 網站公開履歷收斂為中文兩頁 v2 PDF；中文一頁版與英文一頁版保留本地產出與測試，但不掛載到 GitHub Pages，首頁「查看履歷」只指向中文兩頁版。
+
+## 2026-08-17 公開履歷內容一致化
+
+- 高層級頁面移除 `Sim-to-Real` 與過度集中的特定機器人廠商名稱，改用虛擬／真實環境驗證與 Digital Twin 資料流程描述。
+- 明確區分虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論兩條獨立流程。
+- 技能區補上 Frontend、Backend、Embedded 與 IoT，並同步更新 104 文案來源與 PDF 履歷。
 
 ## 標準求職履歷
 

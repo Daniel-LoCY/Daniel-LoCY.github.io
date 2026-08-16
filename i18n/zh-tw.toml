@@ -71,7 +71,7 @@ other = "了解更多"
 other = "精選作品"
 
 [selectedWorkIntro]
-other = "三個核心專案串起 VLA 訓練與真機推論、Quest 2 遙操作資料，以及 TM5S Sim-to-Real 控制。"
+other = "三個核心專案串起 VLA 訓練與真實機器人推論、Quest 2 遙操作資料，以及虛擬／真實環境驗證。"
 
 [viewProject]
 other = "查看專案"

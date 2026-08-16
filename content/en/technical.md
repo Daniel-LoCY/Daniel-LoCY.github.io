@@ -2,14 +2,12 @@
 title: "Core Tech Stack"
 type: "homepage"
 intro: >-
-  Ordered by the actual workstream: robot control, VLA and robot learning, robot perception, then the software used to integrate and deploy complete systems.
+  Ordered by the actual workstream: robot control, VLA and robot learning, robot perception, then the software used to integrate, deploy, and extend complete systems with embedded IoT.
 technical_groups:
   - title: "Robot Control & Simulation"
     skills:
       - icon: "robot"
         name: "ROS 2"
-      - icon: "robot"
-        name: "TM5S"
       - icon: "cube"
         name: "NVIDIA Isaac Sim"
       - icon: "cubes"
@@ -18,8 +16,6 @@ technical_groups:
         name: "MoveIt 2"
       - icon: "bolt"
         name: "cuMotion"
-      - icon: "plug"
-        name: "TM Flow / TM API"
       - icon: "diagram-project"
         name: "TF2 / URDF / USD / XRDF"
       - icon: "route"
@@ -80,6 +76,14 @@ technical_groups:
       - icon: "git-alt"
         name: "Git"
         devicon_name: "git"
+  - title: "Embedded & IoT"
+    skills:
+      - icon: "microchip"
+        name: "Arduino / ESP32"
+      - icon: "network-wired"
+        name: "MQTT / ESPHome"
+      - icon: "bluetooth"
+        name: "Bluetooth / Sensors"
   - title: "Programming & Supporting Tools"
     skills:
       - icon: "python"

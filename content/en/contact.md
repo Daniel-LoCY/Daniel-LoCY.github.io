@@ -2,7 +2,7 @@
 title: "Contact"
 type: "homepage"
 intro: >-
-  I'm open to opportunities in AI robotics, Embodied AI, robot control, VLA / robot learning, and sim-to-real.
+  I'm open to opportunities in AI robotics, Embodied AI, robot control, VLA / robot learning, and Digital Twin data workflows.
 ---
 
 You can reach me through the following channels:

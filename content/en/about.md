@@ -2,12 +2,12 @@
 title: "About"
 type: "homepage"
 intro: >-
-  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, Embodied AI, VLA / robot learning, and sim-to-real. I work with ROS 2, TM5S, Isaac Sim / Isaac Lab, and Isaac GR00T to connect robot control, data workflows, policy inference, and real-robot validation.
+  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, Embodied AI, VLA / robot learning, and Digital Twin data workflows. I work with ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T to connect robot control, data workflows, policy inference, and simulation / real-world validation.
 study: >-
   My academic background combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I studied how AI, natural language processing, and reinforcement learning can be applied to collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
 passion_title: "What I do"
 passion_text: >-
-  I bring AI policies and ROS 2 systems to TM5S real-robot tasks, including GR00T N1.7 data conversion, training, policy inference, real-robot testing, Quest 2 teleoperation, and imitation-learning data workflows.
+  I bring AI policies and ROS 2 systems to industrial and collaborative robot tasks, including GR00T N1.7 data conversion, training, policy inference, real-world validation, Quest 2 teleoperation, and imitation-learning data workflows.
 mix: >-
   I deliver robotics software from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance, with ownership across motion planning, robot state/action, image data, and control commands.
 personal: >-
@@ -34,7 +34,7 @@ quickfacts:
     value: |
       - Robot Control
       - NVIDIA Isaac GR00T / VLA
-      - Sim-to-Real
+      - Simulation / Real-World Validation
       - Robot Data & Teleoperation
       - Robot Perception
 ---

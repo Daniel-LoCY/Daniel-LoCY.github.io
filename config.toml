@@ -20,13 +20,13 @@ defaultContentLanguageInSubdir = false
       lastName = ""
       name = "駱忠湧"
       author = "駱忠湧"
-      description = "駱忠湧的 AI 機器人作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning 與 Sim-to-Real。"
+      description = "駱忠湧的 AI 機器人作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程。"
       copyright = "駱忠湧"
       tagline = "AI 機器人工程師｜Embodied AI"
-      hero_description = "以 ROS 2、TM5S 與 NVIDIA Isaac 平台整合 Robot Control、VLA／Robot Learning、資料流程與真機驗證。"
+      hero_description = "以 ROS 2 與 NVIDIA Isaac 平台整合 Robot Control、VLA／Robot Learning、Digital Twin 資料流程與虛擬／真實環境驗證。"
       hero_location = "新北，台灣"
       resume_url = "/files/daniel-lo-resume-zh-tw-v2.pdf"
-      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Sim-to-Real", "ROS 2"]
+      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.zh-tw.menu]
       [[languages.zh-tw.menu.main]]
         name = "關於我"
@@ -65,13 +65,13 @@ defaultContentLanguageInSubdir = false
       lastName = "Lo"
       name = "Daniel Lo"
       author = "Daniel Lo"
-      description = "Daniel Lo's AI robotics portfolio focused on robot control, Embodied AI, VLA / robot learning, and sim-to-real."
+      description = "Daniel Lo's AI robotics portfolio focused on robot control, Embodied AI, VLA / robot learning, and Digital Twin data workflows."
       copyright = "Daniel Lo"
       tagline = "AI Robotics Engineer | Embodied AI"
-      hero_description = "Integrating ROS 2, TM5S, and NVIDIA Isaac across robot control, VLA / robot learning, data workflows, and real-robot validation."
+      hero_description = "Integrating ROS 2 and NVIDIA Isaac across robot control, VLA / robot learning, Digital Twin data workflows, and simulation / real-world validation."
       hero_location = "New Taipei, Taiwan"
       resume_url = ""
-      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Sim-to-Real", "ROS 2"]
+      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "About"
@@ -118,7 +118,7 @@ defaultContentLanguageInSubdir = false
   profile_image = "/images/profile-about.jpg"
   author = "駱忠湧"
   og_image = "/images/profile-about.jpg"
-  description = "駱忠湧的 AI 機器人作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning 與 Sim-to-Real。"
+  description = "駱忠湧的 AI 機器人作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程。"
   linkedin_url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
   linkedin_text = "linkedin.com/in/chung-yung-lo-790ab6330"
   github_url = "https://github.com/Daniel-LoCY"

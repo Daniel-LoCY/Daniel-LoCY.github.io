@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  目前專注於 Robot Control、VLA／Robot Learning 與 Sim-to-Real，使用 ROS 2、TM5S、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料流程、Policy Inference 與真機驗證。
+  目前專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程，使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -18,9 +18,9 @@ positions:
     company_description: "智慧科技與消費性電子公司，研發工作涵蓋 AI、機器人與系統整合。"
     bullet_points:
       - "從需求分析、系統架構、開發、Docker 部署到測試與現場整合，獨立交付機器人軟體專案。"
-      - "以 ROS 2 串接 TM5S、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、Pick-and-Place 與線材任務。"
-      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練、Policy Inference 與 TM5S 真機測試，整合影像、Robot State／Action 與控制指令。"
-      - "整合 RealSense、YOLO OBB、AprilTag、OpenCV 與 Quest 2 遙操作；資料蒐集量達人工操作的 3～4 倍，線材插接成功率由 70% 提升至 90%（10 次測試）。"
+      - "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、Pick-and-Place 與線材任務。"
+      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。"
+      - "整合 RealSense、YOLO OBB、AprilTag、OpenCV 與 Quest 2 遙操作，建立虛擬與真實機械手臂的資料蒐集流程；資料蒐集量達人工操作的 3～4 倍，線材插接成功率由 70% 提升至 90%（10 次測試）。"
   - company: "采威國際資訊股份有限公司（ISCOM）"
     company_url: "https://www.iscom.com.tw"
     role: "軟體工程實習生"

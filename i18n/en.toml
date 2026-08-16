@@ -71,7 +71,7 @@ other = "Learn more"
 other = "Selected Work"
 
 [selectedWorkIntro]
-other = "Three core projects connect VLA training and physical inference, Quest 2 demonstration data, and TM5S sim-to-real control."
+other = "Three core projects connect VLA training and physical inference, Quest 2 demonstration data, and simulation / real-world validation."
 
 [viewProject]
 other = "View project"

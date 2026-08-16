@@ -1,16 +1,18 @@
 ---
-title: "NVIDIA Isaac GR00T N1.7: VLA Training and TM5S Inference"
-description: "An end-to-end workflow covering robot-data conversion, GR00T N1.7 training, policy inference, and TM5S control integration."
+title: "NVIDIA Isaac GR00T N1.7: VLA Policy Training and Physical-Robot Inference"
+description: "An end-to-end workflow covering robot-data conversion, GR00T N1.7 training, policy inference, and physical-robot control integration."
 featured_image: "/images/projects/default-project.svg"
-tags: ["NVIDIA Isaac GR00T", "VLA", "TM5S", "Robot Data", "Policy Inference"]
+tags: ["NVIDIA Isaac GR00T", "VLA", "Digital Twin Data", "Robot Data", "Policy Inference"]
 weight: 1
 ---
 
-This project connects robot data from simulated and physical environments to NVIDIA Isaac GR00T N1.7 data conversion, model training, policy inference, and TM5S execution. My core responsibility was robot control and end-to-end system integration rather than only one data or modeling step.
+This project connects robot data collected separately from simulated and physical environments to NVIDIA Isaac GR00T N1.7 data conversion, model training, policy inference, and physical-robot execution. My core responsibility was robot control and end-to-end system integration rather than only one data or modeling step.
+
+The project separately validates two workflows: training with simulated data followed by inference in the physical environment, and training plus inference with physical-environment data. These were not run as one simultaneous mixed-data training process.
 
 ## Scope and Ownership
 
-- Completed the end-to-end path from data conversion and model training to inference and TM5S real-robot testing.
+- Completed the end-to-end path from data conversion and model training to inference and physical-robot testing.
 - Owned robot control, policy-service integration, action mapping, and the physical inference path.
 - The recording platform was a separate system; I contributed to its development and integrated robot control and workflow automation with it.
 
@@ -19,7 +21,7 @@ This project connects robot data from simulated and physical environments to NVI
 1. Build episodes from dual-camera images, robot state, gripper state, and control actions.
 2. Record images at 30 FPS and robot state/actions at 60 Hz, align them by timestamp, and organize episodes of approximately 100–600 timesteps.
 3. Convert position, pose, Rotation 6D, and action definitions into the GR00T N1.7 training format, then train and evaluate checkpoints through inference.
-4. Send observations to a policy service, map returned model actions into executable TM5S commands, and validate the physical-robot path.
+4. Send observations to a policy service, map returned model actions into executable robot commands, and validate the physical-robot path.
 
 ## Engineering Focus
 
