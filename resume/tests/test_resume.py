@@ -58,7 +58,7 @@ class ResumeOutputTest(unittest.TestCase):
         path = ROOT / "resume" / "104-resume-zh-tw.md"
         self.assertTrue(path.exists())
         text = path.read_text(encoding="utf-8")
-        for marker in ("自我介紹", "工作經歷", "專長關鍵字", "精選專案", "學歷", "作品集", "Isaac GR00T"):
+        for marker in ("自我介紹", "工作經歷", "專長關鍵字", "精選專案", "學歷", "作品集", "LinkedIn", "Isaac GR00T", "Digital Twin"):
             self.assertIn(marker, text)
 
     def test_104_resume_is_concise_for_hr_screening(self):
@@ -79,7 +79,11 @@ class ResumeOutputTest(unittest.TestCase):
         experience = text.split("### 瑞軒科技股份有限公司", 1)[1].split("### 采威國際", 1)[0]
         self.assertEqual(experience.count("\n- "), 4)
         skills = text.split("## 專長關鍵字", 1)[1].split("## 精選專案", 1)[0]
-        self.assertEqual(skills.count("\n- "), 3)
+        self.assertEqual(skills.count("\n- "), 6)
+        self.assertIn("Frontend Development", skills)
+        self.assertIn("Backend, API & Deployment", skills)
+        self.assertIn("Embedded & IoT Development", skills)
+        self.assertNotIn("Sim-to-Real", text)
 
     def test_traditional_chinese_resume_v2_is_two_pages_and_job_focused(self):
         path = PDF_DIR / "daniel-lo-resume-zh-tw-v2.pdf"
