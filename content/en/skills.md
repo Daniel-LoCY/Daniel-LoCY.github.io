@@ -18,7 +18,7 @@ domains:
     description: "Evaluating DOPE 3D pose estimation in Isaac Sim and using RealSense, YOLO OBB, AprilTag, OpenCV, hand-eye calibration, and visual servoing for physical cable tasks."
   - icon: "diagram-project"
     title: "Robotics Platforms & Automation"
-    description: "Developing web-based remote control and monitoring plus 34-node workflow automation for task execution, scene reset, and data recording."
+    description: "Developing web-based remote control and monitoring plus automated task workflows for task execution, scene reset, and imitation-learning / GR00T / VLA training-data recording."
   - icon: "wrench"
     title: "End-to-End System Integration"
     description: "Independently delivering robotics systems from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance."

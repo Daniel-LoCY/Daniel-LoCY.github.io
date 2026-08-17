@@ -20,7 +20,7 @@ positions:
       - "Delivered robotics software from requirements and system architecture through Docker deployment, testing, on-site integration, and maintenance."
       - "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for motion planning, collision handling, pick-and-place, and cable tasks."
       - "Completed Isaac GR00T N1.7 data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows."
-      - "Integrated RealSense, YOLO OBB, AprilTag, OpenCV, and Quest 2 teleoperation for virtual and physical robot data collection; increased data-collection throughput to 3–4× manual operation and cable-insertion success from 70% to 90% in a 10-trial test."
+      - "Integrated RealSense, YOLO OBB, AprilTag, OpenCV, and Quest 2 teleoperation to build an imitation-learning / GR00T / VLA training-data collection workflow across simulated and physical robot arms; achieved 3–4× manual throughput in the same time window and improved cable-insertion success from 70% to 90% in a 10-trial test."
   - company: "ISCOM"
     company_url: "https://www.iscom.com.tw"
     role: "Software Engineer Intern"

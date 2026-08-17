@@ -11,7 +11,7 @@ passion_text: >-
 mix: >-
   I deliver robotics software from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance, with ownership across motion planning, robot state/action, image data, and control commands.
 personal: >-
-  Verified outcomes include 3–4× manual data-collection throughput and cable-insertion success improved from 70% to 90% in a 10-trial test.
+  Verified outcomes include 3–4× manual throughput for imitation-learning / GR00T / VLA training-data collection in the same time window, plus cable-insertion success improved from 70% to 90% in a 10-trial test.
 quickfacts:
   - icon: "briefcase"
     title: "Current Role"

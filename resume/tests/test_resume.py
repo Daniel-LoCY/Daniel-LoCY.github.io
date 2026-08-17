@@ -100,7 +100,7 @@ class ResumeOutputTest(unittest.TestCase):
             "核心技能",
             "學歷與榮譽",
             "NVIDIA Isaac GR00T",
-            "34 種",
+            "模仿學習／GR00T／VLA 訓練資料蒐集量",
             "3～4 倍",
             "daniel-locy.github.io",
         ):

@@ -31,13 +31,13 @@
         "en": [
           "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for motion planning, collision handling, pick-and-place, and cable tasks.",
           "Delivered <b>Isaac GR00T N1.7</b> data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows.",
-          "Integrated RealSense, YOLO OBB, AprilTag, and OpenCV with Quest 2 teleoperation and imitation-learning recording for virtual and physical robot data collection; automated data collection reached <b>3-4x</b> manual operation in the same time window.",
+          "Integrated RealSense, YOLO OBB, AprilTag, and OpenCV with Quest 2 teleoperation and imitation-learning recording across virtual and physical robots; the automated workflow collected imitation-learning / GR00T-VLA training data at <b>3-4x</b> the manual volume in the same time window.",
           "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; cable-insertion success improved from <b>70%</b> to <b>90%</b> in a 10-trial test."
         ],
         "zh": [
           "建置 ROS 2 控制與模擬流程，整合工業／協作型機械手臂平台、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援路徑規劃、碰撞處理、物件夾取與線材任務。",
           "完成 <b>Isaac GR00T N1.7</b> 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
-          "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV，並串接 Quest 2 遙操作與模仿學習資料錄製，支援虛擬與真實機械手臂資料蒐集；自動化資料蒐集量達人工操作的 <b>3～4 倍</b>。",
+          "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV，並串接 Quest 2 遙操作與模仿學習資料錄製，建立虛擬與真實機械手臂的模仿學習／GR00T／VLA 訓練資料蒐集流程；相同時間內，自動化訓練資料蒐集量達人工操作的 <b>3～4 倍</b>。",
           "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；線材插接成功率在 10 次測試中由 <b>70%</b> 提升至 <b>90%</b>。"
         ]
       }
@@ -77,11 +77,11 @@
   },
   "highlights": {
     "en": [
-      {"metric": "3-4x", "label": "automated data-collection throughput"},
+      {"metric": "3-4x", "label": "imitation-learning / GR00T-VLA training-data throughput"},
       {"metric": "70% → 90%", "label": "cable-insertion success in 10 trials"}
     ],
     "zh": [
-      {"metric": "3～4 倍", "label": "自動化資料蒐集量"},
+      {"metric": "3～4 倍", "label": "模仿學習與 GR00T／VLA 訓練資料蒐集量（相同時間）"},
       {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"}
     ]
   },
@@ -89,7 +89,7 @@
     "en": [
       {
         "title": "Robot Workflow & Data Collection Platform",
-        "detail": "Next.js, React Flow, FastAPI; built a 34-node workflow system that raised data-collection throughput to 3-4x manual operation."
+        "detail": "Next.js, React Flow, FastAPI; built an automated workflow system for imitation-learning / GR00T-VLA training-data collection, reaching 3-4x the manual volume in the same time window."
       },
       {
         "title": "VLA Policy Training and Physical-Robot Inference",
@@ -103,7 +103,7 @@
     "zh": [
       {
         "title": "機器人自動化工作流程與資料錄製平台",
-        "detail": "Next.js、React Flow、FastAPI；建立 34 節點任務流程，資料蒐集量提升至人工操作的 3～4 倍。"
+        "detail": "Next.js、React Flow、FastAPI；建立自動化任務流程，用於模仿學習／GR00T／VLA 訓練資料錄製；相同時間內，訓練資料蒐集量達人工操作的 3～4 倍。"
       },
       {
         "title": "VLA Policy 訓練與真實機器人推論",
@@ -131,9 +131,8 @@
     "version": "2026-08 | v2",
     "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference 到虛擬／真實環境驗證的端到端整合經驗。",
     "highlights": [
-      {"metric": "3～4 倍", "label": "自動化資料蒐集量（相同時間）"},
-      {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"},
-      {"metric": "34 種", "label": "Workflow Node；約 4 週完成第一版"}
+      {"metric": "3～4 倍", "label": "模仿學習／GR00T／VLA 訓練資料蒐集量（相同時間）"},
+      {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"}
     ],
     "experience": [
       {
@@ -146,7 +145,7 @@
           "建置 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 控制環境，整合工業／協作型機械手臂平台，完成目標姿態控制、路徑規劃、碰撞處理，以及 Pick-and-Place 與線材插拔等任務。",
           "完成 NVIDIA Isaac GR00T N1.7 VLA 的資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程，並負責影像、Robot State／Action、Policy Service 與機械手臂控制系統的端到端整合。",
           "建立 Quest 2、ALVR、SteamVR 與 PyOpenXR 遙操作流程，以 60 Hz 將 VR 手把姿態與按鍵轉成虛擬與真實機械手臂控制指令，並串接 30 FPS 影像、60 Hz Robot State／Action 的模仿學習資料錄製平台。",
-          "獨立開發 34 種 Workflow Node 的自動化工作流程平台，整合機器人任務、資料錄製與場景重置；完成任務配置後可無人介入執行，相同時間內的資料蒐集量達人工操作的 3～4 倍。",
+          "獨立開發自動化工作流程平台，整合機器人任務、資料錄製與場景重置；完成任務配置後可無人介入執行，相同時間內的模仿學習／GR00T／VLA 訓練資料蒐集量達人工操作的 3～4 倍。",
           "獨立開發 Web Robot Control 與監控平台，整合關節／笛卡兒控制、I/O、MoveIt 軌跡、相機畫面與 Robot Feedback，提供遠端控制與即時監控。",
           "整合 RealSense、YOLO OBB、AprilTag 與 OpenCV 完成真機手眼標定、TF 轉換與視覺伺服；線材插接流程在 10 次測試中由 70% 成功率提升至 90%。"
         ]
@@ -175,8 +174,8 @@
         "title": "Robot Workflow 自動化與資料錄製整合平台",
         "stack": "Next.js、React Flow、FastAPI、WebSocket、Docker",
         "bullets": [
-          "獨立從需求、架構到部署建立 34 種 Workflow Node，串接機械手臂任務、場景重置、資料錄製、分支、重試與錯誤處理。",
-          "已支援四種 Pick-and-Place 任務變體；資料包含 30 FPS 影像與 60 Hz Robot State／Action，資料蒐集量約為人工操作的 3～4 倍。"
+          "獨立從需求、架構到部署建立自動化工作流程，串接機械手臂任務、場景重置、資料錄製、分支、重試與錯誤處理。",
+          "已支援四種 Pick-and-Place 任務變體；資料包含 30 FPS 影像與 60 Hz Robot State／Action，用於模仿學習／GR00T／VLA 訓練；相同時間內資料蒐集量約為人工操作的 3～4 倍。"
         ]
       },
       {

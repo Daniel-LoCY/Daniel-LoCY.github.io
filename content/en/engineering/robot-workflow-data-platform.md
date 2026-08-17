@@ -1,6 +1,6 @@
 ---
 title: "Robot Workflow Automation and Recording Integration"
-description: "A 34-node workflow platform for robot tasks, scene reset, and recording that collects 3–4× as much data as manual operation in the same time window."
+description: "An automated workflow platform for robot tasks, scene reset, and recording that collects imitation-learning / GR00T / VLA training data at 3–4× the manual volume in the same time window."
 featured_image: "/images/projects/default-project.svg"
 tags: ["Robot Workflow", "ROS 2", "React Flow", "FastAPI", "Docker"]
 weight: 5
@@ -18,7 +18,7 @@ This platform turns repetitive manual robot tasks into configurable and repeatab
 
 - Built a graph-based editor with Next.js and React Flow for composing actions, conditions, waits, retries, recording, and scene-reset steps.
 - Used FastAPI for workflow definitions, the execution queue, runners, state events, and live WebSocket updates.
-- Implemented 34 workflow node types spanning robot arms, grippers, task control, recording, and flow logic.
+- Built configurable workflow steps spanning robot arms, grippers, task control, recording, and flow logic.
 - Supported pause, stop, and retry during execution while reporting the active node, status, errors, and saved-data count to the interface.
 
 ## Tasks and Results

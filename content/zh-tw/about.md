@@ -11,7 +11,7 @@ passion_text: >-
 mix: >-
   熟悉從需求分析、系統架構、開發到 Docker 部署、測試、現場整合與維護的完整流程，能同時處理 Motion Planning、Robot State／Action、影像資料與控制指令。
 personal: >-
-  已驗證的成果包括：資料蒐集量達人工操作的 3～4 倍，以及線材插接成功率在 10 次測試中由 70% 提升至 90%。
+  已驗證的成果包括：相同時間內模仿學習／GR00T／VLA 訓練資料蒐集量達人工操作的 3～4 倍，以及線材插接成功率在 10 次測試中由 70% 提升至 90%。
 quickfacts:
   - icon: "briefcase"
     title: "現職"

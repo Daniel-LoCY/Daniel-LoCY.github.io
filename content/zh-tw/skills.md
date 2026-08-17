@@ -18,7 +18,7 @@ domains:
     description: "於 Isaac Sim 驗證 DOPE 3D 姿態估計，並以 RealSense、YOLO OBB、AprilTag、OpenCV、手眼標定與視覺伺服支援真機線材任務。"
   - icon: "diagram-project"
     title: "Robotics Platforms & Automation"
-    description: "開發 Web 遠端控制／監控與 34 種 Node 的自動化工作流程，串接任務執行、場景重置與資料錄製。"
+    description: "開發 Web 遠端控制／監控與自動化任務流程，串接任務執行、場景重置與模仿學習／GR00T／VLA 訓練資料錄製。"
   - icon: "wrench"
     title: "End-to-End System Integration"
     description: "從需求、架構、開發與 Docker 部署，到測試、現場整合與維護，獨立交付可操作的機器人系統。"

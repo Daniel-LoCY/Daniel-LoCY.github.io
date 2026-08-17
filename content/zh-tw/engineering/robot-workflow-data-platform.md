@@ -1,6 +1,6 @@
 ---
 title: "Robot Workflow 自動化與資料錄製整合平台"
-description: "以 34 種 Workflow Node 編排機器人任務、場景重置與資料錄製，使相同時間內的資料蒐集量達人工操作的 3～4 倍。"
+description: "以自動化任務流程編排機器人任務、場景重置與資料錄製，用於模仿學習／GR00T／VLA 訓練資料蒐集；相同時間內的資料蒐集量達人工操作的 3～4 倍。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["Robot Workflow", "ROS 2", "React Flow", "FastAPI", "Docker"]
 weight: 5
@@ -18,7 +18,7 @@ weight: 5
 
 - 以 Next.js、React Flow 建立圖形化編排介面，將動作、條件、等待、重試、資料錄製與場景重置組成任務配置。
 - 以 FastAPI 管理 Workflow 定義、執行佇列、Runner、狀態事件與 WebSocket 即時回報。
-- 共支援 34 種 Workflow Node，涵蓋機械手臂、夾爪、任務控制、錄製與流程邏輯。
+- 以可配置的自動化任務流程串接機械手臂、夾爪、任務控制、錄製與流程邏輯。
 - 執行期間可暫停、停止與重試，介面會同步顯示目前節點、狀態、錯誤與已儲存資料數量。
 
 ## 實際任務與成果
