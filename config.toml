@@ -70,7 +70,7 @@ defaultContentLanguageInSubdir = false
       tagline = "AI Robotics Engineer | Embodied AI"
       hero_description = "Integrating ROS 2 and NVIDIA Isaac across robot control, VLA / robot learning, Digital Twin data workflows, and simulation / real-world validation."
       hero_location = "New Taipei, Taiwan"
-      resume_url = ""
+      resume_url = "/files/daniel-lo-resume-en.pdf"
       collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -108,6 +108,9 @@ defaultContentLanguageInSubdir = false
   [[module.mounts]]
     source = "output/pdf/daniel-lo-resume-zh-tw-v2.pdf"
     target = "static/files/daniel-lo-resume-zh-tw-v2.pdf"
+  [[module.mounts]]
+    source = "output/pdf/daniel-lo-resume-en.pdf"
+    target = "static/files/daniel-lo-resume-en.pdf"
 
 [params]
   name = "駱忠湧"
