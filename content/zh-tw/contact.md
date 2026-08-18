@@ -2,7 +2,7 @@
 title: "聯絡"
 type: "homepage"
 intro: >-
-  歡迎就 AI 機器人、Embodied AI、Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程相關職缺與我聯繫。
+  歡迎就 AI 機器人、機器人軟體、系統整合、Embodied AI、Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程相關職缺與我聯繫。
 ---
 
 你可以透過以下方式找到我：

@@ -1,6 +1,6 @@
 # 駱忠湧 Daniel Lo 個人網站
 
-這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程、Robot Data 與 AI 機器人系統整合經驗。
+這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程、Robot Data、機器人軟體與 AI 機器人系統整合經驗。
 
 ## 內容結構
 
@@ -38,6 +38,12 @@
 - 高層級頁面移除 `Sim-to-Real` 與過度集中的特定機器人廠商名稱，改用虛擬／真實環境驗證與 Digital Twin 資料流程描述。
 - 明確區分虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論兩條獨立流程。
 - 技能區補上 Frontend、Backend、Embedded 與 IoT，並同步更新 104 文案來源與 PDF 履歷。
+
+## 2026-08-18 軟體工程職涯定位擴充
+
+- 中英文首頁 Hero、About、Experience 與 Contact 同步加入 Robotics Software、Systems Integration 與 frontend/backend platform 關鍵字。
+- 104 copy-ready 履歷新增機器人軟體工程師、系統整合開發工程師與軟體工程師等目標職稱，並補上全端與後端職類。
+- 中英文 PDF 履歷同步更新標題、摘要與 Software & System Integration 技能，現職正式職稱維持 AI Robotics Engineer。
 
 ## 標準求職履歷
 

@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  目前專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程，使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
+  目前專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程，並以前後端平台支援機器人控制與系統整合；使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
 resume_downloads:
   - lang: zh-tw
     label: 中文

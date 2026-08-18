@@ -2,7 +2,7 @@
 title: "技能"
 type: "homepage"
 intro: >-
-  聚焦 Robot Control、VLA／Robot Learning、Perception 與真機系統整合的端到端工程能力。
+  聚焦 Robot Control、Robotics Software、VLA／Robot Learning、Perception 與系統整合的端到端工程能力。
 domains:
   - icon: "robot"
     title: "Robot Control & Simulation / Real-World Validation"

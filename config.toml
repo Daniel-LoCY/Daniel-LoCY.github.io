@@ -20,13 +20,13 @@ defaultContentLanguageInSubdir = false
       lastName = ""
       name = "駱忠湧"
       author = "駱忠湧"
-      description = "駱忠湧的 AI 機器人作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程。"
+      description = "駱忠湧的 AI 機器人與軟體工程作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning、Digital Twin 資料流程與系統整合。"
       copyright = "駱忠湧"
-      tagline = "AI 機器人工程師｜Embodied AI"
-      hero_description = "以 ROS 2 與 NVIDIA Isaac 平台整合 Robot Control、VLA／Robot Learning、Digital Twin 資料流程與虛擬／真實環境驗證。"
+      tagline = "AI 機器人工程師｜機器人軟體與系統整合"
+      hero_description = "以 ROS 2 與 NVIDIA Isaac 整合機器人控制、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程，並以 React／FastAPI／Docker 建置前後端控制、監控與自動化平台。"
       hero_location = "新北，台灣"
       resume_url = "/files/daniel-lo-resume-zh-tw-v2.pdf"
-      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
+      collab_tags = ["Robot Control", "Robotics Software", "System Integration", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.zh-tw.menu]
       [[languages.zh-tw.menu.main]]
         name = "關於我"
@@ -65,13 +65,13 @@ defaultContentLanguageInSubdir = false
       lastName = "Lo"
       name = "Daniel Lo"
       author = "Daniel Lo"
-      description = "Daniel Lo's AI robotics portfolio focused on robot control, Embodied AI, VLA / robot learning, and Digital Twin data workflows."
+      description = "Daniel Lo's AI robotics and software engineering portfolio focused on robot control, Embodied AI, VLA / robot learning, Digital Twin data workflows, and systems integration."
       copyright = "Daniel Lo"
-      tagline = "AI Robotics Engineer | Embodied AI"
-      hero_description = "Integrating ROS 2 and NVIDIA Isaac across robot control, VLA / robot learning, Digital Twin data workflows, and simulation / real-world validation."
+      tagline = "AI Robotics Engineer | Robotics Software & Systems Integration"
+      hero_description = "Integrating ROS 2 and NVIDIA Isaac across robot control, Embodied AI, VLA / robot learning, and Digital Twin data workflows, while building frontend/backend control, monitoring, and automation platforms with React, FastAPI, and Docker."
       hero_location = "New Taipei, Taiwan"
       resume_url = "/files/daniel-lo-resume-en.pdf"
-      collab_tags = ["Robot Control", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
+      collab_tags = ["Robot Control", "Robotics Software", "System Integration", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "About"
@@ -121,7 +121,7 @@ defaultContentLanguageInSubdir = false
   profile_image = "/images/profile-about.jpg"
   author = "駱忠湧"
   og_image = "/images/profile-about.jpg"
-  description = "駱忠湧的 AI 機器人作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程。"
+  description = "駱忠湧的 AI 機器人與軟體工程作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning、Digital Twin 資料流程與系統整合。"
   linkedin_url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330/"
   linkedin_text = "linkedin.com/in/chung-yung-lo-790ab6330"
   github_url = "https://github.com/Daniel-LoCY"

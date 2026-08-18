@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  I focus on robot control, Embodied AI, VLA / robot learning, and Digital Twin data workflows, using ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for data processing, policy inference, and simulation / real-world validation.
+  I focus on robot control, Embodied AI, VLA / robot learning, and Digital Twin data workflows, using frontend/backend platforms alongside ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for system integration, data processing, policy inference, and simulation / real-world validation.
 resume_downloads:
   - lang: zh-tw
     label: 中文

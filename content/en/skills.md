@@ -2,7 +2,7 @@
 title: "Skills"
 type: "homepage"
 intro: >-
-  End-to-end engineering across robot control, Embodied AI, VLA / robot learning, perception, and real-robot execution.
+  End-to-end engineering across robot control, robotics software, Embodied AI, VLA / robot learning, perception, and systems integration.
 domains:
   - icon: "robot"
     title: "Robot Control & Simulation / Real-World Validation"
