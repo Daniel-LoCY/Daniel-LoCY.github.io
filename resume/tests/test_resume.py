@@ -36,25 +36,6 @@ class ResumeOutputTest(unittest.TestCase):
         for removed_detail in ("Selected Projects", "Robot Workflow", "Verification snapshot", "Evidence:"):
             self.assertNotIn(removed_detail, text)
 
-    def test_traditional_chinese_resume_is_one_page_and_job_focused(self):
-        text = self._read_pdf("daniel-lo-resume-zh-tw.pdf")
-        for marker in (
-            "駱忠湧",
-            "AI 機器人工程師",
-            "個人簡介",
-            "核心成果",
-            "工作經歷",
-            "核心技能",
-            "學歷與榮譽",
-            "Isaac GR00T",
-            "3～4 倍",
-            "ROS 2",
-            "daniel-locy.github.io",
-        ):
-            self.assertIn(marker, text)
-        for removed_detail in ("精選專案", "機器人自動化工作流程", "代表專案", "工程驗證摘要", "Evidence:"):
-            self.assertNotIn(removed_detail, text)
-
     def test_104_resume_contains_copy_ready_sections(self):
         path = ROOT / "resume" / "104-resume-zh-tw.md"
         self.assertTrue(path.exists())
@@ -124,6 +105,12 @@ class ResumeOutputTest(unittest.TestCase):
             self.assertIn(marker, text)
         for removed_detail in ("日本教育旅行", "偏鄉教育", "激發創意"):
             self.assertNotIn(removed_detail, text)
+
+    def test_only_latest_chinese_resume_is_generated(self):
+        self.assertEqual(
+            {path.name for path in PDF_DIR.glob("*.pdf")},
+            {"daniel-lo-resume-en.pdf", "daniel-lo-resume-zh-tw-v2.pdf"},
+        )
 
 
 if __name__ == "__main__":

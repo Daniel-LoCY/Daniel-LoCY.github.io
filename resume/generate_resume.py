@@ -463,10 +463,8 @@ def main():
     data = load_data()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     build_resume(data, "en", OUTPUT_DIR / "daniel-lo-resume-en.pdf")
-    build_resume(data, "zh", OUTPUT_DIR / "daniel-lo-resume-zh-tw.pdf")
     build_resume_v2(data, OUTPUT_DIR / "daniel-lo-resume-zh-tw-v2.pdf")
     print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-en.pdf'}")
-    print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-zh-tw.pdf'}")
     print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-zh-tw-v2.pdf'}")
 
 

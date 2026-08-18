@@ -47,16 +47,15 @@
 
 ## 標準求職履歷
 
-PDF 履歷提供一頁版與兩頁深度版：一頁版保留職涯定位、核心成果、工作經歷、核心技能、學歷與榮譽；兩頁版在第一頁延伸現職責任與三個核心專案，第二頁補充 VLA／遙操作／視覺伺服專案、技術棧、學歷、證照與求職方向。完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
-版面使用較大的內文字級與較寬鬆的行距，優先維持紙本閱讀性；一頁版中英文 PDF 維持一頁 A4，中文 v2 維持兩頁 A4。
+中文 PDF 僅保留最新的兩頁 v2 版本：第一頁呈現職涯定位、核心成果、現職責任與三個核心專案，第二頁補充 VLA／遙操作／視覺伺服專案、技術棧、學歷、證照與求職方向；英文 PDF 維持一頁版本。完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
+版面使用較大的內文字級與較寬鬆的行距，優先維持紙本閱讀性；中文 v2 維持兩頁 A4，英文 PDF 維持一頁 A4。
 工作經歷以四項重點呈現，並將相同時間內模仿學習／GR00T／VLA 訓練資料蒐集量達人工操作 3～4 倍，以及 70% → 90% 線材插接成功率獨立拉出，方便招聘者快速掃讀。
 104 則以「標準求職履歷｜AI Robotics」副本維護，將工作內容收斂為 Robot Control、VLA／Robot Learning、Perception & Automation 三個主軸，並保留與目標職涯直接相關的專案與成果。
 
 - `resume/resume_data.json`：中英文履歷的唯一內容來源。
 - `resume/generate_resume.py`：使用 ReportLab 產生中英文 PDF。
 - `resume/104-resume-zh-tw.md`：可直接整理至 104 履歷的中文版本。
-- `output/pdf/daniel-lo-resume-zh-tw.pdf`：中文一頁履歷。
-- `output/pdf/daniel-lo-resume-zh-tw-v2.pdf`：中文兩頁深度履歷，適合需要更多專案脈絡的職缺。
+- `output/pdf/daniel-lo-resume-zh-tw-v2.pdf`：最新中文兩頁履歷，適合需要完整專案脈絡的職缺。
 - `output/pdf/daniel-lo-resume-en.pdf`：英文一頁履歷。
 
 重新產生與測試 PDF：
@@ -65,7 +64,7 @@ PDF 履歷提供一頁版與兩頁深度版：一頁版保留職涯定位、核�
 ./resume/build.sh
 ```
 
-建置與測試固定在 Docker container 中執行，會檢查中英文一頁 PDF、中文兩頁 v2 PDF 的頁數、必要欄位與核心成果是否存在，以及低相關舊活動是否未混入 v2。
+建置與測試固定在 Docker container 中執行，會檢查英文一頁 PDF、最新中文兩頁 v2 PDF 的頁數、必要欄位與核心成果是否存在，以及低相關舊活動是否未混入 v2。
 
 ## 已知限制
 
@@ -98,5 +97,5 @@ GitHub Actions 會在推送至 `main` 後執行建置並部署至 GitHub Pages�
 
 中英文 PDF 履歷來源檔案：
 
-- `output/pdf/daniel-lo-resume-zh-tw.pdf`
+- `output/pdf/daniel-lo-resume-zh-tw-v2.pdf`
 - `output/pdf/daniel-lo-resume-en.pdf`
