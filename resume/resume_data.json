@@ -3,8 +3,8 @@
   "contact": {
     "name_en": "Daniel Lo",
     "name_zh": "駱忠湧 Daniel Lo",
-    "title_en": "AI Robotics Engineer | Robot Control / Digital Twin Data",
-    "title_zh": "AI 機器人工程師｜Robot Control / Digital Twin Data",
+    "title_en": "AI Robotics Engineer | Robotics Software & Systems Integration",
+    "title_zh": "AI 機器人工程師｜機器人軟體與系統整合",
     "location_en": "New Taipei, Taiwan",
     "location_zh": "新北，台灣",
     "email": "m0989062418@gmail.com",
@@ -14,8 +14,8 @@
     "linkedin": "linkedin.com/in/chung-yung-lo-790ab6330"
   },
   "summary": {
-    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for robot control, VLA, and Digital Twin data workflows. Experienced in end-to-end integration across perception, data processing, policy inference, and simulation / real-world validation.",
-    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 的機器人控制、VLA 與 Digital Twin 資料流程。具備從感知、資料處理、Policy Inference 到虛擬／真實環境驗證的端到端整合經驗。"
+    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for robot control, VLA, and Digital Twin data workflows. Experienced in end-to-end integration across perception, data processing, policy inference, frontend/backend platforms, and simulation / real-world validation.",
+    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 的機器人控制、VLA 與 Digital Twin 資料流程。具備從感知、資料處理、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。"
   },
   "experience": [
     {
@@ -66,13 +66,13 @@
       {"label": "Robot Control & Digital Twin", "items": "ROS 2, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, virtual / physical robot workflows"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
       {"label": "Perception & Visual Servoing", "items": "RealSense, YOLO OBB, AprilTag, OpenCV, Hand-Eye Calibration, Visual Servoing"},
-      {"label": "Software, Embedded & IoT", "items": "Python, C++, FastAPI, React / TypeScript, Next.js, WebSocket, Docker, Linux, Arduino, ESP32, MQTT"}
+      {"label": "Software & System Integration", "items": "Python, C++, frontend/backend platforms with FastAPI, React / TypeScript, Next.js, WebSocket, Docker, Linux, Arduino, ESP32, MQTT"}
     ],
     "zh": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
       {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB、AprilTag、OpenCV、手眼標定、視覺伺服"},
-      {"label": "Software, Embedded & IoT", "items": "Python、C++、React／TS、FastAPI、Docker、Linux、Arduino、ESP32、MQTT"}
+      {"label": "Software & System Integration", "items": "Python、C++、React／TS、FastAPI、前後端平台、WebSocket、Docker、Linux、Arduino、ESP32、MQTT"}
     ]
   },
   "highlights": {
@@ -129,7 +129,7 @@
   },
   "second_zh": {
     "version": "2026-08 | v2",
-    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference 到虛擬／真實環境驗證的端到端整合經驗。",
+    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。",
     "highlights": [
       {"metric": "3～4 倍", "label": "模仿學習／GR00T／VLA 訓練資料蒐集量（相同時間）"},
       {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"}
@@ -225,6 +225,6 @@
     "honors": "RHCSA；FIRA RoboWorld Cup 第一名；全國技術創造力競賽第三名",
     "certifications": "RHCSA、丙級室內配線技術士、丙級工業配線技術士、TQC+ 程式語言（C／Python）",
     "language": "英文：聽、說、讀、寫皆為中等程度",
-    "target": "目標職務：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師"
+    "target": "目標職務：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師、系統整合開發工程師、軟體工程師"
   }
 }

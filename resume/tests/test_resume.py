@@ -1,3 +1,4 @@
+import json
 import unittest
 from pathlib import Path
 
@@ -64,10 +65,15 @@ class ResumeOutputTest(unittest.TestCase):
     def test_104_resume_is_concise_for_hr_screening(self):
         path = ROOT / "resume" / "104-resume-zh-tw.md"
         text = path.read_text(encoding="utf-8")
-        self.assertIn("目標職稱：AI 機器人工程師、Embodied AI 工程師", text)
-        self.assertIn("目標職類：AI 工程師、軟體工程師", text)
-        self.assertNotIn("機器人軟體工程師、機器人控制工程師", text)
-        self.assertNotIn("演算法工程師", text)
+        self.assertIn(
+            "目標職稱：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、"
+            "Embodied AI 工程師、系統整合開發工程師、軟體工程師",
+            text,
+        )
+        self.assertIn(
+            "目標職類：AI 工程師、軟體工程師、演算法工程師、全端工程師、後端工程師",
+            text,
+        )
 
         introduction = text.split("## 自我介紹", 1)[1].split("## 自傳", 1)[0].strip()
         autobiography = text.split("## 自傳", 1)[1].split("## 工作經歷", 1)[0].strip()
@@ -81,9 +87,20 @@ class ResumeOutputTest(unittest.TestCase):
         skills = text.split("## 專長關鍵字", 1)[1].split("## 精選專案", 1)[0]
         self.assertEqual(skills.count("\n- "), 6)
         self.assertIn("Frontend Development", skills)
-        self.assertIn("Backend, API & Deployment", skills)
+        self.assertIn("Frontend, Backend & System Integration", skills)
         self.assertIn("Embedded & IoT Development", skills)
         self.assertNotIn("Sim-to-Real", text)
+
+    def test_resume_data_uses_shared_software_positioning(self):
+        path = ROOT / "resume" / "resume_data.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+
+        self.assertIn("Robotics Software", data["contact"]["title_en"])
+        self.assertIn("機器人軟體", data["contact"]["title_zh"])
+        self.assertIn("frontend/backend", data["summary"]["en"])
+        self.assertIn("前後端", data["summary"]["zh"])
+        self.assertIn("系統整合開發工程師", data["second_zh"]["target"])
+        self.assertIn("軟體工程師", data["second_zh"]["target"])
 
     def test_traditional_chinese_resume_v2_is_two_pages_and_job_focused(self):
         path = PDF_DIR / "daniel-lo-resume-zh-tw-v2.pdf"

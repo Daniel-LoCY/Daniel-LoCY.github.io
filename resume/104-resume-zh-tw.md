@@ -2,15 +2,15 @@
 
 ## 履歷定位
 
-目標職涯方向：AI Robotics、Embodied AI、Robot Control、VLA／Robot Learning、Digital Twin 與 Robotics System Integration。
+目標職涯方向：AI Robotics、Robotics Software、Embodied AI、Robot Control、VLA／Robot Learning、Digital Twin 與 Robotics System Integration。
 
 ## 自我介紹
 
-現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程。熟悉 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T，能整合機器人控制、資料流程、Policy Inference 與虛擬／真實環境驗證。
+現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程；具備 React／TypeScript、Next.js、FastAPI、WebSocket 與 Docker 的前後端平台經驗，能整合機器人控制、資料流程、Policy Inference 與虛擬／真實環境驗證。
 
 ## 自傳
 
-我目前在瑞軒科技擔任 AI 機器人工程師，擅長整合機器人控制、模擬、視覺與資料流程，將 AI Policy 與 ROS 2 系統導入工業／協作型機械手臂任務。熟悉從需求、開發到 Docker 部署、測試與現場驗證的完整流程。
+我目前在瑞軒科技擔任 AI 機器人工程師，擅長整合機器人控制、模擬、視覺與資料流程，將 AI Policy 與 ROS 2 系統導入工業／協作型機械手臂任務。熟悉從需求、開發到 Docker 部署、測試與現場驗證的完整流程；另具備前後端與 API 開發經驗，能以 React／TypeScript、FastAPI、WebSocket 與 Docker 建置控制、監控與自動化平台。
 
 ## 工作經歷
 
@@ -35,7 +35,7 @@
 - VLA／Robot Learning：Isaac GR00T N1.7、Policy Inference、Robot State／Action、模仿學習、資料流程
 - Robot Perception & Visual Servoing：RealSense、YOLO OBB、AprilTag、OpenCV、手眼標定、視覺伺服
 - Frontend Development：React、TypeScript／JavaScript、Next.js、React Flow
-- Backend, API & Deployment：FastAPI、Flask、ASP.NET MVC、WebSocket、Docker、Linux、Git、Python、C++、C#／.NET
+- Frontend, Backend & System Integration：FastAPI、Flask、ASP.NET MVC、WebSocket、Docker、Linux、Git、Python、C++、C#／.NET
 - Embedded & IoT Development：Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦
 
 ## 精選專案
@@ -63,8 +63,8 @@
 
 ## 求職條件
 
-- 目標職稱：AI 機器人工程師、Embodied AI 工程師
-- 目標職類：AI 工程師、軟體工程師
+- 目標職稱：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師、系統整合開發工程師、軟體工程師
+- 目標職類：AI 工程師、軟體工程師、演算法工程師、全端工程師、後端工程師
 - 期望投入：機器人控制、VLA／Robot Learning、Digital Twin 資料流程與機器人系統整合
 
 ## 資格認證
