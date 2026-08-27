@@ -1,8 +1,8 @@
 ---
 title: "AprilTag HDMI／電源線拔線系統"
-description: "以 AprilTag 定位接頭，整合 TM5S、夾爪、TM API 與 ROS 2，支援多種拔線方向與機種。"
+description: "以 AprilTag 與 OpenCV 定位接頭，整合 TM5S、夾爪、TM API 與 ROS 2，支援多種拔線方向與機種。"
 featured_image: "/images/projects/default-project.svg"
-tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "AprilTag", "PyQt"]
+tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "AprilTag", "OpenCV", "PyQt"]
 weight: 8
 ---
 
@@ -10,7 +10,7 @@ weight: 8
 
 ## 我的工作
 
-- 使用 AprilTag 辨識接頭位置與姿態，控制手臂移動至目標並執行拔線。
+- 使用 AprilTag 辨識接頭位置與姿態，並以 OpenCV 處理影像與座標轉換，控制手臂移動至目標並執行拔線。
 - 支援背插、側插、下插、電源線及不同機種，單次測試最多辨識 4 個 AprilTag。
 - 量測手臂內建相機的穩定辨識範圍，測試極限約為 50 cm、80 pixels。
 - 依機台與接頭方向設定手臂姿態及夾取位置，降低手臂撞擊機台的風險。

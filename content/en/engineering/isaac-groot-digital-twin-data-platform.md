@@ -14,7 +14,7 @@ The project separately validates two workflows: training with simulated data fol
 
 - Completed the end-to-end path from data conversion and model training to inference and physical-robot testing.
 - Owned robot control, policy-service integration, action mapping, and the physical inference path.
-- The recording platform was a separate system; I contributed to its development and integrated robot control and workflow automation with it.
+- The training-data collection flow consisted of an automated script/control side and a recording system; the recording platform was separate, and I contributed to its development while integrating robot control and workflow automation through ROS 2, WebSocket, and related interfaces.
 
 ## End-to-End Data and Inference Flow
 

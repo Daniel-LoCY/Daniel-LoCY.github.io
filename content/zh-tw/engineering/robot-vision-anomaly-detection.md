@@ -13,7 +13,7 @@ weight: 9
 - 使用官方資料在 Isaac Sim 驗證 DOPE 物件姿態預測與 ROS 2 流程，完成影像輸入、姿態輸出與 TF 轉換測試；未將此項寫成真機成果。
 - 建立 Eye-in-Hand 與 Eye-to-Hand 手眼標定流程。
 - 使用 Checkerboard 與 OpenCV 演算法測試不同標定板，分析平移與旋轉誤差來源。
-- 以 RealSense、AprilTag 與 OpenCV 支援影像取得、定位與座標轉換。
+- 以 RealSense 與 OpenCV 支援影像取得與前處理，並以 AprilTag 定位拔線接頭及進行座標轉換。
 
 ## 異常檢測
 

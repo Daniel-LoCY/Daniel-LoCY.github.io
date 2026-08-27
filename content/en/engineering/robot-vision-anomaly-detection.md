@@ -13,7 +13,7 @@ This project covers both the 3D vision required for robot manipulation and image
 - Evaluated DOPE pose prediction and its ROS 2 image-to-pose and TF flow in Isaac Sim using official data; this is not presented as a physical-robot result.
 - Built Eye-in-Hand and Eye-to-Hand hand-eye calibration workflows.
 - Tested checkerboards and OpenCV calibration algorithms to analyze translation and rotation error sources.
-- Used RealSense, AprilTag, and OpenCV for image acquisition, localization, and coordinate conversion.
+- Used RealSense and OpenCV for image acquisition and preprocessing, with AprilTag for unplugging-connector localization and coordinate conversion.
 
 ## Anomaly Detection
 
