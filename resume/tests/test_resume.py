@@ -64,7 +64,7 @@ class ResumeOutputTest(unittest.TestCase):
         self.assertLessEqual(len(autobiography), 220)
 
         experience = text.split("### 瑞軒科技股份有限公司", 1)[1].split("### 采威國際", 1)[0]
-        self.assertEqual(experience.count("\n- "), 4)
+        self.assertEqual(experience.count("\n- "), 5)
         skills = text.split("## 專長關鍵字", 1)[1].split("## 精選專案", 1)[0]
         self.assertEqual(skills.count("\n- "), 6)
         self.assertIn("Frontend Development", skills)
@@ -111,6 +111,25 @@ class ResumeOutputTest(unittest.TestCase):
             {path.name for path in PDF_DIR.glob("*.pdf")},
             {"daniel-lo-resume-en.pdf", "daniel-lo-resume-zh-tw-v2.pdf"},
         )
+
+    def test_tsmc_targeted_resumes_are_generated_and_job_focused(self):
+        targeted_dir = PDF_DIR / "tsmc"
+        english_path = targeted_dir / "daniel-lo-resume-tsmc-en.pdf"
+        chinese_path = targeted_dir / "daniel-lo-resume-tsmc-zh-tw-v2.pdf"
+        self.assertTrue(english_path.exists(), f"Missing targeted English resume: {english_path}")
+        self.assertTrue(chinese_path.exists(), f"Missing targeted Chinese resume: {chinese_path}")
+
+        english_reader = PdfReader(str(english_path))
+        chinese_reader = PdfReader(str(chinese_path))
+        self.assertEqual(len(english_reader.pages), 1)
+        self.assertEqual(len(chinese_reader.pages), 2)
+
+        english_text = "\n".join(page.extract_text() or "" for page in english_reader.pages)
+        chinese_text = "\n".join(page.extract_text() or "" for page in chinese_reader.pages)
+        for marker in ("force-guided", "six-axis", "GR00T", "Visual Servoing"):
+            self.assertIn(marker, english_text)
+        for marker in ("力／扭矩", "六軸", "GR00T", "視覺伺服"):
+            self.assertIn(marker, chinese_text)
 
 
 if __name__ == "__main__":

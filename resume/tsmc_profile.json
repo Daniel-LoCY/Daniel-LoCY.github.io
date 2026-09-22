@@ -1,0 +1,108 @@
+{
+  "version": "2026-09 | TSMC Robotics",
+  "contact": {
+    "title_en": "Robotics Control & Physical AI Engineer",
+    "title_zh": "機器人控制與 Physical AI 工程師",
+    "location_en": "Hsinchu / New Taipei, Taiwan",
+    "location_zh": "新竹／新北，台灣"
+  },
+  "summary": {
+    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, Isaac Sim / Isaac Lab, MoveIt 2, cuMotion, visual servoing, and physical-robot validation. Experienced in connecting perception, force-guided contact search, robot learning, policy inference, and Dockerized robotics software into practical manipulation workflows.",
+    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、視覺伺服與實體機器人驗證。具備將感知、力導向接觸搜尋、Robot Learning、Policy Inference 與 Docker 化機器人軟體整合至實際操作流程的經驗。"
+  },
+  "experience": [
+    {
+      "company_en": "AMTRAN TECHNOLOGY CO., LTD.",
+      "company_zh": "瑞軒科技股份有限公司",
+      "role_en": "AI Robotics Engineer",
+      "role_zh": "AI 機器人工程師",
+      "period_en": "May 2025 - Present",
+      "period_zh": "2025/05 - 至今",
+      "location_en": "New Taipei, Taiwan",
+      "location_zh": "新北，台灣",
+      "bullets": {
+        "en": [
+          "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion, covering motion planning, collision handling, pick-and-place, and cable tasks.",
+          "Delivered Isaac GR00T N1.7 data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows.",
+          "Built a two-part ROS 2 / WebSocket training-data collection flow that automated robot-arm tasks and recorded actions, images, robot state/actions, and timestamps, reaching 3-4x manual throughput and reducing manual staffing needs by two operators.",
+          "Developed YOLO OBB / OpenCV visual servoing for HDMI insertion and AprilTag / OpenCV connector localization for cable unplugging; integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into final insertion recovery with bounded spiral micro-search. Validated on the physical robot; incremental success-rate impact is not yet quantified."
+        ],
+        "zh": [
+          "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、Pick-and-Place 與線材任務。",
+          "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
+          "建立透過 ROS 2／WebSocket 協作的兩部分訓練資料蒐集流程，自動控制機械手臂任務並記錄動作、影像、Robot State／Action 與 Timestamp，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。",
+          "以 YOLO OBB／OpenCV 建置 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材拔線接頭定位；在最後插接階段整合腕部六軸力／扭矩感測與接觸搜尋，以受限範圍內的螺旋微動補救殘餘視覺誤差。已於真機驗證，額外成功率尚未量化。"
+        ]
+      }
+    },
+    {
+      "company_en": "ISCOM",
+      "company_zh": "采威國際資訊股份有限公司（ISCOM）",
+      "role_en": "Software Engineer Intern",
+      "role_zh": "軟體工程實習生",
+      "period_en": "Feb 2022 - Jun 2022",
+      "period_zh": "2022/02 - 2022/06",
+      "location_en": "Kaohsiung, Taiwan",
+      "location_zh": "高雄，台灣",
+      "bullets": {
+        "en": [
+          "Participated in backend API development, frontend integration, and web feature implementation using C#, ASP.NET MVC, JavaScript, jQuery, MS SQL, and Git."
+        ],
+        "zh": [
+          "參與後端 API 開發、前端串接與網頁功能實作，使用 C#、ASP.NET MVC、JavaScript、jQuery、MS SQL 與 Git。"
+        ]
+      }
+    }
+  ],
+  "skills": {
+    "en": [
+      {"label": "Robot Control & Validation", "items": "ROS 2, Isaac Sim / Isaac Lab, MoveIt 2, cuMotion, Visual Servoing, physical-robot validation"},
+      {"label": "Physical AI & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
+      {"label": "Perception & Force-Guided Insertion", "items": "YOLO OBB + OpenCV, AprilTag, RealSense, Hand-Eye Calibration, six-axis force/torque sensing, force-guided contact search"},
+      {"label": "Robotics Software & Integration", "items": "Python, C++, FastAPI, React / TypeScript, WebSocket, Docker, Linux"}
+    ],
+    "zh": [
+      {"label": "Robot Control & Validation", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、視覺伺服、真實機器人驗證"},
+      {"label": "Physical AI & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
+      {"label": "Perception & Force-Guided Insertion", "items": "YOLO OBB＋OpenCV、AprilTag、RealSense、手眼標定、六軸力／扭矩感測、接觸搜尋補償"},
+      {"label": "Robotics Software & Integration", "items": "Python、C++、FastAPI、React／TypeScript、WebSocket、Docker、Linux"}
+    ]
+  },
+  "highlights": {
+    "en": [
+      {"metric": "3-4x", "label": "imitation-learning / GR00T-VLA training-data throughput"},
+      {"metric": "70% → 90%", "label": "cable-insertion success in 10 trials"}
+    ],
+    "zh": [
+      {"metric": "3～4 倍", "label": "模仿學習與 GR00T／VLA 訓練資料蒐集量（相同時間）"},
+      {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"}
+    ]
+  },
+  "second_zh": {
+    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、視覺伺服、VLA／Robot Learning 與 Digital Twin 資料流程。具備從需求分析、系統架構、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗，並於 HDMI 插線最後接觸階段實作力導向接觸搜尋。",
+    "experience": [
+      {
+        "company": "瑞軒科技股份有限公司",
+        "role": "AI 機器人工程師",
+        "period": "2025/05 - 至今",
+        "location": "新北，台灣",
+        "bullets": [
+          "以 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 建置機器人控制與模擬流程，完成目標姿態、路徑規劃、碰撞處理、Pick-and-Place 與線材任務。",
+          "完成 NVIDIA Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
+          "建立由自動化腳本與資料錄製系統組成的訓練資料蒐集流程，透過 ROS 2／WebSocket 記錄動作、影像、Robot State／Action 與 Timestamp，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。",
+          "以 YOLO OBB／OpenCV 建置 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材拔線接頭定位；在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋，以受限範圍內的螺旋微動補救殘餘視覺誤差，已於真機驗證，額外成功率尚未量化。"
+        ]
+      },
+      {
+        "company": "采威國際資訊股份有限公司（ISCOM）",
+        "role": "軟體工程實習生",
+        "period": "2022/02 - 2022/06",
+        "location": "高雄，台灣",
+        "bullets": [
+          "參與後端 API 開發、前端串接與網頁功能實作，使用 C#、ASP.NET MVC、JavaScript、jQuery、MS SQL 與 Git。"
+        ]
+      }
+    ],
+    "target": "目標職務：Senior Robotics Control & Software Engineer、機器人控制工程師、AI 機器人工程師；目標地點：新竹，可搬遷"
+  }
+}

@@ -162,6 +162,57 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         self.assertIn("AprilTag＋OpenCV", text)
         self.assertNotIn("整合 RealSense、YOLO OBB、AprilTag、OpenCV 與 Quest 2 遙操作", text)
 
+    def test_force_guided_insertion_is_explicit_and_not_overclaimed(self):
+        cases = {
+            "en": (
+                "six-axis force/torque",
+                "force-guided contact search",
+                "bounded spiral micro-search",
+                "not yet quantified",
+            ),
+            "zh": (
+                "六軸力／扭矩",
+                "接觸搜尋",
+                "螺旋微動",
+                "尚未量化",
+            ),
+        }
+
+        for language, terms in cases.items():
+            bullets = self._experience_bullets(language)
+            insertion = self._find_text(
+                bullets,
+                "force-guided" if language == "en" else "六軸力",
+                f"{language} force-guided insertion bullet",
+            )
+            for term in terms:
+                self.assertIn(term, insertion)
+            for forbidden in ("impedance", "admittance", "EtherCAT", "CANopen"):
+                self.assertNotIn(forbidden.lower(), insertion.lower())
+
+    def test_hdmi_project_pages_separate_visual_metric_from_force_recovery(self):
+        paths = {
+            "zh": ROOT / "content" / "zh-tw" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
+            "en": ROOT / "content" / "en" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
+        }
+        for language, path in paths.items():
+            text = path.read_text(encoding="utf-8")
+            if language == "en":
+                for term in ("six-axis force/torque", "force-guided contact search", "bounded spiral micro-search", "not yet quantified", "70%", "90%"):
+                    self.assertIn(term, text)
+            else:
+                for term in ("六軸力／扭矩", "接觸搜尋", "螺旋微動", "尚未量化", "70%", "90%"):
+                    self.assertIn(term, text)
+
+    def test_tsmc_profile_keeps_unverified_low_level_terms_out(self):
+        path = ROOT / "resume" / "tsmc_profile.json"
+        self.assertTrue(path.exists())
+        text = path.read_text(encoding="utf-8")
+        self.assertIn("force-guided", text)
+        self.assertIn("力／扭矩", text)
+        for forbidden in ("EtherCAT", "CANopen", "impedance", "admittance", "functional safety"):
+            self.assertNotIn(forbidden.lower(), text.lower())
+
 
 if __name__ == "__main__":
     unittest.main()

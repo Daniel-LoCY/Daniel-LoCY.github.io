@@ -1,5 +1,5 @@
 {
-  "version": "2026-08",
+  "version": "2026-09",
   "contact": {
     "name_en": "Daniel Lo",
     "name_zh": "駱忠湧 Daniel Lo",
@@ -14,8 +14,8 @@
     "linkedin": "linkedin.com/in/chung-yung-lo-790ab6330"
   },
   "summary": {
-    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for robot control, VLA, and Digital Twin data workflows. Experienced in end-to-end integration across perception, data processing, policy inference, frontend/backend platforms, and simulation / real-world validation.",
-    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 的機器人控制、VLA 與 Digital Twin 資料流程。具備從感知、資料處理、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。"
+    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for robot control, VLA, and Digital Twin data workflows. Experienced in end-to-end integration across perception, visual servoing, force-guided contact search, data processing, policy inference, frontend/backend platforms, and simulation / real-world validation.",
+    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 的機器人控制、VLA 與 Digital Twin 資料流程。具備從感知、視覺伺服、力導向接觸搜尋、資料處理、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。"
   },
   "experience": [
     {
@@ -32,13 +32,15 @@
           "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for motion planning, collision handling, pick-and-place, and cable tasks.",
           "Delivered <b>Isaac GR00T N1.7</b> data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows.",
           "Built a two-part training-data collection flow: an automated workflow ran scripts to control the robot arm and task sequence, while a separate recording system captured actions, images, robot state/actions, and timestamps. They communicated through ROS 2, WebSocket, and related interfaces to fully automate multiple imitation-learning / GR00T / VLA training episodes, achieving <b>3-4x</b> manual throughput and reducing manual staffing needs by <b>two operators</b>.",
-          "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; used YOLO OBB with OpenCV for HDMI insertion and AprilTag with OpenCV for HDMI / power-cable unplugging, while cable-insertion success improved from <b>70%</b> to <b>90%</b> in a 10-trial test."
+          "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; used YOLO OBB with OpenCV for HDMI insertion and AprilTag with OpenCV for HDMI / power-cable unplugging, while cable-insertion success improved from <b>70%</b> to <b>90%</b> in a 10-trial test.",
+          "Integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into the final HDMI insertion stage; when residual visual alignment error remained, used low-speed contact and bounded spiral micro-search to recover insertion. Validated on the physical robot; incremental success-rate impact is not yet quantified."
         ],
         "zh": [
           "建置 ROS 2 控制與模擬流程，整合工業／協作型機械手臂平台、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援路徑規劃、碰撞處理、物件夾取與線材任務。",
           "完成 <b>Isaac GR00T N1.7</b> 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
           "由自動化腳本控制機械手臂與任務流程，搭配資料錄製系統記錄動作、影像、Robot State／Action 與 Timestamp；兩者透過 ROS 2、WebSocket 等介面協作，完成多筆模仿學習／GR00T／VLA 訓練資料的全自動錄製，相同時間內資料蒐集量達人工操作的 <b>3～4 倍</b>，並節省 <b>兩名操作人力</b>。",
-          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；線材插接成功率在 10 次測試中由 <b>70%</b> 提升至 <b>90%</b>。"
+          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；線材插接成功率在 10 次測試中由 <b>70%</b> 提升至 <b>90%</b>。",
+          "整合腕部六軸力／扭矩感測與接觸搜尋策略至 HDMI 插線最後接觸階段；當視覺對位仍存在殘餘誤差時，沿插入方向低速接觸，依力／扭矩回饋執行受限範圍內的螺旋微動，補救未完全對準造成的插接失敗。已於真機驗證，額外成功率尚未量化。"
         ]
       }
     },
@@ -65,13 +67,13 @@
     "en": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, virtual / physical robot workflows"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
-      {"label": "Perception & Visual Servoing", "items": "RealSense, YOLO OBB + OpenCV (HDMI insertion), AprilTag + OpenCV (HDMI / power-cable unplugging), Hand-Eye Calibration, Visual Servoing"},
+      {"label": "Perception & Visual Servoing", "items": "RealSense, YOLO OBB + OpenCV (HDMI insertion), AprilTag + OpenCV (HDMI / power-cable unplugging), Hand-Eye Calibration, Visual Servoing, wrist-mounted six-axis force/torque sensing, force-guided contact search"},
       {"label": "Software & System Integration", "items": "Python, C++, frontend/backend platforms with FastAPI, React / TypeScript, Next.js, WebSocket, Docker, Linux, Arduino, ESP32, MQTT"}
     ],
     "zh": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
-      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服"},
+      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋補償"},
       {"label": "Software & System Integration", "items": "Python、C++、React／TS、FastAPI、前後端平台、WebSocket、Docker、Linux、Arduino、ESP32、MQTT"}
     ]
   },
@@ -97,7 +99,7 @@
       },
       {
         "title": "Visual Servoing, HDMI Insertion & Cable Unplugging",
-        "detail": "Used YOLO OBB + OpenCV for HDMI insertion and AprilTag + OpenCV for HDMI / power-cable unplugging; improved insertion success from 70% to 90% in a 10-trial test."
+        "detail": "Used YOLO OBB + OpenCV for HDMI insertion and AprilTag + OpenCV for HDMI / power-cable unplugging; improved insertion success from 70% to 90% in a 10-trial test. Integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into the final insertion stage; bounded spiral micro-search recovered insertion when residual visual alignment error remained, and the incremental success-rate impact is not yet quantified."
       }
     ],
     "zh": [
@@ -111,7 +113,7 @@
       },
       {
         "title": "視覺伺服、HDMI 插線與線材拔線",
-        "detail": "以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位辨識與視覺對位，以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位；10 次測試插線成功率由 70% 提升至 90%。"
+        "detail": "以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位辨識與視覺對位，以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位；10 次測試插線成功率由 70% 提升至 90%。在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋，當視覺仍有殘餘誤差時，以受限範圍內的螺旋微動補救插接；額外成功率尚未量化。"
       }
     ]
   },
@@ -128,8 +130,8 @@
     ]
   },
   "second_zh": {
-    "version": "2026-08 | v2",
-    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。",
+    "version": "2026-09 | v2",
+    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning、視覺伺服與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗，並於實體 HDMI 插線最後接觸階段整合力導向接觸搜尋。",
     "highlights": [
       {"metric": "3～4 倍", "label": "模仿學習／GR00T／VLA 訓練資料蒐集量（相同時間）"},
       {"metric": "70% → 90%", "label": "線材插接成功率（10 次測試）"}
@@ -147,7 +149,8 @@
           "建立 Quest 2、ALVR、SteamVR 與 PyOpenXR 遙操作流程，以 60 Hz 將 VR 手把姿態與按鍵轉成虛擬與真實機械手臂控制指令，並串接 30 FPS 影像、60 Hz Robot State／Action 的模仿學習資料錄製平台。",
           "獨立開發由兩部分組成的自動化資料蒐集流程：自動化腳本控制機械手臂與任務流程，資料錄製系統記錄動作、影像、Robot State／Action 與 Timestamp；兩者透過 ROS 2、WebSocket 等介面協作，完成任務配置後可全自動錄製多筆模仿學習／GR00T／VLA 訓練資料，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。",
           "獨立開發 Web Robot Control 與監控平台，整合關節／笛卡兒控制、I/O、MoveIt 軌跡、相機畫面與 Robot Feedback，提供遠端控制與即時監控。",
-          "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺伺服，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位與座標轉換；線材插接流程在 10 次測試中由 70% 成功率提升至 90%。"
+          "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺伺服，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位與座標轉換；線材插接流程在 10 次測試中由 70% 成功率提升至 90%。",
+          "整合腕部六軸力／扭矩感測與接觸搜尋策略至 HDMI 插線最後接觸階段；當視覺對位仍有殘餘誤差時，沿插入方向低速接觸並依回饋執行受限範圍內的螺旋微動，補救未完全對準造成的插接失敗；額外成功率尚未量化。"
         ]
       },
       {
@@ -195,11 +198,12 @@
         ]
       },
       {
-        "title": "視覺伺服、HDMI 插線與線材拔線",
+          "title": "視覺伺服、HDMI 插線與線材拔線",
         "stack": "RealSense、YOLO OBB、AprilTag、OpenCV、手眼標定",
-        "bullets": [
-          "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺伺服，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；整合相機幾何、TF 座標轉換與機械手臂控制。",
-          "Checkerboard 驗證最佳結果為平移誤差 6.82 mm、旋轉誤差 0.40°；加入二次校正後，10 次測試成功率由 70% 提升至 90%。"
+          "bullets": [
+            "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺伺服，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；整合相機幾何、TF 座標轉換與機械手臂控制。",
+            "Checkerboard 驗證最佳結果為平移誤差 6.82 mm、旋轉誤差 0.40°；加入二次校正後，10 次測試成功率由 70% 提升至 90%。",
+            "在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋；當視覺仍有殘餘誤差時，以受限範圍內的螺旋微動補救插接，已於真機驗證，額外成功率尚未量化。"
         ]
       },
       {
@@ -214,7 +218,7 @@
     "skills": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、TF2、URDF／USD／XRDF、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、Policy Inference、Robot State／Action、Rotation 6D、模仿學習、Timestamp Synchronization"},
-      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、DOPE、AprilTag＋OpenCV（HDMI／電源線拔線）、3D Pose、手眼標定、視覺伺服"},
+      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、DOPE、AprilTag＋OpenCV（HDMI／電源線拔線）、3D Pose、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋補償"},
       {"label": "Software, Frontend & Backend", "items": "Python、C++、FastAPI、React／TypeScript、Next.js、React Flow、WebSocket、Docker、Nginx、Git"},
       {"label": "Embedded & IoT", "items": "Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦"}
     ],
@@ -225,6 +229,6 @@
     "honors": "RHCSA；FIRA RoboWorld Cup 第一名；全國技術創造力競賽第三名",
     "certifications": "RHCSA、丙級室內配線技術士、丙級工業配線技術士、TQC+ 程式語言（C／Python）",
     "language": "英文：聽、說、讀、寫皆為中等程度",
-    "target": "目標職務：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師、系統整合開發工程師、軟體工程師"
+    "target": "目標職務：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師、系統整合開發工程師、軟體工程師；目標地點：新竹，可搬遷"
   }
 }

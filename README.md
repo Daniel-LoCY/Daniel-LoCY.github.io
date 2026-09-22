@@ -51,6 +51,13 @@
 - 補充模仿學習／GR00T／VLA 訓練資料蒐集由自動化腳本控制與資料錄製系統組成，透過 ROS 2／WebSocket 完成多筆資料全自動錄製，並節省兩名操作人力；不將上述感知技術歸入該流程。
 - 同步中英文網站、104、履歷 PDF 與履歷整理草稿。
 
+## 2026-09-22 台積電 Robotics 客製履歷與力導向插接補救
+
+- 在中英文履歷、104 copy-ready 內容與個人網站同步補上已於實體機器人驗證的腕部六軸力／扭矩感測、接觸搜尋與受限範圍螺旋微動，用於補救 HDMI 插線最後接觸階段的殘餘視覺對位誤差。
+- 將二次視覺校正的 70% → 90%（10 次測試）與力導向補救分開敘述；力導向階段不宣稱尚未量化的額外成功率，也未加入未確認的低階通訊、阻抗或安全功能經驗。
+- 新增 `resume/tsmc_profile.json` 與客製 PDF 生成流程，產生一頁英文與兩頁中文的 TSMC Robotics 版本；共用履歷 PDF 與客製 PDF 均以 Docker 生成並通過 16 項內容、頁數與關鍵字測試。
+- 中英文 Hugo 網站同步更新 Experience、About、Skills、Core Tech Stack 與 HDMI 插線專案頁，並在公開定位加入「可搬遷至新竹」／「Open to relocate to Hsinchu」。Hugo Extended 0.152.1 Docker 建置確認中文 37 頁、英文 35 頁。
+
 ## 標準求職履歷
 
 中文 PDF 僅保留最新的兩頁 v2 版本：第一頁呈現職涯定位、核心成果、現職責任與三個核心專案，第二頁補充 VLA／遙操作／視覺伺服專案、技術棧、學歷、證照與求職方向；英文 PDF 維持一頁版本。完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
@@ -63,6 +70,8 @@
 - `resume/104-resume-zh-tw.md`：可直接整理至 104 履歷的中文版本。
 - `output/pdf/daniel-lo-resume-zh-tw-v2.pdf`：最新中文兩頁履歷，適合需要完整專案脈絡的職缺。
 - `output/pdf/daniel-lo-resume-en.pdf`：英文一頁履歷。
+- `output/pdf/tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf`：台積電 Robotics 客製中文兩頁履歷。
+- `output/pdf/tsmc/daniel-lo-resume-tsmc-en.pdf`：台積電 Robotics 客製英文一頁履歷。
 
 重新產生與測試 PDF：
 

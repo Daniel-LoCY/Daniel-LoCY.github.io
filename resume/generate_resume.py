@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+from copy import deepcopy
 from pathlib import Path
 
 from reportlab.lib import colors
@@ -26,6 +27,7 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = Path(__file__).with_name("resume_data.json")
+TSMC_PROFILE_PATH = Path(__file__).with_name("tsmc_profile.json")
 OUTPUT_DIR = ROOT / "output" / "pdf"
 
 PAGE_WIDTH, PAGE_HEIGHT = A4
@@ -62,8 +64,21 @@ def register_fonts():
     pdfmetrics.registerFont(TTFont("ResumeSans-Bold", str(bold), subfontIndex=0))
 
 
-def load_data():
-    return json.loads(DATA_PATH.read_text(encoding="utf-8"))
+def load_data(path=DATA_PATH):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def apply_profile(data, profile):
+    """Apply a focused profile without mutating the shared resume source."""
+    merged = deepcopy(data)
+    merged["version"] = profile.get("version", merged["version"])
+    merged["contact"].update(profile.get("contact", {}))
+    for key in ("summary", "experience", "skills", "highlights"):
+        if key in profile:
+            merged[key] = profile[key]
+    if "second_zh" in profile:
+        merged["second_zh"].update(profile["second_zh"])
+    return merged
 
 
 def make_styles(lang):
@@ -464,8 +479,15 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     build_resume(data, "en", OUTPUT_DIR / "daniel-lo-resume-en.pdf")
     build_resume_v2(data, OUTPUT_DIR / "daniel-lo-resume-zh-tw-v2.pdf")
+    tsmc_data = apply_profile(data, load_data(TSMC_PROFILE_PATH))
+    tsmc_output_dir = OUTPUT_DIR / "tsmc"
+    tsmc_output_dir.mkdir(parents=True, exist_ok=True)
+    build_resume(tsmc_data, "en", tsmc_output_dir / "daniel-lo-resume-tsmc-en.pdf")
+    build_resume_v2(tsmc_data, tsmc_output_dir / "daniel-lo-resume-tsmc-zh-tw-v2.pdf")
     print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-en.pdf'}")
     print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-zh-tw-v2.pdf'}")
+    print(f"Generated {tsmc_output_dir / 'daniel-lo-resume-tsmc-en.pdf'}")
+    print(f"Generated {tsmc_output_dir / 'daniel-lo-resume-tsmc-zh-tw-v2.pdf'}")
 
 
 if __name__ == "__main__":
