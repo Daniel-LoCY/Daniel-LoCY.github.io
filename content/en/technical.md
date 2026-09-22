@@ -54,6 +54,10 @@ technical_groups:
         name: "Hand-Eye Calibration"
       - icon: "location-crosshairs"
         name: "Visual Servoing"
+      - icon: "hand"
+        name: "Six-Axis Force/Torque Sensing"
+      - icon: "crosshairs"
+        name: "Force-Guided Contact Search"
   - title: "Robotics Platforms & Automation"
     skills:
       - icon: "server"

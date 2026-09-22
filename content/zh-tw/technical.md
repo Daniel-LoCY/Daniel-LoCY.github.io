@@ -54,6 +54,10 @@ technical_groups:
         name: "Hand-Eye Calibration"
       - icon: "location-crosshairs"
         name: "Visual Servoing"
+      - icon: "hand"
+        name: "六軸力／扭矩感測"
+      - icon: "crosshairs"
+        name: "接觸搜尋補償"
   - title: "Robotics Platforms & Automation"
     skills:
       - icon: "server"
