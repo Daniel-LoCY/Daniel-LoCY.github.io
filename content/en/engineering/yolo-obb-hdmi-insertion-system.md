@@ -25,9 +25,9 @@ This workflow combines YOLO OBB detection, OpenCV image and camera-geometry proc
 
 - Integrated wrist-mounted six-axis force/torque sensing with force-guided contact search into the final HDMI insertion stage.
 - When residual visual alignment error remained, approached at low speed and used bounded spiral micro-search from force/torque feedback to recover insertion.
-- Validated on the physical robot; the incremental success-rate impact is not yet quantified. This recovery result is reported separately from the visual-calibration metric below.
+- Validated on the physical robot; the incremental success-rate impact is not yet quantified. This recovery detail is reported separately from the overall insertion result below and is not presented as a separately quantified uplift.
 
 ## Physical-Robot Validation
 
-- Secondary visual calibration improved cable-insertion success from 70% to 90% across 10 trials in each stage.
+- Across the overall insertion workflow, cable-insertion success reached 90% in a 10-trial test compared with a 70% baseline.
 - The recorded hand-eye calibration result was 6.82 mm mean position error and 0.40° mean angular error. This tracks calibration quality and is not presented as absolute accuracy for every scene.
