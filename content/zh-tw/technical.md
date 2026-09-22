@@ -2,7 +2,7 @@
 title: "核心技術棧"
 type: "homepage"
 intro: >-
-  依實際工作主線排序：Robot Control、VLA／Robot Learning、Robot Perception，再到支援系統整合、部署與嵌入式 IoT 的軟體技術。
+  依實際工作主線排序：Robot Control、VLA／Robot Learning、Robot Perception 與力導向接觸搜尋，再到支援系統整合、部署與嵌入式 IoT 的軟體技術。
 technical_groups:
   - title: "Robot Control & Simulation"
     skills:

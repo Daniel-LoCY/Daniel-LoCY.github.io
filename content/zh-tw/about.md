@@ -2,7 +2,7 @@
 title: "關於駱忠湧"
 type: "homepage"
 intro: >-
-  我是駱忠湧，目前在瑞軒科技擔任 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning 與 Digital Twin 資料流程。熟悉 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T，並具備 React／TypeScript、Next.js、FastAPI、WebSocket 與 Docker 的前後端平台開發經驗，能整合機器人控制、資料流程、Policy Inference 與虛擬／真實環境驗證。
+  我是駱忠湧，目前在瑞軒科技擔任 AI 機器人工程師，專注於 Robot Control、視覺伺服、力導向插接補救、VLA／Robot Learning 與 Digital Twin 資料流程。熟悉 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T，並具備 React／TypeScript、Next.js、FastAPI、WebSocket 與 Docker 的前後端平台開發經驗，能整合機器人控制、資料流程、Policy Inference 與虛擬／真實環境驗證。
 study: >-
   我的學習背景橫跨電機、軟體與智慧系統。在國立臺灣師範大學就讀期間，主要研究如何將 AI、自然語言處理與強化學習應用於協作機器人；在國立屏東大學則打下電腦通訊、軟體開發與互動系統的基礎。
 passion_title: "我在做什麼"

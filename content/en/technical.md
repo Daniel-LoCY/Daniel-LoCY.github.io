@@ -2,7 +2,7 @@
 title: "Core Tech Stack"
 type: "homepage"
 intro: >-
-  Ordered by the actual workstream: robot control, VLA and robot learning, robot perception, then the software used to integrate, deploy, and extend complete systems with embedded IoT.
+  Ordered by the actual workstream: robot control, VLA and robot learning, robot perception and force-guided contact search, then the software used to integrate, deploy, and extend complete systems with embedded IoT.
 technical_groups:
   - title: "Robot Control & Simulation"
     skills:
