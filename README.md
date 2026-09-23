@@ -2,19 +2,19 @@
 
 這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程、Robot Data、機器人軟體與 AI 機器人系統整合經驗。
 
-## 2026-09-23 雙軌通用履歷與 PatchCore 同步
+## 2026-09-23 雙軌通用履歷與公開內容同步
 
 - 建立兩條不針對特定公司或職缺的主要履歷：`AI 機器人工程師｜機器人軟體與系統整合` 與 `AI 工程師｜後端與系統整合`，各產出繁中兩頁與英文一頁 PDF。
 - 在 `resume/software_profile.json` 與 104 copy-ready 來源中補上後端 API、即時 WebSocket、Docker、AI／電腦視覺與 PatchCore 工程內容。
-- 中英文網站的 About、Experience、Skills 與 Core Tech Stack 同步補上 PatchCore、PyQt、ROI 前處理、模板替換與異常分數分析流程；既有 PatchCore 專案頁同步呈現完整技術說明。
-- PatchCore 內容聚焦 API Server、PyQt 介面、ROI 前處理、模板替換與異常分數分析等已完成的工程工作。
+- 中英文網站的 About、Experience、Skills 與 Core Tech Stack 同步呈現 PatchCore、PyQt 與 AI 視覺流程；PatchCore 專案頁採高層次工程描述。
+- PatchCore 內容聚焦 API、PyQt 介面、AI 視覺與異常檢測流程。
 - 兩份 104 履歷、LinkedIn 與網站採機器人優先的公開定位；軟體版本使用 `AI 工程師｜後端與系統整合` 作為獨立求職方向。
 
 ## 2026-09-23 公開內容精簡
 
-- 中英文 PDF、104 copy-ready 來源與網站專案頁統一保留核心技術、可驗證成果與 PatchCore 工程內容。
-- 移除過細的頻率、影像速率、座標表示、平台串接與校正參數，改以控制、感知、資料流程與系統整合成果呈現。
-- 保留資料蒐集效率 3～4 倍與線材插接成功率 70% → 90% 等少量成果數字，並以 Docker 完成 PDF 測試與 Hugo 建置驗證。
+- 中英文 PDF、104 copy-ready 來源與網站專案頁統一保留核心技術、工作範圍與 PatchCore 工程內容。
+- 移除過細的頻率、影像速率、座標表示、平台串接、校正參數與測試數字，改以控制、感知、資料流程與系統整合呈現。
+- 以 Docker 完成 PDF 測試與 Hugo 建置驗證。
 
 ## 內容結構
 
@@ -35,14 +35,12 @@
 - 新增並前置 NVIDIA Isaac GR00T N1.7 VLA 訓練／真實機器人推論、Quest 2 遙操作，以及 Robot Control 虛擬／真實環境驗證三個核心專案。
 - 新增 Robot Workflow 自動化資料錄製平台與 Web Robot Control 遠端控制／監控平台的中英文詳細頁，明確區分兩者用途。
 - 保留 YOLO OBB、AprilTag、PatchCore、後端與 Docker 作品於完整專案索引，作為支援機器人整合能力的補充，而非首頁主定位。
-- 明確標示 DOPE 僅使用官方資料於 Isaac Sim 驗證，避免與已完成的真機視覺伺服成果混淆。
-- 移除未經歷的 UR5 → TM5S 延伸敘述；量化成果只保留已有依據的模仿學習／GR00T／VLA 訓練資料蒐集 3～4 倍與線材插接 70% → 90%（10 次測試）。
+- 將機器人視覺、PatchCore 與真機驗證以工作範圍與系統整合角度呈現，避免不必要的實作細節。
 
 ## 2026-08-14 個人網站定位同步
 
 - 將中英文首頁 Hero、About、Skills 與 Contact 收斂為 `AI Robotics Engineer｜Embodied AI`，並保留 Robot Control、VLA／Robot Learning、Perception 與 Digital Twin Data 關鍵字。
-- 將中英文 Experience 現職內容由七段長敘述收斂為四項重點，直接呈現交付範圍、控制與模擬、GR00T 真機驗證，以及模仿學習／GR00T／VLA 訓練資料蒐集與線材插接成果。
-- 保留已驗證數據：相同時間內模仿學習／GR00T／VLA 訓練資料蒐集量達人工操作的 3～4 倍、線材插接成功率由 70% 提升至 90%（10 次測試）。
+- 將中英文 Experience 現職內容由長敘述收斂為重點，呈現交付範圍、控制與模擬、GR00T 流程、AI 視覺與系統整合。
 - 使用 Hugo Extended 0.152.1 建置成功（繁中 37 頁、英文 35 頁），並以 Chrome 實際檢查本機繁中／英文首頁與 Experience 區塊的渲染結果。
 - Docker `hugomods/hugo:exts-0.152.1` 驗證因目前 macOS keychain credential helper 無法在非互動工作階段讀取而未能啟動；本次改以既有版本的本機 Hugo 0.152.1 fallback 驗證，未修改 Docker 設定。
 - 中文首頁「查看履歷」指向中文兩頁 v2 PDF；英文首頁「View CV」指向英文一頁 PDF；中英文 Experience 區均提供中英文履歷下載。
@@ -61,14 +59,11 @@
 
 ## 2026-08-27 技術歸屬與資料流程說明修正
 
-- 明確區分 YOLO OBB＋OpenCV 的 HDMI 插線，以及 AprilTag＋OpenCV 的 HDMI／電源線拔線。
-- 補充模仿學習／GR00T／VLA 訓練資料蒐集由自動化工作流程與資料錄製系統組成，透過 ROS 2／WebSocket 完成多筆資料全自動錄製；不將上述感知技術歸入該流程。
-- 同步中英文網站、104、履歷 PDF 與履歷整理草稿。
+- 統一中英文網站、104、履歷 PDF 與履歷整理來源的工作範圍與技術定位。
 
 ## 2026-09-22 台積電 Robotics 客製履歷與插接定位
 
-- 在中英文履歷、104 copy-ready 內容與個人網站同步呈現已於實體機器人驗證的視覺伺服與接觸式插接定位流程。
-- 將整體插線流程的 70% → 90%（10 次測試）作為已驗證成果，並以高層次方式呈現最後插接定位的系統整合。
+- 在中英文履歷、104 copy-ready 內容與個人網站同步呈現視覺感知、機器人控制與真機驗證的系統整合經驗。
 - 新增 `resume/tsmc_profile.json` 與客製 PDF 生成流程，產生一頁英文與兩頁中文的 TSMC Robotics 版本；共用履歷 PDF 與客製 PDF 均以 Docker 生成並通過 16 項內容、頁數與關鍵字測試。
 - 中英文 Hugo 網站同步更新 Experience、About、Skills、Core Tech Stack 與 HDMI 插線專案頁，公開定位只顯示目前所在地「新北，台灣」／「New Taipei, Taiwan」。Hugo Extended 0.152.1 Docker 建置確認中文 37 頁、英文 35 頁。
 

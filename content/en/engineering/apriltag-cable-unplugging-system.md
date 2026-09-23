@@ -1,21 +1,18 @@
 ---
 title: "AprilTag HDMI and Power-Cable Unplugging"
-description: "An AprilTag- and OpenCV-guided TM5S workflow integrating grippers, TM APIs, and ROS 2 across multiple unplugging orientations and device models."
+description: "A configurable connector-localization and robot-task workflow using AprilTag, OpenCV, TM5S, and ROS 2."
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "AprilTag", "OpenCV", "PyQt"]
 weight: 8
 ---
 
-This real-robot workflow covers HDMI and power-cable connectors from visual detection and pose estimation through robot approach, gripping, unplugging, and error handling, with configurable device and cable settings.
+This real-robot workflow covers connector localization, robot control, and error handling with configurable device and cable settings.
 
 ## My Contributions
 
-- Used AprilTag to detect connector position and pose, with OpenCV handling image processing and coordinate conversion, then controlled the robot to approach and unplug the target.
-- Supported rear-, side-, and bottom-inserted connectors, power cables, and multiple device models; tested up to four AprilTags in one frame.
-- Measured the stable detection range of the robot's built-in camera, with a tested limit of approximately 50 cm and 80 pixels.
-- Tuned robot poses and gripping locations by device and connector orientation to reduce collision risk.
-- Moved the latch/gripping position away from the connector to address the limited vertical approach available on rear-inserted devices.
+- Used AprilTag and OpenCV for connector localization, image processing, coordinate conversion, and robot-control integration.
+- Supported configurable device and cable settings with repeatable task execution and error handling.
 
 ## Control Interface
 
-Designed a PyQt/PyQt6 UI to manage device and cable settings, tag IDs, image display, workflow state, error handling, and robot control while separating vision, PLC, gripper, ROS 2, and workflow-execution modules.
+Designed a PyQt/PyQt6 UI to manage device and cable settings, image display, workflow state, error handling, and robot control while separating vision, PLC, gripper, ROS 2, and workflow-execution modules.

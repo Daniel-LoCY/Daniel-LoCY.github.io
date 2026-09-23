@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  I focus on robot control, Embodied AI, VLA / robot learning, visual servoing, and Digital Twin data workflows, using frontend/backend platforms alongside ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for system integration, data processing, policy inference, and simulation / real-world validation.
+  I focus on robot control, Embodied AI, VLA / robot learning, visual perception, and Digital Twin data workflows, using frontend/backend platforms alongside ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for system integration, data processing, policy inference, and simulation / real-world validation.
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -18,11 +18,11 @@ positions:
     company_description: "Consumer electronics and smart technology company with R&D work spanning AI, robotics, and system integration."
     bullet_points:
       - "Delivered robotics software from requirements and system architecture through Docker deployment, testing, on-site integration, and maintenance."
-      - "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for motion planning, collision handling, and cable tasks."
-      - "Completed Isaac GR00T N1.7 data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows."
-      - "Built an automated workflow and recording system through ROS 2 and WebSocket, fully automating multiple imitation-learning / GR00T / VLA training episodes and achieving 3–4× manual throughput."
-      - "Used YOLO OBB / OpenCV for HDMI insertion visual servoing and AprilTag / OpenCV for cable-connector localization; combined visual alignment with contact-aware insertion and validated the workflow on the physical robot, improving success from 70% to 90% in a 10-trial test."
-      - "Developed a PatchCore anomaly-detection API server and PyQt interface with ROI handling, image preprocessing, template replacement, and anomaly-score evaluation."
+      - "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion."
+      - "Completed Isaac GR00T N1.7 data conversion, model training, and policy inference across simulation and physical-robot workflows."
+      - "Built an automated workflow and recording system through ROS 2, WebSocket, and Docker for AI and robotics data workflows."
+      - "Integrated visual perception, visual servoing, robot control, and physical-robot validation into repeatable task workflows."
+      - "Developed a PatchCore anomaly-detection API server and PyQt interface, integrating AI vision and inspection workflows."
   - company: "ISCOM"
     company_url: "https://www.iscom.com.tw"
     role: "Software Engineer Intern"

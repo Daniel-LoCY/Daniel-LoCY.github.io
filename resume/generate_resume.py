@@ -289,7 +289,7 @@ def build_resume(data, lang, output_path):
         Spacer(1, 3.5 * mm),
         section_heading("Summary" if lang == "en" else "個人簡介", styles["section"], width),
         p(data["summary"][lang], styles["summary"]),
-        section_heading("Key Results" if lang == "en" else "核心成果", styles["section"], width),
+        section_heading("Focus Areas" if lang == "en" else "專注領域", styles["section"], width),
         highlights_block(data, lang, styles, width),
         section_heading("Experience" if lang == "en" else "工作經歷", styles["section"], width),
     ]
@@ -442,7 +442,7 @@ def build_resume_v2(data, output_path):
         Spacer(1, 3.0 * mm),
         section_heading("個人簡介", styles["section"], width),
         p(spec["summary"], styles["summary"]),
-        section_heading("核心成果", styles["section"], width),
+        section_heading("專注領域", styles["section"], width),
         highlights_block_v2(spec["highlights"], styles, width),
         section_heading("工作經歷", styles["section"], width),
     ]

@@ -6,11 +6,11 @@
 
 ## 自我介紹
 
-現任瑞軒科技 AI 機器人工程師，專注 Robot Control、視覺伺服、接觸式插接、VLA 與 PatchCore 異常檢測。熟悉 ROS 2、Isaac Sim／Lab、GR00T、C++、Python、Docker，能整合控制、Policy Inference、Digital Twin 與虛實驗證。
+現任瑞軒科技 AI 機器人工程師，專注 Robot Control、視覺感知、VLA 與 PatchCore 異常檢測。熟悉 ROS 2、Isaac Sim／Lab、GR00T、C++、Python、Docker，能整合控制、Policy Inference、Digital Twin 與虛實驗證。
 
 ## 自傳
 
-我目前在瑞軒科技擔任 AI 機器人工程師，擅長整合機器人控制、模擬、視覺伺服、力導向接觸搜尋與資料流程，將 AI Policy 與 ROS 2 系統導入工業／協作型機械手臂任務。熟悉從需求、開發到 Docker 部署、測試與現場驗證的完整流程；另具備前後端與 API 開發經驗，能以 React／TypeScript、FastAPI、WebSocket 與 Docker 建置控制、監控與自動化平台。
+我目前在瑞軒科技擔任 AI 機器人工程師，擅長整合機器人控制、模擬、視覺感知與資料流程，將 AI Policy 與 ROS 2 系統導入工業／協作型機械手臂任務。熟悉從需求、開發到 Docker 部署、測試與現場驗證的完整流程；另具備前後端與 API 開發經驗，能以 React／TypeScript、FastAPI、WebSocket 與 Docker 建置控制、監控與自動化平台。
 
 ## 工作經歷
 
@@ -21,8 +21,8 @@
 - 從需求分析、系統架構、開發、Docker 部署到測試與現場整合，獨立交付機器人軟體專案。
 - 以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理與線材任務。
 - 完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。
-- 建立自動化工作流程與資料錄製系統，透過 ROS 2、WebSocket 等技術完成多筆模仿學習／GR00T／VLA 訓練資料全自動錄製，相同時間內資料量達人工操作的 3～4 倍。
-- 以 YOLO OBB／OpenCV 完成 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材接頭定位；整合接觸式插接定位並於真機驗證，整體線材插接流程在 10 次測試中由 70% 基準達到 90% 成功率。
+- 建立自動化工作流程與資料錄製系統，透過 ROS 2、WebSocket 與 Docker 支援 AI／VLA 資料流程。
+- 整合視覺感知、視覺伺服、機器人控制與真機驗證，完成可重複的機器人任務流程。
 
 ### 采威國際資訊股份有限公司（ISCOM）｜軟體工程實習生
 
@@ -33,8 +33,8 @@
 ## 專長關鍵字
 
 - Robot Control & Digital Twin：ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂控制
-- VLA／Robot Learning：Isaac GR00T N1.7、Policy Inference、Robot State／Action、模仿學習、資料流程
-- Robot Perception & Visual Inspection：RealSense、YOLO OBB＋OpenCV、AprilTag＋OpenCV、手眼標定、視覺伺服、接觸式插接、PatchCore、PyQt
+- VLA／Robot Learning：Isaac GR00T N1.7、Policy Inference、模仿學習、資料流程
+- Robot Perception & Visual Inspection：RealSense、YOLO OBB、OpenCV、AprilTag、視覺伺服、PatchCore、PyQt
 - Frontend Development：React、TypeScript／JavaScript、Next.js、React Flow
 - Frontend, Backend & System Integration：FastAPI、Flask、ASP.NET MVC、WebSocket、Docker、Linux、Git、Python、C++、C#／.NET
 - Embedded & IoT Development：Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦
@@ -43,29 +43,27 @@
 
 ### 機器人自動化工作流程與資料錄製平台
 
-以自動化工作流程與資料錄製系統建立模仿學習／GR00T／VLA 訓練資料流程，透過 ROS 2、WebSocket 等技術完成多筆資料全自動錄製；相同時間內資料量達人工操作的 3～4 倍。
+以自動化工作流程與資料錄製系統建立 AI／VLA 資料流程，透過 ROS 2、WebSocket 與 Docker 支援任務執行與資料收集。
 
 ### 視覺伺服、HDMI 插線與線材拔線
 
-以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺對位；以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位。
-
-在最後接觸階段整合視覺伺服與接觸式插接定位，已於真機驗證；整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率。
+以視覺感知與視覺伺服支援機器人任務，並以 AprilTag、OpenCV 與相機流程完成定位與真機驗證。
 
 ### PatchCore 異常檢測 API 與 PyQt 介面
 
-開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 ROI、影像前處理、模板替換與異常分數分析，建立可重複的影像檢測流程。
+開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合影像前處理與 AI 視覺檢測流程。
 
 ### VLA Policy 訓練與真實機器人推論
 
-完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，串接相機、Robot State／Action 與控制指令。
+完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，涵蓋虛擬與真實環境流程。
 
 ### VR 虛實機械手臂遙操作與 Digital Twin 資料流程
 
-分別支援虛擬與真實機械手臂操作，整合影像、Robot State 與 Action，建立模仿學習資料流程。
+建立虛擬與真實機械手臂的遙操作與 Digital Twin 資料流程，支援模仿學習資料收集。
 
 ### Robot Control 與模擬／真實環境驗證平台
 
-整合 Isaac Sim／Isaac Lab、ROS 2、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、物件操作與真實環境驗證。
+整合 Isaac Sim／Isaac Lab、ROS 2、MoveIt 2 與 cuMotion，完成機器人控制、規劃與虛實環境驗證。
 
 ## 學歷
 

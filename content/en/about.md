@@ -2,16 +2,16 @@
 title: "About"
 type: "homepage"
 intro: >-
-  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, Embodied AI, VLA / robot learning, visual servoing, PatchCore anomaly detection, and Digital Twin data workflows. I also build frontend/backend platforms with React, TypeScript, Next.js, FastAPI, WebSocket, PyQt, and Docker, connecting robot control, data workflows, policy inference, and simulation / real-world validation.
+  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, Embodied AI, VLA / robot learning, visual perception, PatchCore anomaly detection, and Digital Twin data workflows. I also build frontend/backend platforms with React, TypeScript, Next.js, FastAPI, WebSocket, PyQt, and Docker, connecting robot control, data workflows, policy inference, and simulation / real-world validation.
 study: >-
   My academic background combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I studied how AI, natural language processing, and reinforcement learning can be applied to collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
 passion_title: "What I do"
 passion_text: >-
-  I bring AI policies and ROS 2 systems to industrial and collaborative robot tasks, including GR00T N1.7 data conversion, training, policy inference, real-world validation, visual servoing, and VR teleoperation. I also developed a PatchCore anomaly-detection API server and PyQt interface with ROI image workflows and anomaly-score evaluation, alongside imitation-learning data workflows.
+  I bring AI policies and ROS 2 systems to industrial and collaborative robot tasks, including GR00T N1.7 data conversion, training, policy inference, real-world validation, visual perception, and VR teleoperation. I also developed a PatchCore anomaly-detection API server and PyQt interface, alongside imitation-learning data workflows.
 mix: >-
-  I deliver robotics software from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance, with ownership across motion planning, robot state/action, image data, visual alignment, control commands, and frontend/backend monitoring tools.
+  I deliver robotics software from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance, connecting image data, policy services, control commands, and frontend/backend monitoring tools.
 personal: >-
-  Verified outcomes include 3–4× manual throughput for imitation-learning / GR00T / VLA training-data collection in the same time window, plus cable-insertion success improved from 70% to 90% in a 10-trial test.
+  I focus on turning AI, robot control, and software platforms into clear, testable, and maintainable engineering workflows.
 quickfacts:
   - icon: "briefcase"
     title: "Current Role"

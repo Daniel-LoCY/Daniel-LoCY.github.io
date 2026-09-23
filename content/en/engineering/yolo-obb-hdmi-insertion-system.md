@@ -6,26 +6,15 @@ tags: ["TM5S", "TM Flow", "TM API", "ROS 2", "YOLO OBB", "OpenCV"]
 weight: 4
 ---
 
-This workflow combines YOLO OBB detection, OpenCV image and camera-geometry processing, and robot control so that a wrist-mounted camera can iteratively align with an HDMI port before executing the insertion motion.
+This workflow combines YOLO OBB detection, OpenCV image processing, and robot control for visual localization, alignment, and physical-task validation.
 
 ## My Contributions
 
-- Used YOLO OBB to detect HDMI port centers and rotation poses, with OpenCV handling image processing, camera intrinsics, and coordinate geometry.
-- Controlled the TM5S wrist camera through translation, rotation, and synchronized multi-axis alignment.
-- Estimated relative distance from camera intrinsics, principal-point offset, focal length, detected-box size, and the physical HDMI dimensions.
-- Tuned motion increments and rotation-error thresholds to reduce repeated corrections and improve the insertion flow.
+- Used YOLO OBB and OpenCV for visual localization, image processing, and alignment.
+- Connected the TM5S, TM API, and ROS 2 so visual results could drive the robot-control workflow.
+- Validated the visual-guided workflow on the physical robot.
 
 ## Technical Focus
 
-- Read focal length, image dimensions, camera matrix, and distortion coefficients through the EIH Camera API.
 - Converted visual detections into executable robot-control targets.
 - Connected TM Flow, TM API, and ROS 2 for perception, control, and workflow-state integration.
-
-## Contact-Aware Insertion Alignment
-
-- Integrated visual servoing with contact-aware insertion alignment into the final HDMI insertion stage.
-- Validated the integrated alignment workflow on the physical robot.
-
-## Physical-Robot Validation
-
-- Across the overall insertion workflow, cable-insertion success reached 90% in a 10-trial test compared with a 70% baseline.

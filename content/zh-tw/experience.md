@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  目前專注於 Robot Control、視覺伺服、VLA／Robot Learning 與 Digital Twin 資料流程，並以前後端平台支援機器人控制與系統整合；使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
+  目前專注於 Robot Control、視覺感知、VLA／Robot Learning 與 Digital Twin 資料流程，並以前後端平台支援機器人控制與系統整合；使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -18,11 +18,11 @@ positions:
     company_description: "智慧科技與消費性電子公司，研發工作涵蓋 AI、機器人與系統整合。"
     bullet_points:
       - "從需求分析、系統架構、開發、Docker 部署到測試與現場整合，獨立交付機器人軟體專案。"
-      - "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理與線材任務。"
-      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。"
-      - "由自動化工作流程與資料錄製系統協作，透過 ROS 2、WebSocket 等介面完成多筆模仿學習／GR00T／VLA 訓練資料的全自動錄製，相同時間內資料蒐集量達人工操作的 3～4 倍。"
-      - "以 YOLO OBB／OpenCV 完成 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材接頭定位；整合接觸式插接定位並於真機驗證，整體線材插接流程在 10 次測試中由 70% 基準達到 90% 成功率。"
-      - "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 ROI、影像前處理、模板替換與異常分數分析。"
+      - "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成機器人控制與虛實環境驗證。"
+      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。"
+      - "以自動化工作流程與資料錄製系統支援 AI／VLA 資料流程，整合 ROS 2、WebSocket 與 Docker。"
+      - "整合視覺感知、視覺伺服、機器人控制與真機驗證，完成可重複的機器人任務流程。"
+      - "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。"
   - company: "采威國際資訊股份有限公司（ISCOM）"
     company_url: "https://www.iscom.com.tw"
     role: "軟體工程實習生"

@@ -6,25 +6,21 @@ tags: ["NVIDIA Isaac GR00T", "VLA", "Digital Twin Data", "Robot Data", "Policy I
 weight: 1
 ---
 
-此專案將分別來自虛擬與真實環境的 Robot Data，串接到 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與真實機器人執行流程。我主要負責機械手臂控制與整體系統整合，不只處理單一資料格式或模型步驟。
-
-本專案分別驗證兩條流程：以虛擬環境資料訓練後在真實環境進行推論，以及以真實環境資料訓練並於真實環境進行推論；兩者不是同步混合資料訓練。
+此專案將虛擬與真實環境的 Robot Data 串接到 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與真實機器人執行流程。我主要負責機械手臂控制與整體系統整合。
 
 ## 專案範圍與責任
 
 - 完成資料轉換、模型訓練、模型推論與真實機器人測試的端到端流程。
-- 主要負責 Robot Control、Policy Service 串接、Action 映射與真機推論執行。
-- 訓練資料蒐集流程由自動化腳本控制側與資料錄製系統組成；資料錄製平台由其他系統負責，我協助其開發，並透過 ROS 2、WebSocket 等介面將機器人控制與自動化工作流程整合進錄製流程。
+- 主要負責 Robot Control、Policy Service 串接與整體推論流程整合。
+- 透過 ROS 2、WebSocket 與資料錄製系統整合機器人控制與自動化工作流程。
 
 ## 端到端資料與推論流程
 
-1. 從雙相機影像、Robot State、夾爪狀態與控制 Action 建立 Episode 資料。
-2. 整合影像、Robot State、夾爪狀態與控制 Action，建立可用於訓練與推論的 Episode 資料。
-3. 將 Robot Data 轉成 GR00T N1.7 訓練格式，再進行模型訓練與 Policy Inference。
-4. 由 Policy Service 接收觀測、回傳模型 Action，經控制層映射成真實機器人可執行指令並完成真機測試。
+1. 整理虛擬與真實環境的 Robot Data，建立可用於訓練與推論的資料流程。
+2. 將 Robot Data 轉成 GR00T N1.7 訓練格式，再進行模型訓練與 Policy Inference。
+3. 由 Policy Service 串接模型輸出與機器人控制，完成真實機器人測試。
 
 ## 工程重點
 
-- 建立影像、Robot State、Action 與控制命令之間清楚的資料 contract，支援跨系統整合。
+- 建立資料、模型服務與控制命令之間清楚的介面，支援跨系統整合。
 - 將模型推論與實機輸出拆成可檢查的服務邊界，完成虛擬與真實環境的驗證流程。
-- 已建立虛擬資料訓練後真實環境推論，以及真實資料訓練與推論流程。

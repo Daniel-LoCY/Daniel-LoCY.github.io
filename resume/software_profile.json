@@ -21,15 +21,15 @@
       "bullets": {
         "en": [
           "Owned software delivery from requirements and system architecture through Docker deployment, testing, on-site integration, and maintenance for real-time AI and robotics systems.",
-          "Built a Next.js / React Flow / FastAPI / WebSocket workflow and data-recording platform that automated task execution and reached 3-4x manual throughput in the same time window.",
+          "Built a Next.js / React Flow / FastAPI / WebSocket workflow and data-recording platform for automated task execution and AI data workflows.",
           "Developed a React / TypeScript / FastAPI / ROS 2 web control and monitoring platform with real-time feedback, video, system status, control commands, and Docker / Nginx deployment.",
-          "Developed a PatchCore anomaly-detection API server and PyQt interface with ROI handling, image preprocessing, template replacement, and anomaly-score evaluation."
+          "Developed a PatchCore anomaly-detection API server and PyQt interface, integrating AI vision and inspection workflows."
         ],
         "zh": [
           "負責即時 AI 與機器人系統從需求分析、系統架構、軟體開發到 Docker 部署、測試、現場整合與維護。",
-          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，自動化任務執行，相同時間內資料量達人工操作的 3～4 倍。",
+          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程。",
           "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令。",
-          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 ROI、影像前處理、模板替換與異常分數分析。"
+          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。"
         ]
       }
     },
@@ -69,8 +69,8 @@
   "second_zh": {
     "summary": "AI 工程師，具備從需求分析、系統架構、後端 API、即時 WebSocket 平台、資料流程到 Docker 部署與現場整合的端到端經驗。熟悉 FastAPI、React／TypeScript、Next.js、C#／.NET、MS SQL、Linux 與 AI／電腦視覺流程，並能將機器人、影像、資料與模型服務整合為可操作系統。",
     "highlights": [
-      {"metric": "3～4 倍", "label": "自動化 AI／機器人訓練資料流程相較人工操作的資料量（相同時間）"},
-      {"metric": "70% → 90%", "label": "整合軟體與感知流程後的線材插接成功率（10 次測試）"}
+      {"metric": "FastAPI", "label": "後端服務與即時資料流程"},
+      {"metric": "PatchCore", "label": "AI 視覺與異常檢測流程"}
     ],
     "experience": [
       {
@@ -80,10 +80,10 @@
         "location": "新北，台灣",
         "bullets": [
           "負責即時 AI 與機器人系統從需求分析、系統架構、軟體開發到 Docker 部署、測試、現場整合與維護。",
-          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，自動化任務執行，相同時間內資料量達人工操作的 3～4 倍。",
+          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程。",
           "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令。",
-          "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，將影像、Robot State／Action、Policy Service 與控制系統串接。",
-          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 ROI、影像前處理、模板替換與異常分數分析。"
+          "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，整合模型服務與控制系統。",
+          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。"
         ]
       },
       {
@@ -102,31 +102,31 @@
         "stack": "Next.js、React Flow、FastAPI、WebSocket、Docker",
         "bullets": [
           "建立可配置的任務工作流程與資料錄製平台，支援任務編排、錯誤處理、重試與執行監控。",
-          "自動記錄機器人與影像資料，相同時間內資料量達人工操作的 3～4 倍。"
+          "自動記錄機器人與影像資料，支援 AI／VLA 資料流程。"
         ]
       },
       {
         "title": "Web Robot Control 與即時監控平台",
         "stack": "React、TypeScript、FastAPI、ROS 2、WebSocket、Docker／Nginx",
         "bullets": [
-          "整合關節與笛卡兒控制、I/O、MoveIt 軌跡、Robot Feedback、Tool Pose、相機串流與 ROS 2 系統狀態。",
-          "以 WebSocket 串接即時資料與控制命令，提供遠端操作與監控介面。"
+          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台。",
+          "整合即時影像、系統狀態與控制命令，提供遠端操作與監控介面。"
         ]
       },
       {
         "title": "PatchCore 異常檢測 API 與 PyQt 介面",
-        "stack": "PatchCore、Python、PyQt、API Server、ROI Preprocessing",
+        "stack": "PatchCore、Python、PyQt、AI Vision Workflow",
         "bullets": [
-          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 ROI、影像前處理、模板替換與異常分數分析。",
-          "比較正常圖片、反光、小瑕疵與不同場景資料，找出誤判情境並調整前處理流程，建立可重複的異常分數分析流程。"
+          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。",
+          "建立可重複的影像檢測與結果分析流程。"
         ]
       },
       {
         "title": "Isaac GR00T N1.7 AI 資料與推論服務整合",
         "stack": "Isaac GR00T N1.7、ROS 2、Policy Service、Digital Twin Data",
         "bullets": [
-          "完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，串接影像、Robot State／Action 與控制命令。",
-          "整合影像、Robot State／Action、Policy Service 與控制命令，支援虛擬與真實環境驗證。"
+          "完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，涵蓋虛擬與真實環境流程。",
+          "整合影像、模型服務與控制命令，建立可重複的資料與推論流程。"
         ]
       },
       {
@@ -142,7 +142,7 @@
       {"label": "Frontend & Workflow Platforms", "items": "React、TypeScript、Next.js、React Flow、JavaScript、jQuery"},
       {"label": "AI／ML & Computer Vision", "items": "PatchCore 異常檢測、PyQt、PyTorch、OpenCV、YOLO OBB、AprilTag、Isaac GR00T"},
       {"label": "Deployment & Systems", "items": "Docker、Nginx、Linux、Git、Python、C++、C#／.NET、API 與資料流程整合"},
-      {"label": "Robotics & Real-Time Integration", "items": "ROS 2、Robot State／Action、Policy Service、相機串流、控制命令與虛擬／真實環境驗證"}
+      {"label": "Robotics & Real-Time Integration", "items": "ROS 2、Policy Service、相機串流、控制命令與虛擬／真實環境驗證"}
     ],
     "target": "目標職務：AI 工程師、後端軟體工程師、軟體工程師、系統整合開發工程師；目前所在地：新北，台灣"
   }

@@ -19,6 +19,7 @@ PUBLIC_CONTENT_PATHS = tuple(
         "engineering/vr-imitation-learning-pipeline.md",
         "engineering/yolo-obb-hdmi-insertion-system.md",
         "engineering/robot-vision-anomaly-detection.md",
+        "engineering/apriltag-cable-unplugging-system.md",
         "engineering/tm-ros2-web-control-monitoring.md",
     )
 )
@@ -53,9 +54,25 @@ LOW_LEVEL_MARKERS = (
     "absolute／relative",
     "absolute/relative",
     "dry run",
-    "timesteps",
-    "time steps",
-    "fps",
+        "timesteps",
+        "time steps",
+        "fps",
+        "3～4 倍",
+        "3–4×",
+        "3-4x",
+        "70%",
+        "90%",
+        "10 次",
+        "10-trial",
+        "robot state",
+        "robot state/action",
+        "hand-eye",
+        "手眼標定",
+        "contact-aware",
+        "接觸式插接",
+        "force-guided",
+        "力導向",
+        "roi",
 )
 
 
@@ -86,12 +103,7 @@ class ResumeContentConsistencyTest(unittest.TestCase):
 
         for text in (source_text, public_text):
             self.assertIn("PatchCore", text)
-            self.assertRegex(text, r"ROI|異常分數|anomaly[- ]score")
-
-        self.assertIn("3～4 倍", source_text)
-        self.assertIn("70% → 90%", source_text)
-        self.assertRegex(public_text, r"3–4×|3～4 倍|3-4x")
-        self.assertIn("90%", public_text)
+            self.assertRegex(text, r"AI 視覺|異常檢測|anomaly[- ]detection")
 
     def test_low_level_details_are_removed_from_public_sources(self):
         for path in (*RESUME_SOURCE_PATHS, *PUBLIC_CONTENT_PATHS):
@@ -101,8 +113,8 @@ class ResumeContentConsistencyTest(unittest.TestCase):
 
     def test_workflow_pages_keep_the_system_boundary_and_result(self):
         for language, markers in {
-            "zh-tw": ("ROS 2", "WebSocket", "自動化", "資料錄製", "3～4 倍"),
-            "en": ("ROS 2", "WebSocket", "automated", "recording", "3–4×"),
+            "zh-tw": ("ROS 2", "WebSocket", "自動化", "資料錄製", "AI／VLA"),
+            "en": ("ROS 2", "WebSocket", "automated", "recording", "AI / VLA"),
         }.items():
             text = (
                 ROOT / "content" / language / "engineering" / "robot-workflow-data-platform.md"
@@ -112,8 +124,8 @@ class ResumeContentConsistencyTest(unittest.TestCase):
 
     def test_insertion_pages_keep_verified_outcome_without_calibration_parameters(self):
         for language, markers in {
-            "zh-tw": ("YOLO OBB", "視覺伺服", "真機", "70%", "90%"),
-            "en": ("YOLO OBB", "visual servoing", "physical robot", "70%", "90%"),
+            "zh-tw": ("YOLO OBB", "視覺對位", "真機", "OpenCV"),
+            "en": ("YOLO OBB", "visual localization", "robot-control", "OpenCV"),
         }.items():
             text = (
                 ROOT / "content" / language / "engineering" / "yolo-obb-hdmi-insertion-system.md"

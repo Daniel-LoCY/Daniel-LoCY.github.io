@@ -23,13 +23,13 @@ class ResumeOutputTest(unittest.TestCase):
             "Daniel Lo",
             "AI Robotics Engineer",
             "Summary",
-            "Key Results",
+            "Focus Areas",
             "Experience",
             "Skills",
             "Education & Honors",
             "Isaac GR00T",
-            "3-4x",
             "ROS 2",
+            "PatchCore",
             "daniel-locy.github.io",
         ):
             self.assertIn(marker, text)
@@ -48,7 +48,7 @@ class ResumeOutputTest(unittest.TestCase):
             "PyQt",
         ):
             self.assertIn(marker, text)
-        self.assertIn("anomaly-score evaluation", " ".join(text.split()))
+        self.assertIn("AI vision", " ".join(text.split()))
 
     def test_104_resume_contains_copy_ready_sections(self):
         path = ROOT / "resume" / "104-resume-zh-tw.md"
@@ -69,7 +69,7 @@ class ResumeOutputTest(unittest.TestCase):
             "FastAPI",
             "Docker",
             "PatchCore",
-            "異常分數分析",
+            "AI 視覺",
         ):
             self.assertIn(marker, text)
 
@@ -126,14 +126,13 @@ class ResumeOutputTest(unittest.TestCase):
         for marker in (
             "駱忠湧",
             "個人簡介",
-            "核心成果",
+            "專注領域",
             "工作經歷",
             "精選專案",
             "核心技能",
             "學歷與榮譽",
             "NVIDIA Isaac GR00T",
-            "模仿學習／GR00T／VLA 訓練資料蒐集量",
-            "3～4 倍",
+            "Robot Perception",
             "PatchCore",
             "daniel-locy.github.io",
         ):
@@ -151,8 +150,7 @@ class ResumeOutputTest(unittest.TestCase):
             "Docker",
             "PatchCore",
             "PyQt",
-            "ROI",
-            "異常分數分析",
+            "AI 視覺",
         ):
             self.assertIn(marker, text)
 
@@ -198,6 +196,16 @@ class ResumeOutputTest(unittest.TestCase):
             "resize／crop／normalize／clip",
             "dry run",
             "fps",
+            "70%",
+            "90%",
+            "3-4x",
+            "3–4×",
+            "3～4 倍",
+            "10 trials",
+            "10 次",
+            "ROI",
+            "robot state",
+            "action",
         )
         for output_path in output_paths:
             text = self._read_pdf(output_path, expected_pages=2 if "zh-tw" in output_path else 1).lower()
@@ -232,9 +240,9 @@ class ResumeOutputTest(unittest.TestCase):
 
         english_text = "\n".join(page.extract_text() or "" for page in english_reader.pages)
         chinese_text = "\n".join(page.extract_text() or "" for page in chinese_reader.pages)
-        for marker in ("contact-aware", "GR00T", "Visual Servoing"):
+        for marker in ("visual perception", "GR00T", "Visual Servoing"):
             self.assertIn(marker, english_text)
-        for marker in ("接觸式插接", "GR00T", "視覺伺服"):
+        for marker in ("視覺感知", "GR00T", "視覺伺服"):
             self.assertIn(marker, chinese_text)
 
 

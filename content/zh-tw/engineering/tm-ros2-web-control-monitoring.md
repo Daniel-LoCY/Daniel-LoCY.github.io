@@ -1,29 +1,27 @@
 ---
 title: "TM5S Web 遠端控制與即時監控平台"
-description: "以 ROS 2、FastAPI 與 WebSocket 整合 TM5S 操作、Robot Feedback、相機畫面與 MoveIt 軌跡。"
+description: "以 ROS 2、FastAPI、React 與 WebSocket 建置 TM5S Web 遠端控制與即時監控平台。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "ROS 2", "FastAPI", "React", "WebSocket"]
 weight: 6
 ---
 
-此平台的目標是降低 TM5S 即時操作與狀態查看的門檻，讓使用者能從瀏覽器遠端控制機械手臂並監看即時資訊。它處理「控制與監控」，不負責另一套 Workflow 平台的自動腳本編排。
+此平台讓使用者能從瀏覽器遠端控制 TM5S 並查看即時資訊，聚焦於機器人控制、影像與系統監控；自動腳本編排由另一套 Workflow 平台負責。
 
 ## 專案責任與架構
 
-- 由我獨立從零開發並實際連接 TM5S 使用。
+- 由我獨立開發並實際連接 TM5S 使用。
 - 前端採 React、TypeScript、Vite 與 Material UI；後端以 FastAPI、`rclpy` 與 WebSocket 串接 ROS 2。
-- 使用 Docker 與 Nginx 整理服務邊界與部署方式，將瀏覽器介面和機器人控制程序分開。
+- 使用 Docker 與 Nginx 整理服務邊界與部署方式。
 
 ## 控制能力
 
-- 關節角度與笛卡兒目標控制。
-- TM Script、I/O、事件與常用姿態／動作預設。
-- MoveIt 軌跡規劃與執行，並支援直接送出需要的 TM 控制指令。
+- 支援機械手臂控制、常用動作與控制命令。
+- 整合 MoveIt 軌跡規劃與執行流程。
 
 ## 即時監控
 
-- Robot Feedback、關節狀態、Tool Pose、控制與連線狀態。
-- 相機串流、解析度與影像來源資訊。
-- ROS 2 節點／Topic 等執行資訊，協助確認控制與資料鏈路是否正常。
+- 顯示機器人回饋、控制與連線狀態。
+- 整合相機串流與 ROS 2 執行資訊，支援日常操作與問題確認。
 
-這套平台讓 TM5S 的遠端控制與狀態監看更直接，將控制命令、相機串流、Robot Feedback 與 ROS 2 執行資訊整合在同一個操作介面。
+這套平台將控制命令、相機串流、機器人回饋與 ROS 2 執行資訊整合在同一個操作介面。

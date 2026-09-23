@@ -1,29 +1,27 @@
 ---
 title: "TM5S Web Remote Control and Live Monitoring"
-description: "A ROS 2, FastAPI, and WebSocket platform integrating TM5S operation, robot feedback, camera streams, and MoveIt trajectories."
+description: "A ROS 2, FastAPI, React, and WebSocket platform for TM5S remote control and live monitoring."
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "ROS 2", "FastAPI", "React", "WebSocket"]
 weight: 6
 ---
 
-This platform lowers the barrier to live TM5S operation and status inspection by exposing remote control and monitoring in a browser. It handles interactive control and telemetry, not the automated script orchestration provided by the separate workflow platform.
+This platform exposes TM5S remote control and live monitoring in a browser, focusing on robot operation, camera streams, and system status. Automated script orchestration is handled by a separate workflow platform.
 
 ## Scope and Architecture
 
-- Independently developed from scratch and connected to a physical TM5S.
+- Independently developed and connected to a physical TM5S.
 - Built the frontend with React, TypeScript, Vite, and Material UI, and connected the backend to ROS 2 through FastAPI, `rclpy`, and WebSocket.
-- Used Docker and Nginx to define deployment boundaries between the browser interface and robot-control process.
+- Used Docker and Nginx to organize service boundaries and deployment.
 
 ## Control Capabilities
 
-- Joint-angle and Cartesian-target control.
-- TM Script, I/O, events, and reusable pose or motion presets.
-- MoveIt trajectory planning and execution, plus direct access to required TM control commands.
+- Robot control, reusable actions, and control-command integration.
+- MoveIt trajectory planning and execution.
 
 ## Live Monitoring
 
-- Robot feedback, joint state, tool pose, control state, and connection status.
-- Camera streams, resolution, and image-source information.
-- ROS 2 nodes, topics, and related runtime information for checking control and data paths.
+- Robot feedback, control state, and connection status.
+- Camera streams and ROS 2 runtime information for operation and troubleshooting.
 
-The platform provides direct browser-based robot control and monitoring, combining command execution, camera streams, feedback, and ROS 2 runtime information in one operational interface.
+The platform combines browser-based robot control, camera streams, feedback, and ROS 2 runtime information in one operational interface.
