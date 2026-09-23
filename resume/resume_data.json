@@ -67,13 +67,13 @@
     "en": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, virtual / physical robot workflows"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
-      {"label": "Perception & Visual Servoing", "items": "RealSense, YOLO OBB + OpenCV (HDMI insertion), AprilTag + OpenCV (HDMI / power-cable unplugging), Hand-Eye Calibration, Visual Servoing, wrist-mounted six-axis force/torque sensing, force-guided contact search"},
+      {"label": "Perception & Visual Inspection", "items": "RealSense, YOLO OBB + OpenCV (HDMI insertion), AprilTag + OpenCV (HDMI / power-cable unplugging), Hand-Eye Calibration, Visual Servoing, wrist-mounted six-axis force/torque sensing, force-guided contact search, PatchCore anomaly detection prototype with PyQt"},
       {"label": "Software & System Integration", "items": "Python, C++, frontend/backend platforms with FastAPI, React / TypeScript, Next.js, WebSocket, Docker, Linux, Arduino, ESP32, MQTT"}
     ],
     "zh": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
-      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋補償"},
+      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋補償、PatchCore 異常檢測原型與 PyQt"},
       {"label": "Software & System Integration", "items": "Python、C++、React／TS、FastAPI、前後端平台、WebSocket、Docker、Linux、Arduino、ESP32、MQTT"}
     ]
   },
@@ -213,12 +213,20 @@
           "整合 Isaac Sim／Isaac Lab、ROS 2、MoveIt 2 與 cuMotion，完成目標姿態、路徑規劃、碰撞處理、Pick-and-Place 與線材插拔任務。",
           "實作 Attach Object 與近似碰撞模型，並將機械手臂／夾爪參數改由設定檔讀取，降低控制、規劃與實機環境間的重複設定。"
         ]
+      },
+      {
+        "title": "PatchCore 異常檢測 API 與 PyQt 原型",
+        "stack": "PatchCore、Python、PyQt、API Server、ROI Preprocessing",
+        "bullets": [
+          "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷。",
+          "目前為開發驗證原型，尚未整合至正式檢測或生產流程。"
+        ]
       }
     ],
     "skills": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、TF2、URDF／USD／XRDF、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、Policy Inference、Robot State／Action、Rotation 6D、模仿學習、Timestamp Synchronization"},
-      {"label": "Perception & Visual Servoing", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、DOPE、AprilTag＋OpenCV（HDMI／電源線拔線）、3D Pose、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋補償"},
+      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、DOPE、AprilTag＋OpenCV（HDMI／電源線拔線）、3D Pose、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋補償、PatchCore 異常檢測原型與 PyQt"},
       {"label": "Software, Frontend & Backend", "items": "Python、C++、FastAPI、React／TypeScript、Next.js、React Flow、WebSocket、Docker、Nginx、Git"},
       {"label": "Embedded & IoT", "items": "Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦"}
     ],

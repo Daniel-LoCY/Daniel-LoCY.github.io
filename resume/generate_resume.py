@@ -1,4 +1,4 @@
-"""Generate one-page bilingual job-application resumes from resume_data.json."""
+"""Generate bilingual generic and targeted job-application resumes."""
 
 from __future__ import annotations
 
@@ -27,8 +27,13 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = Path(__file__).with_name("resume_data.json")
+SOFTWARE_PROFILE_PATH = Path(__file__).with_name("software_profile.json")
 TSMC_PROFILE_PATH = Path(__file__).with_name("tsmc_profile.json")
 OUTPUT_DIR = ROOT / "output" / "pdf"
+LEGACY_OUTPUTS = (
+    OUTPUT_DIR / "daniel-lo-resume-en.pdf",
+    OUTPUT_DIR / "daniel-lo-resume-zh-tw-v2.pdf",
+)
 
 PAGE_WIDTH, PAGE_HEIGHT = A4
 INK = colors.HexColor("#20252B")
@@ -473,21 +478,38 @@ def build_resume_v2(data, output_path):
     )
 
 
+def build_profile_outputs(data, profile_dir, slug):
+    profile_dir.mkdir(parents=True, exist_ok=True)
+    english_path = profile_dir / f"daniel-lo-resume-{slug}-en.pdf"
+    chinese_path = profile_dir / f"daniel-lo-resume-{slug}-zh-tw-v2.pdf"
+    build_resume(data, "en", english_path)
+    build_resume_v2(data, chinese_path)
+    return english_path, chinese_path
+
+
 def main():
     register_fonts()
     data = load_data()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    build_resume(data, "en", OUTPUT_DIR / "daniel-lo-resume-en.pdf")
-    build_resume_v2(data, OUTPUT_DIR / "daniel-lo-resume-zh-tw-v2.pdf")
+    for legacy_path in LEGACY_OUTPUTS:
+        if legacy_path.exists():
+            legacy_path.unlink()
+
+    robotics_outputs = build_profile_outputs(data, OUTPUT_DIR / "robotics", "robotics")
+    software_data = apply_profile(data, load_data(SOFTWARE_PROFILE_PATH))
+    software_outputs = build_profile_outputs(software_data, OUTPUT_DIR / "software", "software")
+
     tsmc_data = apply_profile(data, load_data(TSMC_PROFILE_PATH))
     tsmc_output_dir = OUTPUT_DIR / "tsmc"
     tsmc_output_dir.mkdir(parents=True, exist_ok=True)
-    build_resume(tsmc_data, "en", tsmc_output_dir / "daniel-lo-resume-tsmc-en.pdf")
-    build_resume_v2(tsmc_data, tsmc_output_dir / "daniel-lo-resume-tsmc-zh-tw-v2.pdf")
-    print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-en.pdf'}")
-    print(f"Generated {OUTPUT_DIR / 'daniel-lo-resume-zh-tw-v2.pdf'}")
-    print(f"Generated {tsmc_output_dir / 'daniel-lo-resume-tsmc-en.pdf'}")
-    print(f"Generated {tsmc_output_dir / 'daniel-lo-resume-tsmc-zh-tw-v2.pdf'}")
+    tsmc_outputs = (
+        tsmc_output_dir / "daniel-lo-resume-tsmc-en.pdf",
+        tsmc_output_dir / "daniel-lo-resume-tsmc-zh-tw-v2.pdf",
+    )
+    build_resume(tsmc_data, "en", tsmc_outputs[0])
+    build_resume_v2(tsmc_data, tsmc_outputs[1])
+    for output_path in (*robotics_outputs, *software_outputs, *tsmc_outputs):
+        print(f"Generated {output_path}")
 
 
 if __name__ == "__main__":

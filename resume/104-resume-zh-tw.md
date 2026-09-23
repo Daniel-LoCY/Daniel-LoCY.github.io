@@ -1,4 +1,4 @@
-# 104 標準求職履歷｜AI Robotics
+# 104 通用求職履歷｜AI 機器人工程師
 
 ## 履歷定位
 
@@ -6,7 +6,7 @@
 
 ## 自我介紹
 
-現任瑞軒科技 AI 機器人工程師，專注 Robot Control、視覺伺服、力導向接觸搜尋與 VLA。熟悉 ROS 2、Isaac Sim／Lab、GR00T、C++、Python、Docker，能整合控制、Policy Inference、Digital Twin 與虛實驗證。
+現任瑞軒科技 AI 機器人工程師，專注 Robot Control、視覺伺服、力導向接觸搜尋、VLA 與 PatchCore 異常檢測原型。熟悉 ROS 2、Isaac Sim／Lab、GR00T、C++、Python、Docker，能整合控制、Policy Inference、Digital Twin 與虛實驗證。
 
 ## 自傳
 
@@ -34,7 +34,7 @@
 
 - Robot Control & Digital Twin：ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂控制
 - VLA／Robot Learning：Isaac GR00T N1.7、Policy Inference、Robot State／Action、模仿學習、資料流程
-- Robot Perception & Visual Servoing：RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、六軸力／扭矩感測、接觸搜尋補償
+- Robot Perception & Visual Inspection：RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、六軸力／扭矩感測、接觸搜尋補償、PatchCore、PyQt
 - Frontend Development：React、TypeScript／JavaScript、Next.js、React Flow
 - Frontend, Backend & System Integration：FastAPI、Flask、ASP.NET MVC、WebSocket、Docker、Linux、Git、Python、C++、C#／.NET
 - Embedded & IoT Development：Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦
@@ -50,6 +50,10 @@
 以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺對位；以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位。
 
 在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋；當視覺仍有殘餘誤差時，沿插入方向低速接觸並以受限範圍內的螺旋微動補救插接。整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率；力導向階段的額外成功率尚未量化。
+
+### PatchCore 異常檢測 API 與 PyQt 原型
+
+開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷；目前為開發驗證原型，尚未整合至正式檢測或生產流程。
 
 ### VLA Policy 訓練與真實機器人推論
 

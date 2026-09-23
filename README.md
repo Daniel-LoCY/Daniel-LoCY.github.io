@@ -2,6 +2,14 @@
 
 這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程、Robot Data、機器人軟體與 AI 機器人系統整合經驗。
 
+## 2026-09-23 雙軌通用履歷與 PatchCore 同步
+
+- 建立兩條不針對特定公司或職缺的主要履歷：`AI 機器人工程師｜機器人軟體與系統整合` 與 `AI 工程師｜後端與系統整合`，各產出繁中兩頁與英文一頁 PDF。
+- 在 `resume/software_profile.json` 與 104 copy-ready 來源中補上後端 API、即時 WebSocket、Docker、AI／電腦視覺與 PatchCore 原型內容。
+- 中英文網站的 About、Experience、Skills 與 Core Tech Stack 同步補上 PatchCore、PyQt、ROI 前處理與原型限制；既有 PatchCore 專案頁保留為完整技術說明。
+- PatchCore 僅描述開發驗證原型，不宣稱已導入正式檢測或生產流程，也不公開未量測的 AUROC、F1 或推論時間。
+- 兩份 104 履歷、LinkedIn 與網站採機器人優先的公開定位；軟體版本使用 `AI 工程師｜後端與系統整合` 作為獨立求職方向。
+
 ## 內容結構
 
 - `content/zh-tw/`：繁體中文首頁、經歷、技術棧與專案作品。
@@ -58,18 +66,19 @@
 - 新增 `resume/tsmc_profile.json` 與客製 PDF 生成流程，產生一頁英文與兩頁中文的 TSMC Robotics 版本；共用履歷 PDF 與客製 PDF 均以 Docker 生成並通過 16 項內容、頁數與關鍵字測試。
 - 中英文 Hugo 網站同步更新 Experience、About、Skills、Core Tech Stack 與 HDMI 插線專案頁，並在公開定位加入「可搬遷至新竹」／「Open to relocate to Hsinchu」。Hugo Extended 0.152.1 Docker 建置確認中文 37 頁、英文 35 頁。
 
-## 標準求職履歷
+## 通用求職履歷
 
-中文 PDF 僅保留最新的兩頁 v2 版本：第一頁呈現職涯定位、核心成果、現職責任與三個核心專案，第二頁補充 VLA／遙操作／視覺伺服專案、技術棧、學歷、證照與求職方向；英文 PDF 維持一頁版本。完整專案細節、Demo、截圖與驗證資料則保留在個人網站。
-版面使用較大的內文字級與較寬鬆的行距，優先維持紙本閱讀性；中文 v2 維持兩頁 A4，英文 PDF 維持一頁 A4。
-網站 Experience 以五項重點呈現；英文一頁 PDF 維持四項重點，並將自動化資料蒐集的兩部分架構、3～4 倍人工操作量、節省兩名操作人力，以及 70% → 90% 線材插接成功率獨立拉出，方便招聘者快速掃讀。
-104 則以「標準求職履歷｜AI Robotics」副本維護，將工作內容收斂為 Robot Control、VLA／Robot Learning、Perception & Automation 三個主軸，並保留與目標職涯直接相關的專案與成果。
+機器人版與軟體版各自保留最新的中文兩頁 v2 與英文一頁 PDF。中文版本呈現完整專案脈絡；英文版本維持一頁，方便快速篩選。台積電 Robotics 版本位於 `output/pdf/tsmc/`，與兩條通用履歷分開管理。
 
-- `resume/resume_data.json`：中英文履歷的唯一內容來源。
-- `resume/generate_resume.py`：使用 ReportLab 產生中英文 PDF。
-- `resume/104-resume-zh-tw.md`：可直接整理至 104 履歷的中文版本。
-- `output/pdf/daniel-lo-resume-zh-tw-v2.pdf`：最新中文兩頁履歷，適合需要完整專案脈絡的職缺。
-- `output/pdf/daniel-lo-resume-en.pdf`：英文一頁履歷。
+- `resume/resume_data.json`：機器人版與網站共用的核心內容來源。
+- `resume/software_profile.json`：AI 後端／系統整合版的差異化內容來源。
+- `resume/generate_resume.py`：使用 ReportLab 產生兩條通用版本與 TSMC 客製版本。
+- `resume/104-resume-zh-tw.md`：104 機器人版 copy-ready 來源。
+- `resume/104-resume-software-zh-tw.md`：104 AI 後端／系統整合版 copy-ready 來源。
+- `output/pdf/robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf`：機器人版中文兩頁履歷。
+- `output/pdf/robotics/daniel-lo-resume-robotics-en.pdf`：機器人版英文一頁履歷。
+- `output/pdf/software/daniel-lo-resume-software-zh-tw-v2.pdf`：AI 後端／系統整合版中文兩頁履歷。
+- `output/pdf/software/daniel-lo-resume-software-en.pdf`：AI 後端／系統整合版英文一頁履歷。
 - `output/pdf/tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf`：台積電 Robotics 客製中文兩頁履歷。
 - `output/pdf/tsmc/daniel-lo-resume-tsmc-en.pdf`：台積電 Robotics 客製英文一頁履歷。
 
@@ -79,7 +88,7 @@
 ./resume/build.sh
 ```
 
-建置與測試固定在 Docker container 中執行，會檢查英文一頁 PDF、最新中文兩頁 v2 PDF 的頁數、必要欄位與核心成果是否存在，以及低相關舊活動是否未混入 v2。
+建置與測試固定在 Docker container 中執行，會檢查兩條通用履歷與 TSMC 客製履歷的頁數、必要欄位、PatchCore 原型限制與核心成果是否存在，以及低相關舊活動是否未混入 v2。
 
 ## 已知限制
 
@@ -112,5 +121,7 @@ GitHub Actions 會在推送至 `main` 後執行建置並部署至 GitHub Pages�
 
 中英文 PDF 履歷來源檔案：
 
-- `output/pdf/daniel-lo-resume-zh-tw-v2.pdf`
-- `output/pdf/daniel-lo-resume-en.pdf`
+- `output/pdf/robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf`
+- `output/pdf/robotics/daniel-lo-resume-robotics-en.pdf`
+- `output/pdf/software/daniel-lo-resume-software-zh-tw-v2.pdf`
+- `output/pdf/software/daniel-lo-resume-software-en.pdf`

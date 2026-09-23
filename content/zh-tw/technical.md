@@ -58,6 +58,8 @@ technical_groups:
         name: "六軸力／扭矩感測"
       - icon: "crosshairs"
         name: "接觸搜尋補償"
+      - icon: "magnifying-glass"
+        name: "PatchCore 異常檢測（開發原型）"
   - title: "Robotics Platforms & Automation"
     skills:
       - icon: "server"

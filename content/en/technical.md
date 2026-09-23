@@ -58,6 +58,8 @@ technical_groups:
         name: "Six-Axis Force/Torque Sensing"
       - icon: "crosshairs"
         name: "Force-Guided Contact Search"
+      - icon: "magnifying-glass"
+        name: "PatchCore Anomaly Detection (Prototype)"
   - title: "Robotics Platforms & Automation"
     skills:
       - icon: "server"

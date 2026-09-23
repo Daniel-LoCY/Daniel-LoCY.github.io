@@ -213,6 +213,29 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         for forbidden in ("EtherCAT", "CANopen", "impedance", "admittance", "functional safety"):
             self.assertNotIn(forbidden.lower(), text.lower())
 
+    def test_patchcore_is_present_with_prototype_disclaimer(self):
+        source_text = (ROOT / "resume" / "resume_data.json").read_text(encoding="utf-8")
+        software_text = (ROOT / "resume" / "software_profile.json").read_text(encoding="utf-8")
+        copy_ready_text = "\n".join(
+            (ROOT / "resume" / name).read_text(encoding="utf-8")
+            for name in ("104-resume-zh-tw.md", "104-resume-software-zh-tw.md")
+        )
+        public_text = "\n".join(
+            (ROOT / "content" / language / filename).read_text(encoding="utf-8")
+            for language in ("zh-tw", "en")
+            for filename in ("about.md", "experience.md", "skills.md", "technical.md")
+        )
+        project_text = "\n".join(
+            (ROOT / "content" / language / "engineering" / "robot-vision-anomaly-detection.md").read_text(encoding="utf-8")
+            for language in ("zh-tw", "en")
+        )
+
+        for text in (source_text, software_text, copy_ready_text, public_text, project_text):
+            self.assertIn("PatchCore", text)
+        self.assertIn("尚未整合至正式檢測或生產流程", copy_ready_text)
+        self.assertIn("not deployed to a formal inspection or production flow", software_text)
+        self.assertNotIn("deployed to production", software_text.lower())
+
 
 if __name__ == "__main__":
     unittest.main()
