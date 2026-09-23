@@ -69,7 +69,7 @@ class ResumeOutputTest(unittest.TestCase):
             "FastAPI",
             "Docker",
             "PatchCore",
-            "異常分數分析流程",
+            "異常分數分析",
         ):
             self.assertIn(marker, text)
 
@@ -152,7 +152,7 @@ class ResumeOutputTest(unittest.TestCase):
             "PatchCore",
             "PyQt",
             "ROI",
-            "異常分數判斷",
+            "異常分數分析",
         ):
             self.assertIn(marker, text)
 
@@ -169,6 +169,40 @@ class ResumeOutputTest(unittest.TestCase):
             text = self._read_pdf(output_path, expected_pages=2 if "zh-tw" in output_path else 1)
             for forbidden in ("\u88dc\u6551", "\u65b0\u7af9", "Hsin" + "chu", "relo" + "cate", "reco" + "very"):
                 self.assertNotIn(forbidden.lower(), text.lower(), output_path)
+
+    def test_generated_resumes_hide_low_level_details(self):
+        output_paths = (
+            "robotics/daniel-lo-resume-robotics-en.pdf",
+            "robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf",
+            "software/daniel-lo-resume-software-en.pdf",
+            "software/daniel-lo-resume-software-zh-tw-v2.pdf",
+            "tsmc/daniel-lo-resume-tsmc-en.pdf",
+            "tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf",
+        )
+        low_level_markers = (
+            "pick-and-place",
+            "60 hz",
+            "30 fps",
+            "rotation 6d",
+            "timestamp",
+            "6.82 mm",
+            "0.40°",
+            "alvr",
+            "steamvr",
+            "pyopenxr",
+            "two operators",
+            "兩名操作人力",
+            "螺旋微動",
+            "bounded spiral",
+            "resize/crop/normalize/clip",
+            "resize／crop／normalize／clip",
+            "dry run",
+            "fps",
+        )
+        for output_path in output_paths:
+            text = self._read_pdf(output_path, expected_pages=2 if "zh-tw" in output_path else 1).lower()
+            for marker in low_level_markers:
+                self.assertNotIn(marker.lower(), text, output_path)
 
     def test_only_latest_chinese_resume_is_generated(self):
         self.assertEqual({path.name for path in PDF_DIR.glob("*.pdf")}, set())
@@ -198,9 +232,9 @@ class ResumeOutputTest(unittest.TestCase):
 
         english_text = "\n".join(page.extract_text() or "" for page in english_reader.pages)
         chinese_text = "\n".join(page.extract_text() or "" for page in chinese_reader.pages)
-        for marker in ("force-guided", "six-axis", "GR00T", "Visual Servoing"):
+        for marker in ("contact-aware", "GR00T", "Visual Servoing"):
             self.assertIn(marker, english_text)
-        for marker in ("力／扭矩", "六軸", "GR00T", "視覺伺服"):
+        for marker in ("接觸式插接", "GR00T", "視覺伺服"):
             self.assertIn(marker, chinese_text)
 
 

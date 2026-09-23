@@ -2,7 +2,7 @@
 title: "技能"
 type: "homepage"
 intro: >-
-  聚焦 Robot Control、Robotics Software、VLA／Robot Learning、Perception、力導向接觸搜尋與插接定位，以及系統整合的端到端工程能力。
+  聚焦 Robot Control、Robotics Software、VLA／Robot Learning、Perception、視覺伺服與插接定位，以及系統整合的端到端工程能力。
 domains:
   - icon: "robot"
     title: "Robot Control & Simulation / Real-World Validation"
@@ -12,16 +12,16 @@ domains:
     description: "完成 Isaac GR00T N1.7 的資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。"
   - icon: "gamepad"
     title: "Teleoperation & Digital Twin Data"
-    description: "建置 VR Teleoperation，分別支援虛擬與真實機械手臂操作，整合影像、Robot State、Action、Timestamp 對齊與模仿學習資料錄製。"
+    description: "建置 VR Teleoperation，分別支援虛擬與真實機械手臂操作，整合影像、Robot State、Action 與模仿學習資料錄製。"
   - icon: "eye"
     title: "Robot Perception & Visual Servoing"
-    description: "於 Isaac Sim 驗證 DOPE 3D 姿態估計；以 YOLO OBB 搭配 OpenCV 支援 HDMI 插線，以 AprilTag 搭配 OpenCV 支援 HDMI／電源線拔線，並以 RealSense、手眼標定與視覺伺服完成真機線材任務；在最後插接階段整合腕部六軸力／扭矩感測、接觸搜尋與受限範圍內的螺旋微動。"
+    description: "於 Isaac Sim 驗證 DOPE 3D 姿態估計；以 YOLO OBB 搭配 OpenCV 支援 HDMI 插線，以 AprilTag 搭配 OpenCV 支援線材接頭定位，並以 RealSense、手眼標定與視覺伺服完成真機任務；在最後插接階段整合接觸式定位。"
   - icon: "magnifying-glass"
     title: "Visual Inspection & Anomaly Detection"
-    description: "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，支援 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷。"
+    description: "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，支援 ROI、影像前處理、模板替換與異常分數分析。"
   - icon: "diagram-project"
     title: "Robotics Platforms & Automation"
-    description: "開發 Web 遠端控制／監控與自動化任務流程；由自動化腳本控制機械手臂，資料錄製系統記錄動作與影像，透過 ROS 2、WebSocket 等介面協作完成模仿學習／GR00T／VLA 訓練資料錄製，並節省兩名操作人力。"
+    description: "開發 Web 遠端控制／監控與自動化任務流程；由自動化工作流程與資料錄製系統協作，透過 ROS 2、WebSocket 等介面完成模仿學習／GR00T／VLA 訓練資料錄製，資料蒐集量達人工操作的 3～4 倍。"
   - icon: "wrench"
     title: "End-to-End System Integration"
     description: "從需求、架構、開發與 Docker 部署，到測試、現場整合與維護，獨立交付可操作的機器人系統。"

@@ -18,7 +18,7 @@ weight: 9
 ## 異常檢測
 
 - 開發 PatchCore API Server 與 PyQt 介面。
-- 加入 ROI 擷取、Resize、Crop、Normalize、Clip、模板替換與異常分數判斷。
+- 加入 ROI、影像前處理、模板替換與異常分數分析。
 - 比較正常圖片、反光、小瑕疵及不同場景資料，找出模型誤判情境並調整前處理流程。
 
 PatchCore 實作涵蓋 API Server、PyQt 操作介面、ROI 前處理、模板替換與異常分數分析，形成可追蹤的影像異常檢測流程。

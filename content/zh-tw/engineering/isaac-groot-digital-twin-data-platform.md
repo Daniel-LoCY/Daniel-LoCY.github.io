@@ -19,13 +19,12 @@ weight: 1
 ## 端到端資料與推論流程
 
 1. 從雙相機影像、Robot State、夾爪狀態與控制 Action 建立 Episode 資料。
-2. 影像以 30 FPS 錄製，Robot State／Action 以 60 Hz 取樣，並以 Timestamp 對齊；單一 Episode 約 100～600 個時間步。
-3. 將位置、姿態、Rotation 6D 與 Action 定義轉成 GR00T N1.7 訓練格式，再進行訓練與 Checkpoint 推論。
+2. 整合影像、Robot State、夾爪狀態與控制 Action，建立可用於訓練與推論的 Episode 資料。
+3. 將 Robot Data 轉成 GR00T N1.7 訓練格式，再進行模型訓練與 Policy Inference。
 4. 由 Policy Service 接收觀測、回傳模型 Action，經控制層映射成真實機器人可執行指令並完成真機測試。
 
 ## 工程重點
 
-- 明確區分影像、Robot State、Action 與時間戳的資料 contract，處理多來源頻率不同造成的同步問題。
-- 對齊 ABSOLUTE／RELATIVE Action、Base／Tool Frame 與 Rotation 6D 表示，避免訓練資料和真機控制語意漂移。
-- 將模型推論與實機輸出拆成可檢查的服務邊界，保留不送出動作的測試模式，再切換到真機控制。
-- 已完成 Pick-and-Place 類型任務的完整串接，並建立虛擬資料訓練後真實環境推論與真實資料訓練／推論流程。
+- 建立影像、Robot State、Action 與控制命令之間清楚的資料 contract，支援跨系統整合。
+- 將模型推論與實機輸出拆成可檢查的服務邊界，完成虛擬與真實環境的驗證流程。
+- 已建立虛擬資料訓練後真實環境推論，以及真實資料訓練與推論流程。

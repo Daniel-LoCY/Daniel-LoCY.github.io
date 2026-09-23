@@ -10,7 +10,7 @@ This platform lowers the barrier to live TM5S operation and status inspection by
 
 ## Scope and Architecture
 
-- Independently developed from scratch, with the first version completed in approximately one week and connected to one physical TM5S.
+- Independently developed from scratch and connected to a physical TM5S.
 - Built the frontend with React, TypeScript, Vite, and Material UI, and connected the backend to ROS 2 through FastAPI, `rclpy`, and WebSocket.
 - Used Docker and Nginx to define deployment boundaries between the browser interface and robot-control process.
 
@@ -23,7 +23,7 @@ This platform lowers the barrier to live TM5S operation and status inspection by
 ## Live Monitoring
 
 - Robot feedback, joint state, tool pose, control state, and connection status.
-- Camera streams, FPS, resolution, and image-source information.
+- Camera streams, resolution, and image-source information.
 - ROS 2 nodes, topics, and related runtime information for checking control and data paths.
 
 The platform provides direct browser-based robot control and monitoring, combining command execution, camera streams, feedback, and ROS 2 runtime information in one operational interface.

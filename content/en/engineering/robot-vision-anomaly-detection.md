@@ -18,7 +18,7 @@ This project covers both the 3D vision required for robot manipulation and image
 ## Anomaly Detection
 
 - Developed a PatchCore API server and PyQt interface.
-- Added ROI extraction, resize, crop, normalize, clip, template replacement, and anomaly-score evaluation.
+- Added ROI handling, image preprocessing, template replacement, and anomaly-score evaluation.
 - Compared normal images, reflections, small defects, and different scenes to identify false-positive conditions and tune preprocessing.
 
 The PatchCore implementation provides a traceable anomaly-detection workflow with API serving, PyQt interaction, ROI preprocessing, template replacement, and anomaly-score evaluation.

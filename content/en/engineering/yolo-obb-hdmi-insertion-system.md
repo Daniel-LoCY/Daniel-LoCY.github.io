@@ -21,13 +21,11 @@ This workflow combines YOLO OBB detection, OpenCV image and camera-geometry proc
 - Converted visual detections into executable robot-control targets.
 - Connected TM Flow, TM API, and ROS 2 for perception, control, and workflow-state integration.
 
-## Force-Guided Contact Search and Insertion Alignment
+## Contact-Aware Insertion Alignment
 
-- Integrated wrist-mounted six-axis force/torque sensing with force-guided contact search into the final HDMI insertion stage.
-- When residual visual alignment error remained, approached at low speed and used bounded spiral micro-search from force/torque feedback to complete final insertion alignment.
-- Validated the integrated contact-search workflow on the physical robot as part of the final insertion alignment process.
+- Integrated visual servoing with contact-aware insertion alignment into the final HDMI insertion stage.
+- Validated the integrated alignment workflow on the physical robot.
 
 ## Physical-Robot Validation
 
 - Across the overall insertion workflow, cable-insertion success reached 90% in a 10-trial test compared with a 70% baseline.
-- The recorded hand-eye calibration result was 6.82 mm mean position error and 0.40° mean angular error, providing a measurable calibration-quality reference for the workflow.

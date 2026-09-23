@@ -2,7 +2,7 @@
 title: "核心技術棧"
 type: "homepage"
 intro: >-
-  依實際工作主線排序：Robot Control、VLA／Robot Learning、Robot Perception 與力導向接觸搜尋，再到支援系統整合、部署與嵌入式 IoT 的軟體技術。
+  依實際工作主線排序：Robot Control、VLA／Robot Learning、Robot Perception 與視覺伺服，再到支援系統整合、部署與嵌入式 IoT 的軟體技術。
 technical_groups:
   - title: "Robot Control & Simulation"
     skills:
@@ -16,10 +16,6 @@ technical_groups:
         name: "MoveIt 2"
       - icon: "bolt"
         name: "cuMotion"
-      - icon: "diagram-project"
-        name: "TF2 / URDF / USD / XRDF"
-      - icon: "route"
-        name: "OMPL / TRAC-IK / KDL"
   - title: "VLA Model & Robot Learning"
     skills:
       - icon: "brain"
@@ -28,12 +24,6 @@ technical_groups:
         name: "VLA / Policy Inference"
       - icon: "database"
         name: "Robot State / Action"
-      - icon: "arrows-rotate"
-        name: "Rotation 6D"
-      - icon: "gamepad"
-        name: "Quest 2 / PyOpenXR"
-      - icon: "clock"
-        name: "Timestamp Synchronization"
       - icon: "brain"
         name: "PyTorch"
         devicon_name: "pytorch"
@@ -54,10 +44,8 @@ technical_groups:
         name: "Hand-Eye Calibration"
       - icon: "location-crosshairs"
         name: "Visual Servoing"
-      - icon: "hand"
-        name: "六軸力／扭矩感測"
       - icon: "crosshairs"
-        name: "接觸搜尋與螺旋微動"
+        name: "接觸式插接定位"
       - icon: "magnifying-glass"
         name: "PatchCore 異常檢測"
   - title: "Robotics Platforms & Automation"

@@ -19,13 +19,12 @@ The project separately validates two workflows: training with simulated data fol
 ## End-to-End Data and Inference Flow
 
 1. Build episodes from dual-camera images, robot state, gripper state, and control actions.
-2. Record images at 30 FPS and robot state/actions at 60 Hz, align them by timestamp, and organize episodes of approximately 100–600 timesteps.
-3. Convert position, pose, Rotation 6D, and action definitions into the GR00T N1.7 training format, then train and evaluate checkpoints through inference.
+2. Combine images, robot state, gripper state, and control actions into episodes for training and inference.
+3. Convert robot data into the GR00T N1.7 training format, then train and evaluate policies through inference.
 4. Send observations to a policy service, map returned model actions into executable robot commands, and validate the physical-robot path.
 
 ## Engineering Focus
 
-- Defined explicit contracts for images, robot state, actions, and timestamps to handle synchronization across sources with different rates.
-- Reconciled ABSOLUTE/RELATIVE actions, Base/Tool frames, and Rotation 6D so training data and physical control retain the same semantics.
-- Separated policy inference from robot output behind inspectable service boundaries, with a no-motion test mode before physical execution.
-- Completed the full path for pick-and-place tasks and established separate simulation-data and physical-data training/inference workflows.
+- Defined clear contracts for images, robot state, actions, and control commands across integrated systems.
+- Separated policy inference from robot output behind inspectable service boundaries and validated the physical-robot path.
+- Established separate simulation-data training followed by physical inference, and physical-data training/inference workflows.

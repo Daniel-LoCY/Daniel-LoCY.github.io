@@ -10,7 +10,7 @@ weight: 6
 
 ## 專案責任與架構
 
-- 由我獨立從零開發，約 1 週完成第一版，並實際連接 1 台 TM5S 使用。
+- 由我獨立從零開發並實際連接 TM5S 使用。
 - 前端採 React、TypeScript、Vite 與 Material UI；後端以 FastAPI、`rclpy` 與 WebSocket 串接 ROS 2。
 - 使用 Docker 與 Nginx 整理服務邊界與部署方式，將瀏覽器介面和機器人控制程序分開。
 
@@ -23,7 +23,7 @@ weight: 6
 ## 即時監控
 
 - Robot Feedback、關節狀態、Tool Pose、控制與連線狀態。
-- 相機串流、FPS、解析度與影像來源資訊。
+- 相機串流、解析度與影像來源資訊。
 - ROS 2 節點／Topic 等執行資訊，協助確認控制與資料鏈路是否正常。
 
 這套平台讓 TM5S 的遠端控制與狀態監看更直接，將控制命令、相機串流、Robot Feedback 與 ROS 2 執行資訊整合在同一個操作介面。

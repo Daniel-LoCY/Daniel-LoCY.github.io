@@ -2,7 +2,7 @@
 title: "Core Tech Stack"
 type: "homepage"
 intro: >-
-  Ordered by the actual workstream: robot control, VLA and robot learning, robot perception and force-guided contact search, then the software used to integrate, deploy, and extend complete systems with embedded IoT.
+  Ordered by the actual workstream: robot control, VLA and robot learning, robot perception and visual servoing, then the software used to integrate, deploy, and extend complete systems with embedded IoT.
 technical_groups:
   - title: "Robot Control & Simulation"
     skills:
@@ -16,10 +16,6 @@ technical_groups:
         name: "MoveIt 2"
       - icon: "bolt"
         name: "cuMotion"
-      - icon: "diagram-project"
-        name: "TF2 / URDF / USD / XRDF"
-      - icon: "route"
-        name: "OMPL / TRAC-IK / KDL"
   - title: "VLA Models & Robot Learning"
     skills:
       - icon: "brain"
@@ -28,12 +24,6 @@ technical_groups:
         name: "VLA / Policy Inference"
       - icon: "database"
         name: "Robot State / Action"
-      - icon: "arrows-rotate"
-        name: "Rotation 6D"
-      - icon: "gamepad"
-        name: "Quest 2 / PyOpenXR"
-      - icon: "clock"
-        name: "Timestamp Synchronization"
       - icon: "brain"
         name: "PyTorch"
         devicon_name: "pytorch"
@@ -54,10 +44,8 @@ technical_groups:
         name: "Hand-Eye Calibration"
       - icon: "location-crosshairs"
         name: "Visual Servoing"
-      - icon: "hand"
-        name: "Six-Axis Force/Torque Sensing"
       - icon: "crosshairs"
-        name: "Force-Guided Contact Search"
+        name: "Contact-Aware Insertion"
       - icon: "magnifying-glass"
         name: "PatchCore Anomaly Detection"
   - title: "Robotics Platforms & Automation"

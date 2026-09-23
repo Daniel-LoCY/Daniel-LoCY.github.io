@@ -2,7 +2,7 @@
 title: "Skills"
 type: "homepage"
 intro: >-
-  End-to-end engineering across robot control, robotics software, Embodied AI, VLA / robot learning, perception, force-guided contact search and insertion alignment, and systems integration.
+  End-to-end engineering across robot control, robotics software, Embodied AI, VLA / robot learning, perception, visual servoing, insertion alignment, and systems integration.
 domains:
   - icon: "robot"
     title: "Robot Control & Simulation / Real-World Validation"
@@ -12,16 +12,16 @@ domains:
     description: "Delivering Isaac GR00T N1.7 data conversion, model training, and policy inference, with separate validation of virtual-data training followed by real-world inference and real-data training/inference workflows."
   - icon: "gamepad"
     title: "Teleoperation & Digital Twin Data"
-    description: "Building VR teleoperation for virtual and physical robot arms, with image, robot-state, action, timestamp alignment, and imitation-learning recording."
+    description: "Building VR teleoperation for virtual and physical robot arms, with image, robot-state, action, and imitation-learning recording."
   - icon: "eye"
     title: "Robot Perception & Visual Servoing"
-    description: "Evaluating DOPE 3D pose estimation in Isaac Sim; using YOLO OBB with OpenCV for HDMI insertion, AprilTag with OpenCV for HDMI / power-cable unplugging, and RealSense, hand-eye calibration, and visual servoing for physical cable tasks. For the final insertion stage, integrating wrist-mounted six-axis force/torque sensing with force-guided contact search and bounded spiral micro-search."
+    description: "Evaluating DOPE 3D pose estimation in Isaac Sim; using YOLO OBB with OpenCV for HDMI insertion, AprilTag with OpenCV for cable-connector localization, and RealSense, hand-eye calibration, and visual servoing for physical robot tasks. The final insertion stage combines visual alignment with contact-aware insertion."
   - icon: "magnifying-glass"
     title: "Visual Inspection & Anomaly Detection"
-    description: "Developed a PatchCore anomaly-detection API server and PyQt interface with ROI extraction, resize/crop/normalize/clip preprocessing, template replacement, and anomaly-score evaluation."
+    description: "Developed a PatchCore anomaly-detection API server and PyQt interface with ROI handling, image preprocessing, template replacement, and anomaly-score evaluation."
   - icon: "diagram-project"
     title: "Robotics Platforms & Automation"
-    description: "Developing web-based remote control and monitoring plus automated task workflows; scripts control the robot arm while a recording system captures actions and images through ROS 2, WebSocket, and related interfaces for imitation-learning / GR00T / VLA training-data recording, reducing manual staffing needs by two operators."
+    description: "Developing web-based remote control and monitoring plus automated task workflows; an automation and recording system works through ROS 2, WebSocket, and related interfaces for imitation-learning / GR00T / VLA training-data recording, reaching 3–4× manual throughput."
   - icon: "wrench"
     title: "End-to-End System Integration"
     description: "Independently delivering robotics systems from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance."
