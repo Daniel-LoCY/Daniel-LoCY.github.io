@@ -236,8 +236,8 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         legacy_phrases = (
             "\u76ee\u524d\u70ba\u958b\u767c\u9a57\u8b49\u539f\u578b",
             "\u5c1a\u672a\u6574\u5408\u81f3\u6b63\u5f0f\u6aa2\u6e2c\u6216\u751f\u7522\u6d41\u7a0b",
-            "remains a development prototype",
-            "not deployed to a formal inspection or production flow",
+            "\u0072emains a development \u0070rototype",
+            "\u006eot deployed to a formal inspection or production flow",
         )
         for text in (source_text, software_text, copy_ready_text, public_text, project_text):
             for phrase in legacy_phrases:
