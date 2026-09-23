@@ -247,7 +247,7 @@ def highlights_block(data, lang, styles, width):
             p(item["metric"], styles["highlight_metric"]),
             p(item["label"], styles["highlight_label"]),
         ])
-    table = Table([cells], colWidths=[width * 0.5, width * 0.5], hAlign="LEFT")
+    table = Table([cells], colWidths=[width / len(cells)] * len(cells), hAlign="LEFT")
     table.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("BACKGROUND", (0, 0), (-1, -1), PALE),
