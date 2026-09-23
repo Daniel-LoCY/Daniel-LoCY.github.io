@@ -24,14 +24,14 @@
         "en": [
           "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion.",
           "Delivered Isaac GR00T N1.7 data conversion, model training, and policy inference across simulation and physical-robot workflows.",
-          "Built a ROS 2 / WebSocket training-data collection flow that automated robot-arm tasks and recording for AI and robotics data workflows.",
-          "Integrated visual perception, robot control, and physical-robot validation with YOLO OBB, OpenCV, AprilTag, and Dockerized robotics software."
+          "Built a ROS 2 / WebSocket training-data collection flow that automated robot-arm tasks and recording for AI and robotics data workflows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators.",
+          "Integrated visual perception, robot control, and physical-robot validation with YOLO OBB, OpenCV, AprilTag, and Dockerized robotics software; improved cable-insertion success from 70% to 90%."
         ],
         "zh": [
           "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成機器人控制與虛實驗證。",
           "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。",
-          "建立透過 ROS 2／WebSocket 協作的訓練資料蒐集流程，支援 AI 與機器人資料流程。",
-          "整合視覺感知、機器人控制與真機驗證，使用 YOLO OBB、OpenCV、AprilTag 與 Docker 化軟體流程。"
+          "建立透過 ROS 2／WebSocket 協作的訓練資料蒐集流程，支援 AI 與機器人資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
+          "整合視覺感知、機器人控制與真機驗證，使用 YOLO OBB、OpenCV、AprilTag 與 Docker 化軟體流程，將線材插接成功率由 70% 提升至 90%。"
         ]
       }
     },
@@ -70,16 +70,23 @@
   },
   "highlights": {
     "en": [
-      {"metric": "ROS 2", "label": "robot control and physical validation"},
-      {"metric": "VLA", "label": "robot learning and policy workflows"}
+      {"metric": "70% → 90%", "label": "cable-insertion success"},
+      {"metric": "3-4x", "label": "manual data volume in the same time window"},
+      {"metric": "-2 operators", "label": "manual staffing needs"}
     ],
     "zh": [
-      {"metric": "ROS 2", "label": "機器人控制與真機驗證"},
-      {"metric": "VLA", "label": "Robot Learning 與 Policy 流程"}
+      {"metric": "70% → 90%", "label": "線材插接成功率"},
+      {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
+      {"metric": "節省 2 名人力", "label": "自動化資料流程效益"}
     ]
   },
   "second_zh": {
     "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、視覺感知、VLA／Robot Learning 與 Digital Twin 資料流程。具備從需求分析、系統架構、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。",
+    "highlights": [
+      {"metric": "70% → 90%", "label": "線材插接成功率"},
+      {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
+      {"metric": "節省 2 名人力", "label": "自動化資料流程效益"}
+    ],
     "experience": [
       {
         "company": "瑞軒科技股份有限公司",
@@ -89,8 +96,8 @@
         "bullets": [
           "以 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 建置機器人控制與模擬流程，完成控制、規劃與虛實驗證。",
           "完成 NVIDIA Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。",
-          "建立由自動化工作流程與資料錄製系統組成的訓練資料蒐集流程，透過 ROS 2／WebSocket 支援 AI 與機器人資料流程。",
-          "整合視覺感知、機器人控制與真機驗證，使用 YOLO OBB、OpenCV、AprilTag 與 Docker 化軟體流程。"
+          "建立由自動化工作流程與資料錄製系統組成的訓練資料蒐集流程，透過 ROS 2／WebSocket 支援 AI 與機器人資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
+          "整合視覺感知、機器人控制與真機驗證，使用 YOLO OBB、OpenCV、AprilTag 與 Docker 化軟體流程，將線材插接成功率由 70% 提升至 90%。"
         ]
       },
       {

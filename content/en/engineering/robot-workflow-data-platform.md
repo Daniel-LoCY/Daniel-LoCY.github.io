@@ -21,7 +21,7 @@ This flow integrates automated task execution, robot control, and data recording
 
 ## Tasks and Results
 
-- Integrated multiple robot-task variants and recording flows.
-- Provided repeatable execution and clear workflow status for later maintenance.
+- Integrated multiple robot-task variants and recording flows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators.
+- Provided repeatable execution and clear workflow status for later maintenance; cable-insertion success improved from 70% to 90% in a related robotics task.
 
 The workflow demonstrates practical integration across robot control, task orchestration, and AI data collection.

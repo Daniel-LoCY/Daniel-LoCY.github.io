@@ -188,19 +188,12 @@ class ResumeOutputTest(unittest.TestCase):
             "alvr",
             "steamvr",
             "pyopenxr",
-            "two operators",
-            "兩名操作人力",
             "螺旋微動",
             "bounded spiral",
             "resize/crop/normalize/clip",
             "resize／crop／normalize／clip",
             "dry run",
             "fps",
-            "70%",
-            "90%",
-            "3-4x",
-            "3–4×",
-            "3～4 倍",
             "10 trials",
             "10 次",
             "ROI",
@@ -211,6 +204,28 @@ class ResumeOutputTest(unittest.TestCase):
             text = self._read_pdf(output_path, expected_pages=2 if "zh-tw" in output_path else 1).lower()
             for marker in low_level_markers:
                 self.assertNotIn(marker.lower(), text, output_path)
+
+    def test_generated_resumes_keep_verified_quantified_outcomes(self):
+        output_paths = (
+            "robotics/daniel-lo-resume-robotics-en.pdf",
+            "robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf",
+            "software/daniel-lo-resume-software-en.pdf",
+            "software/daniel-lo-resume-software-zh-tw-v2.pdf",
+            "tsmc/daniel-lo-resume-tsmc-en.pdf",
+            "tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf",
+        )
+        for output_path in output_paths:
+            text = self._read_pdf(output_path, expected_pages=2 if "zh-tw" in output_path else 1)
+            self.assertIn("70%", text, output_path)
+            self.assertIn("90%", text, output_path)
+            self.assertTrue(
+                "3-4x" in text or "3～4 倍" in text or "3–4×" in text,
+                output_path,
+            )
+            self.assertTrue(
+                "two operators" in text or "兩名操作人力" in text,
+                output_path,
+            )
 
     def test_only_latest_chinese_resume_is_generated(self):
         self.assertEqual({path.name for path in PDF_DIR.glob("*.pdf")}, set())

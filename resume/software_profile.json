@@ -21,14 +21,14 @@
       "bullets": {
         "en": [
           "Owned software delivery from requirements and system architecture through Docker deployment, testing, on-site integration, and maintenance for real-time AI and robotics systems.",
-          "Built a Next.js / React Flow / FastAPI / WebSocket workflow and data-recording platform for automated task execution and AI data workflows.",
-          "Developed a React / TypeScript / FastAPI / ROS 2 web control and monitoring platform with real-time feedback, video, system status, control commands, and Docker / Nginx deployment.",
+          "Built a Next.js / React Flow / FastAPI / WebSocket workflow and data-recording platform for automated task execution and AI data workflows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators.",
+          "Developed a React / TypeScript / FastAPI / ROS 2 web control and monitoring platform with real-time feedback, video, system status, control commands, and Docker / Nginx deployment; improved cable-insertion success from 70% to 90% in a robotics integration task.",
           "Developed a PatchCore anomaly-detection API server and PyQt interface, integrating AI vision and inspection workflows."
         ],
         "zh": [
           "負責即時 AI 與機器人系統從需求分析、系統架構、軟體開發到 Docker 部署、測試、現場整合與維護。",
-          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程。",
-          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令。",
+          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
+          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。",
           "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。"
         ]
       }
@@ -52,6 +52,18 @@
       }
     }
   ],
+  "highlights": {
+    "en": [
+      {"metric": "70% → 90%", "label": "cable-insertion success"},
+      {"metric": "3-4x", "label": "manual data volume in the same time window"},
+      {"metric": "-2 operators", "label": "manual staffing needs"}
+    ],
+    "zh": [
+      {"metric": "70% → 90%", "label": "線材插接成功率"},
+      {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
+      {"metric": "節省 2 名人力", "label": "自動化資料流程效益"}
+    ]
+  },
   "skills": {
     "en": [
       {"label": "Backend API & Services", "items": "FastAPI, Flask, ASP.NET MVC, WebSocket, REST APIs, MS SQL, PostgreSQL / SQLite"},
@@ -69,8 +81,9 @@
   "second_zh": {
     "summary": "AI 工程師，具備從需求分析、系統架構、後端 API、即時 WebSocket 平台、資料流程到 Docker 部署與現場整合的端到端經驗。熟悉 FastAPI、React／TypeScript、Next.js、C#／.NET、MS SQL、Linux 與 AI／電腦視覺流程，並能將機器人、影像、資料與模型服務整合為可操作系統。",
     "highlights": [
-      {"metric": "FastAPI", "label": "後端服務與即時資料流程"},
-      {"metric": "PatchCore", "label": "AI 視覺與異常檢測流程"}
+      {"metric": "70% → 90%", "label": "線材插接成功率"},
+      {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
+      {"metric": "節省 2 名人力", "label": "自動化資料流程效益"}
     ],
     "experience": [
       {
@@ -80,8 +93,8 @@
         "location": "新北，台灣",
         "bullets": [
           "負責即時 AI 與機器人系統從需求分析、系統架構、軟體開發到 Docker 部署、測試、現場整合與維護。",
-          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程。",
-          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令。",
+          "以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
+          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。",
           "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，整合模型服務與控制系統。",
           "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。"
         ]

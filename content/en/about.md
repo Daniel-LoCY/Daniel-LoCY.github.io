@@ -2,7 +2,7 @@
 title: "About"
 type: "homepage"
 intro: >-
-  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, Embodied AI, VLA / robot learning, visual perception, PatchCore anomaly detection, and Digital Twin data workflows. I also build frontend/backend platforms with React, TypeScript, Next.js, FastAPI, WebSocket, PyQt, and Docker, connecting robot control, data workflows, policy inference, and simulation / real-world validation.
+  I am Daniel Lo, an AI Robotics Engineer at AMTRAN TECHNOLOGY CO., LTD., focused on robot control, Embodied AI, VLA / robot learning, visual perception, PatchCore anomaly detection, and Digital Twin data workflows. I also build frontend/backend platforms with React, TypeScript, Next.js, FastAPI, WebSocket, PyQt, and Docker, connecting robot control, data workflows, policy inference, and simulation / real-world validation. Selected outcomes include approximately 3-4x the manual data volume in the same time window, reduced manual staffing needs by two operators, and cable-insertion success improving from 70% to 90%.
 study: >-
   My academic background combines electrical engineering, software development, and intelligent systems. At National Taiwan Normal University, I studied how AI, natural language processing, and reinforcement learning can be applied to collaborative robotics, building on an undergraduate background in computer and communication engineering at National Pingtung University.
 passion_title: "What I do"

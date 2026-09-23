@@ -19,8 +19,8 @@ AI 工程師，具電機工程碩士背景，專注後端服務、即時控制�
 2025/05 - 至今｜新北
 
 - 負責即時 AI 與機器人系統從需求分析、系統架構、軟體開發到 Docker 部署、測試、現場整合與維護。
-- 以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程。
-- 以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令。
+- 以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，支援自動化任務執行與 AI 資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。
+- 以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。
 - 完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，整合模型服務與控制系統。
 - 開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。
 
@@ -42,11 +42,11 @@ AI 工程師，具電機工程碩士背景，專注後端服務、即時控制�
 
 ### 機器人自動化工作流程與資料錄製平台
 
-以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建立可配置的任務工作流程與資料錄製平台，支援任務編排與執行監控。
+以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建立可配置的任務工作流程與資料錄製平台，支援任務編排與執行監控；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。
 
 ### Web Robot Control 與即時監控平台
 
-以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時影像、系統狀態與控制命令。
+以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時影像、系統狀態與控制命令；線材插接成功率由 70% 提升至 90%。
 
 ### PatchCore 異常檢測 API 與 PyQt 介面
 

@@ -31,14 +31,14 @@
         "en": [
           "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for robot control and system validation.",
           "Delivered <b>Isaac GR00T N1.7</b> data conversion, model training, and policy inference across simulation and physical-robot workflows.",
-          "Built an automated workflow and recording platform with Next.js, React Flow, FastAPI, ROS 2, WebSocket, and Docker for AI and robotics data collection.",
-          "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; integrated visual perception, robot control, and PatchCore anomaly-detection workflows."
+          "Built an automated workflow and recording platform with Next.js, React Flow, FastAPI, ROS 2, WebSocket, and Docker for AI and robotics data collection, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators.",
+          "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; integrated visual perception, robot control, and PatchCore anomaly-detection workflows, improving cable-insertion success from 70% to 90%."
         ],
         "zh": [
           "建置 ROS 2 控制與模擬流程，整合工業／協作型機械手臂平台、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援機器人控制與系統驗證。",
           "完成 <b>Isaac GR00T N1.7</b> 資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。",
-          "以 Next.js、React Flow、FastAPI、ROS 2、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台，支援 AI 與機器人資料流程。",
-          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；整合視覺感知、機器人控制與 PatchCore 異常檢測流程。"
+          "以 Next.js、React Flow、FastAPI、ROS 2、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台，支援 AI 與機器人資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
+          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；整合視覺感知、機器人控制與 PatchCore 異常檢測流程，將線材插接成功率由 70% 提升至 90%。"
         ]
       }
     },
@@ -77,12 +77,14 @@
   },
   "highlights": {
     "en": [
-      {"metric": "ROS 2", "label": "robot control and system integration"},
-      {"metric": "PatchCore", "label": "AI vision and anomaly-detection workflow"}
+      {"metric": "70% → 90%", "label": "cable-insertion success"},
+      {"metric": "3-4x", "label": "manual data volume in the same time window"},
+      {"metric": "-2 operators", "label": "manual staffing needs"}
     ],
     "zh": [
-      {"metric": "ROS 2", "label": "機器人控制與系統整合"},
-      {"metric": "PatchCore", "label": "AI 視覺與異常檢測流程"}
+      {"metric": "70% → 90%", "label": "線材插接成功率"},
+      {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
+      {"metric": "節省 2 名人力", "label": "自動化資料流程效益"}
     ]
   },
   "projects": {
@@ -131,8 +133,9 @@
     "version": "2026-09 | v3",
     "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning、視覺感知與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。",
     "highlights": [
-      {"metric": "ROS 2", "label": "機器人控制與系統整合"},
-      {"metric": "PatchCore", "label": "AI 視覺與異常檢測流程"}
+      {"metric": "70% → 90%", "label": "線材插接成功率"},
+      {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
+      {"metric": "節省 2 名人力", "label": "自動化資料流程效益"}
     ],
     "experience": [
       {
@@ -144,7 +147,7 @@
           "獨立負責多項機器人軟體專案，涵蓋需求分析、系統架構、開發、Docker 部署、測試、現場整合與維護。",
           "建置 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 控制環境，整合工業／協作型機械手臂平台，完成控制、規劃與虛實環境驗證。",
           "完成 NVIDIA Isaac GR00T N1.7 VLA 的資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。",
-          "建置 Web 控制、監控與自動化資料流程，並整合視覺感知、模型服務、機器人控制與 PatchCore 異常檢測。"
+          "建置 Web 控制、監控與自動化資料流程，資料蒐集量約為人工操作的 3～4 倍並節省兩名操作人力；整合視覺感知、模型服務、機器人控制與 PatchCore 異常檢測，將線材插接成功率由 70% 提升至 90%。"
         ]
       },
       {

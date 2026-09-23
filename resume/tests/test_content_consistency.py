@@ -43,8 +43,6 @@ LOW_LEVEL_MARKERS = (
     "alvr",
     "steamvr",
     "pyopenxr",
-    "two operators",
-    "兩名操作人力",
     "螺旋微動",
     "bounded spiral",
     "resize／crop／normalize／clip",
@@ -57,11 +55,6 @@ LOW_LEVEL_MARKERS = (
         "timesteps",
         "time steps",
         "fps",
-        "3～4 倍",
-        "3–4×",
-        "3-4x",
-        "70%",
-        "90%",
         "10 次",
         "10-trial",
         "robot state",
@@ -104,6 +97,16 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         for text in (source_text, public_text):
             self.assertIn("PatchCore", text)
             self.assertRegex(text, r"AI 視覺|異常檢測|anomaly[- ]detection")
+
+    def test_verified_quantified_outcomes_are_preserved(self):
+        source_text = "\n".join(path.read_text(encoding="utf-8") for path in RESUME_SOURCE_PATHS)
+        public_text = "\n".join(path.read_text(encoding="utf-8") for path in PUBLIC_CONTENT_PATHS)
+
+        for text in (source_text, public_text):
+            self.assertIn("70%", text)
+            self.assertIn("90%", text)
+            self.assertTrue("3-4x" in text or "3～4 倍" in text or "3–4×" in text)
+            self.assertTrue("two operators" in text or "兩名操作人力" in text)
 
     def test_low_level_details_are_removed_from_public_sources(self):
         for path in (*RESUME_SOURCE_PATHS, *PUBLIC_CONTENT_PATHS):
