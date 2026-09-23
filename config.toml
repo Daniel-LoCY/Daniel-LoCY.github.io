@@ -23,10 +23,10 @@ defaultContentLanguageInSubdir = false
       description = "駱忠湧的 AI 機器人與軟體工程作品集，聚焦 Robot Control、Embodied AI、VLA／Robot Learning、Digital Twin 資料流程與系統整合。"
       copyright = "駱忠湧"
       tagline = "AI 機器人工程師｜機器人軟體與系統整合"
-      hero_description = "以 ROS 2 與 NVIDIA Isaac 整合機器人控制、視覺伺服、力導向接觸搜尋與插接定位、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程，並以 React／FastAPI／Docker 建置前後端控制、監控與自動化平台。"
+      hero_description = "以 ROS 2 與 NVIDIA Isaac 整合機器人控制、視覺感知、Embodied AI、VLA／Robot Learning 與 Digital Twin 資料流程，並以 React／FastAPI／Docker 建置前後端控制、監控與自動化平台。"
       hero_location = "新北，台灣"
       resume_url = "/files/daniel-lo-resume-robotics-zh-tw-v2.pdf"
-      collab_tags = ["Robot Control", "Robotics Software", "System Integration", "Visual Servoing", "Force-Guided Contact Search", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
+      collab_tags = ["Robot Control", "Robotics Software", "System Integration", "Visual Perception", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.zh-tw.menu]
       [[languages.zh-tw.menu.main]]
         name = "關於我"
@@ -68,10 +68,10 @@ defaultContentLanguageInSubdir = false
       description = "Daniel Lo's AI robotics and software engineering portfolio focused on robot control, Embodied AI, VLA / robot learning, Digital Twin data workflows, and systems integration."
       copyright = "Daniel Lo"
       tagline = "AI Robotics Engineer | Robotics Software & Systems Integration"
-      hero_description = "Integrating ROS 2 and NVIDIA Isaac across robot control, visual servoing, force-guided contact search and insertion alignment, Embodied AI, VLA / robot learning, and Digital Twin data workflows, while building frontend/backend control, monitoring, and automation platforms with React, FastAPI, and Docker."
+      hero_description = "Integrating ROS 2 and NVIDIA Isaac across robot control, visual perception, Embodied AI, VLA / robot learning, and Digital Twin data workflows, while building frontend/backend control, monitoring, and automation platforms with React, FastAPI, and Docker."
       hero_location = "New Taipei, Taiwan"
       resume_url = "/files/daniel-lo-resume-robotics-en.pdf"
-      collab_tags = ["Robot Control", "Robotics Software", "System Integration", "Visual Servoing", "Force-Guided Contact Search", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
+      collab_tags = ["Robot Control", "Robotics Software", "System Integration", "Visual Perception", "NVIDIA Isaac GR00T", "VLA / Robot Learning", "Digital Twin Data", "ROS 2"]
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "About"
