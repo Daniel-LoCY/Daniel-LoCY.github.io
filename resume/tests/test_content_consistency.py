@@ -233,11 +233,15 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         for text in (source_text, software_text, copy_ready_text, public_text, project_text):
             self.assertIn("PatchCore", text)
             self.assertRegex(text, r"ROI|異常分數|anomaly[- ]score")
+        legacy_phrases = (
+            "\u76ee\u524d\u70ba\u958b\u767c\u9a57\u8b49\u539f\u578b",
+            "\u5c1a\u672a\u6574\u5408\u81f3\u6b63\u5f0f\u6aa2\u6e2c\u6216\u751f\u7522\u6d41\u7a0b",
+            "remains a development prototype",
+            "not deployed to a formal inspection or production flow",
+        )
         for text in (source_text, software_text, copy_ready_text, public_text, project_text):
-            self.assertNotIn("目前為開發驗證原型", text)
-            self.assertNotIn("尚未整合至正式檢測或生產流程", text)
-            self.assertNotIn("remains a development prototype", text.lower())
-            self.assertNotIn("not deployed to a formal inspection or production flow", text.lower())
+            for phrase in legacy_phrases:
+                self.assertNotIn(phrase, text.lower())
 
     def test_current_profile_wording_uses_new_taipei_only(self):
         source_paths = [
