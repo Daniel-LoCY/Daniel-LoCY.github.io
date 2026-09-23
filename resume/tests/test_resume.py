@@ -155,6 +155,20 @@ class ResumeOutputTest(unittest.TestCase):
         ):
             self.assertIn(marker, text)
 
+    def test_generated_resumes_use_current_location_wording(self):
+        output_paths = (
+            "robotics/daniel-lo-resume-robotics-en.pdf",
+            "robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf",
+            "software/daniel-lo-resume-software-en.pdf",
+            "software/daniel-lo-resume-software-zh-tw-v2.pdf",
+            "tsmc/daniel-lo-resume-tsmc-en.pdf",
+            "tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf",
+        )
+        for output_path in output_paths:
+            text = self._read_pdf(output_path, expected_pages=2 if "zh-tw" in output_path else 1)
+            for forbidden in ("\u88dc\u6551", "\u65b0\u7af9", "Hsin" + "chu", "relo" + "cate", "reco" + "very"):
+                self.assertNotIn(forbidden.lower(), text.lower(), output_path)
+
     def test_only_latest_chinese_resume_is_generated(self):
         self.assertEqual({path.name for path in PDF_DIR.glob("*.pdf")}, set())
         self.assertEqual(

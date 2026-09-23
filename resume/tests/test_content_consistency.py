@@ -190,7 +190,7 @@ class ResumeContentConsistencyTest(unittest.TestCase):
             for forbidden in ("impedance", "admittance", "EtherCAT", "CANopen"):
                 self.assertNotIn(forbidden.lower(), insertion.lower())
 
-    def test_hdmi_project_pages_separate_visual_metric_from_force_recovery(self):
+    def test_hdmi_project_pages_separate_visual_metric_from_force_contact_search(self):
         paths = {
             "zh": ROOT / "content" / "zh-tw" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
             "en": ROOT / "content" / "en" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
@@ -235,6 +235,38 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         self.assertIn("尚未整合至正式檢測或生產流程", copy_ready_text)
         self.assertIn("not deployed to a formal inspection or production flow", software_text)
         self.assertNotIn("deployed to production", software_text.lower())
+
+    def test_current_profile_wording_uses_new_taipei_only(self):
+        source_paths = [
+            ROOT / "README.md",
+            ROOT / "config.toml",
+            ROOT / "resume" / "resume_data.json",
+            ROOT / "resume" / "software_profile.json",
+            ROOT / "resume" / "tsmc_profile.json",
+            ROOT / "resume" / "104-resume-zh-tw.md",
+            ROOT / "resume" / "104-resume-software-zh-tw.md",
+            ROOT / "content" / "zh-tw" / "about.md",
+            ROOT / "content" / "zh-tw" / "experience.md",
+            ROOT / "content" / "zh-tw" / "skills.md",
+            ROOT / "content" / "zh-tw" / "technical.md",
+            ROOT / "content" / "zh-tw" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
+            ROOT / "content" / "en" / "about.md",
+            ROOT / "content" / "en" / "experience.md",
+            ROOT / "content" / "en" / "skills.md",
+            ROOT / "content" / "en" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
+        ]
+        text = "\n".join(path.read_text(encoding="utf-8") for path in source_paths)
+        for forbidden in (
+            "\u88dc\u6551",
+            "\u65b0\u7af9",
+            "Hsin" + "chu",
+            "Open to " + "relo" + "cate",
+            "relo" + "cate to " + "Hsin" + "chu",
+            "insertion " + "reco" + "very",
+            "contact " + "reco" + "very",
+            "reco" + "ver insertion",
+        ):
+            self.assertNotIn(forbidden, text)
 
 
 if __name__ == "__main__":

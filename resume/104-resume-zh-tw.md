@@ -22,7 +22,7 @@
 - 以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、Pick-and-Place 與線材任務。
 - 完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。
 - 建立由自動化腳本控制機械手臂與任務流程、資料錄製系統記錄動作／影像／Robot State／Action／Timestamp 組成的資料蒐集流程；透過 ROS 2、WebSocket 等技術完成多筆模仿學習／GR00T／VLA 訓練資料全自動錄製，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。
-- 以腕部六軸力／扭矩感測與接觸搜尋補救 HDMI 插線最後接觸階段；當視覺對位仍有殘餘誤差時，沿插入方向低速接觸並執行受限範圍內的螺旋微動。已於真機驗證，額外成功率尚未量化。
+- 以腕部六軸力／扭矩感測與接觸搜尋完成 HDMI 插線最後接觸階段的插接定位；當視覺對位仍有殘餘誤差時，沿插入方向低速接觸並執行受限範圍內的螺旋微動。已於真機驗證，額外成功率尚未量化。
 
 ### 采威國際資訊股份有限公司（ISCOM）｜軟體工程實習生
 
@@ -34,7 +34,7 @@
 
 - Robot Control & Digital Twin：ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂控制
 - VLA／Robot Learning：Isaac GR00T N1.7、Policy Inference、Robot State／Action、模仿學習、資料流程
-- Robot Perception & Visual Inspection：RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、六軸力／扭矩感測、接觸搜尋補償、PatchCore、PyQt
+- Robot Perception & Visual Inspection：RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore、PyQt
 - Frontend Development：React、TypeScript／JavaScript、Next.js、React Flow
 - Frontend, Backend & System Integration：FastAPI、Flask、ASP.NET MVC、WebSocket、Docker、Linux、Git、Python、C++、C#／.NET
 - Embedded & IoT Development：Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦
@@ -49,7 +49,7 @@
 
 以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺對位；以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位。
 
-在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋；當視覺仍有殘餘誤差時，沿插入方向低速接觸並以受限範圍內的螺旋微動補救插接。整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率；力導向階段的額外成功率尚未量化。
+在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋；當視覺仍有殘餘誤差時，沿插入方向低速接觸並以受限範圍內的螺旋微動完成最後插接定位。整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率；力導向階段的額外成功率尚未量化。
 
 ### PatchCore 異常檢測 API 與 PyQt 原型
 
@@ -77,7 +77,7 @@
 - 目標職稱：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師、系統整合開發工程師、軟體工程師
 - 目標職類：AI 工程師、軟體工程師、演算法工程師、全端工程師、後端工程師
 - 期望投入：機器人控制、VLA／Robot Learning、Digital Twin 資料流程與機器人系統整合
-- 目標地點：新竹科學園區（可搬遷）
+- 目前所在地：新北，台灣
 
 ## 資格認證
 

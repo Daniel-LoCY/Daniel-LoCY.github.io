@@ -21,11 +21,11 @@ This workflow combines YOLO OBB detection, OpenCV image and camera-geometry proc
 - Converted visual detections into executable robot-control targets.
 - Connected TM Flow, TM API, and ROS 2 for perception, control, and workflow-state integration.
 
-## Force-Guided Insertion Recovery
+## Force-Guided Contact Search and Insertion Alignment
 
 - Integrated wrist-mounted six-axis force/torque sensing with force-guided contact search into the final HDMI insertion stage.
-- When residual visual alignment error remained, approached at low speed and used bounded spiral micro-search from force/torque feedback to recover insertion.
-- Validated on the physical robot; the incremental success-rate impact is not yet quantified. This recovery detail is reported separately from the overall insertion result below and is not presented as a separately quantified uplift.
+- When residual visual alignment error remained, approached at low speed and used bounded spiral micro-search from force/torque feedback to complete final insertion alignment.
+- Validated on the physical robot; the incremental success-rate impact is not yet quantified. This contact-search detail is reported separately from the overall insertion result below and is not presented as a separately quantified uplift.
 
 ## Physical-Robot Validation
 

@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  目前專注於 Robot Control、視覺伺服、力導向插接補救、VLA／Robot Learning 與 Digital Twin 資料流程，並以前後端平台支援機器人控制與系統整合；使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
+  目前專注於 Robot Control、視覺伺服、力導向接觸搜尋與插接定位、VLA／Robot Learning 與 Digital Twin 資料流程，並以前後端平台支援機器人控制與系統整合；使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -21,7 +21,7 @@ positions:
       - "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、Pick-and-Place 與線材任務。"
       - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。"
       - "由自動化腳本控制機械手臂與任務流程，搭配資料錄製系統記錄動作、影像、Robot State／Action 與 Timestamp；兩者透過 ROS 2、WebSocket 等介面協作，完成多筆模仿學習／GR00T／VLA 訓練資料的全自動錄製，相同時間內資料蒐集量達人工操作的 3～4 倍，並節省兩名操作人力。"
-      - "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺對位；以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；線材插接成功率由 70% 提升至 90%（10 次測試）。當視覺對位仍有殘餘誤差時，整合腕部六軸力／扭矩感測與接觸搜尋，並以受限範圍內的螺旋微動補救最後插接；額外成功率尚未量化。"
+      - "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺對位；以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；線材插接成功率由 70% 提升至 90%（10 次測試）。當視覺對位仍有殘餘誤差時，整合腕部六軸力／扭矩感測與接觸搜尋，並以受限範圍內的螺旋微動完成最後插接定位；額外成功率尚未量化。"
       - "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷；目前為開發驗證原型，尚未整合至正式檢測或生產流程。"
   - company: "采威國際資訊股份有限公司（ISCOM）"
     company_url: "https://www.iscom.com.tw"
