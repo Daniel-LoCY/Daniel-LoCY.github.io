@@ -67,7 +67,7 @@
     ]
   },
   "second_zh": {
-    "summary": "AI 工程師，具備從需求分析、系統架構、後端 API、即時 WebSocket 平台、資料流程到 Docker 部署與現場整合的端到端經驗。熟悉 FastAPI、React／TypeScript、Next.js、C#／.NET、MS SQL、Linux 與 AI／電腦視覺原型，並能將機器人、影像、資料與模型服務整合為可操作系統。",
+    "summary": "AI 工程師，具備從需求分析、系統架構、後端 API、即時 WebSocket 平台、資料流程到 Docker 部署與現場整合的端到端經驗。熟悉 FastAPI、React／TypeScript、Next.js、C#／.NET、MS SQL、Linux 與 AI／電腦視覺流程，並能將機器人、影像、資料與模型服務整合為可操作系統。",
     "highlights": [
       {"metric": "3～4 倍", "label": "自動化 AI／機器人訓練資料流程相較人工操作的資料量（相同時間）"},
       {"metric": "70% → 90%", "label": "整合軟體與感知流程後的線材插接成功率（10 次測試）"}
