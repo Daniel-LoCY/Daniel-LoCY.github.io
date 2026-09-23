@@ -48,7 +48,7 @@ class ResumeOutputTest(unittest.TestCase):
             "PyQt",
         ):
             self.assertIn(marker, text)
-        self.assertIn("not deployed to a formal inspection or production flow", " ".join(text.split()))
+        self.assertIn("anomaly-score evaluation", " ".join(text.split()))
 
     def test_104_resume_contains_copy_ready_sections(self):
         path = ROOT / "resume" / "104-resume-zh-tw.md"
@@ -69,7 +69,7 @@ class ResumeOutputTest(unittest.TestCase):
             "FastAPI",
             "Docker",
             "PatchCore",
-            "尚未整合至正式檢測或生產流程",
+            "異常分數分析流程",
         ):
             self.assertIn(marker, text)
 
@@ -151,7 +151,8 @@ class ResumeOutputTest(unittest.TestCase):
             "Docker",
             "PatchCore",
             "PyQt",
-            "尚未整合至正式檢測或生產流程",
+            "ROI",
+            "異常分數判斷",
         ):
             self.assertIn(marker, text)
 

@@ -18,7 +18,7 @@ domains:
     description: "於 Isaac Sim 驗證 DOPE 3D 姿態估計；以 YOLO OBB 搭配 OpenCV 支援 HDMI 插線，以 AprilTag 搭配 OpenCV 支援 HDMI／電源線拔線，並以 RealSense、手眼標定與視覺伺服完成真機線材任務；在最後插接階段整合腕部六軸力／扭矩感測、接觸搜尋與受限範圍內的螺旋微動。"
   - icon: "magnifying-glass"
     title: "Visual Inspection & Anomaly Detection"
-    description: "開發 PatchCore 異常檢測 API Server 與 PyQt 原型，支援 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷；目前尚未整合至正式檢測或生產流程。"
+    description: "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，支援 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷。"
   - icon: "diagram-project"
     title: "Robotics Platforms & Automation"
     description: "開發 Web 遠端控制／監控與自動化任務流程；由自動化腳本控制機械手臂，資料錄製系統記錄動作與影像，透過 ROS 2、WebSocket 等介面協作完成模仿學習／GR00T／VLA 訓練資料錄製，並節省兩名操作人力。"

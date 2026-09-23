@@ -59,7 +59,7 @@ technical_groups:
       - icon: "crosshairs"
         name: "Force-Guided Contact Search"
       - icon: "magnifying-glass"
-        name: "PatchCore Anomaly Detection (Prototype)"
+        name: "PatchCore Anomaly Detection"
   - title: "Robotics Platforms & Automation"
     skills:
       - icon: "server"

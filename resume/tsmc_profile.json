@@ -25,13 +25,13 @@
           "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion, covering motion planning, collision handling, pick-and-place, and cable tasks.",
           "Delivered Isaac GR00T N1.7 data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows.",
           "Built a two-part ROS 2 / WebSocket training-data collection flow that automated robot-arm tasks and recorded actions, images, robot state/actions, and timestamps, reaching 3-4x manual throughput and reducing manual staffing needs by two operators.",
-          "Developed YOLO OBB / OpenCV visual servoing for HDMI insertion and AprilTag / OpenCV connector localization for cable unplugging; integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into final insertion alignment with bounded spiral micro-search. Validated on the physical robot; incremental success-rate impact is not yet quantified."
+          "Developed YOLO OBB / OpenCV visual servoing for HDMI insertion and AprilTag / OpenCV connector localization for cable unplugging; integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into final insertion alignment with bounded spiral micro-search. Validated the integrated workflow on the physical robot; overall cable-insertion success reached 90% in a 10-trial test from a 70% baseline."
         ],
         "zh": [
           "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成路徑規劃、碰撞處理、Pick-and-Place 與線材任務。",
           "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
           "建立透過 ROS 2／WebSocket 協作的兩部分訓練資料蒐集流程，自動控制機械手臂任務並記錄動作、影像、Robot State／Action 與 Timestamp，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。",
-          "以 YOLO OBB／OpenCV 建置 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材拔線接頭定位；在最後插接階段整合腕部六軸力／扭矩感測與接觸搜尋，以受限範圍內的螺旋微動完成最後插接定位。已於真機驗證，額外成功率尚未量化。"
+          "以 YOLO OBB／OpenCV 建置 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材拔線接頭定位；在最後插接階段整合腕部六軸力／扭矩感測與接觸搜尋，以受限範圍內的螺旋微動完成最後插接定位。已於真機驗證；整體線材插接流程在 10 次測試中由 70% 基準達到 90% 成功率。"
         ]
       }
     },
@@ -58,13 +58,13 @@
     "en": [
       {"label": "Robot Control & Validation", "items": "ROS 2, Isaac Sim / Isaac Lab, MoveIt 2, cuMotion, Visual Servoing, physical-robot validation"},
       {"label": "Physical AI & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
-      {"label": "Perception & Visual Inspection", "items": "YOLO OBB + OpenCV, AprilTag, RealSense, Hand-Eye Calibration, six-axis force/torque sensing, force-guided contact search, PatchCore anomaly-detection prototype"},
+      {"label": "Perception & Visual Inspection", "items": "YOLO OBB + OpenCV, AprilTag, RealSense, Hand-Eye Calibration, six-axis force/torque sensing, force-guided contact search, PatchCore anomaly detection"},
       {"label": "Robotics Software & Integration", "items": "Python, C++, FastAPI, React / TypeScript, WebSocket, Docker, Linux"}
     ],
     "zh": [
       {"label": "Robot Control & Validation", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、視覺伺服、真實機器人驗證"},
       {"label": "Physical AI & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
-      {"label": "Perception & Visual Inspection", "items": "YOLO OBB＋OpenCV、AprilTag、RealSense、手眼標定、六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore 異常檢測原型"},
+      {"label": "Perception & Visual Inspection", "items": "YOLO OBB＋OpenCV、AprilTag、RealSense、手眼標定、六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore 異常檢測"},
       {"label": "Robotics Software & Integration", "items": "Python、C++、FastAPI、React／TypeScript、WebSocket、Docker、Linux"}
     ]
   },
@@ -90,7 +90,7 @@
           "以 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 建置機器人控制與模擬流程，完成目標姿態、路徑規劃、碰撞處理、Pick-and-Place 與線材任務。",
           "完成 NVIDIA Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
           "建立由自動化腳本與資料錄製系統組成的訓練資料蒐集流程，透過 ROS 2／WebSocket 記錄動作、影像、Robot State／Action 與 Timestamp，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。",
-          "以 YOLO OBB／OpenCV 建置 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材拔線接頭定位；在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋，以受限範圍內的螺旋微動完成最後插接定位，已於真機驗證，額外成功率尚未量化。"
+          "以 YOLO OBB／OpenCV 建置 HDMI 插線視覺伺服，以 AprilTag／OpenCV 完成線材拔線接頭定位；在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋，以受限範圍內的螺旋微動完成最後插接定位，已於真機驗證；整體線材插接流程在 10 次測試中由 70% 基準達到 90% 成功率。"
         ]
       },
       {

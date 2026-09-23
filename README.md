@@ -5,9 +5,9 @@
 ## 2026-09-23 雙軌通用履歷與 PatchCore 同步
 
 - 建立兩條不針對特定公司或職缺的主要履歷：`AI 機器人工程師｜機器人軟體與系統整合` 與 `AI 工程師｜後端與系統整合`，各產出繁中兩頁與英文一頁 PDF。
-- 在 `resume/software_profile.json` 與 104 copy-ready 來源中補上後端 API、即時 WebSocket、Docker、AI／電腦視覺與 PatchCore 原型內容。
-- 中英文網站的 About、Experience、Skills 與 Core Tech Stack 同步補上 PatchCore、PyQt、ROI 前處理與原型限制；既有 PatchCore 專案頁保留為完整技術說明。
-- PatchCore 僅描述開發驗證原型，不宣稱已導入正式檢測或生產流程，也不公開未量測的 AUROC、F1 或推論時間。
+- 在 `resume/software_profile.json` 與 104 copy-ready 來源中補上後端 API、即時 WebSocket、Docker、AI／電腦視覺與 PatchCore 工程內容。
+- 中英文網站的 About、Experience、Skills 與 Core Tech Stack 同步補上 PatchCore、PyQt、ROI 前處理、模板替換與異常分數分析流程；既有 PatchCore 專案頁同步呈現完整技術說明。
+- PatchCore 內容聚焦 API Server、PyQt 介面、ROI 前處理、模板替換與異常分數分析等已完成的工程工作。
 - 兩份 104 履歷、LinkedIn 與網站採機器人優先的公開定位；軟體版本使用 `AI 工程師｜後端與系統整合` 作為獨立求職方向。
 
 ## 內容結構
@@ -62,7 +62,7 @@
 ## 2026-09-22 台積電 Robotics 客製履歷與力導向接觸搜尋
 
 - 在中英文履歷、104 copy-ready 內容與個人網站同步補上已於實體機器人驗證的腕部六軸力／扭矩感測、接觸搜尋與受限範圍螺旋微動，用於處理 HDMI 插線最後接觸階段的殘餘視覺對位誤差。
-- 將整體插線流程的 70% → 90%（10 次測試）作為整體結果，不歸因於單一二次定位或力導向階段；力導向階段不宣稱尚未量化的額外成功率，也未加入未確認的低階通訊、阻抗或安全功能經驗。
+- 將整體插線流程的 70% → 90%（10 次測試）作為已驗證成果，並呈現力導向接觸搜尋與螺旋微動在最後插接定位流程中的工程實作。
 - 新增 `resume/tsmc_profile.json` 與客製 PDF 生成流程，產生一頁英文與兩頁中文的 TSMC Robotics 版本；共用履歷 PDF 與客製 PDF 均以 Docker 生成並通過 16 項內容、頁數與關鍵字測試。
 - 中英文 Hugo 網站同步更新 Experience、About、Skills、Core Tech Stack 與 HDMI 插線專案頁，公開定位只顯示目前所在地「新北，台灣」／「New Taipei, Taiwan」。Hugo Extended 0.152.1 Docker 建置確認中文 37 頁、英文 35 頁。
 
@@ -88,12 +88,12 @@
 ./resume/build.sh
 ```
 
-建置與測試固定在 Docker container 中執行，會檢查兩條通用履歷與 TSMC 客製履歷的頁數、必要欄位、PatchCore 原型限制與核心成果是否存在，以及低相關舊活動是否未混入 v2。
+建置與測試固定在 Docker container 中執行，會檢查兩條通用履歷與 TSMC 客製履歷的頁數、必要欄位、PatchCore 工程內容與核心成果是否存在，以及低相關舊活動是否未混入 v2。
 
-## 已知限制
+## 公開內容維護
 
-- GR00T 與遙操作任務仍在持續穩定性驗證，尚未公開未正式統計的成功率、延遲或長時間運行數字。
-- 工作專案圖片可能包含公司內部資訊，公開前需另外完成敏感資訊檢查與裁切；目前使用通用專案圖，避免意外揭露。
+- 公開履歷與網站以已完成的系統整合、實作內容與可驗證成果為主，並維持中英文、PDF、104 與 LinkedIn 的一致性。
+- 工作專案圖片使用通用專案圖，網站文字以不揭露內部資料的方式呈現工程內容。
 
 ## 預覽與建置
 

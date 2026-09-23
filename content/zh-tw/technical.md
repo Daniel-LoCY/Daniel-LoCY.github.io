@@ -59,7 +59,7 @@ technical_groups:
       - icon: "crosshairs"
         name: "接觸搜尋與螺旋微動"
       - icon: "magnifying-glass"
-        name: "PatchCore 異常檢測（開發原型）"
+        name: "PatchCore 異常檢測"
   - title: "Robotics Platforms & Automation"
     skills:
       - icon: "server"

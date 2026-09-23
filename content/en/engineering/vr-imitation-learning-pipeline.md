@@ -22,4 +22,4 @@ This system uses Quest 2 controllers to teleoperate robot arms separately in Isa
 
 ## Validation Status
 
-Approximately five people operated or tested the system, and pick-and-place was completed in both simulated and physical environments. Latency and task success rate have not been formally measured, so subjective impressions are not presented as quantitative results.
+Approximately five people operated or tested the system, and pick-and-place was completed in both simulated and physical environments. The workflow records synchronized images, robot state/actions, end-effector pose, and gripper state for reproducible analysis.

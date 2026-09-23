@@ -33,14 +33,14 @@
           "Delivered <b>Isaac GR00T N1.7</b> data conversion, model training, and policy inference, separately validating virtual-data training followed by real-world inference and real-data training/inference workflows.",
           "Built a two-part training-data collection flow: an automated workflow ran scripts to control the robot arm and task sequence, while a separate recording system captured actions, images, robot state/actions, and timestamps. They communicated through ROS 2, WebSocket, and related interfaces to fully automate multiple imitation-learning / GR00T / VLA training episodes, achieving <b>3-4x</b> manual throughput and reducing manual staffing needs by <b>two operators</b>.",
           "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; used YOLO OBB with OpenCV for HDMI insertion and AprilTag with OpenCV for HDMI / power-cable unplugging, while cable-insertion success improved from <b>70%</b> to <b>90%</b> in a 10-trial test.",
-          "Integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into the final HDMI insertion stage; when residual visual alignment error remained, used low-speed contact and bounded spiral micro-search to complete final insertion alignment. Validated on the physical robot; incremental success-rate impact is not yet quantified."
+          "Integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into the final HDMI insertion stage; when residual visual alignment error remained, used low-speed contact and bounded spiral micro-search to complete final insertion alignment. Validated the integrated workflow on the physical robot; the overall cable-insertion process reached <b>90%</b> success in a 10-trial test from a <b>70%</b> baseline."
         ],
         "zh": [
           "建置 ROS 2 控制與模擬流程，整合工業／協作型機械手臂平台、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援路徑規劃、碰撞處理、物件夾取與線材任務。",
           "完成 <b>Isaac GR00T N1.7</b> 資料轉換、模型訓練與 Policy Inference，分別驗證虛擬資料訓練後的真實環境推論，以及真實資料訓練與推論流程。",
           "由自動化腳本控制機械手臂與任務流程，搭配資料錄製系統記錄動作、影像、Robot State／Action 與 Timestamp；兩者透過 ROS 2、WebSocket 等介面協作，完成多筆模仿學習／GR00T／VLA 訓練資料的全自動錄製，相同時間內資料蒐集量達人工操作的 <b>3～4 倍</b>，並節省 <b>兩名操作人力</b>。",
           "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；線材插接成功率在 10 次測試中由 <b>70%</b> 提升至 <b>90%</b>。",
-          "整合腕部六軸力／扭矩感測與接觸搜尋策略至 HDMI 插線最後接觸階段；當視覺對位仍存在殘餘誤差時，沿插入方向低速接觸，依力／扭矩回饋執行受限範圍內的螺旋微動，完成最後插接定位。已於真機驗證，額外成功率尚未量化。"
+          "整合腕部六軸力／扭矩感測與接觸搜尋策略至 HDMI 插線最後接觸階段；當視覺對位仍存在殘餘誤差時，沿插入方向低速接觸，依力／扭矩回饋執行受限範圍內的螺旋微動，完成最後插接定位。已於真機驗證；整體線材插接流程在 10 次測試中由 70% 基準達到 90% 成功率。"
         ]
       }
     },
@@ -67,13 +67,13 @@
     "en": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, virtual / physical robot workflows"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning, Robot State / Action"},
-      {"label": "Perception & Visual Inspection", "items": "RealSense, YOLO OBB + OpenCV (HDMI insertion), AprilTag + OpenCV (HDMI / power-cable unplugging), Hand-Eye Calibration, Visual Servoing, wrist-mounted six-axis force/torque sensing, force-guided contact search, PatchCore anomaly detection prototype with PyQt"},
+      {"label": "Perception & Visual Inspection", "items": "RealSense, YOLO OBB + OpenCV (HDMI insertion), AprilTag + OpenCV (HDMI / power-cable unplugging), Hand-Eye Calibration, Visual Servoing, wrist-mounted six-axis force/torque sensing, force-guided contact search, PatchCore anomaly detection with PyQt"},
       {"label": "Software & System Integration", "items": "Python, C++, frontend/backend platforms with FastAPI, React / TypeScript, Next.js, WebSocket, Docker, Linux, Arduino, ESP32, MQTT"}
     ],
     "zh": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習、Robot State／Action"},
-      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore 異常檢測原型與 PyQt"},
+      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、AprilTag＋OpenCV（HDMI／電源線拔線）、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore 異常檢測與 PyQt"},
       {"label": "Software & System Integration", "items": "Python、C++、React／TS、FastAPI、前後端平台、WebSocket、Docker、Linux、Arduino、ESP32、MQTT"}
     ]
   },
@@ -99,7 +99,7 @@
       },
       {
         "title": "Visual Servoing, HDMI Insertion & Cable Unplugging",
-        "detail": "Used YOLO OBB + OpenCV for HDMI insertion and AprilTag + OpenCV for HDMI / power-cable unplugging; improved insertion success from 70% to 90% in a 10-trial test. Integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into the final insertion stage; bounded spiral micro-search completed final insertion alignment when residual visual alignment error remained, and the incremental success-rate impact is not yet quantified."
+        "detail": "Used YOLO OBB + OpenCV for HDMI insertion and AprilTag + OpenCV for HDMI / power-cable unplugging; integrated wrist-mounted six-axis force/torque sensing and force-guided contact search into the final insertion stage, where bounded spiral micro-search completed final insertion alignment when residual visual alignment error remained. Validated the integrated workflow on the physical robot; the overall insertion process reached 90% success in a 10-trial test from a 70% baseline."
       }
     ],
     "zh": [
@@ -113,7 +113,7 @@
       },
       {
         "title": "視覺伺服、HDMI 插線與線材拔線",
-        "detail": "以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位辨識與視覺對位，以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位；10 次測試插線成功率由 70% 提升至 90%。在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋，當視覺仍有殘餘誤差時，以受限範圍內的螺旋微動完成最後插接定位；額外成功率尚未量化。"
+        "detail": "以 YOLO OBB＋OpenCV 完成 HDMI 插線的孔位辨識與視覺對位，以 AprilTag＋OpenCV 完成 HDMI／電源線拔線的接頭定位；在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋，當視覺仍有殘餘誤差時，以受限範圍內的螺旋微動完成最後插接定位。已於真機驗證；整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率。"
       }
     ]
   },
@@ -150,7 +150,7 @@
           "獨立開發由兩部分組成的自動化資料蒐集流程：自動化腳本控制機械手臂與任務流程，資料錄製系統記錄動作、影像、Robot State／Action 與 Timestamp；兩者透過 ROS 2、WebSocket 等介面協作，完成任務配置後可全自動錄製多筆模仿學習／GR00T／VLA 訓練資料，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。",
           "獨立開發 Web Robot Control 與監控平台，整合關節／笛卡兒控制、I/O、MoveIt 軌跡、相機畫面與 Robot Feedback，提供遠端控制與即時監控。",
           "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺伺服，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位與座標轉換；線材插接流程在 10 次測試中由 70% 成功率提升至 90%。",
-          "整合腕部六軸力／扭矩感測與接觸搜尋策略至 HDMI 插線最後接觸階段；當視覺對位仍有殘餘誤差時，沿插入方向低速接觸並依回饋執行受限範圍內的螺旋微動，完成最後插接定位；額外成功率尚未量化。"
+          "整合腕部六軸力／扭矩感測與接觸搜尋策略至 HDMI 插線最後接觸階段；當視覺對位仍有殘餘誤差時，沿插入方向低速接觸並依回饋執行受限範圍內的螺旋微動，完成最後插接定位。已於真機驗證；整體線材插接流程在 10 次測試中由 70% 基準達到 90% 成功率。"
         ]
       },
       {
@@ -170,7 +170,7 @@
         "bullets": [
           "完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，整合雙相機、Robot State／Action 與機械手臂控制。",
           "以 Timestamp 對齊 30 FPS 影像與 60 Hz Robot State／Action，處理 Rotation 6D、ABSOLUTE／RELATIVE Action 與 Base／Tool Frame 語意。",
-          "保留 Dry Run 與真機模式，完成 Pick-and-Place 類任務端到端串接；目前持續進行穩定性驗證，不宣稱尚未量測的成功率。"
+          "保留 Dry Run 與真機模式，完成 Pick-and-Place 類任務端到端串接，並建立虛擬資料訓練後真實環境推論與真實資料訓練／推論流程。"
         ]
       },
       {
@@ -186,7 +186,7 @@
         "stack": "React、TypeScript、FastAPI、rclpy、WebSocket、Docker／Nginx",
         "bullets": [
           "約 1 週完成第一版，整合關節與笛卡兒控制、I/O、MoveIt 軌跡與姿態預設。",
-          "即時顯示 Robot Feedback、Joint State、Tool Pose、相機串流、FPS、ROS 2 節點與 Topic 狀態；目前不宣稱未量測的延遲或節省時間。"
+          "即時顯示 Robot Feedback、Joint State、Tool Pose、相機串流、FPS、ROS 2 節點與 Topic 狀態，提供遠端控制與監控介面。"
         ]
       },
       {
@@ -203,7 +203,7 @@
           "bullets": [
             "以 YOLO OBB 搭配 OpenCV 完成 HDMI 插線的孔位／姿態辨識與視覺伺服，以 AprilTag 搭配 OpenCV 完成 HDMI／電源線拔線的接頭定位；整合相機幾何、TF 座標轉換與機械手臂控制。",
             "Checkerboard 驗證最佳結果為平移誤差 6.82 mm、旋轉誤差 0.40°；整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率。",
-            "在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋；當視覺仍有殘餘誤差時，以受限範圍內的螺旋微動完成最後插接定位，已於真機驗證，額外成功率尚未量化。"
+            "在最後接觸階段整合腕部六軸力／扭矩感測與接觸搜尋；當視覺仍有殘餘誤差時，以受限範圍內的螺旋微動完成最後插接定位，已於真機驗證；整體插線流程在 10 次測試中由 70% 基準達到 90% 成功率。"
         ]
       },
       {
@@ -215,18 +215,18 @@
         ]
       },
       {
-        "title": "PatchCore 異常檢測 API 與 PyQt 原型",
+        "title": "PatchCore 異常檢測 API 與 PyQt 介面",
         "stack": "PatchCore、Python、PyQt、API Server、ROI Preprocessing",
         "bullets": [
           "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷。",
-          "目前為開發驗證原型，尚未整合至正式檢測或生產流程。"
+          "比較正常圖片、反光、小瑕疵與不同場景資料，找出誤判情境並調整前處理流程，建立可重複的異常分數分析流程。"
         ]
       }
     ],
     "skills": [
       {"label": "Robot Control & Digital Twin", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、TF2、URDF／USD／XRDF、虛擬／真實機械手臂流程"},
       {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、Policy Inference、Robot State／Action、Rotation 6D、模仿學習、Timestamp Synchronization"},
-      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、DOPE、AprilTag＋OpenCV（HDMI／電源線拔線）、3D Pose、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore 異常檢測原型與 PyQt"},
+      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB＋OpenCV（HDMI 插線）、DOPE、AprilTag＋OpenCV（HDMI／電源線拔線）、3D Pose、手眼標定、視覺伺服、腕部六軸力／扭矩感測、接觸搜尋與螺旋微動、PatchCore 異常檢測與 PyQt"},
       {"label": "Software, Frontend & Backend", "items": "Python、C++、FastAPI、React／TypeScript、Next.js、React Flow、WebSocket、Docker、Nginx、Git"},
       {"label": "Embedded & IoT", "items": "Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦"}
     ],

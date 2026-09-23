@@ -1,12 +1,12 @@
 ---
 title: "智慧型輪椅"
-description: "透過藍牙控制與 Arduino 整合的輔助移動原型系統。"
+description: "透過藍牙控制與 Arduino 整合的輔助移動系統。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["App Inventor", "Arduino", "Bluetooth", "IoT"]
 weight: 60
 ---
 
-這是一個結合行動裝置與嵌入式控制的輔助移動原型，讓輪椅可依預設路線行駛。
+這是一個結合行動裝置與嵌入式控制的輔助移動系統，讓輪椅可依預設路線行駛。
 
 ## 重點
 

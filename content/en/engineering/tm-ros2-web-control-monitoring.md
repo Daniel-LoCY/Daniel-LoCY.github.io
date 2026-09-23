@@ -26,4 +26,4 @@ This platform lowers the barrier to live TM5S operation and status inspection by
 - Camera streams, FPS, resolution, and image-source information.
 - ROS 2 nodes, topics, and related runtime information for checking control and data paths.
 
-The core value is simpler remote control and monitoring. It is currently used mainly by me, and control latency, time savings, and long-duration stability have not been formally measured, so no speculative metric is presented.
+The platform provides direct browser-based robot control and monitoring, combining command execution, camera streams, feedback, and ROS 2 runtime information in one operational interface.

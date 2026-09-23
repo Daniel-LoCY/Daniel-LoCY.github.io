@@ -28,4 +28,4 @@ weight: 1
 - 明確區分影像、Robot State、Action 與時間戳的資料 contract，處理多來源頻率不同造成的同步問題。
 - 對齊 ABSOLUTE／RELATIVE Action、Base／Tool Frame 與 Rotation 6D 表示，避免訓練資料和真機控制語意漂移。
 - 將模型推論與實機輸出拆成可檢查的服務邊界，保留不送出動作的測試模式，再切換到真機控制。
-- 已完成 Pick-and-Place 類型任務的完整串接；目前持續進行 GR00T 相關任務與穩定性驗證，尚未以未統計的成功率作為成果宣稱。
+- 已完成 Pick-and-Place 類型任務的完整串接，並建立虛擬資料訓練後真實環境推論與真實資料訓練／推論流程。

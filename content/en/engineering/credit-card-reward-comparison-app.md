@@ -30,7 +30,7 @@ This is a live Taiwan credit-card reward comparison product. Users enter a spend
 ## Data reliability design
 
 - The synchronization flow requires HTTPS official sources, fixed JSON schemas, date and condition validation, and bank / card / payment / merchant consistency checks.
-- The LLM Collector is bounded to source retrieval and fixed-format validation; unvalidated model output is not published directly as public reward data.
+- The LLM Collector applies source retrieval and fixed-format validation before data enters the public reward dataset.
 - Campaign details and recommendation results expose official source URLs so users can verify terms with the issuing bank or campaign owner.
 
 ## Engineering focus

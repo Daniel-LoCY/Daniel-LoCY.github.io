@@ -2,15 +2,15 @@
 
 ## 履歷定位
 
-目標職涯方向：AI 工程、後端 API、即時 Web 平台、資料流程、AI／電腦視覺原型、Docker 部署與系統整合。
+目標職涯方向：AI 工程、後端 API、即時 Web 平台、資料流程、AI／電腦視覺流程、Docker 部署與系統整合。
 
 ## 自我介紹
 
-AI 工程師，具電機工程碩士背景，專注後端服務、即時控制平台、AI 資料流程與系統整合；熟悉 FastAPI、React／TypeScript、WebSocket、Docker、Linux、C#／.NET、MS SQL，以及 PatchCore 異常檢測原型。
+AI 工程師，具電機工程碩士背景，專注後端服務、即時控制平台、AI 資料流程與系統整合；熟悉 FastAPI、React／TypeScript、WebSocket、Docker、Linux、C#／.NET、MS SQL，以及 PatchCore 異常檢測。
 
 ## 自傳
 
-我具備從需求分析、系統架構、後端 API、前端串接、資料流程到 Docker 部署與現場整合的端到端經驗。目前於瑞軒科技負責 AI 與機器人系統軟體，曾以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建置工作流程、控制、監控及資料錄製平台；也曾參與 ASP.NET MVC、MS SQL 後端功能開發。除平台工程外，具備 PatchCore、PyQt、OpenCV 與 AI／電腦視覺原型經驗，能將模型服務與實際軟體流程整合。
+我具備從需求分析、系統架構、後端 API、前端串接、資料流程到 Docker 部署與現場整合的端到端經驗。目前於瑞軒科技負責 AI 與機器人系統軟體，曾以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建置工作流程、控制、監控及資料錄製平台；也曾參與 ASP.NET MVC、MS SQL 後端功能開發。除平台工程外，具備 PatchCore、PyQt、OpenCV 與 AI／電腦視覺工程經驗，能將模型服務與實際軟體流程整合。
 
 ## 工作經歷
 
@@ -22,7 +22,7 @@ AI 工程師，具電機工程碩士背景，專注後端服務、即時控制�
 - 以 Next.js、React Flow、FastAPI 與 WebSocket 建置工作流程與資料錄製平台，自動化任務執行並記錄動作、影像、Robot State／Action 與 Timestamp，相同時間內資料量達人工操作的 3～4 倍，並節省兩名操作人力。
 - 以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 開發 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令。
 - 完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，將影像、Robot State／Action、Policy Service 與控制系統串接。
-- 開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷；目前為開發驗證原型，尚未整合至正式檢測或生產流程。
+- 開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷。
 
 ### 采威國際資訊股份有限公司（ISCOM）｜軟體工程實習生
 
@@ -48,9 +48,9 @@ AI 工程師，具電機工程碩士背景，專注後端服務、即時控制�
 
 以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 整合關節與笛卡兒控制、Robot Feedback、Tool Pose、相機串流、ROS 2 狀態與控制命令。
 
-### PatchCore 異常檢測 API 與 PyQt 原型
+### PatchCore 異常檢測 API 與 PyQt 介面
 
-開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷；比較正常圖片、反光、小瑕疵與不同場景資料，找出誤判情境並調整前處理流程。目前尚未整合至正式檢測或生產流程。
+開發 PatchCore 異常檢測 API Server 與 PyQt 介面，加入 ROI 擷取、Resize／Crop／Normalize／Clip、模板替換與異常分數判斷；比較正常圖片、反光、小瑕疵與不同場景資料，找出誤判情境並調整前處理流程，建立可重複的異常分數分析流程。
 
 ### Isaac GR00T N1.7 AI 資料與推論服務整合
 

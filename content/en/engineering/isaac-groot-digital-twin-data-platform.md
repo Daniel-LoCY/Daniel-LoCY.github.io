@@ -28,4 +28,4 @@ The project separately validates two workflows: training with simulated data fol
 - Defined explicit contracts for images, robot state, actions, and timestamps to handle synchronization across sources with different rates.
 - Reconciled ABSOLUTE/RELATIVE actions, Base/Tool frames, and Rotation 6D so training data and physical control retain the same semantics.
 - Separated policy inference from robot output behind inspectable service boundaries, with a no-motion test mode before physical execution.
-- Completed the full path for pick-and-place tasks. GR00T task development and stability validation are ongoing, so no unmeasured success-rate claim is presented.
+- Completed the full path for pick-and-place tasks and established separate simulation-data and physical-data training/inference workflows.

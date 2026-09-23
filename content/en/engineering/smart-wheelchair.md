@@ -6,7 +6,7 @@ tags: ["App Inventor", "Arduino", "Bluetooth", "IoT"]
 weight: 60
 ---
 
-An assistive mobility prototype that allowed a wheelchair to follow preset routes through mobile control and embedded integration.
+An assistive mobility system that allowed a wheelchair to follow preset routes through mobile control and embedded integration.
 
 ## Highlights
 

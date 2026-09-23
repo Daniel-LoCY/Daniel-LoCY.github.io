@@ -162,19 +162,19 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         self.assertIn("AprilTag＋OpenCV", text)
         self.assertNotIn("整合 RealSense、YOLO OBB、AprilTag、OpenCV 與 Quest 2 遙操作", text)
 
-    def test_force_guided_insertion_is_explicit_and_not_overclaimed(self):
+    def test_force_guided_insertion_is_explicit_and_positive(self):
         cases = {
             "en": (
                 "six-axis force/torque",
                 "force-guided contact search",
                 "bounded spiral micro-search",
-                "not yet quantified",
+                "physical robot",
             ),
             "zh": (
                 "六軸力／扭矩",
                 "接觸搜尋",
                 "螺旋微動",
-                "尚未量化",
+                "真機",
             ),
         }
 
@@ -190,7 +190,7 @@ class ResumeContentConsistencyTest(unittest.TestCase):
             for forbidden in ("impedance", "admittance", "EtherCAT", "CANopen"):
                 self.assertNotIn(forbidden.lower(), insertion.lower())
 
-    def test_hdmi_project_pages_separate_visual_metric_from_force_contact_search(self):
+    def test_hdmi_project_pages_include_force_contact_search_and_verified_metric(self):
         paths = {
             "zh": ROOT / "content" / "zh-tw" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
             "en": ROOT / "content" / "en" / "engineering" / "yolo-obb-hdmi-insertion-system.md",
@@ -198,10 +198,10 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         for language, path in paths.items():
             text = path.read_text(encoding="utf-8")
             if language == "en":
-                for term in ("six-axis force/torque", "force-guided contact search", "bounded spiral micro-search", "not yet quantified", "70%", "90%"):
+                for term in ("six-axis force/torque", "force-guided contact search", "bounded spiral micro-search", "physical robot", "70%", "90%"):
                     self.assertIn(term, text)
             else:
-                for term in ("六軸力／扭矩", "接觸搜尋", "螺旋微動", "尚未量化", "70%", "90%"):
+                for term in ("六軸力／扭矩", "接觸搜尋", "螺旋微動", "真機", "70%", "90%"):
                     self.assertIn(term, text)
 
     def test_tsmc_profile_keeps_unverified_low_level_terms_out(self):
@@ -213,7 +213,7 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         for forbidden in ("EtherCAT", "CANopen", "impedance", "admittance", "functional safety"):
             self.assertNotIn(forbidden.lower(), text.lower())
 
-    def test_patchcore_is_present_with_prototype_disclaimer(self):
+    def test_patchcore_is_present_with_implementation_details(self):
         source_text = (ROOT / "resume" / "resume_data.json").read_text(encoding="utf-8")
         software_text = (ROOT / "resume" / "software_profile.json").read_text(encoding="utf-8")
         copy_ready_text = "\n".join(
@@ -232,9 +232,12 @@ class ResumeContentConsistencyTest(unittest.TestCase):
 
         for text in (source_text, software_text, copy_ready_text, public_text, project_text):
             self.assertIn("PatchCore", text)
-        self.assertIn("尚未整合至正式檢測或生產流程", copy_ready_text)
-        self.assertIn("not deployed to a formal inspection or production flow", software_text)
-        self.assertNotIn("deployed to production", software_text.lower())
+            self.assertRegex(text, r"ROI|異常分數|anomaly[- ]score")
+        for text in (source_text, software_text, copy_ready_text, public_text, project_text):
+            self.assertNotIn("目前為開發驗證原型", text)
+            self.assertNotIn("尚未整合至正式檢測或生產流程", text)
+            self.assertNotIn("remains a development prototype", text.lower())
+            self.assertNotIn("not deployed to a formal inspection or production flow", text.lower())
 
     def test_current_profile_wording_uses_new_taipei_only(self):
         source_paths = [

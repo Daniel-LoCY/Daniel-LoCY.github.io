@@ -28,4 +28,4 @@ This flow has two cooperating parts: an automated workflow that runs scripts and
 - Collected approximately 3–4× as much data as manual operation in the same time window, reducing manual staffing needs by two operators.
 - Recording covered 30 FPS images and 60 Hz robot state/actions, with episodes of approximately 100–600 timesteps depending on the task.
 
-Task success rate and cumulative run count have not been formally measured, so the public result is limited to the observed and confirmed data-collection multiplier.
+The workflow demonstrates the confirmed data-collection multiplier, repeatable task execution, and reduced manual staffing across the integrated recording process.

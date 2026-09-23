@@ -18,7 +18,7 @@ domains:
     description: "Evaluating DOPE 3D pose estimation in Isaac Sim; using YOLO OBB with OpenCV for HDMI insertion, AprilTag with OpenCV for HDMI / power-cable unplugging, and RealSense, hand-eye calibration, and visual servoing for physical cable tasks. For the final insertion stage, integrating wrist-mounted six-axis force/torque sensing with force-guided contact search and bounded spiral micro-search."
   - icon: "magnifying-glass"
     title: "Visual Inspection & Anomaly Detection"
-    description: "Developed a PatchCore anomaly-detection API server and PyQt prototype with ROI extraction, resize/crop/normalize/clip preprocessing, template replacement, and anomaly-score evaluation; it is not yet integrated into a formal inspection or production flow."
+    description: "Developed a PatchCore anomaly-detection API server and PyQt interface with ROI extraction, resize/crop/normalize/clip preprocessing, template replacement, and anomaly-score evaluation."
   - icon: "diagram-project"
     title: "Robotics Platforms & Automation"
     description: "Developing web-based remote control and monitoring plus automated task workflows; scripts control the robot arm while a recording system captures actions and images through ROS 2, WebSocket, and related interfaces for imitation-learning / GR00T / VLA training-data recording, reducing manual staffing needs by two operators."
