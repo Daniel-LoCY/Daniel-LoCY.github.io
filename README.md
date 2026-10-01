@@ -7,9 +7,10 @@
 - 將兩份通用履歷、104 copy-ready 來源、網站雙語頁面與作品集近期專案統一為 `Software Engineer | AI, Robotics & Systems Integration`／`軟體工程師｜AI、機器人與系統整合`。
 - 將前端、後端 API、AI／ML、電腦視覺、Docker／Linux、ROS 2、VLA 與系統整合以同等層級呈現；保留現職正式職稱 `AI Robotics Engineer`。
 - 重新排列網站技能與技術棧，並將代表專案調整為工作流程平台、Web Robot Control、PatchCore、Isaac GR00T、Robot Control 與 Digital Twin，避免首頁只偏向機器人。
-- 新增 `resume/platform-copy/linkedin-unified.md` 與 `resume/platform-copy/github-unified.md` 作為 LinkedIn、GitHub／作品集的可貼上草稿；本次不代替使用者登入或直接儲存外部平台內容。
+- `resume/platform-copy/linkedin-unified.md` 與 `resume/platform-copy/github-unified.md` 保留為平台文案來源；LinkedIn 已公開同步 headline、Industry、個人網站連結與 Open to Work 職稱，About／目前經歷儲存時由平台回傳 `Something went wrong`，仍以草稿作為後續人工補登依據。
+- 104 已公開同步個人簡介、中英文自傳、目前工作經歷、求職職稱／工作內容與六項個人特色標籤；個人網站內容則由本次 `main` 部署更新。
 - TSMC 客製履歷仍維持獨立的 Robotics 目標定位，不套用通用雙主軸標題。
-- 以 Docker 重建履歷產生器並通過 34 項履歷／內容測試；Hugo Extended 0.152.1 Docker 建置確認繁中 37 頁、英文 35 頁。
+- 以 Docker 重建履歷產生器並通過 24 項履歷／內容測試；Hugo Extended 0.152.1 Docker 建置確認繁中 37 頁、英文 35 頁。
 
 ## 2026-09-23 雙軌通用履歷與公開內容同步（歷史版本）
 
@@ -106,7 +107,8 @@
 ## 公開內容維護
 
 - 公開履歷與網站以已完成的系統整合、實作內容與可驗證成果為主，並維持中英文、PDF、104、LinkedIn 與 GitHub／作品集草稿的一致性。
-- 通用公開定位同時面向 Software／Backend／Full-Stack／AI／ML／Robotics Software／Systems Integration 職缺；尚未直接替使用者送出履歷、訊息或外部平台儲存。
+- 通用公開定位同時面向 Software／Backend／Full-Stack／AI／ML／Robotics Software／Systems Integration 職缺；104 已完成公開同步，LinkedIn 已完成可儲存欄位同步，About／目前經歷仍受平台儲存錯誤限制。
+- 本次未儲存 LinkedIn 工作通知設定，避免未經確認訂閱額外通知；未送出履歷、訊息或申請。
 - 2026/09/23 重新納入三項可驗證成果：線材插接成功率由 70% 提升至 90%、相同時間內資料蒐集量約為人工操作的 3～4 倍、節省兩名操作人力；低層實作參數仍維持精簡。
 - 工作專案圖片使用通用專案圖，網站文字以不揭露內部資料的方式呈現工程內容。
 
