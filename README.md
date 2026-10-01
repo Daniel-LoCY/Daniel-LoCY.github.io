@@ -2,15 +2,22 @@
 
 這是駱忠湧的雙語個人作品集網站，並列呈現 Software Engineering、AI／ML、前後端平台、Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程與機器人系統整合經驗。
 
-## 2026-10-01 機器人與軟體工程雙主軸統一
+## 2026-10-01 VLA 與核心優勢前置同步
 
-- 將兩份通用履歷、104 copy-ready 來源、網站雙語頁面與作品集近期專案統一為 `Software Engineer | AI, Robotics & Systems Integration`／`軟體工程師｜AI、機器人與系統整合`。
-- 將前端、後端 API、AI／ML、電腦視覺、Docker／Linux、ROS 2、VLA 與系統整合以同等層級呈現；保留現職正式職稱 `AI Robotics Engineer`。
-- 重新排列網站技能與技術棧，並將代表專案調整為工作流程平台、Web Robot Control、PatchCore、Isaac GR00T、Robot Control 與 Digital Twin，避免首頁只偏向機器人。
-- `resume/platform-copy/linkedin-unified.md` 與 `resume/platform-copy/github-unified.md` 保留為平台文案來源；LinkedIn 已公開同步 headline、Industry、個人網站連結與 Open to Work 職稱，About／目前經歷儲存時由平台回傳 `Something went wrong`，仍以草稿作為後續人工補登依據。
-- 104 已公開同步個人簡介、中英文自傳、目前工作經歷、求職職稱／工作內容與六項個人特色標籤；個人網站內容則由本次 `main` 部署更新。
-- TSMC 客製履歷仍維持獨立的 Robotics 目標定位，不套用通用雙主軸標題。
-- 以 Docker 重建履歷產生器並通過 24 項履歷／內容測試；Hugo Extended 0.152.1 Docker 建置確認繁中 37 頁、英文 35 頁。
+- 將 VLA／Robot Learning、Isaac GR00T N1.7、Policy Inference、虛擬／真實環境驗證前置到 104 摘要、自傳、履歷來源與網站中英文 About／Experience 首段。
+- 保留並同步前後端平台、API、資料庫、Docker、Linux、Git、視覺感知、PatchCore 與量化成果，維持 AI／機器人與軟體工程雙主軸。
+- 更新 LinkedIn 與 GitHub 可貼上文案；LinkedIn About 與目前職務內容已公開同步，Top skills 受平台 100 項技能上限限制，公開顯示 ROS、AI、Computer Vision、Software Development。
+- 以 Docker 通過 24 項履歷／內容測試；Hugo Extended 0.152.1 建置確認繁中 37 頁、英文 35 頁。
+
+## 2026-10-01 軟體與機器人雙軸並重同步
+
+- 將通用 PDF、104 copy-ready 來源、網站雙語頁面、LinkedIn 與 GitHub 文案統一為軟體工程與 AI／機器人系統整合雙軸；保留現職正式職稱 `AI Robotics Engineer`。
+- 將 C#／ASP.NET MVC、MS SQL、Backend API、資料庫整合、Docker、Linux、Git 與測試維運提前呈現，同時保留 ROS 2、Isaac GR00T、VLA、PatchCore 與 70%→90% 等可驗證成果。
+- 通用中文履歷的第一組精選專案改為 ASP.NET MVC 企業 Web 開發、機器人工作流程平台與 Web Robot Control，讓 HR 同時看到企業軟體與機器人系統能力。
+- 個人網站的履歷下載連結改指向雙軸並重的 software PDF；中英文 About、Experience、Skills 與 Core Tech Stack 同步加入 API、資料庫與企業軟體關鍵字。
+- `resume/platform-copy/linkedin-unified.md` 與 `resume/platform-copy/github-unified.md` 更新為可同步的雙軸文案；104 已公開同步 AI工程師、軟體工程師、後端工程師、全端工程師、系統工程師，LinkedIn 已公開同步標題、About 與目前職務內容。
+- 台積電 Robotics 客製履歷仍維持獨立目標定位，不套用通用雙主軸標題。
+- 以 Docker 重建履歷產生器並通過 24 項履歷／內容測試；Hugo Extended 0.152.1 建置確認繁中 37 頁、英文 35 頁。
 
 ## 2026-09-23 雙軌通用履歷與公開內容同步（歷史版本）
 
@@ -93,8 +100,6 @@
 - `output/pdf/robotics/daniel-lo-resume-robotics-en.pdf`：機器人版英文一頁履歷。
 - `output/pdf/software/daniel-lo-resume-software-zh-tw-v2.pdf`：通用雙主軸中文兩頁履歷（保留原 software 路徑）。
 - `output/pdf/software/daniel-lo-resume-software-en.pdf`：通用雙主軸英文一頁履歷（保留原 software 路徑）。
-- `output/pdf/tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf`：台積電 Robotics 客製中文兩頁履歷。
-- `output/pdf/tsmc/daniel-lo-resume-tsmc-en.pdf`：台積電 Robotics 客製英文一頁履歷。
 
 重新產生與測試 PDF：
 
@@ -102,12 +107,12 @@
 ./resume/build.sh
 ```
 
-建置與測試固定在 Docker container 中執行，會檢查兩條通用履歷與 TSMC 客製履歷的頁數、必要欄位、PatchCore 工程內容與核心成果是否存在，以及低相關舊活動是否未混入 v2。
+建置與測試固定在 Docker container 中執行，會檢查兩條通用履歷與 TSMC 客製履歷的頁數、必要欄位、軟體與機器人關鍵內容、PatchCore 工程內容與核心成果是否存在，以及低相關舊活動是否未混入 v2。
 
 ## 公開內容維護
 
 - 公開履歷與網站以已完成的系統整合、實作內容與可驗證成果為主，並維持中英文、PDF、104、LinkedIn 與 GitHub／作品集草稿的一致性。
-- 通用公開定位同時面向 Software／Backend／Full-Stack／AI／ML／Robotics Software／Systems Integration 職缺；104 已完成公開同步，LinkedIn 已完成可儲存欄位同步，About／目前經歷仍受平台儲存錯誤限制。
+- 通用公開定位同時面向 Software／Backend／Full-Stack／AI／ML／Robotics Software／Systems Integration 職缺；104 與 LinkedIn 已完成本次公開欄位同步。
 - 本次未儲存 LinkedIn 工作通知設定，避免未經確認訂閱額外通知；未送出履歷、訊息或申請。
 - 2026/09/23 重新納入三項可驗證成果：線材插接成功率由 70% 提升至 90%、相同時間內資料蒐集量約為人工操作的 3～4 倍、節省兩名操作人力；低層實作參數仍維持精簡。
 - 工作專案圖片使用通用專案圖，網站文字以不揭露內部資料的方式呈現工程內容。
