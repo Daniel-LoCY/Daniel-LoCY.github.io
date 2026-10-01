@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  I focus on robot control, Embodied AI, VLA / robot learning, visual perception, and Digital Twin data workflows, using frontend/backend platforms alongside ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for system integration, data processing, policy inference, and simulation / real-world validation.
+  I work across software engineering, AI services, and robotics system integration: frontend/backend platforms, APIs, WebSocket, Docker deployment, ROS 2, Isaac Sim / Isaac Lab, Isaac GR00T, visual perception, and simulation / real-world validation for data, control, and monitoring workflows.
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -17,12 +17,11 @@ positions:
     location: "New Taipei, Taiwan"
     company_description: "Consumer electronics and smart technology company with R&D work spanning AI, robotics, and system integration."
     bullet_points:
-      - "Delivered robotics software from requirements and system architecture through Docker deployment, testing, on-site integration, and maintenance."
-      - "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion."
-      - "Completed Isaac GR00T N1.7 data conversion, model training, and policy inference across simulation and physical-robot workflows."
-      - "Built an automated workflow and recording system through ROS 2, WebSocket, and Docker for AI and robotics data workflows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators."
-      - "Integrated visual perception, visual servoing, robot control, and physical-robot validation into repeatable task workflows, improving cable-insertion success from 70% to 90%."
-      - "Developed a PatchCore anomaly-detection API server and PyQt interface, integrating AI vision and inspection workflows."
+      - "Delivered AI and robotics software from requirements and system architecture through frontend/backend implementation, Docker deployment, testing, on-site integration, and maintenance."
+      - "Built a Next.js / React Flow / FastAPI / WebSocket / Docker workflow and data-recording platform for AI / VLA data workflows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators."
+      - "Built a React / TypeScript / FastAPI / ROS 2 / WebSocket platform for web-based robot control and monitoring with real-time video, system status, control commands, and Docker / Nginx deployment; improved cable-insertion success from 70% to 90%."
+      - "Completed Isaac GR00T N1.7 data conversion, model training, and policy inference, integrating ROS 2 control, visual perception, and simulation / physical-robot workflows."
+      - "Developed a PatchCore anomaly-detection API server and PyQt interface, integrating AI vision, visual servoing, and robot-task validation."
   - company: "ISCOM"
     company_url: "https://www.iscom.com.tw"
     role: "Software Engineer Intern"

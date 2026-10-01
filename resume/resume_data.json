@@ -1,10 +1,10 @@
 {
-  "version": "2026-09",
+  "version": "2026-10",
   "contact": {
     "name_en": "Daniel Lo",
     "name_zh": "駱忠湧 Daniel Lo",
-    "title_en": "AI Robotics Engineer | Robotics Software & Systems Integration",
-    "title_zh": "AI 機器人工程師｜機器人軟體與系統整合",
+    "title_en": "Software Engineer | AI, Robotics & Systems Integration",
+    "title_zh": "軟體工程師｜AI、機器人與系統整合",
     "location_en": "New Taipei, Taiwan",
     "location_zh": "新北，台灣",
     "email": "m0989062418@gmail.com",
@@ -14,8 +14,8 @@
     "linkedin": "linkedin.com/in/chung-yung-lo-790ab6330"
   },
   "summary": {
-    "en": "AI Robotics Engineer with an M.S. in Electrical Engineering, focused on ROS 2, Isaac Sim / Isaac Lab, and Isaac GR00T for robot control, VLA, and Digital Twin data workflows. Experienced in end-to-end integration across perception, data and policy workflows, frontend/backend platforms, and simulation / real-world validation.",
-    "zh": "AI 機器人工程師，具電機工程碩士背景，專注於 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 的機器人控制、VLA 與 Digital Twin 資料流程。具備從感知、資料與 Policy 流程、前後端平台到虛擬／真實環境驗證的端到端整合經驗。"
+    "en": "Software Engineer with an M.S. in Electrical Engineering, experienced in frontend/backend platforms, AI services, and robotics software from requirements and architecture through Docker deployment, testing, and real-world integration. Skilled in Python, C++, C#/.NET, React/TypeScript, FastAPI, WebSocket, ROS 2, Isaac Sim/Lab, Isaac GR00T, computer vision, and Digital Twin workflows.",
+    "zh": "軟體工程師，具電機工程碩士背景，能從需求分析、系統架構、開發、測試、Docker 部署到現場整合交付前後端平台、AI 服務與機器人軟體。熟悉 Python、C++、C#／.NET、React／TypeScript、FastAPI、WebSocket、ROS 2、Isaac Sim／Lab、Isaac GR00T、電腦視覺與 Digital Twin 資料流程。"
   },
   "experience": [
     {
@@ -29,16 +29,16 @@
       "location_zh": "新北，台灣",
       "bullets": {
         "en": [
-          "Built ROS 2 control and simulation workflows for industrial and collaborative robot platforms with NVIDIA Isaac Sim / Isaac Lab, MoveIt 2, and cuMotion for robot control and system validation.",
-          "Delivered <b>Isaac GR00T N1.7</b> data conversion, model training, and policy inference across simulation and physical-robot workflows.",
-          "Built an automated workflow and recording platform with Next.js, React Flow, FastAPI, ROS 2, WebSocket, and Docker for AI and robotics data collection, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators.",
-          "Owned robotics software from requirements and architecture through Docker deployment, testing, on-site integration, and maintenance; integrated visual perception, robot control, and PatchCore anomaly-detection workflows, improving cable-insertion success from 70% to 90%."
+          "Owned software delivery from requirements and system architecture through frontend/backend implementation, Docker deployment, testing, on-site integration, and maintenance for AI and robotics systems.",
+          "Built a Next.js / React Flow / FastAPI / WebSocket workflow and data-recording platform for automated task execution and AI / VLA data workflows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators.",
+          "Built a React / TypeScript / FastAPI / ROS 2 web control and monitoring platform with real-time feedback, video, system status, control commands, and Docker / Nginx deployment; improved cable-insertion success from 70% to 90%.",
+          "Integrated ROS 2 control and simulation, <b>Isaac GR00T N1.7</b> data conversion, model training, policy inference, visual perception, and PatchCore anomaly detection across simulation and physical-robot workflows."
         ],
         "zh": [
-          "建置 ROS 2 控制與模擬流程，整合工業／協作型機械手臂平台、NVIDIA Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，支援機器人控制與系統驗證。",
-          "完成 <b>Isaac GR00T N1.7</b> 資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。",
-          "以 Next.js、React Flow、FastAPI、ROS 2、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台，支援 AI 與機器人資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
-          "獨立負責機器人軟體從需求、架構到 Docker 部署、測試、現場整合與維護；整合視覺感知、機器人控制與 PatchCore 異常檢測流程，將線材插接成功率由 70% 提升至 90%。"
+          "獨立負責 AI 與機器人軟體從需求、系統架構、前後端開發到 Docker 部署、測試、現場整合與維護。",
+          "以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台，支援 AI／VLA 資料流程；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。",
+          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時回饋、影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。",
+          "整合 ROS 2 控制與模擬、<b>Isaac GR00T N1.7</b> 資料轉換、模型訓練、Policy Inference、視覺感知與 PatchCore 異常檢測，涵蓋虛擬與真實機器人流程。"
         ]
       }
     },
@@ -63,16 +63,16 @@
   ],
   "skills": {
     "en": [
-      {"label": "Robot Control & Digital Twin", "items": "ROS 2, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, virtual / physical robot workflows"},
-      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7, VLA, Policy Inference, Imitation Learning"},
-      {"label": "Perception & Visual Inspection", "items": "RealSense, YOLO OBB, OpenCV, AprilTag, visual servoing, PatchCore anomaly detection, PyQt"},
-      {"label": "Software & System Integration", "items": "Python, C++, frontend/backend platforms with FastAPI, React / TypeScript, Next.js, WebSocket, Docker, Linux, Arduino, ESP32, MQTT"}
+      {"label": "Software Engineering & Platforms", "items": "Python, C++, C# / .NET, FastAPI, React / TypeScript, Next.js, WebSocket, REST APIs, Docker, Linux"},
+      {"label": "AI / ML & Computer Vision", "items": "PatchCore anomaly detection, PyTorch, OpenCV, YOLO OBB, AprilTag, RealSense, PyQt"},
+      {"label": "Robotics & Real-Time Systems", "items": "ROS 2, NVIDIA Isaac Sim / Lab, MoveIt 2, cuMotion, Isaac GR00T N1.7, VLA, Policy Inference, Digital Twin"},
+      {"label": "Systems Integration & IoT", "items": "frontend/backend platforms, simulation / physical validation, Arduino, ESP32, MQTT"}
     ],
     "zh": [
-      {"label": "Robot Control & Digital Twin", "items": "ROS 2、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂流程"},
-      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、VLA、Policy Inference、模仿學習"},
-      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB、OpenCV、AprilTag、視覺伺服、PatchCore 異常檢測、PyQt"},
-      {"label": "Software & System Integration", "items": "Python、C++、React／TS、FastAPI、前後端平台、WebSocket、Docker、Linux、Arduino、ESP32、MQTT"}
+      {"label": "Software Engineering & Platforms", "items": "Python、C++、C#／.NET、FastAPI、React／TypeScript、Next.js、WebSocket、REST API、Docker、Linux"},
+      {"label": "AI／ML & Computer Vision", "items": "PatchCore 異常檢測、PyTorch、OpenCV、YOLO OBB、AprilTag、RealSense、PyQt"},
+      {"label": "Robotics & Real-Time Systems", "items": "ROS 2、NVIDIA Isaac Sim／Lab、MoveIt 2、cuMotion、Isaac GR00T N1.7、VLA、Policy Inference、Digital Twin"},
+      {"label": "Systems Integration & IoT", "items": "前後端平台、虛擬／真實環境驗證、Arduino、ESP32、MQTT"}
     ]
   },
   "highlights": {
@@ -91,29 +91,29 @@
     "en": [
       {
         "title": "Robot Workflow & Data Collection Platform",
-        "detail": "Built an automated workflow and recording platform with Next.js, React Flow, FastAPI, ROS 2, WebSocket, and Docker for AI and robotics data collection."
+        "detail": "Built a Next.js / React Flow / FastAPI / WebSocket / Docker platform for configurable workflows, task execution, and AI / VLA data collection with ROS 2 integration."
       },
       {
-        "title": "VLA Policy Training and Physical-Robot Inference",
-        "detail": "Delivered data conversion, model training, policy inference, and physical-robot validation across simulation and real-world workflows."
+        "title": "Web Robot Control & Monitoring Platform",
+        "detail": "Built a React / TypeScript / FastAPI / ROS 2 / WebSocket platform for real-time robot control, video, system status, and Docker / Nginx deployment."
       },
       {
-        "title": "Robot Perception & PatchCore Anomaly Detection",
-        "detail": "Integrated visual perception, visual servoing, and PatchCore anomaly detection into robotics and AI software workflows."
+        "title": "PatchCore Anomaly Detection API & PyQt",
+        "detail": "Developed a PatchCore anomaly-detection API and PyQt interface, integrating computer vision preprocessing, inspection, and AI software workflows."
       }
     ],
     "zh": [
       {
         "title": "機器人自動化工作流程與資料錄製平台",
-        "detail": "以 Next.js、React Flow、FastAPI、ROS 2、WebSocket 與 Docker 建立自動化工作流程與資料錄製平台，支援 AI 與機器人資料流程。"
+        "detail": "以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建立可配置的任務工作流程與資料錄製平台，並透過 ROS 2 支援 AI／VLA 與機器人資料流程。"
       },
       {
-        "title": "VLA Policy 訓練與真實機器人推論",
-        "detail": "完成資料轉換、模型訓練、Policy Inference 與真實機器人驗證，涵蓋虛擬與真實環境流程。"
+        "title": "Web Robot Control 與即時監控平台",
+        "detail": "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時影像、系統狀態與控制命令。"
       },
       {
-        "title": "Robot Perception & PatchCore 異常檢測",
-        "detail": "整合視覺感知、視覺伺服與 PatchCore 異常檢測，建立可用於機器人與 AI 軟體的影像流程。"
+        "title": "PatchCore 異常檢測 API 與 PyQt 介面",
+        "detail": "開發 PatchCore 異常檢測 API 與 PyQt 介面，整合影像前處理、AI 視覺檢測與結果分析流程。"
       }
     ]
   },
@@ -130,8 +130,8 @@
     ]
   },
   "second_zh": {
-    "version": "2026-09 | v3",
-    "summary": "現任瑞軒科技 AI 機器人工程師，專注於 Robot Control、VLA／Robot Learning、視覺感知與 Digital Twin 資料流程。具備從需求分析、系統架構、資料流程、Policy Inference、前後端平台到虛擬／真實環境驗證的端到端整合經驗。",
+    "version": "2026-10 | v4",
+    "summary": "現任瑞軒科技 AI 機器人工程師，具備軟體工程、AI 服務與機器人系統的端到端整合經驗，涵蓋需求分析、系統架構、前後端平台、資料流程、Policy Inference、Docker 部署與虛擬／真實環境驗證。",
     "highlights": [
       {"metric": "70% → 90%", "label": "線材插接成功率"},
       {"metric": "3～4 倍", "label": "相同時間內資料蒐集量"},
@@ -144,10 +144,10 @@
         "period": "2025/05 - 至今",
         "location": "新北，台灣",
         "bullets": [
-          "獨立負責多項機器人軟體專案，涵蓋需求分析、系統架構、開發、Docker 部署、測試、現場整合與維護。",
-          "建置 ROS 2、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion 控制環境，整合工業／協作型機械手臂平台，完成控制、規劃與虛實環境驗證。",
-          "完成 NVIDIA Isaac GR00T N1.7 VLA 的資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。",
-          "建置 Web 控制、監控與自動化資料流程，資料蒐集量約為人工操作的 3～4 倍並節省兩名操作人力；整合視覺感知、模型服務、機器人控制與 PatchCore 異常檢測，將線材插接成功率由 70% 提升至 90%。"
+          "獨立負責 AI 與機器人軟體從需求、系統架構、前後端開發到 Docker 部署、測試、現場整合與維護。",
+          "以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台，資料蒐集量約為人工操作的 3～4 倍並節省兩名操作人力。",
+          "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。",
+          "完成 NVIDIA Isaac GR00T N1.7 VLA 的資料轉換、模型訓練與 Policy Inference，整合視覺感知、機器人控制與虛擬／真實環境流程。"
         ]
       },
       {
@@ -162,35 +162,35 @@
     ],
     "projects": [
       {
-        "title": "NVIDIA Isaac GR00T N1.7 VLA 推論整合",
-        "stack": "Isaac GR00T N1.7、ROS 2、Policy Service、Digital Twin Data",
+        "title": "機器人自動化工作流程與資料錄製平台",
+        "stack": "Next.js、React Flow、FastAPI、WebSocket、Docker、ROS 2",
         "bullets": [
-          "完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，涵蓋虛擬與真實環境流程。",
-          "整合影像、模型服務與機器人控制系統，建立可重複的資料與推論流程。"
-        ]
-      },
-      {
-        "title": "Robot Workflow 自動化與資料錄製整合平台",
-        "stack": "Next.js、React Flow、FastAPI、ROS 2、WebSocket、Docker",
-        "bullets": [
-          "獨立從需求、架構到部署建立自動化工作流程與資料錄製平台，支援任務編排與執行監控。",
-          "透過 ROS 2、WebSocket 與 Docker 整合機器人控制、資料流程與 AI／VLA 應用。"
+          "建立可配置的任務工作流程與資料錄製平台，支援任務編排、執行監控與 AI／VLA 資料流程。",
+          "透過前後端平台、WebSocket、Docker 與 ROS 2 整合任務執行、資料收集與機器人控制。"
         ]
       },
       {
         "title": "Web Robot Control 與即時監控平台",
-        "stack": "React、TypeScript、FastAPI、rclpy、WebSocket、Docker／Nginx",
+        "stack": "React、TypeScript、FastAPI、ROS 2、WebSocket、Docker／Nginx",
         "bullets": [
           "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker 建置 Web 控制與監控平台。",
           "整合即時影像、系統狀態與控制命令，提供遠端操作與監控介面。"
         ]
       },
       {
-        "title": "虛實機械手臂 VR 遙操作與 Digital Twin 資料流程",
-        "stack": "VR Teleoperation、ROS 2、Digital Twin、GR00T／VLA",
+        "title": "PatchCore 異常檢測 API 與 PyQt 介面",
+        "stack": "PatchCore、Python、PyQt、AI Vision Workflow",
         "bullets": [
-          "建立虛擬與真實機械手臂的遙操作與 Digital Twin 資料流程。",
-          "支援 VLA／模仿學習資料收集與虛實環境驗證。"
+          "開發 PatchCore 異常檢測 API 與 PyQt 介面，整合影像前處理與 AI 視覺檢測流程。",
+          "建立可重複的檢測服務與結果分析流程。"
+        ]
+      },
+      {
+        "title": "NVIDIA Isaac GR00T N1.7 VLA 推論整合",
+        "stack": "Isaac GR00T N1.7、ROS 2、Policy Service、Digital Twin Data",
+        "bullets": [
+          "完成資料轉換、模型訓練、Policy Inference 與真實機器人測試，涵蓋虛擬與真實環境流程。",
+          "整合影像、模型服務與機器人控制系統，建立可重複的資料與推論流程。"
         ]
       },
       {
@@ -210,19 +210,19 @@
         ]
       },
       {
-        "title": "PatchCore 異常檢測 API 與 PyQt 介面",
-        "stack": "PatchCore、Python、PyQt、AI Vision Workflow",
+        "title": "虛實機械手臂 VR 遙操作與 Digital Twin 資料流程",
+        "stack": "VR Teleoperation、ROS 2、Digital Twin、GR00T／VLA",
         "bullets": [
-          "開發 PatchCore 異常檢測 API 與 PyQt 介面，整合影像前處理與檢測流程。",
-          "建立可重複的 AI 視覺檢測與結果分析流程。"
+          "建立虛擬與真實機械手臂的遙操作與 Digital Twin 資料流程。",
+          "支援 VLA／模仿學習資料收集與虛實環境驗證。"
         ]
       }
     ],
     "skills": [
-      {"label": "Robot Control & Digital Twin", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、虛擬／真實機械手臂流程"},
-      {"label": "VLA & Robot Learning", "items": "Isaac GR00T N1.7、Policy Inference、模仿學習、Digital Twin 資料流程"},
-      {"label": "Perception & Visual Inspection", "items": "RealSense、YOLO OBB、OpenCV、AprilTag、視覺伺服、PatchCore 異常檢測與 PyQt"},
-      {"label": "Software, Frontend & Backend", "items": "Python、C++、FastAPI、React／TypeScript、Next.js、React Flow、WebSocket、Docker、Nginx、Git"},
+      {"label": "Software Engineering & Platforms", "items": "Python、C++、C#／.NET、FastAPI、React／TypeScript、Next.js、React Flow、WebSocket、REST API、Docker、Nginx、Git"},
+      {"label": "AI／ML & Computer Vision", "items": "PatchCore 異常檢測、PyQt、PyTorch、OpenCV、YOLO OBB、AprilTag、RealSense"},
+      {"label": "Robotics & Real-Time Systems", "items": "ROS 2、Isaac Sim／Isaac Lab、MoveIt 2、cuMotion、Isaac GR00T N1.7、VLA、Policy Inference、Digital Twin"},
+      {"label": "Frontend, Backend & System Integration", "items": "前後端平台、API 與資料流程、Docker 部署、虛擬／真實環境驗證"},
       {"label": "Embedded & IoT", "items": "Arduino、ESP32、MQTT、ESPHome、Bluetooth、感測器與單板電腦"}
     ],
     "education": [
@@ -232,6 +232,6 @@
     "honors": "RHCSA；FIRA RoboWorld Cup 第一名；全國技術創造力競賽第三名",
     "certifications": "RHCSA、丙級室內配線技術士、丙級工業配線技術士、TQC+ 程式語言（C／Python）",
     "language": "英文：聽、說、讀、寫皆為中等程度",
-    "target": "目標職務：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、Embodied AI 工程師、系統整合開發工程師、軟體工程師；目前所在地：新北，台灣"
+    "target": "目標職務：軟體工程師、Backend Software Engineer、AI 工程師、機器人軟體工程師、系統整合開發工程師、Embodied AI 工程師；目標職類：軟體工程師、後端工程師、全端工程師、AI 工程師、演算法工程師；目前所在地：新北，台灣"
   }
 }

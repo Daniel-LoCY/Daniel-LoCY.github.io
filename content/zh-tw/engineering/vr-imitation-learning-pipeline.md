@@ -3,7 +3,7 @@ title: "虛擬與真實機械手臂 VR 遙操作與 Digital Twin 資料流程"
 description: "以 VR Teleoperation 與 Digital Twin 支援虛擬／真實機械手臂操作與 GR00T／VLA 資料收集。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["VR Teleoperation", "Digital Twin", "NVIDIA Isaac GR00T", "ROS 2"]
-weight: 2
+weight: 6
 ---
 
 這是一套 VR 遙操作與 Digital Twin 資料流程，可分別驅動 Isaac Sim 虛擬機器人與真實機械手臂，再串接資料錄製平台，建立模仿學習或 NVIDIA Isaac GR00T 所需的示範資料。

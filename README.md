@@ -1,14 +1,23 @@
 # 駱忠湧 Daniel Lo 個人網站
 
-這是駱忠湧的雙語個人作品集網站，主要呈現 Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程、Robot Data、機器人軟體與 AI 機器人系統整合經驗。
+這是駱忠湧的雙語個人作品集網站，並列呈現 Software Engineering、AI／ML、前後端平台、Robot Control、NVIDIA Isaac GR00T／VLA、Digital Twin 資料流程與機器人系統整合經驗。
 
-## 2026-09-23 雙軌通用履歷與公開內容同步
+## 2026-10-01 機器人與軟體工程雙主軸統一
+
+- 將兩份通用履歷、104 copy-ready 來源、網站雙語頁面與作品集近期專案統一為 `Software Engineer | AI, Robotics & Systems Integration`／`軟體工程師｜AI、機器人與系統整合`。
+- 將前端、後端 API、AI／ML、電腦視覺、Docker／Linux、ROS 2、VLA 與系統整合以同等層級呈現；保留現職正式職稱 `AI Robotics Engineer`。
+- 重新排列網站技能與技術棧，並將代表專案調整為工作流程平台、Web Robot Control、PatchCore、Isaac GR00T、Robot Control 與 Digital Twin，避免首頁只偏向機器人。
+- 新增 `resume/platform-copy/linkedin-unified.md` 與 `resume/platform-copy/github-unified.md` 作為 LinkedIn、GitHub／作品集的可貼上草稿；本次不代替使用者登入或直接儲存外部平台內容。
+- TSMC 客製履歷仍維持獨立的 Robotics 目標定位，不套用通用雙主軸標題。
+- 以 Docker 重建履歷產生器並通過 34 項履歷／內容測試；Hugo Extended 0.152.1 Docker 建置確認繁中 37 頁、英文 35 頁。
+
+## 2026-09-23 雙軌通用履歷與公開內容同步（歷史版本）
 
 - 建立兩條不針對特定公司或職缺的主要履歷：`AI 機器人工程師｜機器人軟體與系統整合` 與 `AI 工程師｜後端與系統整合`，各產出繁中兩頁與英文一頁 PDF。
 - 在 `resume/software_profile.json` 與 104 copy-ready 來源中補上後端 API、即時 WebSocket、Docker、AI／電腦視覺與 PatchCore 工程內容。
 - 中英文網站的 About、Experience、Skills 與 Core Tech Stack 同步呈現 PatchCore、PyQt 與 AI 視覺流程；PatchCore 專案頁採高層次工程描述。
 - PatchCore 內容聚焦 API、PyQt 介面、AI 視覺與異常檢測流程。
-- 兩份 104 履歷、LinkedIn 與網站採機器人優先的公開定位；軟體版本使用 `AI 工程師｜後端與系統整合` 作為獨立求職方向。
+- 此版本曾保留機器人優先與 AI 後端／系統整合兩條公開定位；2026-10-01 已合併為雙主軸通用定位，TSMC 客製版除外。
 
 ## 2026-09-23 公開內容精簡
 
@@ -70,17 +79,19 @@
 
 ## 通用求職履歷
 
-機器人版與軟體版各自保留最新的中文兩頁 v2 與英文一頁 PDF。中文版本呈現完整專案脈絡；英文版本維持一頁，方便快速篩選。台積電 Robotics 版本位於 `output/pdf/tsmc/`，與兩條通用履歷分開管理。
+兩份通用履歷保留相同的雙主軸定位，分別輸出繁中兩頁與英文一頁 PDF；中文版本呈現完整專案脈絡，英文版本維持一頁，方便快速篩選。台積電 Robotics 版本位於 `output/pdf/tsmc/`，與通用履歷分開管理。
 
 - `resume/resume_data.json`：機器人版與網站共用的核心內容來源。
-- `resume/software_profile.json`：AI 後端／系統整合版的差異化內容來源。
+- `resume/software_profile.json`：通用雙主軸軟體／AI／機器人內容來源。
 - `resume/generate_resume.py`：使用 ReportLab 產生兩條通用版本與 TSMC 客製版本。
-- `resume/104-resume-zh-tw.md`：104 機器人版 copy-ready 來源。
-- `resume/104-resume-software-zh-tw.md`：104 AI 後端／系統整合版 copy-ready 來源。
+- `resume/104-resume-zh-tw.md`：104 通用雙主軸 copy-ready 來源。
+- `resume/104-resume-software-zh-tw.md`：104 通用雙主軸備用 copy-ready 來源。
+- `resume/platform-copy/linkedin-unified.md`：LinkedIn 雙主軸可貼上草稿。
+- `resume/platform-copy/github-unified.md`：GitHub／作品集雙主軸可貼上草稿。
 - `output/pdf/robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf`：機器人版中文兩頁履歷。
 - `output/pdf/robotics/daniel-lo-resume-robotics-en.pdf`：機器人版英文一頁履歷。
-- `output/pdf/software/daniel-lo-resume-software-zh-tw-v2.pdf`：AI 後端／系統整合版中文兩頁履歷。
-- `output/pdf/software/daniel-lo-resume-software-en.pdf`：AI 後端／系統整合版英文一頁履歷。
+- `output/pdf/software/daniel-lo-resume-software-zh-tw-v2.pdf`：通用雙主軸中文兩頁履歷（保留原 software 路徑）。
+- `output/pdf/software/daniel-lo-resume-software-en.pdf`：通用雙主軸英文一頁履歷（保留原 software 路徑）。
 - `output/pdf/tsmc/daniel-lo-resume-tsmc-zh-tw-v2.pdf`：台積電 Robotics 客製中文兩頁履歷。
 - `output/pdf/tsmc/daniel-lo-resume-tsmc-en.pdf`：台積電 Robotics 客製英文一頁履歷。
 
@@ -94,7 +105,8 @@
 
 ## 公開內容維護
 
-- 公開履歷與網站以已完成的系統整合、實作內容與可驗證成果為主，並維持中英文、PDF、104 與 LinkedIn 的一致性。
+- 公開履歷與網站以已完成的系統整合、實作內容與可驗證成果為主，並維持中英文、PDF、104、LinkedIn 與 GitHub／作品集草稿的一致性。
+- 通用公開定位同時面向 Software／Backend／Full-Stack／AI／ML／Robotics Software／Systems Integration 職缺；尚未直接替使用者送出履歷、訊息或外部平台儲存。
 - 2026/09/23 重新納入三項可驗證成果：線材插接成功率由 70% 提升至 90%、相同時間內資料蒐集量約為人工操作的 3～4 倍、節省兩名操作人力；低層實作參數仍維持精簡。
 - 工作專案圖片使用通用專案圖，網站文字以不揭露內部資料的方式呈現工程內容。
 

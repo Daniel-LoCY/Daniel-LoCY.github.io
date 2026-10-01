@@ -7,6 +7,8 @@ from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[2]
 PDF_DIR = ROOT / "output" / "pdf"
+BALANCED_TITLE_EN = "Software Engineer | AI, Robotics & Systems Integration"
+BALANCED_TITLE_ZH = "軟體工程師｜AI、機器人與系統整合"
 
 
 class ResumeOutputTest(unittest.TestCase):
@@ -17,11 +19,11 @@ class ResumeOutputTest(unittest.TestCase):
         self.assertEqual(len(reader.pages), expected_pages, f"{filename} page count mismatch")
         return "\n".join(page.extract_text() or "" for page in reader.pages)
 
-    def test_english_resume_is_one_page_and_job_focused(self):
+    def test_english_resume_is_one_page_and_balanced(self):
         text = self._read_pdf("robotics/daniel-lo-resume-robotics-en.pdf")
         for marker in (
             "Daniel Lo",
-            "AI Robotics Engineer",
+            BALANCED_TITLE_EN,
             "Summary",
             "Focus Areas",
             "Experience",
@@ -29,6 +31,8 @@ class ResumeOutputTest(unittest.TestCase):
             "Education & Honors",
             "Isaac GR00T",
             "ROS 2",
+            "FastAPI",
+            "React",
             "PatchCore",
             "daniel-locy.github.io",
         ):
@@ -36,14 +40,16 @@ class ResumeOutputTest(unittest.TestCase):
         for removed_detail in ("Selected Projects", "Robot Workflow", "Verification snapshot", "Evidence:"):
             self.assertNotIn(removed_detail, text)
 
-    def test_software_english_resume_is_one_page_and_backend_focused(self):
+    def test_software_english_resume_is_one_page_and_matches_balanced_positioning(self):
         text = self._read_pdf("software/daniel-lo-resume-software-en.pdf")
         for marker in (
             "Daniel Lo",
-            "AI Engineer | Backend & Systems Integration",
+            BALANCED_TITLE_EN,
             "FastAPI",
             "WebSocket",
             "Docker",
+            "ROS 2",
+            "Isaac GR00T",
             "PatchCore",
             "PyQt",
         ):
@@ -62,7 +68,7 @@ class ResumeOutputTest(unittest.TestCase):
         self.assertTrue(path.exists())
         text = path.read_text(encoding="utf-8")
         for marker in (
-            "AI 工程師｜後端與系統整合",
+            BALANCED_TITLE_ZH,
             "自我介紹",
             "工作經歷",
             "後端 API",
@@ -77,12 +83,12 @@ class ResumeOutputTest(unittest.TestCase):
         path = ROOT / "resume" / "104-resume-zh-tw.md"
         text = path.read_text(encoding="utf-8")
         self.assertIn(
-            "目標職稱：AI 機器人工程師、機器人軟體工程師、機器人控制工程師、"
-            "Embodied AI 工程師、系統整合開發工程師、軟體工程師",
+            "目標職稱：軟體工程師、Backend Software Engineer、AI 工程師、"
+            "機器人軟體工程師、系統整合開發工程師、Embodied AI 工程師",
             text,
         )
         self.assertIn(
-            "目標職類：AI 工程師、軟體工程師、演算法工程師、全端工程師、後端工程師",
+            "目標職類：軟體工程師、後端工程師、全端工程師、AI 工程師、演算法工程師",
             text,
         )
 
@@ -102,22 +108,22 @@ class ResumeOutputTest(unittest.TestCase):
         self.assertIn("Embedded & IoT Development", skills)
         self.assertNotIn("Sim-to-Real", text)
 
-    def test_resume_data_uses_shared_software_positioning(self):
+    def test_resume_data_uses_balanced_software_positioning(self):
         path = ROOT / "resume" / "resume_data.json"
         data = json.loads(path.read_text(encoding="utf-8"))
 
-        self.assertIn("Robotics Software", data["contact"]["title_en"])
-        self.assertIn("機器人軟體", data["contact"]["title_zh"])
+        self.assertEqual(data["contact"]["title_en"], BALANCED_TITLE_EN)
+        self.assertEqual(data["contact"]["title_zh"], BALANCED_TITLE_ZH)
         self.assertIn("frontend/backend", data["summary"]["en"])
         self.assertIn("前後端", data["summary"]["zh"])
         self.assertIn("系統整合開發工程師", data["second_zh"]["target"])
         self.assertIn("軟體工程師", data["second_zh"]["target"])
 
-    def test_generic_profile_titles_are_distinct_from_targeted_profile(self):
+    def test_generic_profile_titles_are_balanced_and_targeted_profile_remains_distinct(self):
         software = json.loads((ROOT / "resume" / "software_profile.json").read_text(encoding="utf-8"))
         tsmc = json.loads((ROOT / "resume" / "tsmc_profile.json").read_text(encoding="utf-8"))
-        self.assertEqual(software["contact"]["title_en"], "AI Engineer | Backend & Systems Integration")
-        self.assertEqual(software["contact"]["title_zh"], "AI 工程師｜後端與系統整合")
+        self.assertEqual(software["contact"]["title_en"], BALANCED_TITLE_EN)
+        self.assertEqual(software["contact"]["title_zh"], BALANCED_TITLE_ZH)
         self.assertNotIn("TSMC", software["version"])
         self.assertIn("TSMC", tsmc["version"])
 
@@ -140,14 +146,16 @@ class ResumeOutputTest(unittest.TestCase):
         for removed_detail in ("日本教育旅行", "偏鄉教育", "激發創意"):
             self.assertNotIn(removed_detail, text)
 
-    def test_software_traditional_chinese_resume_v2_is_two_pages(self):
+    def test_software_traditional_chinese_resume_v2_is_two_pages_and_balanced(self):
         text = self._read_pdf("software/daniel-lo-resume-software-zh-tw-v2.pdf", expected_pages=2)
         for marker in (
             "駱忠湧",
-            "AI 工程師｜後端與系統整合",
+            BALANCED_TITLE_ZH,
             "FastAPI",
             "WebSocket",
             "Docker",
+            "ROS 2",
+            "Isaac GR00T",
             "PatchCore",
             "PyQt",
             "AI 視覺",

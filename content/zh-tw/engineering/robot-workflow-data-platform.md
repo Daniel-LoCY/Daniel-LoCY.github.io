@@ -3,7 +3,7 @@ title: "Robot Workflow 自動化與資料錄製整合平台"
 description: "以 ROS 2、WebSocket、React Flow、FastAPI 與 Docker 建置 AI／機器人工作流程與資料錄製平台。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["Robot Workflow", "ROS 2", "WebSocket", "React Flow", "FastAPI", "Docker"]
-weight: 5
+weight: 1
 ---
 
 此流程整合自動化工作流程、機械手臂控制與資料錄製，透過 ROS 2、WebSocket 等介面支援 AI／VLA 資料流程；用途與另一套即時操作的 Web 控制／監控平台區隔。

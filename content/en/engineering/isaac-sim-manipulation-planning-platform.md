@@ -3,7 +3,7 @@ title: "Robot Control and Simulation / Real-World Validation Platform"
 description: "A control, planning, and physical-validation environment connecting Isaac Sim and Isaac Lab, ROS 2, MoveIt 2, and cuMotion."
 featured_image: "/images/projects/default-project.svg"
 tags: ["Isaac Sim", "ROS 2", "MoveIt 2", "cuMotion"]
-weight: 3
+weight: 5
 ---
 
 This robot-control and simulation / real-world validation workflow connects Isaac Sim and Isaac Lab, ROS 2, MoveIt 2, and cuMotion for robot control, planning, and task integration.

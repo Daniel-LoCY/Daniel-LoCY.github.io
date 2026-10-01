@@ -3,7 +3,7 @@ title: "Robot Workflow Automation and Recording Integration"
 description: "An AI and robotics workflow and recording platform built with ROS 2, WebSocket, React Flow, FastAPI, and Docker."
 featured_image: "/images/projects/default-project.svg"
 tags: ["Robot Workflow", "ROS 2", "WebSocket", "React Flow", "FastAPI", "Docker"]
-weight: 5
+weight: 1
 ---
 
 This flow integrates automated task execution, robot control, and data recording through ROS 2, WebSocket, and related interfaces for AI / VLA data workflows. It is distinct from the separate web platform built for live control and monitoring.

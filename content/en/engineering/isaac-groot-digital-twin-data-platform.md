@@ -3,7 +3,7 @@ title: "NVIDIA Isaac GR00T N1.7: VLA Policy Training and Physical-Robot Inferenc
 description: "An end-to-end workflow covering robot-data conversion, GR00T N1.7 training, policy inference, and physical-robot control integration."
 featured_image: "/images/projects/default-project.svg"
 tags: ["NVIDIA Isaac GR00T", "VLA", "Digital Twin Data", "Robot Data", "Policy Inference"]
-weight: 1
+weight: 4
 ---
 
 This project connects robot data from simulated and physical environments to NVIDIA Isaac GR00T N1.7 data conversion, model training, policy inference, and physical-robot execution. My core responsibility was robot control and end-to-end system integration.

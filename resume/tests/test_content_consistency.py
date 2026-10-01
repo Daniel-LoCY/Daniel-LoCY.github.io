@@ -32,6 +32,36 @@ RESUME_SOURCE_PATHS = (
     ROOT / "resume" / "104-resume-software-zh-tw.md",
 )
 
+TOP_LEVEL_CONTENT_PATHS = tuple(
+    ROOT / language / relative_path
+    for language in ("content/zh-tw", "content/en")
+    for relative_path in (
+        "_index.md",
+        "about.md",
+        "experience.md",
+        "skills.md",
+        "technical.md",
+        "contact.md",
+        "engineering/_index.md",
+    )
+)
+
+PLATFORM_COPY_PATHS = (
+    ROOT / "resume" / "platform-copy" / "linkedin-unified.md",
+    ROOT / "resume" / "platform-copy" / "github-unified.md",
+)
+
+BALANCED_TITLE_EN = "Software Engineer | AI, Robotics & Systems Integration"
+BALANCED_TITLE_ZH = "軟體工程師｜AI、機器人與系統整合"
+BALANCED_MARKERS = (
+    "Software",
+    "Backend",
+    "Frontend",
+    "Docker",
+    "ROS 2",
+    "VLA",
+)
+
 LOW_LEVEL_MARKERS = (
     "pick-and-place",
     "60 hz",
@@ -76,7 +106,7 @@ class ResumeContentConsistencyTest(unittest.TestCase):
             (ROOT / "resume" / "resume_data.json").read_text(encoding="utf-8")
         )
 
-    def test_robotics_and_software_profiles_keep_distinct_positioning(self):
+    def test_general_profiles_share_balanced_positioning_and_tsmc_remains_targeted(self):
         software = json.loads(
             (ROOT / "resume" / "software_profile.json").read_text(encoding="utf-8")
         )
@@ -84,11 +114,21 @@ class ResumeContentConsistencyTest(unittest.TestCase):
             (ROOT / "resume" / "tsmc_profile.json").read_text(encoding="utf-8")
         )
 
-        self.assertIn("AI Robotics Engineer", self.resume_data["contact"]["title_en"])
-        self.assertEqual(software["contact"]["title_en"], "AI Engineer | Backend & Systems Integration")
-        self.assertEqual(software["contact"]["title_zh"], "AI 工程師｜後端與系統整合")
+        for profile in (self.resume_data, software):
+            self.assertEqual(profile["contact"]["title_en"], BALANCED_TITLE_EN)
+            self.assertEqual(profile["contact"]["title_zh"], BALANCED_TITLE_ZH)
+            profile_text = json.dumps(profile, ensure_ascii=False)
+            for marker in BALANCED_MARKERS:
+                self.assertIn(marker, profile_text)
         self.assertNotIn("TSMC", software["version"])
         self.assertIn("TSMC", tsmc["version"])
+
+    def test_top_level_public_content_exposes_both_career_axes(self):
+        for path in TOP_LEVEL_CONTENT_PATHS:
+            text = path.read_text(encoding="utf-8")
+            lower_text = text.lower()
+            self.assertRegex(lower_text, r"software|軟體")
+            self.assertRegex(lower_text, r"robot|機器人")
 
     def test_positive_outcomes_and_patchcore_are_preserved(self):
         source_text = "\n".join(path.read_text(encoding="utf-8") for path in RESUME_SOURCE_PATHS)
@@ -145,6 +185,16 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         ):
             text = path.read_text(encoding="utf-8")
             for marker in ("自我介紹", "工作經歷", "專長關鍵字", "精選專案", "學歷", "PatchCore", "目前所在地：新北，台灣"):
+                self.assertIn(marker, text)
+            self.assertIn(BALANCED_TITLE_ZH, text)
+            self.assertIn("後端", text)
+            self.assertIn("前端", text)
+
+    def test_platform_copy_drafts_keep_balanced_positioning(self):
+        for path in PLATFORM_COPY_PATHS:
+            text = path.read_text(encoding="utf-8")
+            self.assertIn(BALANCED_TITLE_EN, text)
+            for marker in ("Software", "Backend", "Frontend", "AI", "robot", "Docker", "ROS 2", "VLA"):
                 self.assertIn(marker, text)
 
     def test_public_profile_wording_keeps_current_location_only(self):

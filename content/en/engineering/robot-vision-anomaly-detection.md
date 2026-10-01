@@ -3,7 +3,7 @@ title: "Robot Vision and PatchCore Anomaly Detection"
 description: "An integrated robot-vision and AI inspection workflow using RealSense, OpenCV, AprilTag, and PatchCore."
 featured_image: "/images/projects/default-project.svg"
 tags: ["RealSense", "OpenCV", "AprilTag", "PatchCore", "ROS 2"]
-weight: 9
+weight: 3
 ---
 
 This project combines robot vision and image anomaly detection for inspection. The focus was turning model outputs into traceable, testable, and integrable engineering workflows.

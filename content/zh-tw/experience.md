@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  目前專注於 Robot Control、視覺感知、VLA／Robot Learning 與 Digital Twin 資料流程，並以前後端平台支援機器人控制與系統整合；使用 ROS 2、Isaac Sim／Isaac Lab 與 Isaac GR00T 完成資料處理、Policy Inference 與虛擬／真實環境驗證。
+  目前以軟體工程、AI 服務與機器人系統整合為主軸，從前後端平台、API、WebSocket 與 Docker 部署，到 ROS 2、Isaac Sim／Isaac Lab、Isaac GR00T、視覺感知與虛擬／真實環境驗證，完成可交付的資料、控制與監控流程。
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -17,12 +17,11 @@ positions:
     location: "新北，台灣"
     company_description: "智慧科技與消費性電子公司，研發工作涵蓋 AI、機器人與系統整合。"
     bullet_points:
-      - "從需求分析、系統架構、開發、Docker 部署到測試與現場整合，獨立交付機器人軟體專案。"
-      - "以 ROS 2 串接工業／協作型機械手臂平台、Isaac Sim／Isaac Lab、MoveIt 2 與 cuMotion，完成機器人控制與虛實環境驗證。"
-      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，涵蓋虛擬與真實機器人流程。"
-      - "以自動化工作流程與資料錄製系統支援 AI／VLA 資料流程，整合 ROS 2、WebSocket 與 Docker；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。"
-      - "整合視覺感知、視覺伺服、機器人控制與真機驗證，將線材插接成功率由 70% 提升至 90%。"
-      - "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺與檢測流程。"
+      - "從需求分析、系統架構、前後端開發、Docker 部署到測試與現場整合，獨立交付 AI 與機器人軟體專案。"
+      - "以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。"
+      - "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。"
+      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，整合 ROS 2 控制、視覺感知與虛擬／真實機器人流程。"
+      - "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺、視覺伺服與機器人任務驗證。"
   - company: "采威國際資訊股份有限公司（ISCOM）"
     company_url: "https://www.iscom.com.tw"
     role: "軟體工程實習生"

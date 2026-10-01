@@ -3,7 +3,7 @@ title: "Robot Control 與模擬／真實環境驗證平台"
 description: "整合 Isaac Sim／Isaac Lab、ROS 2、MoveIt 2 與 cuMotion 的控制、規劃與真實環境驗證流程。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["Isaac Sim", "ROS 2", "MoveIt 2", "cuMotion"]
-weight: 3
+weight: 5
 ---
 
 這是一套串接 Isaac Sim／Isaac Lab、ROS 2、MoveIt 2 與 cuMotion 的機器人控制與模擬／真實環境驗證流程，用於支援機器人控制、規劃與任務整合。

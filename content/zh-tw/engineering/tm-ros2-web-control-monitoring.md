@@ -3,7 +3,7 @@ title: "TM5S Web 遠端控制與即時監控平台"
 description: "以 ROS 2、FastAPI、React 與 WebSocket 建置 TM5S Web 遠端控制與即時監控平台。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "ROS 2", "FastAPI", "React", "WebSocket"]
-weight: 6
+weight: 2
 ---
 
 此平台讓使用者能從瀏覽器遠端控制 TM5S 並查看即時資訊，聚焦於機器人控制、影像與系統監控；自動腳本編排由另一套 Workflow 平台負責。

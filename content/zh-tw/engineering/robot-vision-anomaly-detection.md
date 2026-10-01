@@ -3,7 +3,7 @@ title: "機器人視覺與 PatchCore 異常檢測"
 description: "整合 RealSense、OpenCV、AprilTag 與 PatchCore，建立機器人視覺與 AI 異常檢測流程。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["RealSense", "OpenCV", "AprilTag", "PatchCore", "ROS 2"]
-weight: 9
+weight: 3
 ---
 
 此專案整合機器人視覺與影像異常檢測，重點是將模型輸出轉成可追蹤、可測試、可整合的工程流程。

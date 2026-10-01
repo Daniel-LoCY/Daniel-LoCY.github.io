@@ -3,7 +3,7 @@ title: "NVIDIA Isaac GR00T N1.7：VLA Policy 訓練與真實機器人推論"
 description: "完成 Robot Data 轉換、GR00T N1.7 模型訓練、Policy Inference 與真實機器人控制整合。"
 featured_image: "/images/projects/default-project.svg"
 tags: ["NVIDIA Isaac GR00T", "VLA", "Digital Twin Data", "Robot Data", "Policy Inference"]
-weight: 1
+weight: 4
 ---
 
 此專案將虛擬與真實環境的 Robot Data 串接到 NVIDIA Isaac GR00T N1.7 的資料轉換、模型訓練、Policy Inference 與真實機器人執行流程。我主要負責機械手臂控制與整體系統整合。

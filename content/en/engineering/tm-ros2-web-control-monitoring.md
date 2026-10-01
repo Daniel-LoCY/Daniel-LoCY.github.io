@@ -3,7 +3,7 @@ title: "TM5S Web Remote Control and Live Monitoring"
 description: "A ROS 2, FastAPI, React, and WebSocket platform for TM5S remote control and live monitoring."
 featured_image: "/images/projects/default-project.svg"
 tags: ["TM5S", "ROS 2", "FastAPI", "React", "WebSocket"]
-weight: 6
+weight: 2
 ---
 
 This platform exposes TM5S remote control and live monitoring in a browser, focusing on robot operation, camera streams, and system status. Automated script orchestration is handled by a separate workflow platform.

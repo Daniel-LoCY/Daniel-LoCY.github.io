@@ -3,7 +3,7 @@ title: "Virtual and Physical Robot VR Teleoperation and Digital Twin Data Pipeli
 description: "A VR teleoperation and Digital Twin workflow for virtual / physical robot operation and GR00T / VLA data collection."
 featured_image: "/images/projects/default-project.svg"
 tags: ["VR Teleoperation", "Digital Twin", "NVIDIA Isaac GR00T", "ROS 2"]
-weight: 2
+weight: 6
 ---
 
 This system provides VR teleoperation and a Digital Twin data flow for robot arms in Isaac Sim and on physical robot hardware. It then connects to a recording platform to produce demonstration data for imitation learning and NVIDIA Isaac GR00T.
