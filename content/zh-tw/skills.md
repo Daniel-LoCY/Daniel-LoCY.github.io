@@ -2,14 +2,8 @@
 title: "技能"
 type: "homepage"
 intro: >-
-  以軟體工程、AI／ML、機器人軟體與系統整合為雙主軸，涵蓋前後端平台、視覺感知、Robot Control、VLA／Robot Learning 與 Docker 部署。
+  以 AI／ML、機器人軟體與軟體工程（後端、前端與資料庫）為雙主軸，涵蓋視覺感知、Robot Control、VLA／Robot Learning、API、前後端平台與 Docker 部署。
 domains:
-  - icon: "code"
-    title: "Software Engineering & Platforms"
-    description: "使用 Python、C++、C#／.NET、React、TypeScript、Next.js、FastAPI、WebSocket、REST API 與資料庫技術建置可交付平台。"
-  - icon: "server"
-    title: "Frontend, Backend & Deployment"
-    description: "開發前後端控制、監控與工作流程工具，整合 Docker、Nginx、Linux、Git、API、資料流程與即時回饋。"
   - icon: "brain"
     title: "AI／ML & Computer Vision"
     description: "使用 PatchCore、PyTorch、OpenCV、YOLO OBB、AprilTag、RealSense 與 PyQt 建立 AI 視覺與檢測流程。"
@@ -25,6 +19,12 @@ domains:
   - icon: "eye"
     title: "Robot Perception & Visual Servoing"
     description: "以 RealSense、YOLO OBB、OpenCV、AprilTag 與視覺伺服支援機器人感知與真機任務驗證。"
+  - icon: "code"
+    title: "Software Engineering & Platforms"
+    description: "使用 Python、C++、C#／.NET、React、TypeScript、Next.js、FastAPI、WebSocket、REST API 與資料庫技術建置可交付平台。"
+  - icon: "server"
+    title: "Frontend, Backend & Deployment"
+    description: "開發前後端控制、監控與工作流程工具，整合 Docker、Nginx、Linux、Git、API、資料流程與即時回饋。"
   - icon: "wrench"
     title: "End-to-End System Integration"
     description: "從需求、架構、開發與 Docker 部署，到測試、現場整合與維護，獨立交付可操作的軟體與機器人系統。"

@@ -22,10 +22,10 @@ defaultContentLanguageInSubdir = false
       author = "駱忠湧"
       description = "駱忠湧的軟體工程、AI、機器人與系統整合作品集，涵蓋前後端平台、視覺感知、Robot Control、VLA／Robot Learning、Digital Twin 資料流程與 Docker 部署。"
       copyright = "駱忠湧"
-      tagline = "軟體工程師｜AI、機器人與系統整合"
-      hero_description = "以 React／TypeScript、FastAPI、WebSocket、Docker 與 Linux 建置前後端、AI 與機器人系統，並以 ROS 2、NVIDIA Isaac、VLA／Robot Learning 與 Digital Twin 完成控制、資料流程與虛擬／真實環境驗證。"
+      tagline = "AI／機器人與軟體工程師｜後端、全端與系統整合"
+      hero_description = "以 ROS 2、NVIDIA Isaac、VLA／Robot Learning 與 Digital Twin 建置 AI／機器人系統，並以 React／TypeScript、FastAPI、WebSocket、C#／ASP.NET MVC、MS SQL、Docker 與 Linux 完成前後端、API、資料庫、控制與現場驗證。"
       hero_location = "新北，台灣"
-      resume_url = "/files/daniel-lo-resume-robotics-zh-tw-v2.pdf"
+      resume_url = "/files/daniel-lo-resume-software-zh-tw-v2.pdf"
       collab_tags = ["Software Engineering", "Backend API", "Frontend Development", "AI / ML", "Robotics Software", "ROS 2", "Docker", "VLA / Robot Learning", "Digital Twin Data"]
     [languages.zh-tw.menu]
       [[languages.zh-tw.menu.main]]
@@ -67,10 +67,10 @@ defaultContentLanguageInSubdir = false
       author = "Daniel Lo"
       description = "Daniel Lo's software engineering, AI, robotics, and systems integration portfolio covering frontend/backend platforms, computer vision, robot control, VLA / robot learning, Digital Twin data workflows, and Docker deployment."
       copyright = "Daniel Lo"
-      tagline = "Software Engineer | AI, Robotics & Systems Integration"
-      hero_description = "Building frontend/backend, AI, and robotics systems with React / TypeScript, FastAPI, WebSocket, Docker, and Linux, while using ROS 2, NVIDIA Isaac, VLA / robot learning, and Digital Twin workflows for control, data, and simulation / real-world validation."
+      tagline = "AI & Robotics Software Engineer | Backend, Full-Stack & Systems Integration"
+      hero_description = "Building AI, robotics, and real-time systems with ROS 2, NVIDIA Isaac, VLA / robot learning, and Digital Twin workflows, alongside frontend/backend, API, database, and deployment work with React / TypeScript, FastAPI, WebSocket, C# / ASP.NET MVC, MS SQL, Docker, and Linux."
       hero_location = "New Taipei, Taiwan"
-      resume_url = "/files/daniel-lo-resume-robotics-en.pdf"
+      resume_url = "/files/daniel-lo-resume-software-en.pdf"
       collab_tags = ["Software Engineering", "Backend API", "Frontend Development", "AI / ML", "Robotics Software", "ROS 2", "Docker", "VLA / Robot Learning", "Digital Twin Data"]
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -106,11 +106,11 @@ defaultContentLanguageInSubdir = false
     source = "static"
     target = "static"
   [[module.mounts]]
-    source = "output/pdf/robotics/daniel-lo-resume-robotics-zh-tw-v2.pdf"
-    target = "static/files/daniel-lo-resume-robotics-zh-tw-v2.pdf"
+    source = "output/pdf/software/daniel-lo-resume-software-zh-tw-v2.pdf"
+    target = "static/files/daniel-lo-resume-software-zh-tw-v2.pdf"
   [[module.mounts]]
-    source = "output/pdf/robotics/daniel-lo-resume-robotics-en.pdf"
-    target = "static/files/daniel-lo-resume-robotics-en.pdf"
+    source = "output/pdf/software/daniel-lo-resume-software-en.pdf"
+    target = "static/files/daniel-lo-resume-software-en.pdf"
 
 [params]
   name = "駱忠湧"

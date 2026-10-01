@@ -2,14 +2,8 @@
 title: "Skills"
 type: "homepage"
 intro: >-
-  Balanced engineering across software development, AI / ML, robotics software, and systems integration: frontend/backend platforms, perception, robot control, VLA / robot learning, and Docker deployment.
+  Balanced engineering across AI / ML, robotics software, and software development with databases: perception, robot control, VLA / robot learning, APIs, frontend/backend platforms, and Docker deployment.
 domains:
-  - icon: "code"
-    title: "Software Engineering & Platforms"
-    description: "Building deliverable platforms with Python, C++, C# / .NET, React, TypeScript, Next.js, FastAPI, WebSocket, REST APIs, and database technologies."
-  - icon: "server"
-    title: "Frontend, Backend & Deployment"
-    description: "Developing frontend/backend control, monitoring, and workflow tools with Docker, Nginx, Linux, Git, APIs, data workflows, and real-time feedback."
   - icon: "brain"
     title: "AI / ML & Computer Vision"
     description: "Using PatchCore, PyTorch, OpenCV, YOLO OBB, AprilTag, RealSense, and PyQt for AI vision and inspection workflows."
@@ -25,6 +19,12 @@ domains:
   - icon: "eye"
     title: "Robot Perception & Visual Servoing"
     description: "Using RealSense, YOLO OBB, OpenCV, AprilTag, and visual servoing for robot perception and physical-task validation."
+  - icon: "code"
+    title: "Software Engineering & Platforms"
+    description: "Building deliverable platforms with Python, C++, C# / .NET, React, TypeScript, Next.js, FastAPI, WebSocket, REST APIs, and database technologies."
+  - icon: "server"
+    title: "Frontend, Backend & Deployment"
+    description: "Developing frontend/backend control, monitoring, and workflow tools with Docker, Nginx, Linux, Git, APIs, data workflows, and real-time feedback."
   - icon: "wrench"
     title: "End-to-End System Integration"
     description: "Independently delivering software and robotics systems from requirements and architecture through implementation, Docker deployment, testing, on-site integration, and maintenance."

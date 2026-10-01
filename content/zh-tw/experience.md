@@ -2,7 +2,7 @@
 title: "經歷"
 type: "homepage"
 intro: >-
-  目前以軟體工程、AI 服務與機器人系統整合為主軸，從前後端平台、API、WebSocket 與 Docker 部署，到 ROS 2、Isaac Sim／Isaac Lab、Isaac GR00T、視覺感知與虛擬／真實環境驗證，完成可交付的資料、控制與監控流程。
+  目前以 AI／機器人與即時軟體系統為主軸，涵蓋 VLA／Robot Learning、Isaac GR00T 的資料轉換、模型訓練與 Policy Inference，並從 ROS 2、Isaac Sim／Isaac Lab、視覺感知與虛擬／真實環境驗證，到前後端平台、API／資料庫整合、WebSocket、Docker 部署與維護，完成可交付的資料、控制與監控流程。
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -17,10 +17,10 @@ positions:
     location: "新北，台灣"
     company_description: "智慧科技與消費性電子公司，研發工作涵蓋 AI、機器人與系統整合。"
     bullet_points:
-      - "從需求分析、系統架構、前後端開發、Docker 部署到測試與現場整合，獨立交付 AI 與機器人軟體專案。"
+      - "負責 AI／機器人與即時軟體系統，從需求分析、系統架構、前後端／API／資料庫開發到 Docker 部署、測試、現場整合與維護。"
       - "以 Next.js、React Flow、FastAPI、WebSocket 與 Docker 建置自動化工作流程與資料錄製平台；相同時間內資料蒐集量約為人工操作的 3～4 倍，並節省兩名操作人力。"
       - "以 React、TypeScript、FastAPI、ROS 2、WebSocket 與 Docker／Nginx 建置 Web 控制與監控平台，整合即時影像、系統狀態與控制命令，將線材插接成功率由 70% 提升至 90%。"
-      - "完成 Isaac GR00T N1.7 資料轉換、模型訓練與 Policy Inference，整合 ROS 2 控制、視覺感知與虛擬／真實機器人流程。"
+      - "完成 Isaac GR00T N1.7 VLA 資料轉換、模型訓練與 Policy Inference，整合 ROS 2 控制、視覺感知與虛擬／真實機器人流程。"
       - "開發 PatchCore 異常檢測 API Server 與 PyQt 介面，整合 AI 視覺、視覺伺服與機器人任務驗證。"
   - company: "采威國際資訊股份有限公司（ISCOM）"
     company_url: "https://www.iscom.com.tw"

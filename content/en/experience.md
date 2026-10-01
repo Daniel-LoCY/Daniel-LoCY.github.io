@@ -2,7 +2,7 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  I work across software engineering, AI services, and robotics system integration: frontend/backend platforms, APIs, WebSocket, Docker deployment, ROS 2, Isaac Sim / Isaac Lab, Isaac GR00T, visual perception, and simulation / real-world validation for data, control, and monitoring workflows.
+  I work across AI, robotics, and real-time software systems, including VLA / Robot Learning, Isaac GR00T data conversion, model training, and policy inference, alongside ROS 2, Isaac Sim / Isaac Lab, visual perception, and simulation / real-world validation. I also deliver frontend/backend platforms, API / database integration, WebSocket, Docker deployment, and maintenance for data, control, and monitoring workflows.
 resume_downloads:
   - lang: zh-tw
     label: 中文
@@ -17,10 +17,10 @@ positions:
     location: "New Taipei, Taiwan"
     company_description: "Consumer electronics and smart technology company with R&D work spanning AI, robotics, and system integration."
     bullet_points:
-      - "Delivered AI and robotics software from requirements and system architecture through frontend/backend implementation, Docker deployment, testing, on-site integration, and maintenance."
+      - "Delivered AI, robotics, and real-time software systems from requirements and system architecture through frontend/backend APIs, database integration, Docker deployment, testing, on-site integration, and maintenance."
       - "Built a Next.js / React Flow / FastAPI / WebSocket / Docker workflow and data-recording platform for AI / VLA data workflows, reaching approximately 3-4x the manual data volume in the same time window and reducing manual staffing needs by two operators."
       - "Built a React / TypeScript / FastAPI / ROS 2 / WebSocket platform for web-based robot control and monitoring with real-time video, system status, control commands, and Docker / Nginx deployment; improved cable-insertion success from 70% to 90%."
-      - "Completed Isaac GR00T N1.7 data conversion, model training, and policy inference, integrating ROS 2 control, visual perception, and simulation / physical-robot workflows."
+      - "Completed Isaac GR00T N1.7 VLA data conversion, model training, and policy inference, integrating ROS 2 control, visual perception, and simulation / physical-robot workflows."
       - "Developed a PatchCore anomaly-detection API server and PyQt interface, integrating AI vision, visual servoing, and robot-task validation."
   - company: "ISCOM"
     company_url: "https://www.iscom.com.tw"
