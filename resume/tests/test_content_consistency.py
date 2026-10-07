@@ -123,6 +123,33 @@ class ResumeContentConsistencyTest(unittest.TestCase):
         self.assertNotIn("TSMC", software["version"])
         self.assertIn("TSMC", tsmc["version"])
 
+    def test_thesis_and_competition_are_separate_with_public_project_context(self):
+        zh_resume = (ROOT / "resume" / "104-resume-zh-tw.md").read_text(encoding="utf-8")
+        self.assertIn("碩士論文：整合自然語言處理與強化式學習之協作機器人開發", zh_resume)
+        self.assertIn("全國智慧製造應用競賽學生專案", zh_resume)
+        self.assertIn("整合電腦視覺、ROS 與協作機械手臂", zh_resume)
+        self.assertNotIn("抽血系統研究", zh_resume)
+
+        for path, markers in (
+            (
+                ROOT / "content" / "zh-tw" / "engineering" / "robotic-blood-sampling-system.md",
+                ("學生競賽專案", "全國智慧製造應用競賽", "並非碩士論文研究"),
+            ),
+            (
+                ROOT / "content" / "en" / "engineering" / "robotic-blood-sampling-system.md",
+                ("Student Competition Project", "National Smart Manufacturing Application Competition", "separate from my master's thesis research"),
+            ),
+        ):
+            self.assertTrue(path.exists(), f"Public competition project page is missing: {path}")
+            text = path.read_text(encoding="utf-8")
+            for marker in markers:
+                self.assertIn(marker, text, f"Missing {marker!r} in {path}")
+
+        linkedin = (ROOT / "resume" / "platform-copy" / "linkedin-unified.md").read_text(encoding="utf-8")
+        self.assertIn("student competition project", linkedin.lower())
+        self.assertIn("separate from my master's thesis research", linkedin.lower())
+        self.assertNotIn("blood draw system research", linkedin.lower())
+
     def test_top_level_public_content_exposes_both_career_axes(self):
         for path in TOP_LEVEL_CONTENT_PATHS:
             text = path.read_text(encoding="utf-8")

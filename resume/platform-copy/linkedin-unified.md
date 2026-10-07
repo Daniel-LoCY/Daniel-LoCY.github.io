@@ -28,6 +28,10 @@ I am open to Software Engineer, Backend Engineer, Full-Stack Engineer, AI / ML E
 
 Participated in backend API development, frontend integration, and web feature implementation using C#, ASP.NET MVC, JavaScript, jQuery, MS SQL, and Git.
 
+## Competition project description
+
+Collaborative Robotic Arm Blood Draw System — a student competition project completed for the National Smart Manufacturing Application Competition, separate from my master's thesis research. Worked with a team to integrate computer vision, ROS, and collaborative robotic-arm control for vessel localization, tool recognition, and a task-execution prototype.
+
 ## Skills ordering
 
 Software Engineering · Backend API · Frontend Development · AI / ML · Computer Vision · Robotics Software · ROS 2 · Docker · Linux · Systems Integration · VLA / Robot Learning · Digital Twin
